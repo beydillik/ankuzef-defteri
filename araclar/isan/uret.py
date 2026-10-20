@@ -4,7 +4,8 @@ import sys, os, json, re
 sys.path.insert(0, os.path.dirname(__file__))
 from ortak import HATA, h, soru_kontrol, yaz
 from bolumler import BOLUMLER
-from cikmis import CIKMIS_2025_VIZE
+from cikmis import CIKMIS_2025_VIZE, CIKMIS_2025_FINAL
+from gozden import GOZDEN
 from tahmin import DENEMELER
 
 BOLUM_LISTE = [
@@ -57,6 +58,27 @@ for q in cik["sorular"]:
 cik_dosya = "cikmis_2025_guz_vize.json"
 soru_dosyalari.append(cik_dosya)
 
+cikf = CIKMIS_2025_FINAL
+if [q["no"] for q in cikf["sorular"]] != list(range(1, 21)):
+    h("çıkmış final: soru numaraları 1–20 değil")
+for q in cikf["sorular"]:
+    soru_kontrol(q, f"çıkmış final S{q['no']}")
+    if q["bolum"] not in FINAL:
+        h(f"çıkmış final S{q['no']}: bölüm hatalı")
+soru_dosyalari.append("cikmis_2025_guz_final.json")
+
+# ---- Gözden Geçirelim ----
+gg = []
+for bid, qs in GOZDEN.items():
+    if [q["kitapNo"] for q in qs] != list(range(1, 11)):
+        h(f"gözden {bid}: kitap numaraları 1–10 değil")
+    for q in qs:
+        soru_kontrol(q, q["id"])
+        if "ABCDE"[q["dogru"]] != q["kitapCevap"] and not q.get("kitapNotu"):
+            h(f"{q['id']}: doğru şık kitap cevabından farklı ama kitapNotu yok")
+    gg += qs
+soru_dosyalari.append("gozden.json")
+
 # ---- tahmin ----
 tahmin_dosyalar = []
 for did, ad, sorular in DENEMELER:
@@ -86,8 +108,8 @@ ders = {
     "kapsamlar": {
         "vize": {"ad": "Vize", "bolumler": VIZE, "deneme": {"soru": 20, "sureDk": 30, "dagilim": {"b1": 6, "b2": 7, "b3": 7},
                  "sureNot": "Dağılım 2025-26 Güz Vize'den alındı (B1: 6, B2: 7, B3: 7 soru). Sınav süresi doğrulanamadı; varsayılan 30 dakika, sınav giriş belgendeki süreyle değiştir."}},
-        "final": {"ad": "Final", "bolumler": FINAL, "deneme": {"soru": 20, "sureDk": 30, "dagilim": {"b1": 3, "b2": 4, "b3": 4, "b4": 3, "b5": 3, "b6": 3},
-                  "sureNot": "Final dağılımı tahmindir (çıkmış final yok). Bölüm 4–6 hazırlanınca dolar."}},
+        "final": {"ad": "Final", "bolumler": FINAL, "deneme": {"soru": 20, "sureDk": 30, "dagilim": {"b1": 1, "b2": 2, "b3": 2, "b4": 5, "b5": 5, "b6": 5},
+                  "sureNot": "Dağılım 2025-26 Güz Final'den alındı (B1: 1, B2: 2, B3: 2, B4–B6: beşer soru). Sınav süresi doğrulanamadı; varsayılan 30 dakika."}},
     },
     "bolumler": [{"id": b, "no": n, "baslik": t, "sayfalar": s, "hazir": hz, "sinav": ["Vize", "Final"] if b in VIZE else ["Final"]} for b, n, t, s, hz in BOLUM_LISTE],
     "soruDosyalari": soru_dosyalari,
@@ -102,12 +124,16 @@ yaz("ders.json", ders)
 for bid, B in BOLUMLER.items():
     yaz(f"bolumler/{bid}.json", B)
 yaz(f"sorular/{cik_dosya}", cik)
+yaz("sorular/cikmis_2025_guz_final.json", cikf)
+yaz("sorular/gozden.json", {"kaynak": "gozden", "sorular": gg})
 for ad, v in tahmin_dosyalar:
     yaz(f"sorular/{ad}", v)
 
 print("Yazıldı.")
 for bid, s in istatistik.items():
     print(f"  {bid}: özet {s['ozet']} bölüm | kart {s['kart']} | çift {s['cift']} ({s['cift_ifade']} ifade) | formül {s['formul']} | konu testi {s['test']}")
+print(f"  çıkmış final: {len(cikf['sorular'])} soru, bölüm dağılımı", {b: sum(1 for q in cikf['sorular'] if q['bolum'] == b) for b in FINAL})
+print(f"  gözden geçirelim: {len(gg)} soru, kitap anahtarından farklı: {[q['id'] for q in gg if 'ABCDE'[q['dogru']] != q['kitapCevap']]}")
 print(f"  çıkmış: {len(cik['sorular'])} soru, bölüm dağılımı", {b: sum(1 for q in cik['sorular'] if q['bolum'] == b) for b in VIZE})
 for did, ad, qs in DENEMELER:
     print(f"  {ad}: {len(qs)} soru, öncüllü {sum(1 for q in qs if q.get('onculler'))}, doğru şık konumu {[sum(1 for q in qs if q['dogru'] == i) for i in range(5)]}")

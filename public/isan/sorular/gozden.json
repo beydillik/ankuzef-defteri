@@ -1,0 +1,2319 @@
+{
+ "kaynak": "gozden",
+ "sorular": [
+  {
+   "soru": "İş analitiği için aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    "İşletmedeki problemlerle ilgilenir.",
+    "Karşılaşılan probleme çözüm sunar.",
+    "Yalnızca işletmenin veri analizi bölümünün problemleriyle ilgilenir.",
+    "Veriyi analiz eder.",
+    "Karar verme sistemleriyle ilgilenir."
+   ],
+   "dogru": 2,
+   "aciklama": "İş analitiği işletmedeki herhangi bir problemle ilgilenir; tek bir bölümle sınırlı değildir.",
+   "sayfa": "s. 16",
+   "celdirici": "\"Yalnızca\" gibi daraltan kelimeler bu derste yanlış öncülün işaretidir.",
+   "bolum": "b1",
+   "kitapNo": 1,
+   "kitapCevap": "C",
+   "id": "gg-b1-01",
+   "sabitSik": true
+  },
+  {
+   "soru": "Verinin tanımlanması iş analitiğinin hangi aşamasıdır?",
+   "secenekler": [
+    "Tahminleyici iş analitiği",
+    "Tanımlayıcı iş analitiği",
+    "Karar verici iş analitiği",
+    "Veri toplayıcı iş analitiği",
+    "Optimal iş analitiği"
+   ],
+   "dogru": 1,
+   "aciklama": "Verinin tanımlanmasına tanımlayıcı iş analitiği denir (s. 7).",
+   "sayfa": "s. 16",
+   "celdirici": "Tahminleyici aşama tahmin üretir; diğer üç ad kitapta bir aşama olarak geçmez.",
+   "bolum": "b1",
+   "kitapNo": 2,
+   "kitapCevap": "B",
+   "id": "gg-b1-02",
+   "sabitSik": true
+  },
+  {
+   "soru": "Optimal kârı arayan bir programın sonuç tablosu yukarıdadır. Aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    "30 birimlik karar değişkeni çözüm kriterini sağlamaz.",
+    "8 ve 25 birimlik karar değişkenleri çözüm kriterlerini sağlar.",
+    "25 birimlik karar değişkeni optimal çözüm olabilir.",
+    "5 birimlik karar değişkeni optimal çözüm olabilir.",
+    "20 birimlik karar değişkeni çözüm kriterini sağlar."
+   ],
+   "dogru": 3,
+   "aciklama": "Kriterleri sağlayanlar 5, 8, 20 ve 25; bunların en yüksek amaç değeri 25 birimde (500). 5 birim (100) optimal olamaz.",
+   "sayfa": "s. 16",
+   "tablo": {
+    "basliklar": [
+     "Karar değişkeni",
+     "Amaç fonksiyonu çıktısı",
+     "Çözüm kriterleri"
+    ],
+    "satirlar": [
+     [
+      "5",
+      "100",
+      "Sağlar"
+     ],
+     [
+      "8",
+      "160",
+      "Sağlar"
+     ],
+     [
+      "20",
+      "400",
+      "Sağlar"
+     ],
+     [
+      "25",
+      "500",
+      "Sağlar"
+     ],
+     [
+      "30",
+      "600",
+      "Sağlamaz"
+     ]
+    ]
+   },
+   "kitapNotu": "Kitabın cevap anahtarı C diyor; ama C (25 birim optimal olabilir) doğru bir ifade. Yanlış olan 5 birimin optimal olabileceği ifadesi.",
+   "tabloOnce": true,
+   "bolum": "b1",
+   "kitapNo": 3,
+   "kitapCevap": "C",
+   "id": "gg-b1-03",
+   "sabitSik": true
+  },
+  {
+   "soru": "Bir varlığın incelenen bir özelliği hakkında elde edilen bilgi hangi kavramdır?",
+   "secenekler": [
+    "Veri",
+    "Veri toplama",
+    "İstatistik",
+    "Gözlem birimi",
+    "Gözlem"
+   ],
+   "dogru": 4,
+   "aciklama": "Gözlem, incelenen bir özellik hakkında elde edilen bilgidir; veri ise bütün gözlemlerdir (s. 8).",
+   "sayfa": "s. 16",
+   "celdirici": "Veri ile gözlem karışır: tek bilgi gözlem, tümü veri.",
+   "bolum": "b1",
+   "kitapNo": 4,
+   "kitapCevap": "E",
+   "id": "gg-b1-04",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "Yalnız III",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Matematiksel modelle karar verme: problemi tanımla → alternatifler → kriterler → model kur → çöz ve uygula → gerçekle değerlendir. \"Bir alternatifin uygulanması\" problem çözme adımıdır (s. 10–11).",
+   "sayfa": "s. 17",
+   "onculler": [
+    "Problemin tanımlanması ve belirlenmesi",
+    "Bir alternatif çözümün uygulanması",
+    "Matematiksel modelin kurulması"
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri matematiksel modelleme ile karar vermenin adımlarındandır?",
+   "sabitSik": true,
+   "bolum": "b1",
+   "kitapNo": 5,
+   "kitapCevap": "D",
+   "id": "gg-b1-05"
+  },
+  {
+   "soru": "σ sembolü neyi gösterir?",
+   "secenekler": [
+    "Örneklem varyansı",
+    "Örneklem standart sapması",
+    "Popülasyon varyansı",
+    "Popülasyon standart sapması",
+    "Örneklem ortalaması"
+   ],
+   "dogru": 3,
+   "aciklama": "Tablo 1.1: σ popülasyon standart sapması; s örneklem standart sapması; σ² popülasyon varyansı (s. 9).",
+   "sayfa": "s. 17",
+   "bolum": "b1",
+   "kitapNo": 6,
+   "kitapCevap": "D",
+   "id": "gg-b1-06",
+   "sabitSik": true
+  },
+  {
+   "soru": "Pazarlama bölümü satışların müşteri yaşına göre segmentasyonunu istiyor. Bu çalışmanın değişkeni hangisidir?",
+   "secenekler": [
+    "Satış tutarları",
+    "Müşteri sayısı",
+    "Müşteri sadakati",
+    "Müşteri harcamaları",
+    "Müşteri yaşı"
+   ],
+   "dogru": 4,
+   "aciklama": "Segmentasyon müşteri yaşına göre yapılıyor; ölçülen ve gözlemden gözleme değişen özellik yaştır (s. 9).",
+   "sayfa": "s. 17",
+   "bolum": "b1",
+   "kitapNo": 7,
+   "kitapCevap": "E",
+   "id": "gg-b1-07",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "Yalnız III",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "x̄ aritmetik ortalama, f frekans; korelasyonun örneklem sembolü r'dir, s standart sapmadır (Tablo 1.1, s. 9).",
+   "sayfa": "s. 17",
+   "onculler": [
+    "x̄ aritmetik ortalamayı gösterir.",
+    "f frekansı gösterir.",
+    "s korelasyonu gösterir."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri istatistik sembolleri bakımından doğrudur?",
+   "sabitSik": true,
+   "bolum": "b1",
+   "kitapNo": 8,
+   "kitapCevap": "B",
+   "id": "gg-b1-08"
+  },
+  {
+   "soru": "Z = 40 X1 + 50 X2 olan kâr maksimizasyonunda optimal çözüm X1 = 8, X2 = 12 ise Z kaçtır?",
+   "secenekler": [
+    "880",
+    "890",
+    "900",
+    "910",
+    "920"
+   ],
+   "dogru": 4,
+   "aciklama": "40 × 8 + 50 × 12 = 320 + 600 = 920.",
+   "sayfa": "s. 17",
+   "cozum": [
+    "40 × 8 = 320",
+    "50 × 12 = 600",
+    "Z = 920"
+   ],
+   "bolum": "b1",
+   "kitapNo": 9,
+   "kitapCevap": "E",
+   "id": "gg-b1-09",
+   "sabitSik": true
+  },
+  {
+   "soru": "Optimal değeri 500, karar değişkenleri X1 = 5 ve X2 = 8 olan problemin amaç fonksiyonu hangisi olabilir?",
+   "secenekler": [
+    "Z = 8 X1 + 10 X2",
+    "Z = 40 X1 + 30 X2",
+    "Z = 10 X1 + 90 X2",
+    "Z = 30 X1 + 70 X2",
+    "Z = 20 X1 + 50 X2"
+   ],
+   "dogru": 4,
+   "aciklama": "Şıkları dene: 20 × 5 + 50 × 8 = 100 + 400 = 500.",
+   "sayfa": "s. 17",
+   "cozum": [
+    "8·5 + 10·8 = 120",
+    "40·5 + 30·8 = 440",
+    "10·5 + 90·8 = 770",
+    "30·5 + 70·8 = 710",
+    "20·5 + 50·8 = 500 ✓"
+   ],
+   "bolum": "b1",
+   "kitapNo": 10,
+   "kitapCevap": "E",
+   "id": "gg-b1-10",
+   "sabitSik": true
+  },
+  {
+   "soru": "Tanımlayıcı iş analitiği için aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    "Verinin kolay anlaşılmasını sağlar.",
+    "Verinin merkez değerini bulur.",
+    "Veri sınıflandırması yapılabilir.",
+    "Gelecekle ilgili öngörü sağlar.",
+    "Müşteri segmentasyonu yapılabilir."
+   ],
+   "dogru": 3,
+   "aciklama": "Gelecekle ilgili öngörü tahminleyici iş analitiğinin işidir.",
+   "sayfa": "s. 42",
+   "bolum": "b2",
+   "kitapNo": 1,
+   "kitapCevap": "D",
+   "id": "gg-b2-01",
+   "sabitSik": true
+  },
+  {
+   "soru": "Sınıftaki gözlem sayısını gösteren kavram hangisidir?",
+   "secenekler": [
+    "Sınıf aralığı",
+    "Sınıf orta noktası",
+    "Frekans",
+    "Frekans dağılımı",
+    "Göreli frekans"
+   ],
+   "dogru": 2,
+   "aciklama": "Frekans sınıftaki gözlem sayısıdır (s. 23).",
+   "sayfa": "s. 42",
+   "bolum": "b2",
+   "kitapNo": 2,
+   "kitapCevap": "C",
+   "id": "gg-b2-02",
+   "sabitSik": true
+  },
+  {
+   "soru": "Beş kalem türünün satış adetleri yukarıdadır. Aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    "En fazla satış A türündedir.",
+    "Toplam satış 20 bindir.",
+    "En az satış D türündedir.",
+    "E türünün göreli frekansı %16'dır.",
+    "Satışların %30'u A ve C türlerindedir."
+   ],
+   "dogru": 4,
+   "aciklama": "A + C = 8 + 2 = 10 bin → 10 / 20 = %50, %30 değil.",
+   "sayfa": "s. 42",
+   "tablo": {
+    "basliklar": [
+     "Kalem türü",
+     "Satış adedi (bin)"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "8"
+     ],
+     [
+      "B",
+      "5"
+     ],
+     [
+      "C",
+      "2"
+     ],
+     [
+      "D",
+      "1"
+     ],
+     [
+      "E",
+      "4"
+     ]
+    ]
+   },
+   "kitapNotu": "Kitapta bu soruda iki yanlış ifade var: E'nin göreli frekansı 4 / 20 = %20'dir, %16 değil. Kitabın cevap anahtarı E'yi (A ve C %30) kabul ediyor; burada da öyle, ama %16 ifadesi de yanlış.",
+   "tabloOnce": true,
+   "bolum": "b2",
+   "kitapNo": 3,
+   "kitapCevap": "E",
+   "id": "gg-b2-03",
+   "sabitSik": true
+  },
+  {
+   "soru": "50 ürünün kârlılık dağılımı yukarıdadır. %10–%15 sınıfının kümülatif göreli frekansı yüzde kaçtır?",
+   "secenekler": [
+    "5",
+    "8",
+    "13",
+    "26",
+    "28"
+   ],
+   "dogru": 3,
+   "aciklama": "(5 + 8) / 50 × 100 = 26.",
+   "sayfa": "s. 42",
+   "celdirici": "13 kümülatif frekanstır (adet); yüzde için 50'ye böl.",
+   "tablo": {
+    "basliklar": [
+     "Kârlılık",
+     "Ürün sayısı"
+    ],
+    "satirlar": [
+     [
+      "%5 – %10",
+      "5"
+     ],
+     [
+      "%10 – %15",
+      "8"
+     ],
+     [
+      "%15 – %20",
+      "15"
+     ],
+     [
+      "%20 – %25",
+      "12"
+     ],
+     [
+      "%25 – %30",
+      "10"
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "bolum": "b2",
+   "kitapNo": 4,
+   "kitapCevap": "D",
+   "id": "gg-b2-04",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Merkezi eğilim ölçütleri mod, medyan, ortalama. Veri aralığı bir sınıflama kavramıdır.",
+   "sayfa": "s. 43",
+   "onculler": [
+    "Veri aralığı",
+    "Medyan",
+    "Aritmetik ortalama"
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri merkezi eğilim ölçütüdür?",
+   "sabitSik": true,
+   "bolum": "b2",
+   "kitapNo": 5,
+   "kitapCevap": "E",
+   "id": "gg-b2-05"
+  },
+  {
+   "soru": "3, 5, 7, 10, 12, 16, 24 veri setinin aritmetik ortalaması kaçtır?",
+   "secenekler": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   "dogru": 4,
+   "aciklama": "Toplam 77, n = 7 → 11.",
+   "sayfa": "s. 43",
+   "celdirici": "10 medyandır (4. değer).",
+   "bolum": "b2",
+   "kitapNo": 6,
+   "kitapCevap": "E",
+   "id": "gg-b2-06",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve II",
+    "II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Medyan uç değerden etkilenmez; mod her veri setinde olmayabilir. Popülasyona çıkarım yapılabilen merkezi eğilim ölçütü aritmetik ortalamadır.",
+   "sayfa": "s. 43",
+   "onculler": [
+    "Medyan uç değerlerden etkilenir.",
+    "Aritmetik ortalama popülasyona çıkarımda bulunulabilen merkezi eğilim ölçütüdür.",
+    "Mod her veri setinde mutlaka hesaplanır."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri doğrudur?",
+   "sabitSik": true,
+   "bolum": "b2",
+   "kitapNo": 7,
+   "kitapCevap": "B",
+   "id": "gg-b2-07"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve II",
+    "I ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Aralık ve standart sapma saçınım ölçütüdür; mod merkezi eğilim ölçütüdür.",
+   "sayfa": "s. 43",
+   "onculler": [
+    "Aralık",
+    "Standart sapma",
+    "Mod"
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri saçınım ölçütüdür?",
+   "sabitSik": true,
+   "bolum": "b2",
+   "kitapNo": 8,
+   "kitapCevap": "D",
+   "id": "gg-b2-08"
+  },
+  {
+   "soru": "7, 10, 12, 20, 26 örneklem veri setinin varyansı kaçtır?",
+   "secenekler": [
+    "48,8",
+    "50",
+    "55,50",
+    "61",
+    "66,50"
+   ],
+   "dogru": 3,
+   "aciklama": "x̄ = 15; farkların kareleri 64 + 25 + 9 + 25 + 121 = 244; 244 / 4 = 61.",
+   "sayfa": "s. 43",
+   "celdirici": "48,8 = 244 / 5: n'ye bölmek.",
+   "cozum": [
+    "x̄ = 75 / 5 = 15",
+    "Σ(xᵢ − x̄)² = 244",
+    "s² = 244 / (5 − 1) = 61"
+   ],
+   "bolum": "b2",
+   "kitapNo": 9,
+   "kitapCevap": "D",
+   "id": "gg-b2-09",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Aralık uç değerden etkilenir; çeyreklikler arası fark ortalamayı dikkate almaz. Ortalama mutlak sapma ortalamaya dayandığı için uç değerden etkilenir.",
+   "sayfa": "s. 43",
+   "onculler": [
+    "Aralık verinin uç değerlerinden etkilenmez.",
+    "Çeyreklikler arası fark ortalamayı dikkate alır.",
+    "Ortalama mutlak sapma uç değerlerden etkilenir."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri doğrudur?",
+   "sabitSik": true,
+   "bolum": "b2",
+   "kitapNo": 10,
+   "kitapCevap": "C",
+   "id": "gg-b2-10"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "II ve III",
+    "I ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Tahminleyici iş analitiği nedenselliği araştırır ve öngörü modeli üretir. Değişkenler arası ilişki yalnızca istatistikle değil, bilimsel açıklamayla da ele alınır.",
+   "sayfa": "s. 63",
+   "onculler": [
+    "Değişkenler arasındaki ilişkiyi yalnızca istatistik açısından ele alır.",
+    "Değişkenler arasındaki nedensellik ilişkisini araştırır.",
+    "Öngörüde bulunulabilecek bir matematiksel model elde edilebilir."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri tahminleyici iş analitiği için doğrudur?",
+   "sabitSik": true,
+   "bolum": "b3",
+   "kitapNo": 1,
+   "kitapCevap": "D",
+   "id": "gg-b3-01"
+  },
+  {
+   "soru": "SSXY = 45, SSX = 60 ve SSY = 135 ise korelasyon katsayısı kaçtır?",
+   "secenekler": [
+    "0,10",
+    "0,20",
+    "0,30",
+    "0,40",
+    "0,50"
+   ],
+   "dogru": 4,
+   "aciklama": "r = 45 / √(60 × 135) = 45 / √8.100 = 45 / 90 = 0,50.",
+   "sayfa": "s. 63",
+   "cozum": [
+    "60 × 135 = 8.100",
+    "√8.100 = 90",
+    "r = 45 / 90 = 0,50"
+   ],
+   "bolum": "b3",
+   "kitapNo": 2,
+   "kitapCevap": "E",
+   "id": "gg-b3-02",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Korelasyon katsayısı ilişkinin yönünü ve gücünü gösterir; bağımlı ve bağımsız değişkeni belirlemez (bunu bilimsel çerçeve ve regresyon yapar).",
+   "sayfa": "s. 63",
+   "onculler": [
+    "İki değişken arasındaki ilişkinin yönünü gösterir.",
+    "İki değişken arasındaki ilişkinin gücünü gösterir.",
+    "Bağımlı ve bağımsız değişkeni belirler."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri korelasyon katsayısı için doğrudur?",
+   "sabitSik": true,
+   "bolum": "b3",
+   "kitapNo": 3,
+   "kitapCevap": "C",
+   "id": "gg-b3-03"
+  },
+  {
+   "soru": "Model R = 15 X1 + 20 X2. Programa X1 = 10, X2 = 5 girilirse sonuç kaçtır?",
+   "secenekler": [
+    "100",
+    "150",
+    "200",
+    "250",
+    "300"
+   ],
+   "dogru": 3,
+   "aciklama": "15 × 10 + 20 × 5 = 150 + 100 = 250.",
+   "sayfa": "s. 63",
+   "bolum": "b3",
+   "kitapNo": 4,
+   "kitapCevap": "D",
+   "id": "gg-b3-04",
+   "sabitSik": true
+  },
+  {
+   "soru": "Basit regresyonda bağımlı değişkenin ortalaması 50, bağımsız değişkenin ortalaması 20 ve β₁ = 1 ise β₀ kaçtır?",
+   "secenekler": [
+    "10",
+    "20",
+    "30",
+    "40",
+    "50"
+   ],
+   "dogru": 2,
+   "aciklama": "β₀ = Ȳ − β₁X̄ = 50 − 1 × 20 = 30.",
+   "sayfa": "s. 64",
+   "bolum": "b3",
+   "kitapNo": 5,
+   "kitapCevap": "C",
+   "id": "gg-b3-05",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Katsayılar t dağılımıyla test edilir (ki-kare değil). Açıklama gücü R², modelin açıklama gücünün olup olmadığı Anlamlılık F ile bulunur.",
+   "sayfa": "s. 64",
+   "onculler": [
+    "Katsayıların hipotez testi ki-kare dağılımıyla yapılır.",
+    "Modelin açıklama gücü R² ile bulunur.",
+    "Modelin açıklama gücü olup olmadığına Anlamlılık F değeriyle karar verilir."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri regresyon hipotez testleri için doğrudur?",
+   "sabitSik": true,
+   "bolum": "b3",
+   "kitapNo": 6,
+   "kitapCevap": "E",
+   "id": "gg-b3-06"
+  },
+  {
+   "soru": "Bağımlı değişkenin bağımsız değişkenlerce açıklanamayan kısmı hangi kavramdır?",
+   "secenekler": [
+    "En küçük kareler yöntemi",
+    "Bağımsız değişken",
+    "Açıklayıcı değişken",
+    "Açıklanan değişken",
+    "Hata terimi"
+   ],
+   "dogru": 4,
+   "aciklama": "Hata terimi modelde düşünülemeyen ya da alınamayan, açıklanamayan kısımdır (s. 55).",
+   "sayfa": "s. 64",
+   "celdirici": "Açıklanan değişken bağımlı değişkenin kendisidir.",
+   "bolum": "b3",
+   "kitapNo": 7,
+   "kitapCevap": "E",
+   "id": "gg-b3-07",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre A = 5 ve B = 2 iken bağımlı değişken kaçtır?",
+   "secenekler": [
+    "20,60",
+    "25,60",
+    "28,60",
+    "30,60",
+    "32,60"
+   ],
+   "dogru": 3,
+   "aciklama": "5 + 3,20 × 5 + 4,80 × 2 = 5 + 16 + 9,6 = 30,6.",
+   "sayfa": "s. 64",
+   "celdirici": "25,60 kesişimi (5) eklemeyi unutmaktır.",
+   "tablo": {
+    "basliklar": [
+     "",
+     "Katsayılar",
+     "t Stat",
+     "P-değeri"
+    ],
+    "satirlar": [
+     [
+      "Kesişim",
+      "5,00",
+      "3,36",
+      "0,02"
+     ],
+     [
+      "A değişkeni",
+      "3,20",
+      "4,03",
+      "0,01"
+     ],
+     [
+      "B değişkeni",
+      "4,80",
+      "2,90",
+      "0,03"
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "bolum": "b3",
+   "kitapNo": 8,
+   "kitapCevap": "D",
+   "id": "gg-b3-08",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre;",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "A (p = 0,01) ve B (p = 0,03) %5 düzeyinde anlamlı. Kesişimin p'si 0,02 < 0,05 → sıfırdan farklı; \"sıfırdır\" yanlış.",
+   "sayfa": "s. 64",
+   "onculler": [
+    "A katsayısının %5 düzeyinde sıfırdan farklı olduğuna dair güçlü kanıt vardır.",
+    "B katsayısının %5 düzeyinde sıfırdan farklı olduğuna dair güçlü kanıt vardır.",
+    "Kesişim değeri %5 düzeyinde sıfırdır."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri doğrudur?",
+   "tablo": {
+    "basliklar": [
+     "",
+     "Katsayılar",
+     "t Stat",
+     "P-değeri"
+    ],
+    "satirlar": [
+     [
+      "Kesişim",
+      "5,00",
+      "3,36",
+      "0,02"
+     ],
+     [
+      "A değişkeni",
+      "3,20",
+      "4,03",
+      "0,01"
+     ],
+     [
+      "B değişkeni",
+      "4,80",
+      "2,90",
+      "0,03"
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "sabitSik": true,
+   "bolum": "b3",
+   "kitapNo": 9,
+   "kitapCevap": "C",
+   "id": "gg-b3-09"
+  },
+  {
+   "soru": "İki değişken arasındaki ilişkinin yönü pozitifse korelasyon katsayısı hangisi olabilir?",
+   "secenekler": [
+    "−2",
+    "−0,8",
+    "0",
+    "0,8",
+    "2"
+   ],
+   "dogru": 3,
+   "aciklama": "Pozitif ilişkide 0 < r ≤ 1; −2 ve 2 korelasyon katsayısı olamaz.",
+   "sayfa": "s. 64",
+   "celdirici": "2 pozitif ama r 1'i geçemez.",
+   "bolum": "b3",
+   "kitapNo": 10,
+   "kitapCevap": "D",
+   "id": "gg-b3-10",
+   "sabitSik": true
+  },
+  {
+   "soru": "Şebeke modelleri için aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    "İş analisti şebeke problemlerine şebeke modelleriyle çözüm arar.",
+    "Şebeke problemi grafikle gösterilebilir.",
+    "Şebeke modelleri verimliliği artırabilir.",
+    "Şebeke modellerinin temel amacı iş süreçlerini analiz etmektir.",
+    "Kullanım alanlarından biri lojistiktir."
+   ],
+   "dogru": 3,
+   "aciklama": "Şebeke modellerinin amacı şebeke problemlerini (en kısa yol, en kısa döngü, en az bağlantı, en çok akış) çözmektir; iş süreci analizi değil.",
+   "sayfa": "B4 s. 40",
+   "bolum": "b4",
+   "kitapNo": 1,
+   "kitapCevap": "D",
+   "id": "gg-b4-01",
+   "sabitSik": true
+  },
+  {
+   "soru": "Başlangıç düğümünden hedef düğüme en kısa yol ya da en az kayıpla ulaşmayı amaçlayan model hangisidir?",
+   "secenekler": [
+    "Gezgin satıcı modeli",
+    "En kısa yol modeli",
+    "En kısa yol ağacı modeli",
+    "Maksimum akış modeli",
+    "Proje yönetim modeli"
+   ],
+   "dogru": 1,
+   "aciklama": "Bir yerden başka bir yere en kısa mesafe: en kısa yol modeli.",
+   "sayfa": "B4 s. 40",
+   "celdirici": "En kısa yol ağacı bütün düğümleri birbirine bağlar; tek bir hedefe gitmez.",
+   "bolum": "b4",
+   "kitapNo": 2,
+   "kitapCevap": "B",
+   "id": "gg-b4-02",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre;",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve II",
+    "I ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "3 → 4 hattında kayıp 40 MWH. 1 nolu şehirden çıkan kapasite 500 + 400 = 900 ile en yüksek. En fazla kayıp 1 → 2 hattında (100), 3 nolu şehirde değil.",
+   "sayfa": "B4 s. 40–41",
+   "onculler": [
+    "3 nolu şehirden 4 nolu şehre iletimde 40 MWH kayıp yaşanır.",
+    "Kapasite miktarı en yüksek şehir 1 nolu şehirdir.",
+    "İletimde en fazla kayıp 3 nolu şehirden dağıtım yapılırken olur."
+   ],
+   "kok": "Yukarıdakilerden hangisi ya da hangileri doğrudur?",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Şehirden",
+     "Şehre",
+     "Kapasite (MWH)",
+     "Ters kapasite (MWH)",
+     "Kayıp (MWH)"
+    ],
+    "satirlar": [
+     [
+      "Bağlantı-1",
+      "1",
+      "2",
+      "500",
+      "50",
+      "100"
+     ],
+     [
+      "Bağlantı-2",
+      "1",
+      "3",
+      "400",
+      "40",
+      "80"
+     ],
+     [
+      "Bağlantı-3",
+      "2",
+      "4",
+      "150",
+      "15",
+      "75"
+     ],
+     [
+      "Bağlantı-4",
+      "2",
+      "5",
+      "350",
+      "35",
+      "60"
+     ],
+     [
+      "Bağlantı-5",
+      "3",
+      "4",
+      "250",
+      "25",
+      "40"
+     ],
+     [
+      "Bağlantı-6",
+      "3",
+      "5",
+      "100",
+      "10",
+      "90"
+     ],
+     [
+      "Bağlantı-7",
+      "4",
+      "5",
+      "300",
+      "30",
+      "45"
+     ]
+    ],
+    "baslik": "XYZ elektrik dağıtım şirketinin hatları"
+   },
+   "tabloOnce": true,
+   "sabitSik": true,
+   "bolum": "b4",
+   "kitapNo": 3,
+   "kitapCevap": "D",
+   "id": "gg-b4-03"
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre;",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 0,
+   "aciklama": "Yollar: 1–2–5 = 100 + 60 = 160; 1–3–4–5 = 80 + 40 + 45 = 165; 1–3–5 = 170. En az kayıp 1–2–5 (Bağlantı-1 ve Bağlantı-4).",
+   "sayfa": "B4 s. 41",
+   "onculler": [
+    "Bağlantı-1",
+    "Bağlantı-2",
+    "Bağlantı-6"
+   ],
+   "kok": "1 nolu şehirden 5 nolu şehre en az kayıpla iletim için yukarıdaki bağlantılardan hangisi ya da hangileri kullanılır?",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Şehirden",
+     "Şehre",
+     "Kapasite (MWH)",
+     "Ters kapasite (MWH)",
+     "Kayıp (MWH)"
+    ],
+    "satirlar": [
+     [
+      "Bağlantı-1",
+      "1",
+      "2",
+      "500",
+      "50",
+      "100"
+     ],
+     [
+      "Bağlantı-2",
+      "1",
+      "3",
+      "400",
+      "40",
+      "80"
+     ],
+     [
+      "Bağlantı-3",
+      "2",
+      "4",
+      "150",
+      "15",
+      "75"
+     ],
+     [
+      "Bağlantı-4",
+      "2",
+      "5",
+      "350",
+      "35",
+      "60"
+     ],
+     [
+      "Bağlantı-5",
+      "3",
+      "4",
+      "250",
+      "25",
+      "40"
+     ],
+     [
+      "Bağlantı-6",
+      "3",
+      "5",
+      "100",
+      "10",
+      "90"
+     ],
+     [
+      "Bağlantı-7",
+      "4",
+      "5",
+      "300",
+      "30",
+      "45"
+     ]
+    ],
+    "baslik": "XYZ elektrik dağıtım şirketinin hatları"
+   },
+   "tabloOnce": true,
+   "sabitSik": true,
+   "bolum": "b4",
+   "kitapNo": 4,
+   "kitapCevap": "A",
+   "id": "gg-b4-04"
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre 1 nolu şehirden 5 nolu şehre en az kayıpla iletimde kaç MWH kayıp olur?",
+   "secenekler": [
+    "150",
+    "155",
+    "160",
+    "165",
+    "170"
+   ],
+   "dogru": 2,
+   "aciklama": "En kısa (en az kayıplı) yol 1–2–5: 100 + 60 = 160.",
+   "sayfa": "B4 s. 41",
+   "celdirici": "165, 1–3–4–5 yoludur; yalnızca 5 MWH fazla.",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Şehirden",
+     "Şehre",
+     "Kapasite (MWH)",
+     "Ters kapasite (MWH)",
+     "Kayıp (MWH)"
+    ],
+    "satirlar": [
+     [
+      "Bağlantı-1",
+      "1",
+      "2",
+      "500",
+      "50",
+      "100"
+     ],
+     [
+      "Bağlantı-2",
+      "1",
+      "3",
+      "400",
+      "40",
+      "80"
+     ],
+     [
+      "Bağlantı-3",
+      "2",
+      "4",
+      "150",
+      "15",
+      "75"
+     ],
+     [
+      "Bağlantı-4",
+      "2",
+      "5",
+      "350",
+      "35",
+      "60"
+     ],
+     [
+      "Bağlantı-5",
+      "3",
+      "4",
+      "250",
+      "25",
+      "40"
+     ],
+     [
+      "Bağlantı-6",
+      "3",
+      "5",
+      "100",
+      "10",
+      "90"
+     ],
+     [
+      "Bağlantı-7",
+      "4",
+      "5",
+      "300",
+      "30",
+      "45"
+     ]
+    ],
+    "baslik": "XYZ elektrik dağıtım şirketinin hatları"
+   },
+   "tabloOnce": true,
+   "bolum": "b4",
+   "kitapNo": 5,
+   "kitapCevap": "C",
+   "id": "gg-b4-05",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre;",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve II",
+    "I ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Bütün şehirleri bağlamak en kısa yol ağacı problemidir. En küçük kayıplardan başla, döngü oluşturanı atla: 3–4 (40), 4–5 (45), 2–5 (60), 1–3 (80). Kullanılanlar Bağlantı-5, 7, 4 ve 2.",
+   "sayfa": "B4 s. 41–42",
+   "onculler": [
+    "Bağlantı-1",
+    "Bağlantı-3",
+    "Bağlantı-5"
+   ],
+   "kok": "1 nolu şehirden başlayıp bütün şehirlere en az kayıpla dağıtım için yukarıdaki bağlantılardan hangisi ya da hangileri kullanılır?",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Şehirden",
+     "Şehre",
+     "Kapasite (MWH)",
+     "Ters kapasite (MWH)",
+     "Kayıp (MWH)"
+    ],
+    "satirlar": [
+     [
+      "Bağlantı-1",
+      "1",
+      "2",
+      "500",
+      "50",
+      "100"
+     ],
+     [
+      "Bağlantı-2",
+      "1",
+      "3",
+      "400",
+      "40",
+      "80"
+     ],
+     [
+      "Bağlantı-3",
+      "2",
+      "4",
+      "150",
+      "15",
+      "75"
+     ],
+     [
+      "Bağlantı-4",
+      "2",
+      "5",
+      "350",
+      "35",
+      "60"
+     ],
+     [
+      "Bağlantı-5",
+      "3",
+      "4",
+      "250",
+      "25",
+      "40"
+     ],
+     [
+      "Bağlantı-6",
+      "3",
+      "5",
+      "100",
+      "10",
+      "90"
+     ],
+     [
+      "Bağlantı-7",
+      "4",
+      "5",
+      "300",
+      "30",
+      "45"
+     ]
+    ],
+    "baslik": "XYZ elektrik dağıtım şirketinin hatları"
+   },
+   "tabloOnce": true,
+   "sabitSik": true,
+   "bolum": "b4",
+   "kitapNo": 6,
+   "kitapCevap": "C",
+   "id": "gg-b4-06"
+  },
+  {
+   "soru": "1 nolu şehirden başlayıp bütün şehirlere en az kayıpla dağıtımda toplam kayıp kaç MWH olur?",
+   "secenekler": [
+    "185",
+    "225",
+    "265",
+    "305",
+    "345"
+   ],
+   "dogru": 1,
+   "aciklama": "40 + 45 + 60 + 80 = 225.",
+   "sayfa": "B4 s. 42",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Şehirden",
+     "Şehre",
+     "Kapasite (MWH)",
+     "Ters kapasite (MWH)",
+     "Kayıp (MWH)"
+    ],
+    "satirlar": [
+     [
+      "Bağlantı-1",
+      "1",
+      "2",
+      "500",
+      "50",
+      "100"
+     ],
+     [
+      "Bağlantı-2",
+      "1",
+      "3",
+      "400",
+      "40",
+      "80"
+     ],
+     [
+      "Bağlantı-3",
+      "2",
+      "4",
+      "150",
+      "15",
+      "75"
+     ],
+     [
+      "Bağlantı-4",
+      "2",
+      "5",
+      "350",
+      "35",
+      "60"
+     ],
+     [
+      "Bağlantı-5",
+      "3",
+      "4",
+      "250",
+      "25",
+      "40"
+     ],
+     [
+      "Bağlantı-6",
+      "3",
+      "5",
+      "100",
+      "10",
+      "90"
+     ],
+     [
+      "Bağlantı-7",
+      "4",
+      "5",
+      "300",
+      "30",
+      "45"
+     ]
+    ],
+    "baslik": "XYZ elektrik dağıtım şirketinin hatları"
+   },
+   "tabloOnce": true,
+   "bolum": "b4",
+   "kitapNo": 7,
+   "kitapCevap": "B",
+   "id": "gg-b4-07",
+   "sabitSik": true
+  },
+  {
+   "soru": "1 nolu şehirden 5 nolu şehre ulaştırılabilecek en fazla elektrik kaç MWH'tir?",
+   "secenekler": [
+    "700",
+    "750",
+    "800",
+    "850",
+    "900"
+   ],
+   "dogru": 1,
+   "aciklama": "Maksimum akış: 5 nolu şehre giren kapasiteler 350 (2–5) + 100 (3–5) + 300 (4–5) = 750; bu kapasiteler doldurulabiliyor (1–2–5: 350, 1–2–4–5: 150, 1–3–4–5: 150, 1–3–5: 100).",
+   "sayfa": "B4 s. 42",
+   "celdirici": "900, 1 nolu şehirden çıkan kapasitedir; ama 5'e en fazla 750 girebilir.",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Şehirden",
+     "Şehre",
+     "Kapasite (MWH)",
+     "Ters kapasite (MWH)",
+     "Kayıp (MWH)"
+    ],
+    "satirlar": [
+     [
+      "Bağlantı-1",
+      "1",
+      "2",
+      "500",
+      "50",
+      "100"
+     ],
+     [
+      "Bağlantı-2",
+      "1",
+      "3",
+      "400",
+      "40",
+      "80"
+     ],
+     [
+      "Bağlantı-3",
+      "2",
+      "4",
+      "150",
+      "15",
+      "75"
+     ],
+     [
+      "Bağlantı-4",
+      "2",
+      "5",
+      "350",
+      "35",
+      "60"
+     ],
+     [
+      "Bağlantı-5",
+      "3",
+      "4",
+      "250",
+      "25",
+      "40"
+     ],
+     [
+      "Bağlantı-6",
+      "3",
+      "5",
+      "100",
+      "10",
+      "90"
+     ],
+     [
+      "Bağlantı-7",
+      "4",
+      "5",
+      "300",
+      "30",
+      "45"
+     ]
+    ],
+    "baslik": "XYZ elektrik dağıtım şirketinin hatları"
+   },
+   "tabloOnce": true,
+   "bolum": "b4",
+   "kitapNo": 8,
+   "kitapCevap": "B",
+   "id": "gg-b4-08",
+   "sabitSik": true
+  },
+  {
+   "soru": "Dağıtıcı merkezden çıkıp bütün sokakları dolaşıp merkeze dönecektir. Aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Optimal döngü için önce S3'e gidilmelidir.",
+    "Merkezden S3'e gitmek 200 metredir.",
+    "Merkez ile sokaklar arası mesafe simetrik değildir.",
+    "En uzun mesafe merkezden S3'e gitmektir.",
+    "Bu problem en kısa yol modeliyle çözülür."
+   ],
+   "dogru": 2,
+   "aciklama": "Merkez → S1 200 ama S1 → Merkez 220; gidiş ve dönüş farklı, tablo simetrik değil.",
+   "sayfa": "B4 s. 42",
+   "celdirici": "Bu bir gezgin satıcı problemidir; en uzun mesafe S3 → Merkez (510).",
+   "tablo": {
+    "basliklar": [
+     "Nereden \\ Nereye",
+     "S1",
+     "S2",
+     "S3",
+     "Merkez"
+    ],
+    "satirlar": [
+     [
+      "Merkez",
+      "200",
+      "300",
+      "500",
+      "-"
+     ],
+     [
+      "S1",
+      "-",
+      "250",
+      "350",
+      "220"
+     ],
+     [
+      "S2",
+      "240",
+      "-",
+      "400",
+      "290"
+     ],
+     [
+      "S3",
+      "360",
+      "390",
+      "-",
+      "510"
+     ]
+    ],
+    "baslik": "Mesafeler (metre)"
+   },
+   "tabloOnce": true,
+   "bolum": "b4",
+   "kitapNo": 9,
+   "kitapCevap": "C",
+   "id": "gg-b4-09",
+   "sabitSik": true
+  },
+  {
+   "soru": "Dağıtıcı en kısa mesafeyle dağıtımı yapıp merkeze dönerse kaç metre yürür?",
+   "secenekler": [
+    "M-1-3-2-M döngüsü ile 1230 metre",
+    "M-3-1-2-M döngüsü ile 1200 metre",
+    "M-1-2-3-M döngüsü ile 1230 metre",
+    "M-2-3-1-M döngüsü ile 1280 metre",
+    "M-2-1-3-M döngüsü ile 1200 metre"
+   ],
+   "dogru": 0,
+   "aciklama": "M-1-3-2-M: 200 + 350 + 390 + 290 = 1230 en kısa döngü.",
+   "sayfa": "B4 s. 43",
+   "celdirici": "M-2-3-1-M ile 1280 doğru bir hesaptır ama en kısa döngü değildir.",
+   "tablo": {
+    "basliklar": [
+     "Nereden \\ Nereye",
+     "S1",
+     "S2",
+     "S3",
+     "Merkez"
+    ],
+    "satirlar": [
+     [
+      "Merkez",
+      "200",
+      "300",
+      "500",
+      "-"
+     ],
+     [
+      "S1",
+      "-",
+      "250",
+      "350",
+      "220"
+     ],
+     [
+      "S2",
+      "240",
+      "-",
+      "400",
+      "290"
+     ],
+     [
+      "S3",
+      "360",
+      "390",
+      "-",
+      "510"
+     ]
+    ],
+    "baslik": "Mesafeler (metre)"
+   },
+   "cozum": [
+    "M-1-3-2-M = 1230",
+    "M-2-3-1-M = 1280",
+    "M-3-2-1-M = 1350",
+    "M-1-2-3-M = 1360",
+    "M-2-1-3-M ve M-3-1-2-M = 1400"
+   ],
+   "tabloOnce": true,
+   "bolum": "b4",
+   "kitapNo": 10,
+   "kitapCevap": "A",
+   "id": "gg-b4-10",
+   "sabitSik": true
+  },
+  {
+   "soru": "Proje yönetimi için aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    "Proje yönetim modelleri şebeke modelleri kapsamında değerlendirilebilir.",
+    "Projedeki her faaliyet kritik faaliyettir.",
+    "İş geliştirme süreçleri proje haline getirilerek yönetilebilir.",
+    "Faaliyet proje yönetiminin temel unsurlarındandır.",
+    "Proje yönetim modellerinin amacı projenin başarılı yürütülmesidir."
+   ],
+   "dogru": 1,
+   "aciklama": "Yalnızca bolluk zamanı olmayan faaliyetler kritiktir; bolluğu olan faaliyetler kritik değildir.",
+   "sayfa": "B5 s. 30",
+   "bolum": "b5",
+   "kitapNo": 1,
+   "kitapCevap": "B",
+   "id": "gg-b5-01",
+   "sabitSik": true
+  },
+  {
+   "soru": "Bolluk zamanı olmayan faaliyetlerin oluşturduğu topluluğun adı nedir?",
+   "secenekler": [
+    "Ardıl faaliyet",
+    "Kritik faaliyet",
+    "Faaliyet kümesi",
+    "Öncül faaliyet topluluğu",
+    "Kritik yol"
+   ],
+   "dogru": 4,
+   "aciklama": "Kritik yol, bolluk zamanı olmayan faaliyetlerin oluşturduğu faaliyet topluluğudur (B5 s. 29).",
+   "sayfa": "B5 s. 31",
+   "celdirici": "Kritik faaliyet tek bir faaliyettir; topluluk kritik yoldur.",
+   "bolum": "b5",
+   "kitapNo": 2,
+   "kitapCevap": "E",
+   "id": "gg-b5-02",
+   "sabitSik": true
+  },
+  {
+   "soru": "Gantt şemasında kritik faaliyetlerin süreleri 5, 7, 3 ve 10 ise projenin beklenen tamamlanma süresi kaçtır?",
+   "secenekler": [
+    "8",
+    "12",
+    "15",
+    "20",
+    "25"
+   ],
+   "dogru": 4,
+   "aciklama": "Kritik faaliyet sürelerinin toplamı: 5 + 7 + 3 + 10 = 25. 2025 finalin 17. sorusu bunun aynısı (4, 8, 4, 3, 1 → 20).",
+   "sayfa": "B5 s. 31",
+   "bolum": "b5",
+   "kitapNo": 3,
+   "kitapCevap": "E",
+   "id": "gg-b5-03",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve II",
+    "II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Süreler belirliyse CPM, olasılıklıysa PERT kullanılır. En kısa yol bir şebeke modelidir, proje yönetim modeli değil.",
+   "sayfa": "B5 s. 31",
+   "onculler": [
+    "En kısa yol yöntemi",
+    "CPM",
+    "PERT"
+   ],
+   "kok": "Faaliyet süreleri belirli olan bir iş geliştirme sürecinde yukarıdaki proje yönetim modellerinden hangisi ya da hangileri kullanılır?",
+   "sabitSik": true,
+   "bolum": "b5",
+   "kitapNo": 4,
+   "kitapCevap": "B",
+   "id": "gg-b5-04"
+  },
+  {
+   "soru": "Süresi 3 hafta olan faaliyete en erken 5., en geç 7. haftada başlanabiliyor. En geç tamamlanma haftası kaçtır?",
+   "secenekler": [
+    "2",
+    "4",
+    "5",
+    "8",
+    "10"
+   ],
+   "dogru": 4,
+   "aciklama": "LF = LS + süre = 7 + 3 = 10.",
+   "sayfa": "B5 s. 31",
+   "celdirici": "8, en erken tamamlanmadır (ES + süre = 5 + 3); 2 ise bolluk zamanıdır.",
+   "bolum": "b5",
+   "kitapNo": 5,
+   "kitapCevap": "E",
+   "id": "gg-b5-05",
+   "sabitSik": true
+  },
+  {
+   "soru": "İyimser süre 5, genellikle süre 8, kötümser süre 17 olan faaliyetin beklenen süresi kaçtır?",
+   "secenekler": [
+    "5",
+    "7",
+    "9",
+    "11",
+    "13"
+   ],
+   "dogru": 2,
+   "aciklama": "μ = (a + 4m + b) / 6 = (5 + 32 + 17) / 6 = 54 / 6 = 9 (B5 s. 21). 2025 finalin 6. sorusu aynı tip (6, 14, 16 → 13).",
+   "sayfa": "B5 s. 32",
+   "bolum": "b5",
+   "kitapNo": 6,
+   "kitapCevap": "C",
+   "id": "gg-b5-06",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre projenin beklenen tamamlanma süresi kaçtır?",
+   "secenekler": [
+    "17",
+    "18",
+    "19",
+    "20",
+    "21"
+   ],
+   "dogru": 4,
+   "aciklama": "EF = ES + süre: A 3, B 7, C 13, D 9, E 17, F 20, G 21. Proje en son biten faaliyetle (G, 21) biter.",
+   "sayfa": "B5 s. 32",
+   "celdirici": "17, G'nin başlama zamanıdır.",
+   "tablo": {
+    "basliklar": [
+     "Faaliyet",
+     "Süre",
+     "ES",
+     "EF"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "3",
+      "0",
+      ""
+     ],
+     [
+      "B",
+      "7",
+      "0",
+      ""
+     ],
+     [
+      "C",
+      "6",
+      "7",
+      ""
+     ],
+     [
+      "D",
+      "2",
+      "7",
+      ""
+     ],
+     [
+      "E",
+      "8",
+      "9",
+      ""
+     ],
+     [
+      "F",
+      "7",
+      "13",
+      ""
+     ],
+     [
+      "G",
+      "4",
+      "17",
+      ""
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "bolum": "b5",
+   "kitapNo": 7,
+   "kitapCevap": "E",
+   "id": "gg-b5-07",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "E faaliyetinin bolluk zamanı yoktur.",
+    "B faaliyetinin en erken tamamlanma zamanı 10'dur.",
+    "E faaliyetinin öncülü kesinlikle A faaliyetidir.",
+    "C faaliyetinin iyimser süresi 12'dir.",
+    "A faaliyetinin ardıllarından biri B faaliyetidir."
+   ],
+   "dogru": 0,
+   "aciklama": "Kritik yol B–D–E–G (7 + 2 + 8 + 4 = 21); E bu yolda, bolluğu yok. E'nin ES'si 9 = D'nin EF'si; öncülü D'dir, A değil.",
+   "sayfa": "B5 s. 32",
+   "celdirici": "E'nin öncülü A olsaydı E 3. haftada başlayabilirdi; ES 9 olduğu için EF'si 9 olan D öncüldür.",
+   "tablo": {
+    "basliklar": [
+     "Faaliyet",
+     "Süre",
+     "ES",
+     "EF"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "3",
+      "0",
+      ""
+     ],
+     [
+      "B",
+      "7",
+      "0",
+      ""
+     ],
+     [
+      "C",
+      "6",
+      "7",
+      ""
+     ],
+     [
+      "D",
+      "2",
+      "7",
+      ""
+     ],
+     [
+      "E",
+      "8",
+      "9",
+      ""
+     ],
+     [
+      "F",
+      "7",
+      "13",
+      ""
+     ],
+     [
+      "G",
+      "4",
+      "17",
+      ""
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "bolum": "b5",
+   "kitapNo": 8,
+   "kitapCevap": "A",
+   "id": "gg-b5-08",
+   "sabitSik": true
+  },
+  {
+   "soru": "Beklenen tamamlanma süresi μ = 20, varyansı σ² = 9 olan projenin %95 güven aralığı hangisidir? (z = 1,96)",
+   "secenekler": [
+    "14,12 < μ < 25,88",
+    "13,75 < μ < 24,15",
+    "18,04 < μ < 21,96",
+    "16,08 < μ < 23,92",
+    "16,08 < μ < 25,88"
+   ],
+   "dogru": 0,
+   "aciklama": "σ = √9 = 3. 20 ± 1,96 × 3 = 20 ± 5,88 → 14,12 ile 25,88.",
+   "sayfa": "B5 s. 32–33",
+   "celdirici": "18,04–21,96, karekök almadan 1,96 × 1 kullanmaktır; standart sapma 3.",
+   "bolum": "b5",
+   "kitapNo": 9,
+   "kitapCevap": "A",
+   "id": "gg-b5-09",
+   "sabitSik": true
+  },
+  {
+   "soru": "İyimser süre 3, genellikle süre 20, kötümser süre 27 olan faaliyetin standart sapması kaçtır?",
+   "secenekler": [
+    "2",
+    "3",
+    "4",
+    "9",
+    "10"
+   ],
+   "dogru": 2,
+   "aciklama": "σ = (b − a) / 6 = (27 − 3) / 6 = 4 (varyans 16).",
+   "sayfa": "B5 s. 33",
+   "kitapNotu": "Kitabın cevap anahtarı A (2) diyor; formülle (B5 s. 21: σ² = ((b − a) / 6)²) sonuç 4. Burada doğru kabul edilen 4.",
+   "bolum": "b5",
+   "kitapNo": 10,
+   "kitapCevap": "A",
+   "id": "gg-b5-10",
+   "sabitSik": true
+  },
+  {
+   "soru": "Karar analizi için aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    "Kararların olası durumlarda aldığı sonuçları belirler.",
+    "Olası durumları belirler.",
+    "Sonuçlar için tablo hazırlanabilir.",
+    "Risk altında olası durumların gerçekleşme olasılığını belirler.",
+    "Belirsizlik (olasılıksız) varsayımında mükemmel bilginin beklenen değerini belirler."
+   ],
+   "dogru": 4,
+   "aciklama": "Mükemmel bilginin beklenen değeri olasılık gerektirir; risk altında (olasılıklı) karar vermenin konusudur. 2025 finalin 12. sorusunun III. öncülü de bu tuzaktı.",
+   "sayfa": "B6 s. 27",
+   "bolum": "b6",
+   "kitapNo": 1,
+   "kitapCevap": "E",
+   "id": "gg-b6-01",
+   "sabitSik": true
+  },
+  {
+   "soru": "İyimserlik ile kötümserlik arasında bir katsayıyla karar veren kriter hangisidir?",
+   "secenekler": [
+    "Beklenen değer",
+    "Beklenen fırsat kaybı",
+    "Hurwicz indeks kriteri",
+    "Minimaks pişmanlık kriteri",
+    "Maksimaks kriteri"
+   ],
+   "dogru": 2,
+   "aciklama": "Hurwicz: iyimserlik katsayısı α ile en iyi ve en kötü sonuç ağırlıklandırılır.",
+   "sayfa": "B6 s. 27",
+   "bolum": "b6",
+   "kitapNo": 2,
+   "kitapCevap": "C",
+   "id": "gg-b6-02",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki sonuç tablosuna göre maksimaks kriteriyle hangi proje seçilir?",
+   "secenekler": [
+    "1 nolu Proje",
+    "2 nolu Proje",
+    "3 nolu Proje",
+    "4 nolu Proje",
+    "5 nolu Proje"
+   ],
+   "dogru": 4,
+   "aciklama": "En iyi sonuçlar 8, 10, 12, 7, 13 → en büyüğü 13 (5 nolu).",
+   "sayfa": "B6 s. 27–28",
+   "tablo": {
+    "basliklar": [
+     "İş Geliştirme Projeleri",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "8",
+      "5",
+      "3"
+     ],
+     [
+      "2 nolu Proje",
+      "10",
+      "7",
+      "2"
+     ],
+     [
+      "3 nolu Proje",
+      "12",
+      "6",
+      "4"
+     ],
+     [
+      "4 nolu Proje",
+      "7",
+      "6",
+      "5"
+     ],
+     [
+      "5 nolu Proje",
+      "13",
+      "9",
+      "4"
+     ]
+    ],
+    "baslik": "Ekonomik görünüm (milyon TL)"
+   },
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 3,
+   "kitapCevap": "E",
+   "id": "gg-b6-03",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre maksimin kriteriyle hangi proje seçilir?",
+   "secenekler": [
+    "1 nolu Proje",
+    "2 nolu Proje",
+    "3 nolu Proje",
+    "4 nolu Proje",
+    "5 nolu Proje"
+   ],
+   "dogru": 3,
+   "aciklama": "En kötü sonuçlar 3, 2, 4, 5, 4 → en büyüğü 5 (4 nolu).",
+   "sayfa": "B6 s. 28",
+   "celdirici": "Maksimin kötümserdir: her projenin en kötüsüne bakılır.",
+   "tablo": {
+    "basliklar": [
+     "İş Geliştirme Projeleri",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "8",
+      "5",
+      "3"
+     ],
+     [
+      "2 nolu Proje",
+      "10",
+      "7",
+      "2"
+     ],
+     [
+      "3 nolu Proje",
+      "12",
+      "6",
+      "4"
+     ],
+     [
+      "4 nolu Proje",
+      "7",
+      "6",
+      "5"
+     ],
+     [
+      "5 nolu Proje",
+      "13",
+      "9",
+      "4"
+     ]
+    ],
+    "baslik": "Ekonomik görünüm (milyon TL)"
+   },
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 4,
+   "kitapCevap": "D",
+   "id": "gg-b6-04",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki tabloda Hurwicz iyimserlik katsayısı α = 0,4 ise hangi proje seçilir?",
+   "secenekler": [
+    "1 nolu Proje",
+    "2 nolu Proje",
+    "3 nolu Proje",
+    "4 nolu Proje",
+    "5 nolu Proje"
+   ],
+   "dogru": 4,
+   "aciklama": "Hurwicz = α × en iyi + (1 − α) × en kötü: 1 → 5; 2 → 5,2; 3 → 7,2; 4 → 5,8; 5 → 0,4 × 13 + 0,6 × 4 = 7,6 en büyük.",
+   "sayfa": "B6 s. 28",
+   "tablo": {
+    "basliklar": [
+     "İş Geliştirme Projeleri",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "8",
+      "5",
+      "3"
+     ],
+     [
+      "2 nolu Proje",
+      "10",
+      "7",
+      "2"
+     ],
+     [
+      "3 nolu Proje",
+      "12",
+      "6",
+      "4"
+     ],
+     [
+      "4 nolu Proje",
+      "7",
+      "6",
+      "5"
+     ],
+     [
+      "5 nolu Proje",
+      "13",
+      "9",
+      "4"
+     ]
+    ],
+    "baslik": "Ekonomik görünüm (milyon TL)"
+   },
+   "cozum": [
+    "1: 0,4 × 8 + 0,6 × 3 = 5",
+    "2: 0,4 × 10 + 0,6 × 2 = 5,2",
+    "3: 0,4 × 12 + 0,6 × 4 = 7,2",
+    "4: 0,4 × 7 + 0,6 × 5 = 5,8",
+    "5: 0,4 × 13 + 0,6 × 4 = 7,6 ✓"
+   ],
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 5,
+   "kitapCevap": "E",
+   "id": "gg-b6-05",
+   "sabitSik": true
+  },
+  {
+   "soru": "Eşit olasılık kriterinde 4 nolu projenin beklenen değeri kaçtır?",
+   "secenekler": [
+    "4 milyon TL",
+    "5 milyon TL",
+    "6 milyon TL",
+    "7 milyon TL",
+    "8 milyon TL"
+   ],
+   "dogru": 2,
+   "aciklama": "(7 + 6 + 5) / 3 = 6.",
+   "sayfa": "B6 s. 28",
+   "tablo": {
+    "basliklar": [
+     "İş Geliştirme Projeleri",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "8",
+      "5",
+      "3"
+     ],
+     [
+      "2 nolu Proje",
+      "10",
+      "7",
+      "2"
+     ],
+     [
+      "3 nolu Proje",
+      "12",
+      "6",
+      "4"
+     ],
+     [
+      "4 nolu Proje",
+      "7",
+      "6",
+      "5"
+     ],
+     [
+      "5 nolu Proje",
+      "13",
+      "9",
+      "4"
+     ]
+    ],
+    "baslik": "Ekonomik görünüm (milyon TL)"
+   },
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 6,
+   "kitapCevap": "C",
+   "id": "gg-b6-06",
+   "sabitSik": true
+  },
+  {
+   "soru": "Ekonomik görünüm iyi olduğunda pişmanlık değeri en büyük olan proje hangisidir?",
+   "secenekler": [
+    "1 nolu Proje",
+    "2 nolu Proje",
+    "3 nolu Proje",
+    "4 nolu Proje",
+    "5 nolu Proje"
+   ],
+   "dogru": 3,
+   "aciklama": "İyi durumda en yüksek sonuç 13. Pişmanlık = 13 − sonuç: 5, 3, 1, 6, 0 → en büyük 4 nolu (6).",
+   "sayfa": "B6 s. 28",
+   "tablo": {
+    "basliklar": [
+     "İş Geliştirme Projeleri",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "8",
+      "5",
+      "3"
+     ],
+     [
+      "2 nolu Proje",
+      "10",
+      "7",
+      "2"
+     ],
+     [
+      "3 nolu Proje",
+      "12",
+      "6",
+      "4"
+     ],
+     [
+      "4 nolu Proje",
+      "7",
+      "6",
+      "5"
+     ],
+     [
+      "5 nolu Proje",
+      "13",
+      "9",
+      "4"
+     ]
+    ],
+    "baslik": "Ekonomik görünüm (milyon TL)"
+   },
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 7,
+   "kitapCevap": "D",
+   "id": "gg-b6-07",
+   "sabitSik": true
+  },
+  {
+   "soru": "Olasılıklar iyi 0,2, durağan 0,7, kötü 0,1 ise beklenen değere göre hangi proje seçilir?",
+   "secenekler": [
+    "Beklenen değeri 5,4 milyon TL olan 1 nolu proje",
+    "Beklenen değeri 8,9 milyon TL olan 5 nolu proje",
+    "Beklenen değeri 9,3 milyon TL olan 5 nolu proje",
+    "Beklenen değeri 7,1 milyon TL olan 2 nolu proje",
+    "Beklenen değeri 7,1 milyon TL olan 5 nolu proje"
+   ],
+   "dogru": 2,
+   "aciklama": "EV: 1 → 5,4; 2 → 7,1; 3 → 7,0; 4 → 6,1; 5 → 0,2 × 13 + 0,7 × 9 + 0,1 × 4 = 9,3.",
+   "sayfa": "B6 s. 28–29",
+   "tablo": {
+    "basliklar": [
+     "İş Geliştirme Projeleri",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "8",
+      "5",
+      "3"
+     ],
+     [
+      "2 nolu Proje",
+      "10",
+      "7",
+      "2"
+     ],
+     [
+      "3 nolu Proje",
+      "12",
+      "6",
+      "4"
+     ],
+     [
+      "4 nolu Proje",
+      "7",
+      "6",
+      "5"
+     ],
+     [
+      "5 nolu Proje",
+      "13",
+      "9",
+      "4"
+     ]
+    ],
+    "baslik": "Ekonomik görünüm (milyon TL)"
+   },
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 8,
+   "kitapCevap": "C",
+   "id": "gg-b6-08",
+   "sabitSik": true
+  },
+  {
+   "soru": "Aynı olasılıklarla (0,2; 0,7; 0,1) mükemmel bilginin beklenen değeri kaçtır?",
+   "secenekler": [
+    "0,1 milyon TL",
+    "0,2 milyon TL",
+    "9,2 milyon TL",
+    "9,3 milyon TL",
+    "9,4 milyon TL"
+   ],
+   "dogru": 0,
+   "aciklama": "Mükemmel bilgiyle her durumda en iyisi seçilir: 0,2 × 13 + 0,7 × 9 + 0,1 × 5 = 9,4. EVPI = 9,4 − 9,3 = 0,1 (B6 s. 20).",
+   "sayfa": "B6 s. 29",
+   "celdirici": "9,4, mükemmel bilgi varken beklenen değerdir; EVPI bundan en iyi kararın beklenen değeri çıkarılarak bulunur.",
+   "tablo": {
+    "basliklar": [
+     "İş Geliştirme Projeleri",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "8",
+      "5",
+      "3"
+     ],
+     [
+      "2 nolu Proje",
+      "10",
+      "7",
+      "2"
+     ],
+     [
+      "3 nolu Proje",
+      "12",
+      "6",
+      "4"
+     ],
+     [
+      "4 nolu Proje",
+      "7",
+      "6",
+      "5"
+     ],
+     [
+      "5 nolu Proje",
+      "13",
+      "9",
+      "4"
+     ]
+    ],
+    "baslik": "Ekonomik görünüm (milyon TL)"
+   },
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 9,
+   "kitapCevap": "A",
+   "id": "gg-b6-09",
+   "sabitSik": true
+  },
+  {
+   "soru": "Amacı maksimizasyon olan karar ağacı yukarıdaki dallardan oluşuyor. Hangi karar seçilir?",
+   "secenekler": [
+    "Karar 1",
+    "Karar 2",
+    "Karar 3",
+    "Karar 4",
+    "Karar 5"
+   ],
+   "dogru": 2,
+   "aciklama": "Her dalın beklenen değeri: K1 9,4; K2 9,9; K3 0,7 × 11 + 0,3 × 9 = 10,4; K4 10,3; K5 10,2 → en büyük K3.",
+   "sayfa": "B6 s. 30",
+   "tablo": {
+    "basliklar": [
+     "Karar",
+     "İyi (0,7)",
+     "Kötü (0,3)"
+    ],
+    "satirlar": [
+     [
+      "Karar 1",
+      "10",
+      "8"
+     ],
+     [
+      "Karar 2",
+      "12",
+      "5"
+     ],
+     [
+      "Karar 3",
+      "11",
+      "9"
+     ],
+     [
+      "Karar 4",
+      "13",
+      "4"
+     ],
+     [
+      "Karar 5",
+      "12",
+      "6"
+     ]
+    ],
+    "baslik": "Karar ağacındaki dallar: olasılık ve sonuç"
+   },
+   "kitapNotu": "Kitaptaki karar ağacı burada tablo olarak gösterildi; dallar ve değerler aynı.",
+   "tabloOnce": true,
+   "bolum": "b6",
+   "kitapNo": 10,
+   "kitapCevap": "C",
+   "id": "gg-b6-10",
+   "sabitSik": true
+  }
+ ]
+}

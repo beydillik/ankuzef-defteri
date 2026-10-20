@@ -36,14 +36,14 @@
     "soru": 20,
     "sureDk": 30,
     "dagilim": {
-     "b1": 3,
-     "b2": 4,
-     "b3": 4,
-     "b4": 3,
-     "b5": 3,
-     "b6": 3
+     "b1": 1,
+     "b2": 2,
+     "b3": 2,
+     "b4": 5,
+     "b5": 5,
+     "b6": 5
     },
-    "sureNot": "Final dağılımı tahmindir (çıkmış final yok). Bölüm 4–6 hazırlanınca dolar."
+    "sureNot": "Dağılım 2025-26 Güz Final'den alındı (B1: 1, B2: 2, B3: 2, B4–B6: beşer soru). Sınav süresi doğrulanamadı; varsayılan 30 dakika."
    }
   }
  },
@@ -114,6 +114,8 @@
  ],
  "soruDosyalari": [
   "cikmis_2025_guz_vize.json",
+  "cikmis_2025_guz_final.json",
+  "gozden.json",
   "tahmin_t1.json",
   "tahmin_t2.json"
  ],

@@ -126,3 +126,143 @@ CIKMIS_2025_VIZE = {
 for q in CIKMIS_2025_VIZE["sorular"]:
     q["id"] = f"c2025v-{q['no']:02d}"
     q.setdefault("sabitSik", True)
+
+
+# =====================================================================
+# 2025-26 Güz Final (B kitapçığı). Kaynak: kaynaklar/isan/cikmis/Cikmis_isan_2025_Guz_Final.pdf
+# Fosforlu işaretler 20/20 okundu ve hesapla/kitapla doğrulandı. S9'daki şebeke şekli SVG olarak yeniden çizildi.
+# Vize konusu olanlar (bölüm 1–3): S7, S10, S11, S18, S19.
+# =====================================================================
+def _sebeke_svg():
+    d = {1: (20, 92), 2: (112, 40), 3: (95, 152), 4: (210, 100), 5: (268, 20), 6: (302, 104), 7: (270, 172), 8: (430, 106)}
+    e = [(1, 2, 15), (1, 3, 20), (2, 5, 32), (2, 4, 26), (3, 4, 30), (3, 7, 35), (4, 5, 18), (4, 7, 16), (5, 6, 14), (5, 8, 22), (6, 8, 18), (6, 7, 12), (7, 8, 24)]
+    s = ['<svg class="sebeke" viewBox="0 0 450 192" role="img" aria-label="Şehirler ve aralarındaki mesafeler (km)" xmlns="http://www.w3.org/2000/svg">']
+    for a, b, w in e:
+        (x1, y1), (x2, y2) = d[a], d[b]
+        s.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="currentColor" stroke-opacity=".55" stroke-width="1.4"/>')
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        s.append(f'<text x="{mx:.0f}" y="{my - 4:.0f}" font-size="12" text-anchor="middle" fill="currentColor">{w}</text>')
+    for n, (x, y) in d.items():
+        s.append(f'<circle cx="{x}" cy="{y}" r="11" fill="var(--yuzey)" stroke="currentColor" stroke-width="1.6"/><text x="{x}" y="{y + 4}" font-size="12" font-weight="700" text-anchor="middle" fill="currentColor">{n}</text>')
+    s.append("</svg>")
+    return "".join(s)
+
+
+EG = ["İş Geliştirme Projeleri", "İyi", "Durağan", "Kötü"]
+
+CIKMIS_2025_FINAL = {
+    "kaynak": "cikmis", "sinav": "2025-26 Güz Final", "sinavTur": "Final",
+    "sorular": [
+        Q("İş analisti geliştirdiği 5 adet iş geliştirme projesinden birinin gerçekleştirilmesi istenmektedir. İş analisti iş geliştirme projelerinin olası ekonomik görünüme göre işletme karı üstüne etkilerini (milyon TL) aşağıdaki sonuç tablosunda göstermiştir. İş analisti eşit olasılıklı kritere göre seçebileceği iş geliştirme projesi aşağıdaki seçeneklerin hangisinde doğru olarak ifade edilmiştir?",
+          A_("3 nolu Proje", "1 nolu Proje", "2 nolu Proje", "4 nolu Proje", "5 nolu Proje"), 0,
+          "Eşit olasılık kriterinde bütün olası durumlar eşit ihtimalle gerçekleşir: her projenin sonuçlarının ortalaması alınır, amaç kâr olduğu için en büyüğü seçilir.", "B6 s. 14–15",
+          cozum=["1: (5 + 4 + 3) / 3 = 4", "2: (8 + 5 + 2) / 3 = 5", "3: (9 + 8 + 6) / 3 = 7,67", "4: (12 + 4 + 3) / 3 = 6,33", "5: (14 + 5 + 3) / 3 = 7,33 → en büyük ortalama 3 nolu proje"],
+          celdirici="5 nolu proje \"iyi\" durumda en yüksek kârı (14) veriyor; bu maksimaks kriterinin seçimidir, eşit olasılığın değil.",
+          tablo=T(EG, [["1 nolu Proje", "5", "4", "3"], ["2 nolu Proje", "8", "5", "2"], ["3 nolu Proje", "9", "8", "6"], ["4 nolu Proje", "12", "4", "3"], ["5 nolu Proje", "14", "5", "3"]], baslik="Ekonomik görünüm (milyon TL)"),
+          no=1, bolum="b6"),
+        Q("İş analisti ve yazılım ekibi işletmenin kaynak programına, en kısa yol modeli ile bir şehirden başka bir şehre en kısa mesafede gidilebilecek güzergahı ve kilometre bilgisinin yapabilen bir modül geliştirmişlerdir. Sistem kullanıcısı aşağıda belirtilen tabloyu sisteme girdiğinde, 1 nolu şehirden 7 nolu şehre kaç kilometrede gidilebileceği aşağıdaki seçeneklerin hangisinde doğru olarak ifade edilmiştir?",
+          A_("62", "61", "58", "59", "60"), 3,
+          "En kısa yol modelinde başlangıçtan her şehre en kısa mesafe adım adım bulunur; bir şehre birden fazla yoldan varılıyorsa küçük olan alınır.", "B4 s. 11–21",
+          cozum=["1→3 = 25; 1→2 = 30 (1→3→2 = 35 daha uzun)", "1→5 = min(30 + 8, 25 + 15) = 38", "1→4 = min(30 + 20, 38 + 1) = 39", "1→6 = min(39 + 12, 38 + 9) = 47", "1→7 = min(38 + 24, 47 + 12) = 59 (1–2–5–6–7)"],
+          celdirici="62, 5'ten doğrudan 7'ye gitmektir (38 + 24); 6 üzerinden gitmek 3 km daha kısa.",
+          tablo=T(["Yollar", "Şehirden", "Şehre", "Mesafe (km)"], [["Yol-1", "1", "2", "30"], ["Yol-2", "1", "3", "25"], ["Yol-3", "2", "3", "10"], ["Yol-4", "2", "4", "20"], ["Yol-5", "2", "5", "8"], ["Yol-6", "3", "5", "15"], ["Yol-7", "4", "5", "1"], ["Yol-8", "4", "6", "12"], ["Yol-9", "5", "6", "9"], ["Yol-10", "5", "7", "24"], ["Yol-11", "6", "7", "12"]]),
+          no=2, bolum="b4"),
+        Q("Aşağıda gösterilen tabloda 5 faaliyetli bir iş geliştirme projesinin en erken başlama zamanı ve beklenen tamamlanma süresi gösterilmiştir. Buna göre projedeki faaliyetlerle ilgili iş analisti analizlerde bulunmuştur. Aşağıdaki ifadelerin hangisinde iş analisti analizi bağlamında doğru bir değerlendirmedir?",
+          A_("E faaliyetinin öncül faaliyetlerinden biri kesinlikle C faaliyetidir.", "Projenin beklenen tamamlanma süresi 9’dur.", "Her bir faaliyetin bolluk süresi vardır.", "A faaliyeti kritik faaliyettir.", "C faaliyetinin iyimser koşullarda en erken tamamlanma süresi 5’dir."), 0,
+          "EF = ES + süre. Bir faaliyetin ES'si, öncüllerinin EF'lerinin en büyüğüdür. E'nin ES'si 9 ve EF'si 9 olan tek faaliyet C (5 + 4 = 9); demek ki C, E'nin öncülüdür.", "B5 s. 10–14",
+          cozum=["EF: A = 2, B = 5, C = 5 + 4 = 9, D = 5 + 1 = 6, E = 9 + 7 = 16", "E'nin ES'si 9 → EF'si 9 olan C öncüldür", "Proje süresi en büyük EF: 16 (9 değil)", "Kritik yol B–C–E (5 + 4 + 7 = 16); A kritik değil, B, C, E'nin bolluğu yok"],
+          celdirici="\"Proje süresi 9\" C'nin EF'sidir; proje en son biten faaliyetle (E, 16) biter.",
+          tablo=T(["Faaliyet", "Süre", "ES", "EF"], [["A", "2", "0", ""], ["B", "5", "0", ""], ["C", "4", "5", ""], ["D", "1", "5", ""], ["E", "7", "9", ""]]),
+          no=3, bolum="b5"),
+        Q("İş analisti, hazırladığı raporları şubelere teslim edilmesi için dağıtım birimine teslim etmiştir. Dağıtıcı en az kilometre ile merkezden şubelere evrakları teslim edip, merkeze geri dönecek. Buna göre dağıtıcının izlediği güzergah ve kilometre bilgisi aşağıdakilerden hangisinde doğru olarak ifade edilmiştir? (Merkezden Şubelere gidiş ve dönüş mesafeleri aynıdır.)",
+          A_("M-2-1-3-M güzergahı ile 17 kilometre.", "M-1-2-3-M güzergahı ile 11 kilometre.", "M-2-3-1-M güzergahı ile 14 kilometre.", "M-3-1-2-M güzergahı ile 17 kilometre.", "M-1-3-2-M güzergahı ile 11 kilometre."), 4,
+          "Gezgin satıcı modeli: her şubeye bir kez uğrayıp merkeze dönen en kısa döngü. Bütün döngüleri hesapla, en kısayı seç.", "B4 s. 6–10",
+          cozum=["M-1-3-2-M: 3 + 2 + 1 + 5 = 11", "M-2-3-1-M: 5 + 1 + 2 + 3 = 11 (aynı döngünün tersi)", "M-1-2-3-M: 3 + 4 + 1 + 6 = 14", "M-2-1-3-M ve M-3-1-2-M: 17", "Şıklarda güzergahı ve mesafesi birlikte doğru olan yalnızca M-1-3-2-M, 11 km"],
+          celdirici="\"M-1-2-3-M ile 11\" mesafeyi doğru, güzergahı yanlış veriyor (o güzergah 14 km). \"M-2-3-1-M ile 14\" ise güzergahı en kısa ama mesafeyi yanlış yazıyor.",
+          tablo=T(["Şubeler ve Merkez", "Ş1", "Ş2", "Ş3"], [["Merkez", "3", "5", "6"], ["Ş1", "-", "4", "2"], ["Ş2", "4", "-", "1"], ["Ş3", "2", "1", "-"]], baslik="Caddeler (km)"),
+          no=4, bolum="b4"),
+        Q("Karar ağacı ile aşağıdaki karar verme modellerinden hangisinin gösterildiği doğru olarak ifade edilmiştir?",
+          A_("Eşit Olasılıklı Kriter", "Maksimaks Kriteri", "Minimaks Pişmanlık Kriteri", "Hurwicz İndeks Kriteri", "Beklenen Değer"), 4,
+          "Karar ağacı, risk altında (olasılıklı) karar verme modellerinden beklenen değerin şebeke gösterimiyle analizidir.", "B6 s. 21–26",
+          celdirici="Diğer dördü belirsizlik altında (olasılıksız) karar kriterleridir; karar ağacında olasılıklar kullanılır.", no=5, bolum="b6"),
+        Q("İş analisti geliştirdiği iş sürecindeki faaliyetlerin olasılıklı olarak değerlendirmektedir. Bu iş geliştirme projesindeki bir faaliyetin iyimser koşullar altında tamamlanma süresi 6, genellikle tamamlanma süresi 14, kötümser koşullarda ise 16 hafta olduğuna göre bu faaliyetin beklenen tamamlanma süresi aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+          A_("12", "13", "14", "11", "10"), 1,
+          "PERT: μ = (a + 4m + b) / 6; a iyimser, m genellikle, b kötümser süre.", "B5 s. 21",
+          cozum=["μ = (6 + 4 × 14 + 16) / 6", "= (6 + 56 + 16) / 6 = 78 / 6 = 13"],
+          celdirici="12, üç sürenin basit ortalamasıdır ((6 + 14 + 16) / 3); PERT'te genellikle süresi 4 ile çarpılır.", no=6, bolum="b5"),
+        Q("İş analisti rekabet ortamı araştırmasında, pazarın cazibesini örneklem ile belirlemek istemektedir. Örneklem büyüklüğü 11 adet veriden (5, 5, 4, 3, 3, 4, 2, 6, 7, 2, 3) oluşmaktadır. Bu veriye göre pazar cazibesinin varyansı aşağıdakilerin hangisinde doğru olarak ifade edilmiştir?",
+          A_("4,00", "2,36", "2,60", "2,76", "2,90"), 2,
+          "Örneklem varyansında farkların kareleri toplamı n − 1'e bölünür.", "s. 37–38",
+          cozum=["x̄ = 44 / 11 = 4", "(xᵢ − x̄)²: 1 + 1 + 0 + 1 + 1 + 0 + 4 + 4 + 9 + 4 + 1 = 26", "s² = 26 / (11 − 1) = 2,60"],
+          celdirici="2,36 = 26 / 11: n'ye bölmek (popülasyon formülü). Soru \"örneklem\" diyor.", no=7, bolum="b2"),
+        Q("İş analisti geliştirdiği 6 adet iş geliştirme projesinden birinin gerçekleştirilmesi istenmektedir. İş analisti iş geliştirme projelerinin olası ekonomik görünüme göre işletme karı üstüne etkilerini (milyon TL) aşağıdaki sonuç tablosunda göstermiştir. İş analisti maksimaks kriterine göre seçebileceği iş geliştirme projesinin işletme karına olan etkisi aşağıdaki seçeneklerin hangisinde doğru olarak ifade edilmiştir?",
+          A_("16 milyon TL", "11 milyon TL", "21 milyon TL", "20 milyon TL", "18 milyon TL"), 3,
+          "Maksimaks: iyimserlik varsayımı. Her projenin en iyi sonucunu al, bunların en büyüğünü seç.", "B6 s. 6–9",
+          cozum=["En iyi sonuçlar: 10, 18, 13, 5, 19, 20", "En büyüğü 20 (6 nolu proje)"],
+          celdirici="11 milyon, her projenin en kötü sonucunun en büyüğüdür; bu maksimin kriteridir.",
+          tablo=T(EG, [["1 nolu Proje", "10", "8", "6"], ["2 nolu Proje", "18", "16", "10"], ["3 nolu Proje", "13", "10", "8"], ["4 nolu Proje", "5", "4", "3"], ["5 nolu Proje", "19", "12", "11"], ["6 nolu Proje", "20", "15", "9"]], baslik="Ekonomik görünüm (milyon TL)"),
+          no=8, bolum="b6"),
+        Q(_sebeke_svg() + "<p>Fiber kablo şirketi en az kablo kullanılarak şehirlere fiber kablo hizmeti sunmaktadır. Bu şirkette çalışan iş analisti ve yazılım ekibi şirketin amacına uygun olarak en kısa yol ağacı modeli en az kablo kullanımı gerçekleştirilerek bir modül geliştirmişlerdir. Yukardaki şebeke modelinde şehirler ve şehriler arası mesafe (km) gösterilmiş ve sistem kullanıcısı geliştirilen modülle bu bilgilerin girişini yapmıştır. Buna göre 1 nolu şehirden 8 nolu şehre kadar tüm şehirlere en az kaç metre fiber kablo kullanılacağı bilgisi aşağıdaki seçeneklerin hangisinde doğru olarak ifade edilmiştir?</p>",
+          A_("122.000", "121.000", "123.000", "120.000", "124.000"), 1,
+          "En kısa yol ağacı: bütün şehirleri döngü oluşturmadan birbirine bağlayan en kısa toplam. En kısa bağlantıdan başla, döngü oluşturanı atla.", "B4 s. 22–28",
+          cozum=["Seçilen bağlantılar: 6–7 (12), 5–6 (14), 1–2 (15), 4–7 (16), 6–8 (18), 1–3 (20), 2–4 (26)", "Atlananlar: 4–5 (18) ve 5–8 (22) döngü oluşturur", "Toplam = 12 + 14 + 15 + 16 + 18 + 20 + 26 = 121 km = 121.000 metre"],
+          celdirici="Soru metre istiyor: 121 km × 1.000 = 121.000. 122.000 gibi değerler bir bağlantıyı yanlış seçince çıkar.",
+          kitapNotu="Sınavdaki şekil burada yeniden çizildi; şehirler ve mesafeler kâğıttakiyle aynı.", no=9, bolum="b4"),
+        Q("İş analisti işletmedeki probleme ilişkin regresyon modelini R = 10 X1 - 5 X2 + 7 X3 bulmuştur. Böylelikle bir program uygulaması geliştirmiştir. Aşağıda gösterilen programa işletmedeki ilgili personel birinci değişkene 6, ikinci değişkene 4 ve üçüncü değişkene 10 değerini girer ise sonuç kısmı aşağıdakilerden hangisinde doğru olarak ifade edilir?",
+          A_("130", "150", "140", "110", "120"), 3,
+          "Değerleri yerine yaz; eksi işaretli katsayıyı çıkar.", "s. 57, 60",
+          cozum=["10 × 6 = 60", "−5 × 4 = −20", "7 × 10 = 70", "R = 60 − 20 + 70 = 110"],
+          celdirici="150, eksiyi artı almaktır (60 + 20 + 70).", tablo=T(None, [["X1:", "6"], ["X2:", "4"], ["X3:", "10"], ["Sonuç:", ""]]), no=10, bolum="b3"),
+        Q("İşletme yönetimi iş analistinden çalışanların kıdemleri ile ilgili çalışma yapmasını istemiştir. İş analisti insan kaynağı programından çalışanların kıdem yılları (0, 4, 1, 12, 10, 16, 30, 8, 5, 17, 7) verisini elde etmiştir. Bu veriye göre kıdem yıllarının ortalaması ile medyanı arasındaki fark aşağıdakilerin hangisinde doğru olarak ifade edilmiştir?",
+          A_("0", "1", "3", "4", "2"), 4,
+          "Ortalama için topla ve böl; medyan için önce sırala.", "s. 31–33",
+          cozum=["Toplam = 110, n = 11 → ortalama 10", "Sırala: 0, 1, 4, 5, 7, 8, 10, 12, 16, 17, 30 → 6. değer = 8", "Fark = 10 − 8 = 2"],
+          celdirici="Sıralamadan 6. değeri (16) almak yanlış medyan verir; medyan hep sıralı veride.", no=11, bolum="b2"),
+        Q("", A_("I ve II", "Yalnız III", "Yalnız I", "Yalnız II", "I ve III"), 2,
+          "Karar verme modelleri kararların işletmeye etkisini inceler. Beklenen değerde amaç minimumsa en küçük beklenen değerli karar seçilir. Mükemmel bilginin beklenen değeri risk altında (beklenen değer) karar vermenin konusudur, minimaks pişmanlığın değil.", "B6 s. 2, 17, 20",
+          onculler=["İş geliştirme ile ilgili bir kararın işletmeye olan etkileri, karar verme modelleri ile incelenebilir.", "İş analisti, beklenen değere göre karar verirken işletmenin amacı minimum olsa bile beklenen değeri en büyük kararı karar vericiye sunar.", "İş analisti, minimaks pişmanlık kriterinde mükemmel bilginin beklenen değerini karar vericiye sunar."],
+          kok="İş analisti karar verme modellerini kullanarak karar analizi gerçekleştirecektir. Buna göre yukarıdaki ifadelerden hangisi ya da hangileri karar verme modelleri bağlamında doğrudur?",
+          celdirici="II'deki \"amaç minimum olsa bile\" ifadesi yanlış: kitap \"amaç minimum ise minimum beklenen değere sahip karar seçilir\" der.", no=12, bolum="b6"),
+        Q("", A_("I ve II", "Yalnız II", "I ve III", "Yalnız III", "Yalnız I"), 4,
+          "İş geliştirme süreçleri proje haline getirilip proje yönetim modelleriyle yönetilebilir. Kritik faaliyet bolluk zamanı olmayan faaliyettir; personel sayısıyla belirlenmez. Her projede bolluğu olmayan faaliyetlerden oluşan bir kritik yol vardır.", "B5 s. 2, 29",
+          onculler=["İş analisti iş geliştirme süreçlerini proje haline getirebilir ve proje yönetim modellerini kullanabilir.", "İş analisti, projedeki her bir faaliyeti kritik olmayan faaliyet olarak değerlendirebilir.", "Kritik faaliyet, iş analisti ve yönetici tarafından faaliyette çalışan personel sayısına göre belirlenir."],
+          kok="Yukarıdaki ifadelerden hangisi ya da hangileri proje yönetim modelleri bağlamında doğrudur?",
+          celdirici="II: bütün faaliyetler kritik olmayan olsaydı kritik yol olmazdı; proje süresini en uzun yol (kritik yol) belirler.", no=13, bolum="b5"),
+        Q("", A_("I ve II", "Yalnız I", "Yalnız II", "Yalnız III", "I ve III"), 0,
+          "Şebekeyi oluşturan unsurlar düğümler, oklar ve akış miktarıdır. Gezgin satıcı modeli bir unsur değil, şebeke modellerinden biridir.", "B4 s. 39",
+          onculler=["Düğüm", "Ok", "Gezgin Satıcı Modeli"], kok="Yukarıdaki ifadelerden hangisi ya da hangileri şebeke modellini oluşturan unsurlar bağlamında doğrudur?",
+          celdirici="\"I ve III\": gezgin satıcı bir modeldir (en kısa yol, en kısa yol ağacı ve maksimum akış gibi).", no=14, bolum="b4"),
+        Q("İş analisti, iş geliştirme projesinin beklenen değerini hesaplamak istemektedir. Ekonomik görünümün olası durumları iyi, genellikle ve kötü olası durumlardır. İş analisti, iyi olası durumun gerçekleşme olasılığının, genellikle olası durumun gerçekleşme olasılığının 1,5 katı olduğunu belirlemiştir. Benzer şekilde kötü olası durumun gerçekleşme olasılığını ise iyi olası durumun gerçekleşme olasılığının üçte biri kadar olduğunu belirlemiştir. Buna göre iş geliştirme projesinin iyi olası durumda kara 2 milyon TL, genellikle olası durumda kara 1,2 milyon TL ve kötü olası durumda 600 bin TL etki etmesi beklendiğine göre, bu iş geliştirme projesinin beklenen değeri aşağıdakilerin hangisinde doğru olarak ifade edilmiştir?",
+          A_("2,50 milyon TL", "1,50 milyon TL", "2,00 milyon TL", "3,00 milyon TL", "1,00 milyon TL"), 1,
+          "Önce olasılıkları bul (toplamları 1), sonra beklenen değer = Σ olasılık × sonuç.", "B6 s. 16–18",
+          cozum=["Genellikle = p; iyi = 1,5p; kötü = 1,5p / 3 = 0,5p", "p + 1,5p + 0,5p = 3p = 1 → p = 1/3", "Olasılıklar: iyi 0,5; genellikle 1/3; kötü 1/6", "EV = 0,5 × 2 + (1/3) × 1,2 + (1/6) × 0,6 = 1 + 0,4 + 0,1 = 1,5 milyon TL"],
+          celdirici="600 bin TL'yi 0,6 milyon yazmayı unutma; olasılıkları eşit alırsan (1,27) şıklarda yok.", no=15, bolum="b6"),
+        Q("Birbiriyle ilişkili faaliyetlerden sonra yapılan faaliyetti tanımlayan proje şebeke modelleri unsuru aşağıdakilerin hangisinde doğru olarak ifade edilmiştir?",
+          A_("Faaliyet", "Öncül Faaliyet", "Kritik Faaliyet", "Kritik Olmayan Faaliyet", "Ardıl Faaliyet"), 4,
+          "Ardıl faaliyet: birbiriyle ilişkili faaliyetlerden sonra yapılan faaliyet. Öncül faaliyet: önce yapılması gereken faaliyet.", "B5 s. 29",
+          celdirici="Öncül ile ardıl en sık karıştırılan çift: öncül önce, ardıl sonra.", no=16, bolum="b5"),
+        Q("İş analisti iş geliştirme sürecini Gantt Şeması ile yürütecektir. Gantt Şemasında kritik faaliyetlerin sırayla tamamlanma süreleri 4, 8, 4, 3 ve 1 ise projenin beklenen tamamlanma süresi aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+          A_("12", "4", "8", "20", "16"), 3,
+          "Kritik faaliyetlerin sürelerinin toplamı projenin beklenen tamamlanma süresidir.", "B5 s. 9",
+          cozum=["4 + 8 + 4 + 3 + 1 = 20"], celdirici="8, en uzun kritik faaliyettir; proje bütün kritik yolun toplamı kadar sürer.", no=17, bolum="b5"),
+        Q("", A_("Yalnız II", "Yalnız I", "II ve III", "I ve III", "I ve II"), 2,
+          "İş analisti veriyi anlaşılabilir halde sunar (tanımlayıcı iş analitiği). Woolworths örneğinde verinin sigorta şirketiyle paylaşılması iki tarafın performansını artırdı. İş analitiği yalnızca pazarlamada satış artırmayı değil, işletmedeki herhangi bir problemi çözmeyi amaçlar.", "s. 6–7",
+          onculler=["İş analitiği, işletmelerin pazarlama fonksiyonunda satışların artırılmasını amaçlar.", "İş analisti veriyi kullanarak işletmedeki bir problemi anlaşılabilir bir halde sunabilir.", "İşletmelerin birbirleriyle veri paylaşması işletmelerin performansını artırabilir."],
+          kok="Yukarıdaki ifadelerden hangisi ya da hangileri iş analitiği ve veri bağlamında doğrudur?",
+          celdirici="I, iş analitiğini tek bir fonksiyona ve tek bir amaca daraltıyor; 2025 vizedeki AOSM öncülü gibi.", no=18, bolum="b1"),
+        Q("Aşağıda A, B, C ve D değişkenlerinin korelasyon matrisi verilmiştir. Bu tabloya göre aşağıdaki ifadelerden hangi ifade " + U + "?",
+          A_("D değişkeni ile diğer tüm değişkenler arasındaki ilişkinin yönü aynıdır.", "Tüm değişkenlerin birbirleriyle bir ilişkisi vardır.", "A değişkeni ile diğer tüm değişkenlerin bir ilişkisi vardır.",
+             "Kendileri ile ilişkileri dışında korelasyon seviyesi en güçlü ilişki A değişkeni ile D değişkeni arasındadır.", "Ters yönlü ilişki sadece A değişkeni ile B değişkeni arasındadır."), 1,
+          "B ile C arasında r = 0,00: ilişki yoktur. Bu yüzden \"tüm değişkenlerin birbirleriyle ilişkisi vardır\" yanlış.", "s. 49–54",
+          tablo=T(["Değişkenler", "A", "B", "C", "D"], [["A", "1,00", "-0,20", "0,50", "0,90"], ["B", "-0,20", "1,00", "0,00", "0,30"], ["C", "0,50", "0,00", "1,00", "0,65"], ["D", "0,90", "0,30", "0,65", "1,00"]]),
+          celdirici="\"A ile diğer tüm değişkenlerin ilişkisi vardır\" doğru: −0,20 zayıf ama ters yönlü bir ilişkidir.", no=19, bolum="b3"),
+        Q("", A_("Yalnız III", "Yalnız I", "I ve III", "I ve II", "Yalnız II"), 2,
+          "Ambulans güzergahı en kısa yol modelinin kullanım alanıdır; iş analisti problem çözerken şebeke modellerinden yararlanır. Şebeke modelleri karar verme modellerinin uygulamasıdır; tanımlayıcı iş analitiğinin aracı değildir.", "B4 s. 2, 11, 39",
+          onculler=["Sağlık sektörü kapsamında ambulans güzergahlarının belirlenmesinde kullanılabilir.", "Şebeke modelleri, tanımlayıcı iş analitiği alanındaki çalışmalarda kullanılabilir.", "İş analisti işletmedeki bir problemi çözerken şebeke modellerinden yararlanabilir."],
+          kok="Yukarıdaki ifadelerden hangisi ya da hangileri şebeke modelleri bağlamında doğrudur?",
+          celdirici="II: tanımlayıcı iş analitiğinin araçları sınıflama, merkezi eğilim ve saçınım ölçütleridir (Bölüm 2).", no=20, bolum="b4"),
+    ],
+}
+for q in CIKMIS_2025_FINAL["sorular"]:
+    q["id"] = f"c2025f-{q['no']:02d}"
+    q.setdefault("sabitSik", True)
