@@ -5,7 +5,7 @@ description: Kemal ve Şengül'ün ANKUZEF sınav hazırlık sitesi (beydillik/a
 
 # ANKUZEF Defteri — çalışma yöntemi
 
-Depo: `beydillik/ankuzef-defteri`. Netlify: Kemal'in **ikinci** Netlify hesabı (Ela'nın sitesinin olduğu hesap değil). Kullanıcılar yetişkin: Kemal (Plant Controller, SMMM) ve eşi Şengül; ANKUZEF açık öğretim öğrencileri. Hedef: her sınavda **75+**. Yanıtlar Türkçe, kısa ve net. Her kişi farklı ders alabilir (`dersler.json` → `ogrenciler`).
+Depo: `beydillik/ankuzef-defteri`. Netlify: Kemal'in **ikinci** Netlify hesabı (Ela'nın sitesinin olduğu hesap değil). Kullanıcılar yetişkin: Kemal ve eşi Şengül; ANKUZEF açık öğretim öğrencileri. Hedef: her sınavda **75+**. Yanıtlar Türkçe, kısa ve net. Her kişi farklı ders alabilir (`dersler.json` → `ogrenciler`). Depodaki `docs/SKILL-ankuzef-defteri.md` bu dosyanın kopyasıdır; değişince ikisini birlikte güncelle.
 
 ## ⚠ Yayın kuralı (her işten önce)
 - Ücretsiz planda `main`'e her gönderim = 1 canlı yayın = 15 kredi (ayda 300). `taslak` dalı ve önizlemeler 0 kredi.
@@ -64,7 +64,7 @@ public/ortak/defter.js, defter.css     ortak motor — içerik eklerken DEĞİŞ
 public/<kod>/index.html                ders sayfası (isan/index.html kopyası; yalnız data-ders ve title değişir)
 public/<kod>/ders.json                 üretilir: bolumler, kapsamlar (vize/final: bolumler, deneme{soru, sureDk, dagilim, sureNot}), soruDosyalari, cikmisNot
 public/<kod>/bolumler/bN.json          üretilir: ozet, kitapNotlari, akildaKalsin, kartlar, ciftler, formuller, sorular
-public/<kod>/sorular/*.json            üretilir: çıkmış ve tahmin dosyaları
+public/<kod>/sorular/*.json            üretilir: çıkmış, gozden.json ve tahmin dosyaları
 public/<kod>/atolye.js                 elle: window.ATOLYE = [{id, bolum, ad, aciklama, formul:[formül id], uret()}]
 araclar/<kod>/ortak.py                 Q(), T(), kart(), cift(), F(), onc(), frac(), kok() ve doğrulama
 araclar/<kod>/bolumler.py, cikmis.py, gozden.py, tahmin.py, uret.py
@@ -115,4 +115,4 @@ kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 - Çeyrek yöntemi kitaptaki: Q1 (n+1)/4., Q3 3(n+1)/4. sıra, ondalık kısım kadar ara fark. Örneklem varyansı n − 1. β₁ = SSXY / bağımsız değişkenin SS'i (kitap korelasyon örneğinde X'i performans almış; regresyonda bağımsız ücret artışı).
 - Bilinen kitap hataları `bolumler.py` `kitapNotlari`'nda. Gözden Geçirelim anahtar hataları: B1 S3 (anahtar C, doğrusu D), B5 S10 (anahtar A = 2, doğrusu C = 4); B2 S3'te iki yanlış ifade var (anahtar E). Final bölümleri yazılırken eklenecekler: B5 PERT güven aralığı alt/üst sınır ters (doğrusu 38,14–45,86), B5 Tablo 5.1 E faaliyeti süresi 48 → 4, B6 Tablo 6.3 K1 kötü durum 508 → 50.
 - Netlify: proje `ankuzef-defteri` (Ela Beydilli takımı, Ela'nın sitelerinden ayrı kredi). Önizleme `https://taslak--ankuzef-defteri.netlify.app/isan/`. `taslak` dalı Netlify kurulumundan önce gönderildiyse dal yayını oluşmaz; yeni bir gönderim (gerekirse boş commit) tetikler.
-- Sıradaki: B4–6 içeriği ve atölye üreticileri (en kısa yol, maksimum akış, CPM erken/geç zaman ve bolluk, PERT beklenen süre ve varyans, maksimaks/maksimin/Hurwicz/minimaks pişmanlık/beklenen değer/EVPI); final çıkmış sınavı gelince eklenir.
+- Sıradaki: B4–6 içeriği ve atölye üreticileri (en kısa yol, maksimum akış, CPM erken/geç zaman ve bolluk, PERT beklenen süre ve varyans, maksimaks/maksimin/Hurwicz/minimaks pişmanlık/beklenen değer/EVPI). Bölüm 4–6 Gözden Geçirelim ve 2025-26 Final zaten ekli.
