@@ -1,0 +1,121 @@
+{
+ "kod": "isan",
+ "ad": "Veri ve İş Analitiği",
+ "dersKodu": "AAUF1405",
+ "varsayilanKapsam": "vize",
+ "kapsamlar": {
+  "vize": {
+   "ad": "Vize",
+   "bolumler": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "deneme": {
+    "soru": 20,
+    "sureDk": 30,
+    "dagilim": {
+     "b1": 6,
+     "b2": 7,
+     "b3": 7
+    },
+    "sureNot": "Dağılım 2025-26 Güz Vize'den alındı (B1: 6, B2: 7, B3: 7 soru). Sınav süresi doğrulanamadı; varsayılan 30 dakika, sınav giriş belgendeki süreyle değiştir."
+   }
+  },
+  "final": {
+   "ad": "Final",
+   "bolumler": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "deneme": {
+    "soru": 20,
+    "sureDk": 30,
+    "dagilim": {
+     "b1": 3,
+     "b2": 4,
+     "b3": 4,
+     "b4": 3,
+     "b5": 3,
+     "b6": 3
+    },
+    "sureNot": "Final dağılımı tahmindir (çıkmış final yok). Bölüm 4–6 hazırlanınca dolar."
+   }
+  }
+ },
+ "bolumler": [
+  {
+   "id": "b1",
+   "no": 1,
+   "baslik": "İş Analitiği",
+   "sayfalar": "s. 5–20",
+   "hazir": true,
+   "sinav": [
+    "Vize",
+    "Final"
+   ]
+  },
+  {
+   "id": "b2",
+   "no": 2,
+   "baslik": "Veri Betimlemesi",
+   "sayfalar": "s. 21–46",
+   "hazir": true,
+   "sinav": [
+    "Vize",
+    "Final"
+   ]
+  },
+  {
+   "id": "b3",
+   "no": 3,
+   "baslik": "Tahminleyici Veri Analizi Uygulaması",
+   "sayfalar": "s. 47–66",
+   "hazir": true,
+   "sinav": [
+    "Vize",
+    "Final"
+   ]
+  },
+  {
+   "id": "b4",
+   "no": 4,
+   "baslik": "Şebeke Modelleri Uygulamaları",
+   "sayfalar": "B4 s. 1–46",
+   "hazir": false,
+   "sinav": [
+    "Final"
+   ]
+  },
+  {
+   "id": "b5",
+   "no": 5,
+   "baslik": "Proje Yönetimi Uygulamaları",
+   "sayfalar": "B5 s. 1–36",
+   "hazir": false,
+   "sinav": [
+    "Final"
+   ]
+  },
+  {
+   "id": "b6",
+   "no": 6,
+   "baslik": "İş Analitiğinde Karar Verme Uygulamaları",
+   "sayfalar": "B6 s. 1–33",
+   "hazir": false,
+   "sinav": [
+    "Final"
+   ]
+  }
+ ],
+ "soruDosyalari": [
+  "cikmis_2025_guz_vize.json",
+  "tahmin_t1.json",
+  "tahmin_t2.json"
+ ],
+ "cikmisNot": "2024-25 Güz Vize, Final ve Bütünleme dosyaları başka bir dersin (AYBS407 Büyük Veri ve İş Analitiği: Hadoop, Spark, Hive) sınavı; bu dersin kitabında o konular yok, bu yüzden eklenmedi."
+}

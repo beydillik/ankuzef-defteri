@@ -1,0 +1,700 @@
+{
+ "ozet": [
+  {
+   "baslik": "Tahminleyici veri analizi",
+   "sayfa": "s. 48",
+   "maddeler": [
+    "Bölüm 2 \"ne oldu?\" sorusunu, bu bölüm <b>\"ne olabilir?\"</b> sorusunu cevaplar. Araçlar: korelasyon ve regresyon.",
+    "Önce değişkenler bilimsel açıdan belirlenir; ilişki yalnızca istatistikle açıklanmaz.",
+    "Uygulamalar: talep, müşteri kaybı, çalışan performansı, verimlilik, tasarruf, kârlılık tahmini.",
+    "İlişki nedensellik değildir: tekstil firmasında performans ile dondurma satışı ilişkili çıkabilir, ama dondurma performansı etkilemez."
+   ]
+  },
+  {
+   "baslik": "Korelasyon",
+   "sayfa": "s. 49–54",
+   "maddeler": [
+    "Korelasyon analizi ilişkinin <b>yönünü ve gücünü</b> inceler. Katsayı −1 ile +1 arasındadır.",
+    "0 < r ≤ 1 pozitif (r = 1 mükemmel pozitif); r = 0 ilişki yok; −1 ≤ r < 0 negatif (r = −1 mükemmel negatif).",
+    "Varsayımlar: değişkenlerin normal dağılımı ve doğrusallık.",
+    "r = SSXY / √(SSX · SSY). Örnek: performans–ücret artışı 663,87 / √(1.639,60 × 386,43) = 0,8340.",
+    "Korelasyon tablosu (matrisi): tüm değişkenlerin birbiriyle ilişkisi; köşegen 1 (her değişken kendisiyle mükemmel pozitif)."
+   ]
+  },
+  {
+   "baslik": "Regresyon modeli",
+   "sayfa": "s. 54–55",
+   "maddeler": [
+    "Bilimsel teorilerle açıklanan neden-sonuç ilişkisinin istatistikle gösterilmesi. Amaç: açıklama ve öngörü.",
+    "Y = β<sub>0</sub> + β<sub>1</sub>X<sub>1</sub> + … + β<sub>n</sub>X<sub>n</sub> + ε. Y <b>bağımlı</b> (sonuç), X <b>bağımsız</b> (neden), β parametreler, ε <b>hata terimi</b> (düşünülemeyen ya da modele alınamayan etkiler).",
+    "<b>EKK</b> (en küçük kareler): hata terimlerinin kareler toplamını en küçük yapan yöntem; doğrusal, en iyi, sapmasız, tutarlı.",
+    "Tek bağımsız değişken → <b>basit</b>, birden fazla → <b>çoklu</b> regresyon."
+   ]
+  },
+  {
+   "baslik": "Basit regresyon: 9 adım",
+   "sayfa": "s. 55–59",
+   "maddeler": [
+    "1) Bilimsel çerçeveyle değişkenleri tanımla 2) Korelasyonla ilişkiyi incele 3) Modeli kur 4) Çözümle 5) Hata terimlerini bul 6) Açıklama gücü 7) Model hipotez testi 8) Parametre hipotez testleri 9) Güven aralıkları.",
+    "β<sub>1</sub> = SSXY / (bağımsız değişkenin kareler toplamı) = 663,87 / 386,43 = 1,7180. β<sub>0</sub> = Ȳ − β<sub>1</sub>X̄ = 80,60 − 1,7180 × 11,07 = 61,58.",
+    "Model: Ŷ = 61,58 + 1,7180X. Ücret artışı %10 → 78,76. Hata: ε = Y − Ŷ (56 − 70,17 = −14,17).",
+    "R² = SSR / SST = 1.140,58 / 1.639,60 = 0,6956: ücret artışı performansın %69,56'sını açıklar. SST = SSR + SSE; R² 1'e yaklaştıkça açıklama gücü artar.",
+    "Model anlamlılığı <b>F</b> dağılımıyla (H<sub>0</sub>: β<sub>1</sub> = 0). Anlamlılık F 0,0001 < 0,05 → model anlamlı.",
+    "Parametre testleri <b>t</b> dağılımıyla, n − k − 1 serbestlik derecesi. P-değeri < 0,05 → H<sub>0</sub> reddedilir, katsayı sıfırdan farklı.",
+    "Güven aralığı: %95 düzeyinde 1,0371 < β<sub>1</sub> < 2,3989."
+   ]
+  },
+  {
+   "baslik": "Çoklu regresyon",
+   "sayfa": "s. 59–61",
+   "maddeler": [
+    "Ŷ = 41,63 + 1,31X<sub>1</sub> + 8,28X<sub>2</sub> (X<sub>1</sub> ücret artışı, X<sub>2</sub> eğitim harcaması). %10 ve 2,5 milyon → 75,43.",
+    "Her değişken eklendiğinde R² matematiksel olarak yükselir; gerçek açıklama gücü için <b>ayarlı R²</b> kullanılır: 0,8344 → %83,44.",
+    "H<sub>0</sub>: β<sub>1</sub> = β<sub>2</sub> = 0; Anlamlılık F 0,00001 < 0,05 → en az biri açıklayıcı. Bütün P-değerleri < 0,05."
+   ]
+  }
+ ],
+ "kitapNotlari": [
+  "Kitapta korelasyon örneğinde X performans (SSX = 1.639,60), Y ücret artışı (SSY = 386,43) alınıyor; regresyonda ise bağımsız değişken ücret artışı ve β₁ = 663,87 / 386,43 (Tablo 3.4 bu sayıyı \"SSX\" diye etiketliyor). Kural: β₁ = SSXY ÷ bağımsız değişkenin kareler toplamı.",
+  "Kitapta (s. 55) çoklu modelde X₂ de \"Ücret Artış Oranı\" yazılmış; doğrusu Eğitim Harcaması. Kesişim tabloda 41,69, metinde 41,63; hesaplarda 41,63 kullanılmış."
+ ],
+ "akildaKalsin": [
+  "Korelasyon: yön ve güç, −1…+1. Regresyon: neden-sonuç ve tahmin.",
+  "İlişki nedensellik değildir (dondurma örneği).",
+  "Bağımsız = neden (X), bağımlı = sonuç (Y).",
+  "r = SSXY / √(SSX·SSY); β₁ = SSXY / SSX; Ȳ = β₀ + β₁X̄.",
+  "R² = SSR / SST; çoklu regresyonda ayarlı R².",
+  "Model → F testi; tek tek katsayılar → t testi. P < 0,05 → anlamlı.",
+  "Tahmin sorusunda kesişimi (β₀) eklemeyi unutma."
+ ],
+ "kartlar": [
+  {
+   "ad": "Tahminleyici veri analizi",
+   "tanim": "Veriden yola çıkarak \"ne olabilir?\" sorusuna cevap aranması; korelasyon ve regresyon analizi kullanılır.",
+   "sayfa": "s. 48",
+   "akil": "ne olabilir?"
+  },
+  {
+   "ad": "İlişki ≠ nedensellik",
+   "tanim": "Değişkenler arasında ilişki olması, birinin diğerinin nedeni olduğu anlamına gelmez; neden-sonuç bilimsel açıklamaya dayanmalıdır.",
+   "sayfa": "s. 48",
+   "ornek": "Tekstil firmasında performans ile dondurma satışı arasında çıkan ilişki."
+  },
+  {
+   "ad": "Korelasyon analizi",
+   "tanim": "Değişkenler arasındaki ilişkinin yönünün ve gücünün incelenmesi.",
+   "sayfa": "s. 49",
+   "akil": "yön + güç"
+  },
+  {
+   "ad": "Korelasyon katsayısı",
+   "tanim": "İki değişken arasındaki ilişkinin yönünü ve büyüklüğünü gösteren katsayı; −1 ile +1 arasında değer alır. Normal dağılım ve doğrusallık varsayımına dayanır.",
+   "sayfa": "s. 49, 51"
+  },
+  {
+   "ad": "Pozitif korelasyon",
+   "tanim": "0 < r ≤ 1: değişkenlerden biri artarsa diğeri de artar (ya da biri azalırsa diğeri de azalır). r = 1 mükemmel pozitif.",
+   "sayfa": "s. 49"
+  },
+  {
+   "ad": "Negatif korelasyon",
+   "tanim": "−1 ≤ r < 0: biri artarken diğeri azalır. r = −1 mükemmel negatif.",
+   "sayfa": "s. 50"
+  },
+  {
+   "ad": "İlişki yok",
+   "tanim": "r = 0: iki değişken arasında herhangi bir ilişki yoktur.",
+   "sayfa": "s. 49",
+   "akil": "sadece r = 0"
+  },
+  {
+   "ad": "Korelasyon tablosu (matrisi)",
+   "tanim": "Tüm değişkenlerin birbirleriyle ilişkisinin gösterildiği tablo. Köşegendeki 1'ler değişkenin kendisiyle mükemmel pozitif korelasyonudur.",
+   "sayfa": "s. 53–54"
+  },
+  {
+   "ad": "Regresyon analizi",
+   "tanim": "Bilimsel teorilerle açıklanabilen neden-sonuç ilişkisinin istatistikle gösterilmesi; aynı zamanda tahmin modeli olarak kullanılır.",
+   "sayfa": "s. 54, 65"
+  },
+  {
+   "ad": "Bağımlı değişken (Y)",
+   "tanim": "Sonuç değişkeni; bağımsız değişkenlerce açıklanan değişken. Açıklanan değişken de denir.",
+   "sayfa": "s. 48, 62",
+   "akil": "sonuç",
+   "ornek": "Çalışan performansı."
+  },
+  {
+   "ad": "Bağımsız değişken (X)",
+   "tanim": "Neden değişkeni; bağımlı değişkeni açıklayan değişken.",
+   "sayfa": "s. 48, 62",
+   "akil": "neden",
+   "ornek": "Ücret artış oranı, eğitim harcaması."
+  },
+  {
+   "ad": "Hata terimi (ε)",
+   "tanim": "Bağımlı değişkeni etkileyen ama modelde düşünülemeyen ya da imkân dahilinde olmayan unsurlar. Gözlenen değer ile tahmin edilen değer arasındaki fark: ε = Y − Ŷ.",
+   "sayfa": "s. 55, 57"
+  },
+  {
+   "ad": "Parametre (regresyonda)",
+   "tanim": "Regresyon modelindeki katsayılar (β₀, β₁, …). β₀ kesişim değeridir.",
+   "sayfa": "s. 54, 65"
+  },
+  {
+   "ad": "En küçük kareler (EKK)",
+   "tanim": "Hata terimlerinin kareler toplamını en küçük yapan parametreleri bulma yöntemi; doğrusal, en iyi, sapmasız, tutarlı.",
+   "sayfa": "s. 55"
+  },
+  {
+   "ad": "Basit / çoklu regresyon",
+   "tanim": "Bir bağımsız değişkenli model basit, birden fazla bağımsız değişkenli model çoklu regresyondur.",
+   "sayfa": "s. 55"
+  },
+  {
+   "ad": "Basit regresyonun 9 adımı",
+   "tanim": "Değişkenleri tanımla, korelasyon, modeli kur, çözümle, hata terimleri, açıklama gücü, model hipotez testi, parametre hipotez testleri, güven aralıkları.",
+   "sayfa": "s. 55"
+  },
+  {
+   "ad": "Açıklama gücü (R²)",
+   "tanim": "Regresyon kareler toplamının bağımlı değişken kareler toplamına oranı: SSR / SST. 1'e yaklaştıkça açıklama gücü artar.",
+   "sayfa": "s. 57–58",
+   "ornek": "0,6956 → ücret artışı performansın %69,56'sını açıklar."
+  },
+  {
+   "ad": "SST, SSR, SSE",
+   "tanim": "SST bağımlı değişken kareler toplamı = SSR (regresyonun açıkladığı) + SSE (hata terimlerinin, açıklanamayan kısım).",
+   "sayfa": "s. 58",
+   "akil": "SST = SSR + SSE"
+  },
+  {
+   "ad": "Ayarlı R²",
+   "tanim": "Çoklu regresyonda her değişken eklendiğinde R² matematiksel olarak yükseldiği için düzeltilmiş açıklama gücü. Düzeltilmiş R² de denir.",
+   "sayfa": "s. 60",
+   "ornek": "0,8344 → %83,44."
+  },
+  {
+   "ad": "Model hipotez testi (F)",
+   "tanim": "Modelin anlamlılığı F dağılımıyla test edilir. H₀: modelin açıklama gücü yok (β = 0). Anlamlılık F < 0,05 → H₀ reddedilir.",
+   "sayfa": "s. 58",
+   "akil": "model → F"
+  },
+  {
+   "ad": "Parametre hipotez testi (t)",
+   "tanim": "Her parametre n − k − 1 serbestlik dereceli t dağılımıyla test edilir. P-değeri < 0,05 → katsayı sıfırdan farklı.",
+   "sayfa": "s. 58–59",
+   "akil": "katsayı → t"
+  },
+  {
+   "ad": "Güven aralığı",
+   "tanim": "Parametrenin %95 güven düzeyinde alabileceği değerlerin aralığı.",
+   "sayfa": "s. 59",
+   "ornek": "1,0371 < β₁ < 2,3989."
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "Korelasyon",
+    "tanim": "İlişkinin yönü ve gücü."
+   },
+   "b": {
+    "ad": "Regresyon",
+    "tanim": "Neden-sonuç ilişkisi ve tahmin."
+   },
+   "fark": "Korelasyon \"birlikte hareket ediyorlar mı?\", regresyon \"biri ötekini ne kadar etkiliyor, değeri ne olur?\" sorusudur.",
+   "sorular": [
+    {
+     "ifade": "−1 ile +1 arasında bir katsayı üretir",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Ücret %10 artarsa performansın 78,76 olacağını tahmin eder",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Bağımlı ve bağımsız değişken ayrımı yapar",
+     "cevap": "b",
+     "neden": "Korelasyon katsayısı bağımlı/bağımsız belirlemez."
+    },
+    {
+     "ifade": "Değişkenler arasındaki ilişkiyi tespit eder",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "En küçük kareler yöntemiyle çözülür",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Bağımlı değişken (Y)",
+    "tanim": "Sonuç; açıklanan."
+   },
+   "b": {
+    "ad": "Bağımsız değişken (X)",
+    "tanim": "Neden; açıklayan."
+   },
+   "fark": "Neden → bağımsız, sonuç → bağımlı. Soruda \"... etkiler\" diyorsa etkileyen bağımsızdır.",
+   "sorular": [
+    {
+     "ifade": "Çalışan performansı",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Ücret artış oranı",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Eğitim harcaması",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Açıklanan değişken",
+     "cevap": "a",
+     "neden": "s. 62."
+    },
+    {
+     "ifade": "Neden-sonuç ilişkisinde sonuç değişkeni",
+     "cevap": "a",
+     "neden": "2025 vizede bunun bağımsız diye verildiği öncül yanlıştı."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "R²",
+    "tanim": "SSR / SST; açıklama gücü."
+   },
+   "b": {
+    "ad": "Ayarlı R²",
+    "tanim": "Değişken sayısına göre düzeltilmiş açıklama gücü."
+   },
+   "fark": "Basit regresyonda R², çoklu regresyonda ayarlı R² yorumlanır.",
+   "sorular": [
+    {
+     "ifade": "Basit regresyonda 0,6956",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Çoklu regresyonda %83,44",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Her değişken eklendiğinde matematiksel olarak yükselir",
+     "cevap": "a",
+     "neden": "s. 60."
+    },
+    {
+     "ifade": "Çoklu modelde gerçek açıklama gücünü verir",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "F testi",
+    "tanim": "Modelin bütün olarak anlamlılığı."
+   },
+   "b": {
+    "ad": "t testi",
+    "tanim": "Tek tek parametrelerin anlamlılığı."
+   },
+   "fark": "Model → F (Anlamlılık F), katsayı → t (t Stat ve P-değeri).",
+   "sorular": [
+    {
+     "ifade": "H₀: β₁ = β₂ = 0",
+     "cevap": "a",
+     "neden": "Modelin açıklama gücü yok."
+    },
+    {
+     "ifade": "n − k − 1 serbestlik derecesi",
+     "cevap": "b",
+     "neden": "s. 58."
+    },
+    {
+     "ifade": "Ücret artış oranının katsayısı sıfırdan farklı mı?",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "ANOVA tablosunda yer alır",
+     "cevap": "a",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Pozitif korelasyon",
+    "tanim": "Aynı yönde hareket."
+   },
+   "b": {
+    "ad": "Negatif korelasyon",
+    "tanim": "Ters yönde hareket."
+   },
+   "fark": "İşaret yönü, mutlak değer gücü gösterir: −0,72 ilişkisi, 0,65'ten daha güçlüdür.",
+   "sorular": [
+    {
+     "ifade": "r = 0,8340",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "r = −0,30",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Biri artarken diğeri azalır",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Biri azalırken diğeri de azalır",
+     "cevap": "a",
+     "neden": "Aynı yön."
+    },
+    {
+     "ifade": "r = −1",
+     "cevap": "b",
+     "neden": "Mükemmel negatif."
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "ss",
+   "ad": "Kareler toplamları",
+   "formul": "SSXY = Σ(X<sub>i</sub> − X̄)(Y<sub>i</sub> − Ȳ) &nbsp; SSX = Σ(X<sub>i</sub> − X̄)² &nbsp; SSY = Σ(Y<sub>i</sub> − Ȳ)²",
+   "sayfa": "s. 51"
+  },
+  {
+   "id": "r",
+   "ad": "Korelasyon katsayısı",
+   "formul": "r<sub>XY</sub> = <span class=\"frac\"><span>SSXY</span><span>√<span class=\"kok\">SSX · SSY</span></span></span>",
+   "ornek": "SSX = 15, SSY = 60, SSXY = 6 → 6 / √900 = 6 / 30 = 0,20 (2025 vize S17).",
+   "tuzak": "Paydada iki kareler toplamının çarpımının karekökü var; yalnız SSX'e bölmek β₁ hesabıdır.",
+   "sayfa": "s. 51"
+  },
+  {
+   "id": "b1",
+   "ad": "Eğim (β₁)",
+   "formul": "β<sub>1</sub> = <span class=\"frac\"><span>SSXY</span><span>SSX</span></span>",
+   "aciklama": "SSX burada bağımsız değişkenin kareler toplamıdır.",
+   "ornek": "663,87 / 386,43 = 1,7180.",
+   "sayfa": "s. 56"
+  },
+  {
+   "id": "b0",
+   "ad": "Kesişim (β₀)",
+   "formul": "Ȳ = β<sub>0</sub> + β<sub>1</sub>X̄ &nbsp; → &nbsp; β<sub>0</sub> = Ȳ − β<sub>1</sub>X̄",
+   "aciklama": "Regresyon doğrusu ortalamalardan geçer.",
+   "ornek": "80,60 − 1,7180 × 11,07 = 61,58. Ters soru: X̄ = 80, β₁ = 0,5, β₀ = 30 → Ȳ = 70 (2025 vize S4).",
+   "sayfa": "s. 56"
+  },
+  {
+   "id": "tahmin",
+   "ad": "Tahmin",
+   "formul": "Ŷ = β<sub>0</sub> + β<sub>1</sub>X<sub>1</sub> + β<sub>2</sub>X<sub>2</sub> + …",
+   "ornek": "41,63 + 1,31 × 10 + 8,28 × 2,5 = 75,43.",
+   "tuzak": "Kesişimi eklemeyi unutmak en sık hata (2025 vize S19-II).",
+   "sayfa": "s. 57, 60"
+  },
+  {
+   "id": "hata",
+   "ad": "Hata terimi",
+   "formul": "ε<sub>i</sub> = Y<sub>i</sub> − Ŷ<sub>i</sub>",
+   "aciklama": "Gözlenen eksi tahmin. Negatifse model fazla tahmin etmiştir.",
+   "ornek": "56 − 70,17 = −14,17.",
+   "sayfa": "s. 57"
+  },
+  {
+   "id": "r2",
+   "ad": "Açıklama gücü",
+   "formul": "R² = <span class=\"frac\"><span>SSR</span><span>SST</span></span> = 1 − <span class=\"frac\"><span>SSE</span><span>SST</span></span> &nbsp;&nbsp; SST = SSR + SSE",
+   "ornek": "1.140,58 / 1.639,60 = 0,6956.",
+   "tuzak": "SSE / SST açıklanamayan kısımdır (0,30); R² ile karıştırma.",
+   "sayfa": "s. 58"
+  },
+  {
+   "id": "p",
+   "ad": "Anlamlılık kararı",
+   "formul": "P-değeri (ya da Anlamlılık F) &lt; 0,05 → H<sub>0</sub> reddedilir → anlamlı (sıfırdan farklı)",
+   "aciklama": "%5 anlamlılık düzeyinde.",
+   "ornek": "P = 0,005 → anlamlı; P = 0,30 → anlamlı değil.",
+   "sayfa": "s. 58–61"
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Tahminleyici veri analizi hangi sorunun cevabını arar?",
+   "secenekler": [
+    "Ne oldu?",
+    "Ne olabilir?",
+    "Kim yaptı?",
+    "Nerede oldu?",
+    "Ne kadar harcandı?"
+   ],
+   "dogru": 1,
+   "aciklama": "Veri betimlemesi \"ne oldu?\", tahminleyici veri analizi \"ne olabilir?\" sorusunu cevaplar.",
+   "sayfa": "s. 48",
+   "celdirici": "\"Ne oldu?\" tanımlayıcı iş analitiğinin sorusudur."
+  },
+  {
+   "soru": "A tekstil firmasında çalışan performansı ile dondurma satışları arasında bir ilişki bulunmuştur. Kitaba göre bu durumdan çıkarılacak sonuç nedir?",
+   "secenekler": [
+    "Dondurma satışları çalışan performansını artırır.",
+    "Değişkenler arasında ilişki olması, birinin diğerinin nedeni olduğu anlamına gelmez.",
+    "Korelasyon katsayısı negatiftir.",
+    "Dondurma satışı bağımlı değişkendir.",
+    "Regresyon modeli mutlaka kurulmalıdır."
+   ],
+   "dogru": 1,
+   "aciklama": "Korelasyon ilişki gösterir; neden-sonuç bilimsel açıklamaya dayanmalıdır.",
+   "sayfa": "s. 48",
+   "celdirici": "\"Dondurma satışı performansı artırır\" demek, ilişkiyi nedensellik sanmaktır."
+  },
+  {
+   "soru": "Korelasyon katsayısı hangi aralıkta değer alır?",
+   "secenekler": [
+    "0 ile 1",
+    "0 ile 100",
+    "−1 ile +1",
+    "−∞ ile +∞",
+    "−100 ile +100"
+   ],
+   "dogru": 2,
+   "aciklama": "Korelasyon katsayısı −1 ile +1 arasında değer alır.",
+   "sayfa": "s. 49",
+   "celdirici": "0 ile 1 yalnızca pozitif ilişkinin aralığıdır."
+  },
+  {
+   "soru": "İki değişken arasındaki korelasyon katsayısı −1 ise aralarındaki ilişki için ne söylenir?",
+   "secenekler": [
+    "İlişki yoktur.",
+    "Zayıf negatif ilişki vardır.",
+    "Mükemmel negatif korelasyon vardır.",
+    "Mükemmel pozitif korelasyon vardır.",
+    "Nedensellik vardır."
+   ],
+   "dogru": 2,
+   "aciklama": "r = −1 mükemmel negatif korelasyondur: bir değişken ne kadar değişirse diğeri aynı miktarda ters yönde değişir.",
+   "sayfa": "s. 50",
+   "celdirici": "İlişki yok yalnızca r = 0'dır."
+  },
+  {
+   "soru": "Korelasyon katsayısının hesaplanması hangi varsayımlara dayanır?",
+   "secenekler": [
+    "Değişkenlerin normal dağılımı ve doğrusal olması",
+    "Değişkenlerin nitel olması",
+    "Örneklemin 100'den büyük olması",
+    "Hata teriminin sıfır olması",
+    "Bağımsız değişkenin sabit olması"
+   ],
+   "dogru": 0,
+   "aciklama": "Kitapta iki varsayım sayılır: değişkenlerin normal dağılımı ve doğrusallık.",
+   "sayfa": "s. 51",
+   "celdirici": "Hata terimi regresyonun konusudur, korelasyonun değil."
+  },
+  {
+   "soru": "SSXY = 30, SSX = 25 ve SSY = 64 ise X ile Y arasındaki korelasyon katsayısı kaçtır?",
+   "secenekler": [
+    "0,60",
+    "0,75",
+    "0,80",
+    "1,20",
+    "0,47"
+   ],
+   "dogru": 1,
+   "aciklama": "r = 30 / √(25 × 64) = 30 / √1.600 = 30 / 40 = 0,75.",
+   "sayfa": "s. 51",
+   "celdirici": "1,20 = 30 / 25: paydaya yalnızca SSX'i koymak (bu β₁'dir ve r 1'i geçemez)."
+  },
+  {
+   "soru": "Basit regresyon modelinde SSXY = 50 ve bağımsız değişkenin kareler toplamı 25 ise β₁ parametresi kaçtır?",
+   "secenekler": [
+    "0,5",
+    "1",
+    "2",
+    "25",
+    "1.250"
+   ],
+   "dogru": 2,
+   "aciklama": "β₁ = SSXY / SSX = 50 / 25 = 2.",
+   "sayfa": "s. 56",
+   "celdirici": "0,5, oranı ters kurmaktır (25 / 50)."
+  },
+  {
+   "soru": "Ŷ = 61,58 + 1,718X modelinde ücret artış oranı (X) %10 olursa tahmini çalışan performansı kaçtır?",
+   "secenekler": [
+    "61,58",
+    "63,30",
+    "78,76",
+    "79,62",
+    "80,60"
+   ],
+   "dogru": 2,
+   "aciklama": "61,58 + 1,718 × 10 = 61,58 + 17,18 = 78,76. Kitaptaki Şekil 3.3 örneği.",
+   "sayfa": "s. 57",
+   "celdirici": "80,60 performansın ortalamasıdır; tahmin değildir."
+  },
+  {
+   "soru": "Bir gözlemde çalışan performansının gerçek değeri 56, modelin tahmini 70,17 ise bu gözlemin hata terimi kaçtır?",
+   "secenekler": [
+    "14,17",
+    "−14,17",
+    "126,17",
+    "0",
+    "70,17"
+   ],
+   "dogru": 1,
+   "aciklama": "ε = Y − Ŷ = 56 − 70,17 = −14,17.",
+   "sayfa": "s. 57",
+   "celdirici": "14,17, çıkarmayı ters yapmaktır (Ŷ − Y)."
+  },
+  {
+   "soru": "Bir basit regresyon modelinde SST = 1.639,60 ve SSE = 499,02 ise R² yaklaşık kaçtır?",
+   "secenekler": [
+    "0,30",
+    "0,44",
+    "0,70",
+    "0,83",
+    "1,00"
+   ],
+   "dogru": 2,
+   "aciklama": "SSR = 1.639,60 − 499,02 = 1.140,58. R² = 1.140,58 / 1.639,60 ≈ 0,70 (kitapta 0,6956).",
+   "sayfa": "s. 58",
+   "celdirici": "0,30 = SSE / SST: açıklanamayan kısım."
+  },
+  {
+   "soru": "Çoklu regresyon modelinde modelin gerçek açıklama gücü için hangi değere bakılır?",
+   "secenekler": [
+    "Çoklu R",
+    "R Kare",
+    "Ayarlı R Kare",
+    "Standart hata",
+    "Gözlem sayısı"
+   ],
+   "dogru": 2,
+   "aciklama": "Çoklu regresyonda her değişken eklendiğinde R² matematiksel olarak yükseldiği için ayarlı (düzeltilmiş) R² kullanılır.",
+   "sayfa": "s. 60",
+   "celdirici": "R Kare basit regresyonda yorumlanır."
+  },
+  {
+   "soru": "Regresyon modelinin bütün olarak anlamlılığı (modelin hipotez testi) hangi dağılımla test edilir?",
+   "secenekler": [
+    "t dağılımı",
+    "F dağılımı",
+    "Ki-kare dağılımı",
+    "Normal dağılım",
+    "Binom dağılımı"
+   ],
+   "dogru": 1,
+   "aciklama": "Modelin anlamlılık testi F dağılımı gösterir; parametreler ise t dağılımıyla test edilir.",
+   "sayfa": "s. 58",
+   "celdirici": "t testi tek tek katsayılar içindir."
+  },
+  {
+   "soru": "En küçük kareler (EKK) yöntemi neyi en küçük yapar?",
+   "secenekler": [
+    "Bağımsız değişken sayısını",
+    "Hata terimlerinin kareler toplamını",
+    "Korelasyon katsayısını",
+    "Regresyon kareler toplamını",
+    "Parametre sayısını"
+   ],
+   "dogru": 1,
+   "aciklama": "EKK, hata terimlerinin kareler toplamını en küçük yapan regresyon parametrelerini bulur.",
+   "sayfa": "s. 55",
+   "celdirici": "Regresyon kareler toplamı (SSR) açıklanan kısımdır; küçültülmez."
+  },
+  {
+   "soru": "Yukarıdaki regresyon sonuç tablosuna göre;",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "X1'in P-değeri 0,01 < 0,05 → anlamlı. X2'nin 0,08 > 0,05 → anlamlı değil. Kesişimin 0,20 > 0,05 → sıfırdan farklı olduğuna dair kanıt yok.",
+   "sayfa": "s. 58–61",
+   "celdirici": "II'yi seçen P-değerini 0,10 ile karşılaştırmıştır; kitapta düzey %5.",
+   "onculler": [
+    "X1 katsayısı %5 anlamlılık düzeyinde sıfırdan farklıdır.",
+    "X2 katsayısı %5 anlamlılık düzeyinde sıfırdan farklıdır.",
+    "Kesişim değerinin %5 anlamlılık düzeyinde sıfırdan farklı olduğuna dair kanıt yoktur."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri doğrudur?",
+   "tablo": {
+    "basliklar": [
+     "",
+     "Katsayılar",
+     "P-değeri"
+    ],
+    "satirlar": [
+     [
+      "Kesişim",
+      "12,00",
+      "0,20"
+     ],
+     [
+      "X1",
+      "2,50",
+      "0,01"
+     ],
+     [
+      "X2",
+      "−1,40",
+      "0,08"
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "sabitSik": true
+  },
+  {
+   "soru": "Tek bağımsız değişkeni olan regresyon modeline ne ad verilir?",
+   "secenekler": [
+    "Çoklu regresyon modeli",
+    "Basit regresyon modeli",
+    "Korelasyon matrisi",
+    "En küçük kareler modeli",
+    "Ayarlı model"
+   ],
+   "dogru": 1,
+   "aciklama": "Bir bağımsız değişkenli model basit, birden fazla bağımsız değişkenli model çoklu regresyondur.",
+   "sayfa": "s. 55",
+   "celdirici": "EKK bir çözüm yöntemidir, model türü değil."
+  },
+  {
+   "soru": "Regresyon modelinde bağımlı değişkeni etkileyen ama modeli kuranlarca düşünülemeyen ya da modele alınması mümkün olmayan unsurları içeren terim hangisidir?",
+   "secenekler": [
+    "Parametre",
+    "Kesişim",
+    "Hata terimi",
+    "Bağımsız değişken",
+    "Kareler toplamı"
+   ],
+   "dogru": 2,
+   "aciklama": "Kitabın hata terimi tanımı.",
+   "sayfa": "s. 55",
+   "celdirici": "Bağımsız değişken modelde açıkça yer alan nedendir."
+  }
+ ]
+}

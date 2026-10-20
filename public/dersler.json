@@ -1,0 +1,4 @@
+[
+  {"kod": "isan", "ad": "Veri ve İş Analitiği", "kodu": "AAUF1405", "ogrenciler": ["Şengül"], "hazir": true},
+  {"kod": "hzpz", "ad": "Hizmet Pazarlaması", "ogrenciler": ["Kemal"], "hazir": false}
+]

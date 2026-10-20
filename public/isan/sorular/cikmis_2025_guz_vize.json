@@ -1,0 +1,608 @@
+{
+ "kaynak": "cikmis",
+ "sinav": "2025-26 Güz Vize",
+ "sinavTur": "Vize",
+ "sorular": [
+  {
+   "soru": "İş analisti geliştirdiği karar verme modeli sonuç tablosu yukarıda gösterilmiştir. Söz konusu tablo dikkate alındığında aşağıdaki ifadelerden hangisi <u>yanlıştır</u>?",
+   "secenekler": [
+    "Alternatif Çözüm 4, uygulanabilir bir çözümdür.",
+    "Alternatif Çözüm 5, optimal çözüm olabilir.",
+    "Alternatif Çözüm 1, tüm kriterleri sağlamaz.",
+    "Alternatif Çözüm 2, iki kriteri sağlar.",
+    "Alternatif Çözüm 3 uygulanırsa 750,45 milyon TL kar elde edilir."
+   ],
+   "dogru": 0,
+   "aciklama": "Alternatif Çözüm 4, Kriter III'ü sağlamıyor (x). Bir çözümün uygulanabilir olması için bütün kriterleri sağlaması gerekir; bu yüzden ifade yanlıştır.",
+   "sayfa": "s. 12–13 (Tablo 1.2)",
+   "celdirici": "\"Alternatif Çözüm 5 optimal olabilir\" doğru bir ifadedir: bütün kriterleri sağlayan yalnızca 3 ve 5 var, bunlardan kârı yüksek olan 5'tir (1.250,85). Çözüm 2'nin kârı daha yüksek ama Kriter I'i sağlamıyor.",
+   "tablo": {
+    "basliklar": [
+     "Alternatif Çözümler/Kriterler",
+     "Kar (milyon TL)",
+     "Kriter-I",
+     "Kriter-II",
+     "Kriter-III"
+    ],
+    "satirlar": [
+     [
+      "Alternatif Çözüm 1",
+      "1.450,35",
+      "o",
+      "x",
+      "o"
+     ],
+     [
+      "Alternatif Çözüm 2",
+      "1.588,74",
+      "x",
+      "o",
+      "o"
+     ],
+     [
+      "Alternatif Çözüm 3",
+      "750,45",
+      "o",
+      "o",
+      "o"
+     ],
+     [
+      "Alternatif Çözüm 4",
+      "1.353,79",
+      "o",
+      "o",
+      "x"
+     ],
+     [
+      "Alternatif Çözüm 5",
+      "1.250,85",
+      "o",
+      "o",
+      "o"
+     ]
+    ],
+    "baslik": "o: koşul sağlanır, x: koşul sağlanmaz"
+   },
+   "tabloOnce": true,
+   "no": 1,
+   "bolum": "b1",
+   "id": "c2025v-01",
+   "sabitSik": true
+  },
+  {
+   "soru": "Araştırma konusuyla ilgili dışarıda veri bırakmayacak şekilde gözlemlerin tümünü kapsayan en büyük gözlem birimi aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+   "secenekler": [
+    "Veri",
+    "Örnek",
+    "Örneklem",
+    "Popülasyon",
+    "Gözlem"
+   ],
+   "dogru": 3,
+   "aciklama": "Soru kökü kitaptaki popülasyon tanımının aynısı: \"dışarıda veri bırakmayacak şekilde gözlemlerin tümünü kapsayan en büyük gözlem birimi\".",
+   "sayfa": "s. 8",
+   "celdirici": "Örneklem popülasyonun bir kısmıdır; dışarıda gözlem bırakır.",
+   "no": 2,
+   "bolum": "b1",
+   "id": "c2025v-02",
+   "sabitSik": true
+  },
+  {
+   "soru": "Aşağıdaki terimlerden hangisi saçılım ölçütlerinden birisidir?",
+   "secenekler": [
+    "Aritmetik Ortalama",
+    "Aralık",
+    "Parametre",
+    "Medyan",
+    "Mod"
+   ],
+   "dogru": 1,
+   "aciklama": "Saçınım ölçütleri: aralık ve çeyreklikler, ortalama mutlak sapma, varyans, standart sapma.",
+   "sayfa": "s. 23, 35",
+   "celdirici": "Aritmetik ortalama, medyan ve mod merkezi eğilim ölçütleridir; parametre popülasyonun sayısal özet bilgisidir.",
+   "no": 3,
+   "bolum": "b2",
+   "id": "c2025v-03",
+   "sabitSik": true
+  },
+  {
+   "soru": "Basit regresyon modelinde bağımsız değişkenin ortalaması 80, parametresi 0,5 ve kesişim değeri 30 ise bağımlı değişkenini ortalama değeri aşağıdaki ifadelerden hangisinde doğru olarak verilmiştir?",
+   "secenekler": [
+    "40",
+    "70",
+    "30",
+    "60",
+    "50"
+   ],
+   "dogru": 1,
+   "aciklama": "Regresyon doğrusu ortalamalardan geçer: Ȳ = β<sub>0</sub> + β<sub>1</sub>·X̄.",
+   "sayfa": "s. 56",
+   "celdirici": "40 yalnızca 0,5 × 80'dir; kesişim değeri (30) eklenmeyi unutulmuş.",
+   "cozum": [
+    "Ȳ = 30 + 0,5 × 80",
+    "0,5 × 80 = 40",
+    "Ȳ = 30 + 40 = 70"
+   ],
+   "no": 4,
+   "bolum": "b3",
+   "id": "c2025v-04",
+   "sabitSik": true
+  },
+  {
+   "soru": "Bir iş analisti, insan kaynağı verimliliği ile ilgili işletmedeki veri tabanından yararlanarak elde ettiği veriyi anlaşılabilir bir şekilde özetlemiştir. İş analistini söz konusu araştırmasıyla ilgili olarak aşağıdaki seçeneklerden hangisi doğru bir ifade olarak değerlendirilebilir?",
+   "secenekler": [
+    "İş analisti, tanımlayıcı iş analitiği konusunda çalışma yapmıştır.",
+    "İş analisti insan kaynağı verimliliğinin nedenlerini tespit etmiştir.",
+    "İş analistinin hedefi işten çıkarılacak personelin listesini hazırlamaktır.",
+    "İş analisti insan kaynağı verimliliği ile ilişkili işletme fonksiyonları üzerine çalışmıştır.",
+    "İş analisti, tahminleyici iş analitiği konusunda çalışma yapmıştır."
+   ],
+   "dogru": 0,
+   "aciklama": "Veriyi anlaşılabilir halde özetleyip sunmak, iş analitiğinin ilk aşaması olan tanımlayıcı iş analitiğidir (verinin tanımlanması).",
+   "sayfa": "s. 7",
+   "celdirici": "Tahminleyici iş analitiği gelecekle ilgili öngörü sunar; nedenleri bulmak da neden-sonuç (regresyon) işidir. Soruda analist yalnızca özetlemiş.",
+   "no": 5,
+   "bolum": "b1",
+   "id": "c2025v-05",
+   "sabitSik": true
+  },
+  {
+   "soru": "Bir iş analisti, işletmedeki kaynak programının verimliliğiyle ilgili problem konusunda araştırma yapmaktadır. Geliştirdiği karar verme modelinde amaç fonksiyonu Z = 50 X1 + 70 X2 ve optimal çözümü sağlayan X1 ve X2 değerleri 1,2 ve 0,4 bulduğuna göre amaç fonksiyonun optimal değeri aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+   "secenekler": [
+    "82",
+    "94",
+    "88",
+    "85",
+    "91"
+   ],
+   "dogru": 2,
+   "aciklama": "Optimal değerleri amaç fonksiyonunda yerine yaz.",
+   "sayfa": "s. 13",
+   "celdirici": "Her katsayıyı kendi değişkeniyle çarp: 50 ile X1'i (1,2), 70 ile X2'yi (0,4). Diğer şıklar bu çarpımlardan birini yanlış yapınca çıkar.",
+   "cozum": [
+    "Z = 50 × 1,2 + 70 × 0,4",
+    "50 × 1,2 = 60; 70 × 0,4 = 28",
+    "Z = 60 + 28 = 88"
+   ],
+   "no": 6,
+   "bolum": "b1",
+   "id": "c2025v-06",
+   "sabitSik": true
+  },
+  {
+   "soru": "Bir işletmede çalışanların departman bazında verisi 250, 130, 80, 70, 85, 150, 90'dır. İşletmeye yeni bir departman açılmış ve 100 yeni çalışan işe alınmıştır. Yeni açılan departmanla birlikte medyan değerindeki değişim aşağıdakilerin hangisinde doğru olarak ifade edilmiştir?",
+   "secenekler": [
+    "Değişmemiştir",
+    "5 çalışan azalmıştır",
+    "5 çalışan artmıştır",
+    "10 çalışan azalmıştır",
+    "10 çalışan artmıştır"
+   ],
+   "dogru": 2,
+   "aciklama": "Medyan için önce sırala. 7 değerde medyan 4. değerdir; 8 değerde ortadaki iki değerin ortalamasıdır.",
+   "sayfa": "s. 32–33",
+   "celdirici": "Sıralamadan medyan alırsan (verilen sırada 4. değer 70) yanlış sonuç bulursun; medyan her zaman sıralı veride bulunur.",
+   "cozum": [
+    "Sırala: 70, 80, 85, 90, 130, 150, 250 → n = 7, (7+1)/2 = 4. değer → medyan 90",
+    "100'ü ekle: 70, 80, 85, 90, 100, 130, 150, 250 → n = 8, 4,5. sıra",
+    "Medyan = (90 + 100) / 2 = 95",
+    "Değişim: 95 − 90 = 5 artış"
+   ],
+   "no": 7,
+   "bolum": "b2",
+   "id": "c2025v-07",
+   "sabitSik": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "I ve II",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve III",
+    "Yalnız I"
+   ],
+   "dogru": 2,
+   "aciklama": "Ortalamalar farklı olduğu için oynaklık değişim katsayısıyla (DK = s / x̄) karşılaştırılır.",
+   "sayfa": "s. 37–40",
+   "celdirici": "\"I ve III\" seçen, standart sapması büyük olanın DK'sının da büyük olduğunu varsayar; DK'yı mutlaka böl.",
+   "onculler": [
+    "A şirketinin değişim katsayısı, B şirketinin değişim katsayısından daha büyüktür.",
+    "B şirketinin değişim katsayısı 1'den büyüktür.",
+    "B şirketinin varyansı A şirketinin varyansından daha büyüktür."
+   ],
+   "kok": "İş analisti sektördeki firmaların ciro değişimleri üzerine araştırma yapmaktadır. A şirketinin ortalama ciro değişimi %20, standart sapması %12, B şirketinin ise ortalama ciro değişimi %40, standart sapması %30'dir. Bu şirketler için yukarıdaki ifadelerden hangisi ya da hangileri veri betimlemesi bağlamında doğrudur?",
+   "cozum": [
+    "DK<sub>A</sub> = 12 / 20 = 0,60",
+    "DK<sub>B</sub> = 30 / 40 = 0,75 → I yanlış (A daha küçük), II yanlış (0,75 < 1)",
+    "Varyans = standart sapmanın karesi: A = 12² = 144, B = 30² = 900 → III doğru"
+   ],
+   "sabitSik": true,
+   "no": 8,
+   "bolum": "b2",
+   "id": "c2025v-08"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız III",
+    "I ve II",
+    "Yalnız II",
+    "II ve III",
+    "Yalnız I"
+   ],
+   "dogru": 1,
+   "aciklama": "İş analitiği işletmedeki herhangi bir problemle ilgilenir ve istatistik, yönetim bilimi, veri bilimiyle yakından ilişkilidir. Ağırlıklı ortalama sermaye maliyetinin optimizasyonu kitapta iş analitiğinin konusu olarak geçmez; sınav III'ü yanlış saydı.",
+   "sayfa": "s. 6–7",
+   "celdirici": "III bir finans konusu (kitapta yok). Kitapta geçmeyen, belirli bir alana daraltılmış ifadeler genelde yanlış öncüldür.",
+   "onculler": [
+    "İşletmede herhangi bir problem iş analitiğinin konusudur.",
+    "İş analitiği istatistik yöntemlerinden yararlanır.",
+    "İş analitiğinin bir konusu da ağırlıklı ortalama sermaye maliyetinin optimize edilmesidir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri iş analitiği bağlamında doğrudur?",
+   "sabitSik": true,
+   "no": 9,
+   "bolum": "b1",
+   "id": "c2025v-09"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız III",
+    "Yalnız II",
+    "I ve II",
+    "Yalnız I",
+    "I ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Tahminleyici iş analitiği gelecekle ilgili öngörü sunar (\"ne olabilir?\"). Merkezi eğilim ölçütleri tanımlayıcı iş analitiğinin aracıdır; standart sapmayı azaltmak bir amaç değildir.",
+   "sayfa": "s. 7, 48",
+   "celdirici": "II, Bölüm 2'nin (tanımlayıcı) konusu; tahminleyici analizde araç korelasyon ve regresyondur.",
+   "onculler": [
+    "İşletmedeki probleme ilişkin öngörülerde bulunmayı sağlar.",
+    "Merkezi eğilim ölçütleri ile tahminlemede bulunur.",
+    "Tahminleyici iş analitiğinin amacı standart sapmayı en aza indirmektir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri tahminleyici iş analitiği bağlamında doğrudur?",
+   "sabitSik": true,
+   "no": 10,
+   "bolum": "b3",
+   "id": "c2025v-10"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız II",
+    "Yalnız I",
+    "Yalnız III",
+    "I ve II",
+    "I ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Korelasyon değişkenler arasındaki ilişkiyi, regresyon ise öngörü için kullanılır. Bağımsız değişken neden değişkenidir; sonuç değişkeni bağımlı değişkendir.",
+   "sayfa": "s. 48–49, 54",
+   "celdirici": "II'de bağımlı ile bağımsız yer değiştirilmiş: neden → bağımsız, sonuç → bağımlı.",
+   "onculler": [
+    "Korelasyon analizi ile değişkenlerin birbirleri arasındaki ilişki tespit edilebilir.",
+    "Bağımsız değişken, neden-sonuç ilişkisinde sonuç değişkenidir.",
+    "İş analisti tarafından regresyon analizi, gelecekle ilgili öngörüde bulunmak için kullanılabilir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri tahminleyici iş analitiği bağlamında doğrudur?",
+   "sabitSik": true,
+   "no": 11,
+   "bolum": "b3",
+   "id": "c2025v-11"
+  },
+  {
+   "soru": "İş analisti işlerin riskini ölçmek istemektedir. Bir işin riskini A, B, C, D adını verdiği dört kriterde ölçmek istemektedir. A, B, C, D kriterlerinin sırasıyla ağırlıkları %10, %30, %25 ve %35 seviyesindedir. Bir iş A kriterinden 50, B kriterinden 30, C kriterinden 60 ve D kriterinden 80 puan aldığına göre bu işin risk puanı aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+   "secenekler": [
+    "59",
+    "58",
+    "55",
+    "57",
+    "56"
+   ],
+   "dogru": 3,
+   "aciklama": "Ağırlıklı aritmetik ortalama: her puanı kendi ağırlığıyla çarpıp topla. Kitaptaki iş riski örneğinin aynısı.",
+   "sayfa": "s. 32",
+   "celdirici": "55, ağırlıksız ortalamadır: (50 + 30 + 60 + 80) / 4 = 55. Ağırlık verildiyse mutlaka kullan.",
+   "cozum": [
+    "0,10 × 50 = 5",
+    "0,30 × 30 = 9",
+    "0,25 × 60 = 15",
+    "0,35 × 80 = 28",
+    "Toplam: 5 + 9 + 15 + 28 = 57"
+   ],
+   "no": 12,
+   "bolum": "b2",
+   "id": "c2025v-12",
+   "sabitSik": true
+  },
+  {
+   "soru": "İş analisti işletmedeki probleme ilişkin regresyon modelini R = 100 X1 + 75 X2 bulmuştur. Böylelikle bir program uygulaması geliştirmiştir. Yukarıda gösterilen programa işletmedeki ilgili personel birinci değişkene 8, ikinci değişkene 2 değerini girer ise sonuç kısmı aşağıdakilerden hangisinde doğru olarak ifade edilir?",
+   "secenekler": [
+    "950",
+    "900",
+    "850",
+    "1000",
+    "800"
+   ],
+   "dogru": 0,
+   "aciklama": "Değerleri modelde yerine yaz.",
+   "sayfa": "s. 56–60 (Şekil 3.3, 3.4)",
+   "celdirici": "800 yalnızca birinci terimdir; ikinci değişkenin katkısını (150) eklemeyi unutma.",
+   "tablo": {
+    "basliklar": null,
+    "satirlar": [
+     [
+      "X1:",
+      "8"
+     ],
+     [
+      "X2:",
+      "2"
+     ],
+     [
+      "Sonuç:",
+      ""
+     ]
+    ]
+   },
+   "cozum": [
+    "R = 100 × 8 + 75 × 2",
+    "= 800 + 150 = 950"
+   ],
+   "tabloOnce": true,
+   "no": 13,
+   "bolum": "b3",
+   "id": "c2025v-13",
+   "sabitSik": true
+  },
+  {
+   "soru": "İş analisti veri setindeki varyansı 36 bulmuştur. Hesaplamalarını incelemesi sonucunda gözlem değerlerini 100 katına çıkarması gerekliliğini bulmuştur. Buna göre veri setinin standart sapması aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "secenekler": [
+    "600",
+    "3600",
+    "6",
+    "360",
+    "60"
+   ],
+   "dogru": 0,
+   "aciklama": "Önce standart sapmayı bul: √36 = 6. Her gözlem 100 katına çıkınca ortalamadan farklar da 100 katına çıkar; standart sapma da 100 katı olur: 600.",
+   "sayfa": "s. 37–38",
+   "celdirici": "3600 = 36 × 100: varyansı 100 ile çarpıp karekök almayı unutmak. 6: ölçek değişimini hiç uygulamamak.",
+   "cozum": [
+    "s = √36 = 6",
+    "Gözlemler × 100 → farklar × 100 → kareler × 10.000 → varyans 360.000",
+    "s = √360.000 = 600 (yani 6 × 100)"
+   ],
+   "kitapNotu": "\"Sabitle çarpınca standart sapma da o sabitle çarpılır\" kuralı kitapta açıkça yazmaz; standart sapma formülünden (s. 37) çıkar.",
+   "no": 14,
+   "bolum": "b2",
+   "id": "c2025v-14",
+   "sabitSik": true
+  },
+  {
+   "soru": "İş analisti, popülasyona ait sayısal özet bilgisi olan standart sapmayı aşağıdaki sembollerden hangisi ile gösterir?",
+   "secenekler": [
+    "f",
+    "σ",
+    "s",
+    "σ2",
+    "s2"
+   ],
+   "dogru": 1,
+   "aciklama": "Tablo 1.1: popülasyon (parametre) standart sapması σ, örneklem (istatistik) standart sapması s.",
+   "sayfa": "s. 9 (Tablo 1.1)",
+   "celdirici": "s örneklemin standart sapmasıdır; σ² popülasyon varyansıdır.",
+   "no": 15,
+   "bolum": "b1",
+   "id": "c2025v-15",
+   "sabitSik": true
+  },
+  {
+   "soru": "İşletmede üretilen dört markanın satış adetleri ile ilgili veri tabanından veri alınmıştır. Alınan veri (A, C, A, C, D, A, A, C, C, D, D, A, A, B, B, B, C, C, A, D) şeklindedir. Buna göre D markasının göreli frekansı yüzde kaç olduğu aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+   "secenekler": [
+    "25",
+    "30",
+    "15",
+    "35",
+    "20"
+   ],
+   "dogru": 4,
+   "aciklama": "Göreli frekans = (f / n) × 100. Kalitatif veride frekans, aynı değeri sayarak bulunur.",
+   "sayfa": "s. 26–27",
+   "celdirici": "25 = 4/16 ya da 1/4: dört marka olduğu için %25 sanmak. Göreli frekans markaların sayısına değil, gözlem sayısına bölünür.",
+   "cozum": [
+    "Toplam gözlem n = 20",
+    "D sayısı f = 4 (5., 10., 11. ve 20. sırada)",
+    "(4 / 20) × 100 = 20"
+   ],
+   "no": 16,
+   "bolum": "b2",
+   "id": "c2025v-16",
+   "sabitSik": true
+  },
+  {
+   "soru": "X ve Y değişkenleri ile ilgili olarak SSX = 15, SSY = 60 ve SSXY = 6 bilgileri mevcuttur. Bu bilgiler bağlamında X ve Y değişkenleri arasındaki korelasyon katsayısı aşağıdaki seçeneklerden hangisinde doğru olarak verilmiştir?",
+   "secenekler": [
+    "0,40",
+    "0,10",
+    "0,30",
+    "0,50",
+    "0,20"
+   ],
+   "dogru": 4,
+   "aciklama": "r = SSXY / √(SSX × SSY).",
+   "sayfa": "s. 51",
+   "celdirici": "0,40 = 6 / 15: paydayı yalnızca SSX almak (bu β₁ hesabıdır). 0,10 = 6 / 60.",
+   "cozum": [
+    "SSX × SSY = 15 × 60 = 900",
+    "√900 = 30",
+    "r = 6 / 30 = 0,20"
+   ],
+   "no": 17,
+   "bolum": "b3",
+   "id": "c2025v-17",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıda A, B, C değişkenlerinin korelasyon matrisi verilmiştir. Bu tabloya göre aşağıdaki ifadelerden hangi ifade <u>yanlıştır</u>?",
+   "secenekler": [
+    "B değişkeni ile C değişkeni arasında pozitif yönlü bir ilişki vardır.",
+    "B değişkeni, C değişkenine göre A değişkeni ile daha güçlü bir ilişkisi vardır.",
+    "A değişkeni ile C değişkeni arasında korelasyon yoktur.",
+    "A değişkeni ile B değişkeni arasında pozitif yönlü bir ilişki vardır.",
+    "Değişkenlerin kendileri ile korelasyon katsayısı aynı zamanda mükemmel pozitif korelasyon katsayısıdır."
+   ],
+   "dogru": 2,
+   "aciklama": "A ile C arasında r = −0,30: zayıf da olsa negatif yönlü bir ilişki vardır. \"Korelasyon yok\" demek için r = 0 olmalı.",
+   "sayfa": "s. 49–54",
+   "celdirici": "E doğru bir ifadedir: köşegendeki 1,00 değerleri mükemmel pozitif korelasyondur.",
+   "tablo": {
+    "basliklar": [
+     "Değişkenler",
+     "A",
+     "B",
+     "C"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "1,00",
+      "0,80",
+      "-0,30"
+     ],
+     [
+      "B",
+      "0,80",
+      "1,00",
+      "0,25"
+     ],
+     [
+      "C",
+      "-0,30",
+      "0,25",
+      "1,00"
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "no": 18,
+   "bolum": "b3",
+   "id": "c2025v-18",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıda iş analistinin geliştirdiği regresyon modelinin sonuç tablosu gösterilmiştir. Buna göre;",
+   "secenekler": [
+    "Yalnız II",
+    "Yalnız III",
+    "I ve III",
+    "I ve II",
+    "Yalnız I"
+   ],
+   "dogru": 4,
+   "aciklama": "P-değeri 0,05'ten küçükse katsayı %5 anlamlılık düzeyinde sıfırdan farklıdır.",
+   "sayfa": "s. 58–61",
+   "celdirici": "II'de kesişimi (10) eklemeyi unutursan 84 bulursun: 33 + 51 = 84. Tuzak tam olarak bu.",
+   "onculler": [
+    "A değişkeni katsayısı %5 anlamlılık düzeyinde sıfırdan farklı olduğunda dair güçlü kanıtlar vardır.",
+    "A değişkeni 4, B değişkeni 10 değerini aldığında regresyon modeli sonucu 84 olur.",
+    "Kesişim değeri %5 anlamlılık düzeyinde sıfırdır."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri geliştirilen regresyon modeli bağlamında doğrudur?",
+   "tablo": {
+    "basliklar": [
+     "",
+     "Katsayılar",
+     "t Stat",
+     "P-değeri"
+    ],
+    "satirlar": [
+     [
+      "Kesişim",
+      "10,00",
+      "2,508",
+      "0,010"
+     ],
+     [
+      "A değişkeni",
+      "8,25",
+      "2,878",
+      "0,005"
+     ],
+     [
+      "B değişkeni",
+      "5,10",
+      "1,95",
+      "0,030"
+     ]
+    ]
+   },
+   "cozum": [
+    "I: A'nın p = 0,005 < 0,05 → doğru",
+    "II: 10 + 8,25 × 4 + 5,10 × 10 = 10 + 33 + 51 = 94 → 84 değil, yanlış",
+    "III: kesişimin p = 0,010 < 0,05 → sıfırdan farklıdır, \"sıfırdır\" yanlış"
+   ],
+   "tabloOnce": true,
+   "sabitSik": true,
+   "no": 19,
+   "bolum": "b3",
+   "id": "c2025v-19"
+  },
+  {
+   "soru": "Yukarıdaki tabloda iş analisti müşteri yaşlarına göre satış adedini sınıflamıştır. Bu tabloya göre 35 yaşından daha küçük müşteriler, satış yapılan müşterilerin yüzde kaçı olduğu aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+   "secenekler": [
+    "80",
+    "60",
+    "70",
+    "50",
+    "40"
+   ],
+   "dogru": 3,
+   "aciklama": "35 yaşından küçükler ilk üç sınıftır; bu, 30–35 sınıfının kümülatif göreli frekansıdır.",
+   "sayfa": "s. 23, 29",
+   "celdirici": "80, 35–40 sınıfını da katmaktır (8.000). Sınıfın üst sınırı 35 olan sınıfa kadar topla.",
+   "tablo": {
+    "basliklar": [
+     "Müşteri Yaş Grupları",
+     "Satış Adedi"
+    ],
+    "satirlar": [
+     [
+      "20 - 25",
+      "2.500"
+     ],
+     [
+      "25 - 30",
+      "1.500"
+     ],
+     [
+      "30 - 35",
+      "1.000"
+     ],
+     [
+      "35 - 40",
+      "3.000"
+     ],
+     [
+      "40 - 45",
+      "2.000"
+     ]
+    ]
+   },
+   "cozum": [
+    "Toplam: 2.500 + 1.500 + 1.000 + 3.000 + 2.000 = 10.000",
+    "35'ten küçük: 2.500 + 1.500 + 1.000 = 5.000",
+    "5.000 / 10.000 × 100 = 50"
+   ],
+   "tabloOnce": true,
+   "no": 20,
+   "bolum": "b2",
+   "id": "c2025v-20",
+   "sabitSik": true
+  }
+ ]
+}

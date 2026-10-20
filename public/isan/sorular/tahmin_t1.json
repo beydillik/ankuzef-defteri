@@ -1,0 +1,462 @@
+{
+ "kaynak": "tahmin",
+ "deneme": "t1",
+ "ad": "Tahmini deneme 1",
+ "sorular": [
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız III",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "İş analitiği istatistik, yönetim bilimi ve veri bilimiyle yakından ilişkilidir; büyük veri ve veri madenciliğiyle iç içedir. Ama yalnızca geçmişi özetlemez; tahmin ve karar desteği de onun aşamalarıdır.",
+   "sayfa": "s. 7",
+   "celdirici": "III'teki \"yalnızca\" kelimesi ifadeyi yanlış yapıyor; tanımlayıcı aşama üç aşamadan yalnızca biri.",
+   "onculler": [
+    "İş analitiği istatistik, yönetim bilimi ve veri bilimiyle yakından ilişkilidir.",
+    "İş analitiği büyük veri ve veri madenciliği alanlarıyla iç içedir.",
+    "İş analitiği yalnızca geçmiş verinin özetlenmesiyle ilgilenir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri iş analitiği bağlamında doğrudur?",
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "t1-01"
+  },
+  {
+   "soru": "Araştırmacının araştırma konusuyla ilgili veriyi deney, anket, gözlem ya da mülakat yoluyla doğrudan kendisinin toplaması aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "İkincil kaynaktan veri toplama",
+    "Birincil kaynaktan veri toplama",
+    "Örnekleme",
+    "Ölçüm",
+    "Gözlem birimi"
+   ],
+   "dogru": 1,
+   "aciklama": "Deney, anket, gözlem ve mülakat birincil kaynaktan veri toplama türleridir.",
+   "sayfa": "s. 8",
+   "celdirici": "İkincil kaynakta veri başka kurumlarca üretilmiştir (TÜİK, makaleler).",
+   "bolum": "b1",
+   "id": "t1-02"
+  },
+  {
+   "soru": "Termometre ile yapılan sıcaklık ölçümü hangi ölçek türüne örnektir?",
+   "secenekler": [
+    "Sınıflama",
+    "Sıralama",
+    "Eşit aralıklı",
+    "Oranlı",
+    "Likert"
+   ],
+   "dogru": 2,
+   "aciklama": "Termometrede sıralar arası fark eşittir ama sıfır noktası gerçek bir sıfır değildir: eşit aralıklı ölçek.",
+   "sayfa": "s. 10",
+   "celdirici": "Oranlı ölçek gerçek sıfır ister; kitap terazilerini örnek verir.",
+   "bolum": "b1",
+   "id": "t1-03"
+  },
+  {
+   "soru": "Yukarıdaki karar modeli sonuç tablosuna göre optimal çözüm hangisidir?",
+   "secenekler": [
+    "Alternatif Çözüm 1",
+    "Alternatif Çözüm 2",
+    "Alternatif Çözüm 3",
+    "Alternatif Çözüm 4",
+    "Alternatif Çözüm 5"
+   ],
+   "dogru": 3,
+   "aciklama": "Önce bütün kriterleri sağlayanları ayır: yalnızca 3 ve 4. Bunlardan kârı yüksek olan 4 (890) optimal çözümdür.",
+   "sayfa": "s. 12–13",
+   "celdirici": "Çözüm 5'in kârı en yüksek (1.010) ama Kriter I'i sağlamıyor; uygulanabilir olmayan çözüm optimal olamaz.",
+   "tablo": {
+    "basliklar": [
+     "Alternatif",
+     "Kâr (milyon TL)",
+     "Kriter I",
+     "Kriter II",
+     "Kriter III"
+    ],
+    "satirlar": [
+     [
+      "Alternatif Çözüm 1",
+      "820",
+      "o",
+      "o",
+      "x"
+     ],
+     [
+      "Alternatif Çözüm 2",
+      "950",
+      "o",
+      "x",
+      "o"
+     ],
+     [
+      "Alternatif Çözüm 3",
+      "760",
+      "o",
+      "o",
+      "o"
+     ],
+     [
+      "Alternatif Çözüm 4",
+      "890",
+      "o",
+      "o",
+      "o"
+     ],
+     [
+      "Alternatif Çözüm 5",
+      "1.010",
+      "x",
+      "o",
+      "o"
+     ]
+    ],
+    "baslik": "o: koşul sağlanır, x: koşul sağlanmaz"
+   },
+   "tabloOnce": true,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "t1-04"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi σ² sembolünü doğru olarak ifade eder?",
+   "secenekler": [
+    "Örneklem varyansı",
+    "Popülasyon standart sapması",
+    "Popülasyon varyansı",
+    "Örneklem korelasyonu",
+    "Popülasyon oranı"
+   ],
+   "dogru": 2,
+   "aciklama": "Tablo 1.1: σ² popülasyon varyansı, s² örneklem varyansı, σ popülasyon standart sapması.",
+   "sayfa": "s. 9",
+   "celdirici": "Yunan harfi popülasyondur; kare işareti varyans demektir.",
+   "bolum": "b1",
+   "id": "t1-05"
+  },
+  {
+   "soru": "Amaç fonksiyonu Z = 25 X1 + 40 X2 olan bir kâr maksimizasyonu probleminde optimal çözüm X1 = 6 ve X2 = 3,5 ise amaç fonksiyonunun değeri kaçtır?",
+   "secenekler": [
+    "270",
+    "280",
+    "290",
+    "300",
+    "310"
+   ],
+   "dogru": 2,
+   "aciklama": "25 × 6 + 40 × 3,5 = 150 + 140 = 290.",
+   "sayfa": "s. 13",
+   "celdirici": "Katsayıları yer değiştirirsen 25 × 3,5 + 40 × 6 = 327,5 çıkar; her katsayı kendi değişkeniyle çarpılır.",
+   "cozum": [
+    "25 × 6 = 150",
+    "40 × 3,5 = 140",
+    "Z = 150 + 140 = 290"
+   ],
+   "bolum": "b1",
+   "id": "t1-06"
+  },
+  {
+   "soru": "Veri setindeki en büyük gözlem değeri ile en küçük gözlem değeri arasındaki farka ne ad verilir?",
+   "secenekler": [
+    "Çeyreklikler arası fark",
+    "Varyans",
+    "Aralık",
+    "Sınıf aralığı",
+    "Ortalama mutlak sapma"
+   ],
+   "dogru": 2,
+   "aciklama": "Aralık R = Xmaks − Xmin.",
+   "sayfa": "s. 35",
+   "celdirici": "Sınıf aralığı bir sınıfın üst ve alt sınırı arasındaki farktır, bütün veri için değil.",
+   "bolum": "b2",
+   "id": "t1-07"
+  },
+  {
+   "soru": "Bir mağazada yapılan 40 satışın 14'ü X markasıdır. X markasının göreli frekansı yüzde kaçtır?",
+   "secenekler": [
+    "14",
+    "26",
+    "35",
+    "40",
+    "54"
+   ],
+   "dogru": 2,
+   "aciklama": "(14 / 40) × 100 = 35.",
+   "sayfa": "s. 27",
+   "celdirici": "14 frekanstır; göreli frekans yüzde olarak verilir.",
+   "cozum": [
+    "f = 14, n = 40",
+    "14 / 40 = 0,35",
+    "× 100 = 35"
+   ],
+   "bolum": "b2",
+   "id": "t1-08"
+  },
+  {
+   "soru": "Beş çalışanın aylık maaşları (bin TL) 30, 32, 35, 38 ve 40'tır. Altıncı çalışan 95 bin TL maaşla işe alınırsa aritmetik ortalama kaç bin TL artar?",
+   "secenekler": [
+    "5",
+    "8",
+    "10",
+    "12",
+    "15"
+   ],
+   "dogru": 2,
+   "aciklama": "Eski ortalama 175 / 5 = 35. Yeni ortalama 270 / 6 = 45. Artış 10. Aynı ekleme medyanı yalnızca 35'ten 36,5'e çıkarır: ortalama uç değerden etkilenir, medyan etkilenmez.",
+   "sayfa": "s. 31–33",
+   "celdirici": "5 ve 8 medyan ile karıştırma ya da yeni toplamı 5'e bölme hatasından gelir.",
+   "cozum": [
+    "Eski toplam 175, ortalama 35",
+    "Yeni toplam 175 + 95 = 270, n = 6",
+    "270 / 6 = 45",
+    "45 − 35 = 10"
+   ],
+   "bolum": "b2",
+   "id": "t1-09"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Mod her veri setinde hesaplanmayabilir, birden fazla olabilir ve histogramda en büyük çubuğu oluşturduğu için tepe noktası da denir.",
+   "sayfa": "s. 33",
+   "celdirici": "\"Mod her veri setinde kesinlikle hesaplanır\" kitap testlerinde yanlış öncül olarak sık kullanılır; burada tersi soruluyor.",
+   "onculler": [
+    "Mod her veri setinde hesaplanamayabilir.",
+    "Bir veri setinde birden fazla mod görülebilir.",
+    "Histogramda en uzun çubuk modu gösterir; bu yüzden moda tepe noktası da denir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri mod için doğrudur?",
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "t1-10"
+  },
+  {
+   "soru": "Küçükten büyüğe sıralanmış 4, 6, 9, 12, 15, 18, 25 veri setinin çeyreklikler arası farkı (IQR) kaçtır?",
+   "secenekler": [
+    "6",
+    "12",
+    "15",
+    "21",
+    "9"
+   ],
+   "dogru": 1,
+   "aciklama": "n = 7. Q1: (7+1)/4 = 2. sıra = 6. Q3: 3 × 8 / 4 = 6. sıra = 18. IQR = 18 − 6 = 12.",
+   "sayfa": "s. 35–36",
+   "celdirici": "21 aralıktır (25 − 4).",
+   "cozum": [
+    "Q1 sırası = (7 + 1) / 4 = 2 → 6",
+    "Q3 sırası = 3 × (7 + 1) / 4 = 6 → 18",
+    "IQR = 18 − 6 = 12"
+   ],
+   "bolum": "b2",
+   "id": "t1-11"
+  },
+  {
+   "soru": "Bir örneklemin gözlem değerleri 2, 4, 6, 8 ve 10'dur. Örneklem varyansı kaçtır?",
+   "secenekler": [
+    "8",
+    "10",
+    "3,16",
+    "40",
+    "2,4"
+   ],
+   "dogru": 1,
+   "aciklama": "x̄ = 6. Farkların kareleri 16, 4, 0, 4, 16 → toplam 40. Örneklemde n − 1 = 4'e bölünür: 10.",
+   "sayfa": "s. 37–38",
+   "celdirici": "8, n'ye (5) bölmektir; bu popülasyon varyansı formülüdür.",
+   "cozum": [
+    "x̄ = 30 / 5 = 6",
+    "Σ(xᵢ − x̄)² = 16 + 4 + 0 + 4 + 16 = 40",
+    "s² = 40 / (5 − 1) = 10"
+   ],
+   "bolum": "b2",
+   "id": "t1-12"
+  },
+  {
+   "soru": "A ürününün aylık satış ortalaması 200 adet, standart sapması 50 adettir. B ürününün ortalaması 80 adet, standart sapması 24 adettir. Buna göre aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "A'nın değişim katsayısı B'ninkinden büyüktür.",
+    "B'nin değişim katsayısı 0,30'dur.",
+    "Standart sapması büyük olduğu için A daha oynaktır.",
+    "İki ürünün değişim katsayısı eşittir.",
+    "B'nin varyansı A'nınkinden büyüktür."
+   ],
+   "dogru": 1,
+   "aciklama": "DK_A = 50 / 200 = 0,25; DK_B = 24 / 80 = 0,30. Bir birim satışta B daha oynaktır.",
+   "sayfa": "s. 39–40",
+   "celdirici": "Ortalamalar farklıyken standart sapmaya bakıp \"A daha oynak\" demek kitabın uyardığı hatadır.",
+   "bolum": "b2",
+   "id": "t1-13"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız III",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Pozitif korelasyonda değişkenler aynı yönde hareket eder; r = 0 ilişki yok demektir. Korelasyon neden-sonuç göstermez; bunu regresyon bilimsel temelle yapar.",
+   "sayfa": "s. 48–49",
+   "celdirici": "III'ü doğru sayan, dondurma örneğindeki tuzağa düşer.",
+   "onculler": [
+    "Korelasyon katsayısı pozitifse değişkenlerden biri artarken diğeri de artar.",
+    "Korelasyon katsayısı 0 ise iki değişken arasında ilişki yoktur.",
+    "Korelasyon katsayısı değişkenler arasındaki neden-sonuç ilişkisini gösterir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri korelasyon bağlamında doğrudur?",
+   "bolum": "b3",
+   "sabitSik": true,
+   "id": "t1-14"
+  },
+  {
+   "soru": "X ve Y değişkenleri için SSX = 40, SSY = 90 ve SSXY = −24 bulunmuştur. Korelasyon katsayısı kaçtır?",
+   "secenekler": [
+    "0,40",
+    "−0,40",
+    "−0,60",
+    "0,27",
+    "−0,27"
+   ],
+   "dogru": 1,
+   "aciklama": "r = −24 / √(40 × 90) = −24 / √3.600 = −24 / 60 = −0,40.",
+   "sayfa": "s. 51",
+   "celdirici": "İşareti kaybetme: SSXY negatifse r de negatiftir.",
+   "cozum": [
+    "40 × 90 = 3.600",
+    "√3.600 = 60",
+    "r = −24 / 60 = −0,40"
+   ],
+   "bolum": "b3",
+   "id": "t1-15"
+  },
+  {
+   "soru": "Basit regresyon modelinde bağımlı değişkenin ortalaması 120, bağımsız değişkenin ortalaması 40 ve β₁ = 2,5 ise β₀ kaçtır?",
+   "secenekler": [
+    "20",
+    "40",
+    "100",
+    "220",
+    "48"
+   ],
+   "dogru": 0,
+   "aciklama": "β₀ = Ȳ − β₁X̄ = 120 − 2,5 × 40 = 120 − 100 = 20.",
+   "sayfa": "s. 56",
+   "celdirici": "220, çarpımı çıkarmak yerine eklemektir.",
+   "cozum": [
+    "β₁ × X̄ = 2,5 × 40 = 100",
+    "β₀ = 120 − 100 = 20"
+   ],
+   "bolum": "b3",
+   "id": "t1-16"
+  },
+  {
+   "soru": "Bir iş analistinin geliştirdiği tahmin uygulamasının modeli Ŷ = 15 + 4X1 + 2,5X2'dir. Personel X1'e 6, X2'ye 8 girerse sonuç kaçtır?",
+   "secenekler": [
+    "44",
+    "49",
+    "54",
+    "59",
+    "64"
+   ],
+   "dogru": 3,
+   "aciklama": "15 + 4 × 6 + 2,5 × 8 = 15 + 24 + 20 = 59.",
+   "sayfa": "s. 60",
+   "celdirici": "44, kesişimi (15) eklemeyi unutmaktır.",
+   "cozum": [
+    "4 × 6 = 24",
+    "2,5 × 8 = 20",
+    "15 + 24 + 20 = 59"
+   ],
+   "bolum": "b3",
+   "id": "t1-17"
+  },
+  {
+   "soru": "Yukarıdaki ANOVA tablosuna göre modelin açıklama gücü (R²) kaçtır?",
+   "secenekler": [
+    "0,20",
+    "0,25",
+    "0,80",
+    "4,00",
+    "0,64"
+   ],
+   "dogru": 2,
+   "aciklama": "R² = SSR / SST = 800 / 1.000 = 0,80.",
+   "sayfa": "s. 58",
+   "celdirici": "0,20 = SSE / SST, açıklanamayan kısımdır. 4,00 = SSR / SSE.",
+   "tablo": {
+    "basliklar": [
+     "",
+     "df",
+     "SS"
+    ],
+    "satirlar": [
+     [
+      "Regresyon",
+      "1",
+      "800"
+     ],
+     [
+      "Fark",
+      "18",
+      "200"
+     ],
+     [
+      "Toplam",
+      "19",
+      "1.000"
+     ]
+    ]
+   },
+   "tabloOnce": true,
+   "bolum": "b3",
+   "id": "t1-18"
+  },
+  {
+   "soru": "Kitaba göre çoklu regresyon modeline yeni bir bağımsız değişken eklendiğinde R² için ne söylenebilir?",
+   "secenekler": [
+    "Her zaman düşer.",
+    "Matematiksel nedenlerle yükselir; bu yüzden ayarlı R² kullanılır.",
+    "Değişmez.",
+    "Negatif olur.",
+    "Her zaman 1'e eşit olur."
+   ],
+   "dogru": 1,
+   "aciklama": "Her değişken eklendiğinde R² yükselir ve gerçek açıklama gücünü göstermeyebilir; düzeltilmiş (ayarlı) R² kullanılır.",
+   "sayfa": "s. 60",
+   "celdirici": "R² hiçbir zaman negatif değildir ve eklemeyle düşmez.",
+   "bolum": "b3",
+   "id": "t1-19"
+  },
+  {
+   "soru": "Bir regresyon modelinin ANOVA tablosunda Anlamlılık F değeri 0,0001 bulunmuştur. %5 anlamlılık düzeyinde aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Modelin açıklama gücü yoktur hipotezi reddedilir.",
+    "H₀ kabul edilir.",
+    "Bütün parametreler sıfırdır.",
+    "Model %5 düzeyinde anlamsızdır.",
+    "R² sıfırdır."
+   ],
+   "dogru": 0,
+   "aciklama": "Anlamlılık F 0,05'ten küçükse H₀ (modelin açıklama gücü yoktur) reddedilir; model anlamlıdır.",
+   "sayfa": "s. 58",
+   "celdirici": "Küçük p-değeri anlamsızlık değil anlamlılık gösterir.",
+   "bolum": "b3",
+   "id": "t1-20"
+  }
+ ]
+}

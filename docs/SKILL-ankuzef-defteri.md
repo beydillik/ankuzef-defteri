@@ -1,0 +1,100 @@
+---
+name: ankuzef-defteri
+description: Kemal ve Şengül'ün ANKUZEF sınav hazırlık sitesi (beydillik/ankuzef-defteri, Netlify) için yeni ders açma, bölüm içeriği yazma, çıkmış sınavı online teste çevirme, tahmini deneme ve Hesap Atölyesi üreticisi ekleme, yayınlama işleri.
+---
+
+# ANKUZEF Defteri — çalışma yöntemi
+
+Depo: `beydillik/ankuzef-defteri`. Netlify: Kemal'in **ikinci** Netlify hesabı (Ela'nın sitesinin olduğu hesap değil). Kullanıcılar yetişkin: Kemal (Plant Controller, SMMM) ve eşi Şengül; ANKUZEF açık öğretim öğrencileri. Hedef: her sınavda **75+**. Yanıtlar Türkçe, kısa ve net. Her kişi farklı ders alabilir (`dersler.json` → `ogrenciler`).
+
+## ⚠ Yayın kuralı (her işten önce)
+- Ücretsiz planda `main`'e her gönderim = 1 canlı yayın = 15 kredi (ayda 300). `taslak` dalı ve önizlemeler 0 kredi.
+- **Bütün işler `taslak` dalına. `main`'e kendiliğinden gönderme.** Başlarken: `git fetch origin && git checkout taslak && git pull` (yoksa `git checkout -b taslak origin/main && git push -u origin taslak`). Göndermeden önce `git pull --rebase origin taslak`.
+- "Yayınla / canlıya al" denirse önce sor: "15 kredi düşecek. Canlıya gidecekler: <`git log --oneline origin/main..origin/taslak`>. Emin misin?" Onayla: `git checkout main && git pull && git merge --ff-only origin/taslak && git push origin main`.
+- Gönderim reddedilirse (403): önce `add_repo` (push) dene. Olmazsa değişen dosyaları klasör yapısını koruyarak zip'le, gönder ve şunu yaz: "GitHub → depo → dal seçicide **taslak** → Add file → Upload files → zip'ten çıkan klasörleri sürükle → Commit." Kalıcı çözüm: GitHub → Settings → Applications → Claude → Configure → Repository access → depoyu ekle.
+- Bu ortamdan netlify.app adreslerine erişilemez; yerelde test et (`cd public && python3 -m http.server 8765 &` + Playwright). `pkill -f http.server` kullanma.
+
+## 0. Kaynak kuralları (kritik)
+- Tek kaynak ders kitabı. Tanım, terim, formül, sınıflandırma kitaptaki gibi (kitap "memnuniyet düzeyi nicel" diyorsa site de öyle der).
+- Kitap dışı bilgi yalnızca "kitap dışı" etiketi ve kaynak URL'siyle; doğrulanamıyorsa eklenmez. Kitabın formülünden doğrudan çıkan sonuç (ör. "gözlemler ×c → standart sapma ×c") `kitapNotu` ile "kitapta açıkça yazmaz, s. N formülünden çıkar" diye işaretlenir.
+- Kitapta açık hata varsa doğrusu yazılır, bölümün `kitapNotlari` listesine "Kitapta (s. N): … ; doğrusu …" eklenir. Yöntem ve tanımda kitap esastır.
+- Sayfa atfı basılı sayfa: `(s. N)`. Bölümün kendi numaralı PDF'i varsa (isan Bölüm 4–6) `B4 s. N`. Her bölümün sayfa aralığı `araclar/<kod>/bolumler.py`'de `aralik`; `uret.py` aralık dışı atfı hata sayar.
+- Kitap metni: `kaynaklar/<kod>/bolumN.md` (`pdftotext -f N -l N`, sonuna `[pdf N]`). Basılı sayfa = PDF sayfası + sabit (isan: B1 +4, B2 +20, B3 +46). Formüller PDF'te resimdir; metinde boş çıkar → sayfa görüntüsünden (`pdftoppm -r 110 -f N -l N`) oku.
+- Kitabın "Gözden Geçirelim" sorularını ve paragraflarını birebir kopyalama; özet ve sorular bizim yazımızdır. Cevap anahtarını kontrol et; hata varsa kullanıcıya söyle.
+
+## 1. Çıkmış sorular (en değerli içerik)
+- Kullanıcı sınav PDF'lerini Claude projesinin dosyalarına yükler. Doğru şık kâğıtta **fosforlu kalemle** işaretlidir: sayfaları `pdftoppm -r 130 -png` ile görüntüye çevir ve her soruyu görüntüden oku (metin katmanı sütunları karıştırır).
+- **Önce sınavın bu derse ait olduğunu kontrol et**: başlıktaki ders kodu ve adı (isan = AAUF1405 Veri ve İş Analitiği). Başka dersin sınavı gelirse (ör. 2024-25 dosyaları AYBS407 Büyük Veri ve İş Analitiği: Hadoop, Spark, Hive) ekleme, kullanıcıya bildir, `ders.json` `cikmisNot`'a yaz.
+- Soru ve şıklar **birebir** (yazım hataları dahil; "yanlıştır" gibi altı çizili kelimeler `<u>`). İşaretli şık doğru cevaptır. Her işaretli cevabı hesapla/kitapla doğrula; işaret okunamıyor ya da hesap tutmuyorsa tahmin etme, kullanıcıya sor.
+- Her soruya `bolum` ata (konunun kitapta anlatıldığı bölüm). Final ve bütünlemede çıkan vize konuları `bolum` sayesinde vize çalışırken de görünür ("Final'de çıkan vize konusu" etiketi). Tekrar eden soruları ayıklama: tekrar = önemli soru.
+- Dosya: `araclar/<kod>/cikmis.py`'ye sınav başına bir sözlük `{"kaynak": "cikmis", "sinav": "2025-26 Güz Vize", "sinavTur": "Vize"|"Final"|"Büt", "sorular": [...]}`; `id` = `c<yıl><v|f|b>-NN`, `no` sınavdaki numara, `sabitSik: True` (sınavdaki şık sırası korunur). `uret.py`'ye dosyayı ve `soruDosyalari`'na adını ekle.
+- Her soruya açıklama: neden doğru (`aciklama`), en güçlü çeldiricinin neden yanlış olduğu (`celdirici`), hesap sorusunda adımlar (`cozum`), `sayfa`.
+- Yeni çıkmış sınav, sınavın biçimini (soru sayısı, şık sayısı, öncüllü oranı, bölüm dağılımı) günceller: `ders.json` → `kapsamlar.<vize|final>.deneme.dagilim`.
+
+## 2. Öğretim ilkeleri (yetişkin, sınav odaklı)
+1. Bölüm akışı: **Özet** (1 ekran, sayfa atıflı) → **Kavram kartları** (önce hatırla, sonra aç; Biliyordum/Bilmiyordum → aralıklı tekrar 1-3-7-14 gün) → **Karıştırılanlar** (kavram çiftleri; her ifadenin hangisine ait olduğunu seç) → **Formüller** → **Hesap** → **Konu testi** → **Çıkmış**.
+2. Sorular sınav biçiminde: 5 şık; öncüllü (I–III + kök) sorular ~%30; hesap soruları ~%40. Şıklar sıraya bağlı yazılmaz ("yukarıdakilerin hepsi" yok), açıklamada şık harfi geçmez (konu ve tahmin sorularında şıklar karışır).
+3. Her soruda neden doğru + en güçlü çeldirici + sayfa. Çeldiriciler sık yapılan hatalardan seçilir (n yerine n−1, kesişimi unutmak, varyans/standart sapma karışması, ağırlıksız ortalama).
+4. Her hesap türü için Hesap Atölyesi üreticisi: sayılar her seferinde değişir, yanlış şıklar hata türlerinden üretilir, cevaptan sonra adım adım çözüm.
+5. Yanlış defteri ve günün tekrarı motor tarafından tutulur; deneme sınavı gerçek sınav uzunluğunda ve bölüm dağılımında, süreli, sonda bölüm bazında rapor ve 75 çizgisi.
+6. Kısa ve net; dolgu, motivasyon cümlesi, çocuk dili yok.
+7. Tahmini sorular "Tahmin · henüz sorulmadı" etiketiyle; çıkmış sınavın biçiminde ve zorluğunda, kitapta olup henüz sorulmamış konulardan. Kullanıcıya sınavda çıkacağı garanti olmadığını söyle.
+
+## 3. Depo yapısı
+```
+public/index.html, dersler.json        ana sayfa (kişi seçimi; ders listesi: kod, ad, kodu, ogrenciler, hazir)
+public/ortak/defter.js, defter.css     ortak motor — içerik eklerken DEĞİŞTİRME
+public/<kod>/index.html                ders sayfası (isan/index.html kopyası; yalnız data-ders ve title değişir)
+public/<kod>/ders.json                 üretilir: bolumler, kapsamlar (vize/final: bolumler, deneme{soru, sureDk, dagilim, sureNot}), soruDosyalari, cikmisNot
+public/<kod>/bolumler/bN.json          üretilir: ozet, kitapNotlari, akildaKalsin, kartlar, ciftler, formuller, sorular
+public/<kod>/sorular/*.json            üretilir: çıkmış ve tahmin dosyaları
+public/<kod>/atolye.js                 elle: window.ATOLYE = [{id, bolum, ad, aciklama, formul:[formül id], uret()}]
+araclar/<kod>/ortak.py                 Q(), T(), kart(), cift(), F(), onc(), frac(), kok() ve doğrulama
+araclar/<kod>/bolumler.py, cikmis.py, tahmin.py, uret.py
+araclar/test/atolye_stres.js, akis.py
+kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
+```
+İlerleme tarayıcıda: `localStorage` anahtarı `ankuzef:<kişi>:<ders>:<anahtar>` (soru, yanlis, kart, atolye, denemeler, kapsam, sinavTarihi, devam:*). Cihaz değişiminde Ayarlar → Yedeği indir / geri yükle. Bulut eşitleme yok (istenirse ayrı, onaylı iş).
+
+## 4. Şema
+- **Soru** (`Q(soru, secenekler[5], dogru, aciklama, sayfa, celdirici=, onculler=, kok=, tablo=T(basliklar, satirlar, baslik=), cozum=[adımlar], kitapNotu=, tabloOnce=True, sabitSik=True, bolum=, no=)`). Öncüllü soruda `soru` boş ya da giriş metni, `onculler` 3 madde, `kok` soru cümlesi; şıklar `onc("Yalnız I", ...)`.
+- **Kart** `kart(ad, tanim, sayfa, akil=2–4 kelime, ornek=)`; bölüm başına 20–30 kart, ad benzersiz.
+- **Çift** `cift(a, a_tanım, b, b_tanım, fark, [(ifade, "a"|"b"|"ikisi", neden)], ikisi=bool)`; çift başına 3–8 ifade.
+- **Formül** `F(id, ad, formul_html, aciklama, ornek, tuzak, sayfa)`; kesir `frac(pay, payda)`, karekök `kok(x)`, alt/üst simge `<sub>`/`<sup>`. Örnekte çıkmış soruya bağla ("2025 vize S17").
+- **Özet** `{"baslik", "sayfa", "maddeler": [...]}` ya da `"tablo"`; bir ekranı geçmesin.
+- Konu testi: bölüm başına 12–16 soru, her ana kavram en az bir soruda.
+
+## 5. İş akışları
+### A. Yeni ders aç (ör. Hizmet Pazarlaması `hzpz`)
+1. Kitap PDF'lerini al (Claude projesi dosyaları). Metni `kaynaklar/<kod>/bolumN.md`'ye çıkar, basılı sayfa ofsetini bul.
+2. Vize/final bölümlerini kullanıcıdan ya da çıkmış sınavlardan doğrula (tahmin etme).
+3. `araclar/isan/`'ı `araclar/<kod>/`'a kopyala, içeriği boşalt; `uret.py`'de `BOLUM_LISTE`, `VIZE`, `FINAL`, `ders` sözlüğü.
+4. `public/<kod>/index.html` (kopya, `data-ders="<kod>"`), `public/<kod>/atolye.js` (sayısal ders değilse `window.ATOLYE = []`).
+5. `public/dersler.json`'da dersi `hazir: true` yap, `ogrenciler` doğru kişi.
+6. Çıkmış sınavları ekle (bölüm 1), sonra bölümleri (B), sonra tahmini denemeler (C).
+### B. Bölüm içeriği yaz
+1. `bolumN.md`'yi baştan sona oku; formül ve tablo sayfalarını görüntüden kontrol et.
+2. `bolumler.py`'ye `aralik`, `ozet`, `kitapNotlari`, `akildaKalsin` (5–7 madde), `kartlar`, `ciftler`, `formuller`, `sorular`.
+3. Çıkmış sorulardaki konulara özellikle kart ve çift yaz; formül örneklerini çıkmış sorulara bağla.
+4. Hesap içeren konularda `atolye.js`'e üretici ekle (D).
+5. `python3 araclar/<kod>/uret.py` → sayıları kullanıcıya yaz.
+### C. Tahmini deneme
+- Çıkmış vize/finalin biçiminde 20 soru (bölüm dağılımı `uret.py` kontrol eder), %30 öncüllü, %40 hesap; çıkmış sorularda sorulmamış konular öncelikli, sorulmuş konular başka açıdan. `tahmin.py` → `DENEMELER`.
+- Aynı soru metni iki yerde olmasın (`uret.py` kontrol eder).
+### D. Hesap Atölyesi üreticisi
+- `uret()` her çağrıda yeni sayılarla `{soru|kok, secenekler[5], dogru: 0, cozum, aciklama, celdirici, sayfa, tablo?, onculler?}` döndürür; uygun sayı bulamazsa `null` (motor yeniden dener). `siklar(dogru, [hata sonuçları], biçim, adım)` 5 farklı şık üretir; `oncullu([I,II,III doğru mu])` öncül şıkları.
+- Sonek sorunu: sayıdan sonra Türkçe ek yazma ("26'dır" yanlış çıkabilir); "olarak bulunmuştur", "şöyledir:" kullan. Eksi işareti `tr()` içinde `−`.
+- `node araclar/test/atolye_stres.js` her üreticiyi 3000 kez çalıştırır: 5 farklı şık, NaN/undefined yok.
+### E. Doğrulama ve teslim
+1. `python3 araclar/<kod>/uret.py` (hata varsa yazmaz), `node araclar/test/atolye_stres.js`, yerel sunucu + `python3 araclar/test/akis.py <ekran klasörü>` (çıkmış sınavı işaretli cevaplarla baştan sona çözer, 100 puan bekler; deneme, atölye, tekrar, yanlış defteri, özet, ayar; telefon + koyu tema; yatay taşma; konsol hatası).
+2. Ekran görüntülerine bak (özellikle yeni tablo ve formüller).
+3. `taslak`'a gönder; kullanıcıya: ne eklendi (sayılarla), önizleme adresi (`https://taslak--<site>.netlify.app/<kod>/`), canlıda olmayan değişiklikler, "canlıya almak için 'yayınla' de (15 kredi)", kalan plan.
+
+## 6. Derse özgü notlar
+### Veri ve İş Analitiği — `isan` (AAUF1405, Şengül)
+- Kitap 6 bölüm: B1 İş Analitiği (s. 5–20), B2 Veri Betimlemesi (s. 21–46), B3 Tahminleyici Veri Analizi (s. 47–66) — **vize**; B4 Şebeke Modelleri, B5 Proje Yönetimi (CPM/PERT), B6 Karar Verme — final (final B1–6). B4–6 PDF'leri kendi sayfa numarasıyla (`B4 s. N`).
+- Çıkmış: 2025-26 Güz Vize (20 soru, 5 şık, B1 6 / B2 7 / B3 7, 6 öncüllü, 9 hesap). Sınav süresi doğrulanamadı (deneme varsayılanı 30 dk, kullanıcı değiştirebilir). Puanlama varsayımı: her soru 5 puan, yanlış doğruyu götürmez (doğrulanamadı).
+- 2024-25 Güz Vize/Final/Bütünleme dosyaları AYBS407 Büyük Veri ve İş Analitiği'ne ait; bu dersin kitabında yok, eklenmedi.
+- Çeyrek yöntemi kitaptaki: Q1 (n+1)/4., Q3 3(n+1)/4. sıra, ondalık kısım kadar ara fark. Örneklem varyansı n − 1. β₁ = SSXY / bağımsız değişkenin SS'i (kitap korelasyon örneğinde X'i performans almış; regresyonda bağımsız ücret artışı).
+- Bilinen kitap hataları `bolumler.py` `kitapNotlari`'nda. Final için B4–6'da da kontrol edilecekler: B5 PERT güven aralığı alt/üst sınır ters (doğrusu 38,14–45,86), B5 Tablo 5.1 E faaliyeti süresi 48 → 4, B6 Tablo 6.3 K1 kötü durum 508 → 50.
+- Sıradaki: B4–6 içeriği ve atölye üreticileri (en kısa yol, maksimum akış, CPM erken/geç zaman ve bolluk, PERT beklenen süre ve varyans, maksimaks/maksimin/Hurwicz/minimaks pişmanlık/beklenen değer/EVPI); final çıkmış sınavı gelince eklenir.

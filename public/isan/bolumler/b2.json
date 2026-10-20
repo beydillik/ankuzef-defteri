@@ -1,0 +1,932 @@
+{
+ "ozet": [
+  {
+   "baslik": "Veri betimlemesi",
+   "sayfa": "s. 23",
+   "maddeler": [
+    "Çok sayıdaki verinin önemli özelliklerini kaybetmeden anlaşılabilir halde sunmak. Tanımlayıcı iş analitiğinin bölümüdür.",
+    "Üç yolu var: <b>sınıflama ve gösterim</b>, <b>merkezi eğilim ölçütleri</b> (mod, medyan, ortalama), <b>saçınım ölçütleri</b> (aralık ve çeyreklikler, ortalama mutlak sapma, varyans, standart sapma)."
+   ]
+  },
+  {
+   "baslik": "Sınıflama kavramları",
+   "sayfa": "s. 23–24",
+   "maddeler": [
+    "Veri aralığı = maks − min. Sınıf aralığı = üst sınır − alt sınır. Sınıf orta noktası = (alt + üst) / 2.",
+    "<b>Frekans</b> sınıftaki gözlem sayısı; <b>göreli frekans</b> = f / n × 100; <b>kümülatif</b> o sınıf dahil öncekilerin toplamı.",
+    "Kalitatif veride aynı değerler sayılır (A1 markası 21 kez → frekans 21). Kantitatif veride sınıflar kurulur."
+   ]
+  },
+  {
+   "baslik": "Kantitatif sınıflama adımları",
+   "sayfa": "s. 27–28",
+   "maddeler": [
+    "1) En küçük ve en büyük değeri bul (5.028 ve 24.695).",
+    "2) Sınıf sayısı: 2<sup>k</sup> &gt; n eşitsizliğini sağlayan en küçük k (n = 100 → 2<sup>7</sup> = 128 → 7 sınıf).",
+    "3) Sınıf aralığı = (maks − min) / k → 19.667 / 7 = 2.807,57 → yaklaşık 2.800.",
+    "4) Sınıfları kur (5.000–7.800, 7.800–10.600 …). 5) Her sınıfın frekansını say."
+   ]
+  },
+  {
+   "baslik": "Histogram",
+   "sayfa": "s. 30–31",
+   "maddeler": [
+    "Sınıflanmış verinin grafik gösterimi: X ekseninde sınıflar, Y ekseninde frekanslar. En uzun çubuk en çok gözlenen sınıf (tepe noktası).",
+    "Kazancı: sınıfları karşılaştırmak; en çok/en az, yükseliş/düşüş, kümülatifle \"satışların %85'i 21.800 TL'den düşük\" gibi yorumlar."
+   ]
+  },
+  {
+   "baslik": "Merkezi eğilim ölçütleri",
+   "sayfa": "s. 31–35",
+   "maddeler": [
+    "<b>Aritmetik ortalama:</b> toplam / gözlem sayısı. Uç değerlerden etkilenir (10, 16, 20, 26 → 18; 100 eklenince 34,4). Popülasyona çıkarım yapılabilen tek merkezi eğilim ölçütü.",
+    "<b>Ağırlıklı ortalama:</b> her değer ağırlığıyla çarpılıp toplanır (risk örneği: %40×5 + %10×2 + %20×6 + %30×3 = 4,3).",
+    "<b>Medyan:</b> sıralı verinin ortancası, (n+1)/2. sıra. Çift sayıda ortadaki iki değerin ortalaması. Uç değerden etkilenmez, yalnızca gözlem sayısından etkilenir.",
+    "<b>Mod:</b> en sık tekrar eden değer, histogramın tepe noktası. Her veri setinde olmayabilir ya da birden fazla olabilir.",
+    "<b>Dağılım biçimi:</b> mod &lt; medyan &lt; ortalama → sağa çarpık; eşitse normal; ortalama &lt; medyan &lt; mod → sola çarpık (A işletmesi yaşları: 41,70 &lt; 42 &lt; 51)."
+   ]
+  },
+  {
+   "baslik": "Saçınım ölçütleri",
+   "sayfa": "s. 35–39",
+   "maddeler": [
+    "<b>Aralık</b> R = maks − min; uç değerden çok etkilenir (2, 3, 8, 15, 16 → 14; 100 eklenince 98).",
+    "<b>Çeyreklikler:</b> Q1 (n+1)/4., Q2 (medyan) 2(n+1)/4., Q3 3(n+1)/4. sıra. IQR = Q3 − Q1 uç değer etkisinden arındırır (13 → 34,25).",
+    "Aralık ve IQR ortalamayı dikkate almaz. OMS, varyans ve standart sapma ortalamayı dikkate alır.",
+    "<b>Ortalama mutlak sapma:</b> |xᵢ − x̄| değerlerinin ortalaması. Örneklem OMS'sinden popülasyona çıkarım yapılamaz.",
+    "<b>Varyans</b> farkların karelerinin ortalaması; örneklemde n − 1'e bölünür (aşağı yönlü yanlılığı gidermek için). <b>Standart sapma</b> varyansın karekökü.",
+    "Normal dağılımda gözlemlerin %68'i μ ± σ, %95'i μ ± 2σ, %99,7'si μ ± 3σ aralığındadır.",
+    "<b>Değişim katsayısı</b> DK = s / x̄: ortalamalar farklıysa oynaklığı bununla karşılaştır; küçük DK daha az oynak (Tablo 2.10'da D firması, 0,38)."
+   ]
+  }
+ ],
+ "kitapNotlari": [
+  "Kitapta (s. 27) sınıf sayısı eşitsizliği \"2 &gt; n\" diye çıkmış; doğrusu 2<sup>k</sup> &gt; n (üs kaybolmuş).",
+  "Kitapta (s. 31) 10, 16, 20, 26 verisine 100 eklenince ortalamanın 43 olduğu yazıyor; 5 değerin ortalaması (10+16+20+26+100)/5 = 34,4 eder. Ders kitabının ana fikri (ortalama uç değerden etkilenir) doğru, sayı hatalı.",
+  "Kitapta ortalama satış tutarı birkaç yerde 14.794,42 yazılmış (s. 39); doğrusu 14.797,42. Varyans da bir yerde 35.819.714,41 diye geçiyor; tablodaki değer 35.819.704,41."
+ ],
+ "akildaKalsin": [
+  "Merkezi eğilim: mod, medyan, ortalama. Saçınım: aralık, çeyreklikler, OMS, varyans, standart sapma.",
+  "Medyan için önce sırala; çift sayıda ortadaki ikisinin ortalaması.",
+  "Uç değer: ortalama ve aralık etkilenir; medyan ve IQR etkilenmez.",
+  "Örneklem varyansı n − 1'e bölünür; standart sapma = √varyans.",
+  "Ortalamalar farklıysa standart sapma değil değişim katsayısı karşılaştırılır.",
+  "Ortalama < medyan < mod → sola çarpık; mod < medyan < ortalama → sağa çarpık.",
+  "Sınıf sayısı: 2ᵏ > n'yi sağlayan en küçük k."
+ ],
+ "kartlar": [
+  {
+   "ad": "Veri betimlemesi",
+   "tanim": "Çok sayıdaki verinin önemli özelliklerini kaybetmeden anlaşılabilir halde sunulması: sınıflama ve gösterim, merkezi eğilim, saçınım.",
+   "sayfa": "s. 23",
+   "akil": "anlat, merkezini bul, yayılımını göster"
+  },
+  {
+   "ad": "Veri aralığı (sınıflamada)",
+   "tanim": "Verideki en büyük değer ile en küçük değer arasındaki fark.",
+   "sayfa": "s. 23"
+  },
+  {
+   "ad": "Sınıf ve sınıf sınırları",
+   "tanim": "Sınıf: verinin belirlenen kurala göre gruplara ayrılması. Alt sınır sınıfın en küçük, üst sınır en büyük değeri; ikisi birlikte sınıf sınırları.",
+   "sayfa": "s. 23"
+  },
+  {
+   "ad": "Sınıf aralığı",
+   "tanim": "Sınıfın üst sınırı ile alt sınırı arasındaki fark.",
+   "sayfa": "s. 23",
+   "ornek": "5.000–7.800 sınıfının aralığı 2.800."
+  },
+  {
+   "ad": "Sınıf orta noktası",
+   "tanim": "Alt sınır ile üst sınırın toplamının yarısı.",
+   "sayfa": "s. 23",
+   "akil": "(alt + üst) / 2",
+   "ornek": "5.000–7.800 → 6.400."
+  },
+  {
+   "ad": "Frekans",
+   "tanim": "Sınıftaki gözlem sayısı.",
+   "sayfa": "s. 23"
+  },
+  {
+   "ad": "Kümülatif frekans",
+   "tanim": "Belirlenen sınıf dahil daha önceki sınıflara ait toplam gözlem sayısı.",
+   "sayfa": "s. 23",
+   "akil": "o sınıf dahil toplam",
+   "ornek": "19.000–21.800 sınıfının kümülatif frekansı 85: satışların 85'i 21.800 TL'den düşük."
+  },
+  {
+   "ad": "Göreli frekans",
+   "tanim": "Sınıftaki gözlem sayısının toplam gözlem sayısı içindeki oranı, yüzde olarak.",
+   "sayfa": "s. 23, 27",
+   "akil": "(f / n) × 100"
+  },
+  {
+   "ad": "Kümülatif göreli frekans",
+   "tanim": "Belirlenen sınıf dahil daha önceki sınıfların göreli frekanslarının toplamı.",
+   "sayfa": "s. 24",
+   "ornek": "16.200–19.000 sınıfında %71: satışların %71'i 19.000 TL'den düşük."
+  },
+  {
+   "ad": "Frekans dağılımı",
+   "tanim": "Sınıfların frekanslarını gösteren tablo ya da liste. Veri sınıflandırmaya frekans dağılımı da denir.",
+   "sayfa": "s. 23–24"
+  },
+  {
+   "ad": "Sınıf sayısı kuralı",
+   "tanim": "En az sınıf sayısı, 2ᵏ > n eşitsizliğini sağlayan en küçük k değeridir.",
+   "sayfa": "s. 27",
+   "akil": "2ᵏ > n",
+   "ornek": "n = 100 → 2⁶ = 64 yetmez, 2⁷ = 128 → 7 sınıf."
+  },
+  {
+   "ad": "Histogram",
+   "tanim": "Sınıflanmış verinin grafik gösterimi. X ekseninde sınıflar, Y ekseninde frekanslar.",
+   "sayfa": "s. 30",
+   "akil": "X: sınıf, Y: frekans"
+  },
+  {
+   "ad": "Merkezi eğilim ölçütleri",
+   "tanim": "Verinin merkezini bulmaya yarayan ölçütler: mod, medyan, aritmetik ortalama.",
+   "sayfa": "s. 23"
+  },
+  {
+   "ad": "Aritmetik ortalama",
+   "tanim": "Gözlem değerleri toplamının gözlem sayısına bölümü (popülasyonda μ, örneklemde x̄). Uç değerlerden etkilenir; popülasyona çıkarım yapılabilen merkezi eğilim ölçütüdür.",
+   "sayfa": "s. 31, 41"
+  },
+  {
+   "ad": "Ağırlıklı aritmetik ortalama",
+   "tanim": "Değişkenlerin önemi eşit değilse her biri ağırlığıyla çarpılarak bulunan ortalama.",
+   "sayfa": "s. 32",
+   "ornek": "%40×5 + %10×2 + %20×6 + %30×3 = 4,3."
+  },
+  {
+   "ad": "Medyan",
+   "tanim": "Gözlem değerleri küçükten büyüğe sıralandığında ortanca değer; (n+1)/2. sıra. Çift sayıda ortadaki iki değerin ortalaması.",
+   "sayfa": "s. 32–33",
+   "akil": "sırala, ortadakini al"
+  },
+  {
+   "ad": "Medyanın iki özelliği",
+   "tanim": "Yalnızca gözlem sayısından etkilenir; uç değerlerden etkilenmez.",
+   "sayfa": "s. 33",
+   "ornek": "20, 25, 40, 50, 60 ve 1, 25, 40, 100, 150: ikisinin de medyanı 40."
+  },
+  {
+   "ad": "Mod",
+   "tanim": "En fazla tekrar eden gözlem değeri; histogramda en büyük çubuk olduğu için tepe noktası da denir. Her veri setinde hesaplanmayabilir, birden fazla olabilir.",
+   "sayfa": "s. 33"
+  },
+  {
+   "ad": "Normal dağılım",
+   "tanim": "Gözlemler çan şeklinde, merkeze göre simetrik: mod = medyan = ortalama.",
+   "sayfa": "s. 34–35"
+  },
+  {
+   "ad": "Sağa çarpık dağılım",
+   "tanim": "Merkeze göre küçük değerler daha fazla görülür: mod < medyan < aritmetik ortalama.",
+   "sayfa": "s. 34–35",
+   "akil": "kuyruk sağda, ortalama en büyük"
+  },
+  {
+   "ad": "Sola çarpık dağılım",
+   "tanim": "Merkeze göre büyük değerler daha fazla görülür: aritmetik ortalama < medyan < mod.",
+   "sayfa": "s. 34–35",
+   "akil": "ortalama en küçük",
+   "ornek": "A işletmesi yaşları: 41,70 < 42 < 51."
+  },
+  {
+   "ad": "Saçınım ölçütleri",
+   "tanim": "Verinin merkez değer etrafındaki dağılımı hakkında bilgi verir: aralık ve çeyreklikler, ortalama mutlak sapma, varyans, standart sapma.",
+   "sayfa": "s. 23, 35"
+  },
+  {
+   "ad": "Aralık",
+   "tanim": "En büyük gözlem değeri ile en küçük gözlem değeri arasındaki fark: R = Xmaks − Xmin. Uç değerlerden etkilenir.",
+   "sayfa": "s. 35"
+  },
+  {
+   "ad": "Çeyreklikler arası fark (IQR)",
+   "tanim": "Üçüncü çeyrek ile birinci çeyrek arasındaki fark. Veriyi dört eşit parçaya böler ve uç değer etkisinden arındırır.",
+   "sayfa": "s. 35–36",
+   "akil": "Q3 − Q1"
+  },
+  {
+   "ad": "Ortalama mutlak sapma (OMS)",
+   "tanim": "Her gözlemin aritmetik ortalamadan mutlak farklarının ortalaması. Örneklem OMS'sinden popülasyona çıkarım yapılamaz.",
+   "sayfa": "s. 37"
+  },
+  {
+   "ad": "Varyans",
+   "tanim": "Her gözlem değerinin ortalamadan farklarının karelerinin ortalaması. Örneklemde n − 1'e bölünür.",
+   "sayfa": "s. 37"
+  },
+  {
+   "ad": "Neden n − 1?",
+   "tanim": "Örneklem orta değerlere yakın yerlerden oluşma eğilimindedir; n'ye bölünürse popülasyon varyansını genellikle küçük tahmin eder (aşağı yönlü yanlı). n − 1 bu yanlılığı giderir.",
+   "sayfa": "s. 38",
+   "akil": "aşağı yönlü yanlılık"
+  },
+  {
+   "ad": "Standart sapma",
+   "tanim": "Varyansın karekökü. Varyansı yorumlamak zor olduğu için kullanılır.",
+   "sayfa": "s. 37–38"
+  },
+  {
+   "ad": "Normal dağılımda %68–%95–%99,7",
+   "tanim": "Gözlemlerin %68'i μ ± σ, %95'i μ ± 2σ, %99,7'si μ ± 3σ aralığındadır.",
+   "sayfa": "s. 38"
+  },
+  {
+   "ad": "Değişim katsayısı (DK)",
+   "tanim": "Standart sapma / aritmetik ortalama. Bir birim gözlem değerinin saçınımı hakkında bilgi verir; ortalamalar farklıysa karşılaştırma bununla yapılır.",
+   "sayfa": "s. 39",
+   "akil": "DK küçük = daha az oynak"
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "Merkezi eğilim ölçütü",
+    "tanim": "Verinin merkezini bulur."
+   },
+   "b": {
+    "ad": "Saçınım ölçütü",
+    "tanim": "Merkez etrafındaki yayılımı gösterir."
+   },
+   "fark": "Merkezi eğilim: mod, medyan, ortalama. Saçınım: aralık, çeyreklikler, OMS, varyans, standart sapma.",
+   "sorular": [
+    {
+     "ifade": "Aralık",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Medyan",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Standart sapma",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Mod",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Çeyreklikler arası fark",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Aritmetik ortalama",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Ortalama mutlak sapma",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Varyans",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Aritmetik ortalama",
+    "tanim": "Toplam / gözlem sayısı."
+   },
+   "b": {
+    "ad": "Medyan",
+    "tanim": "Sıralı verinin ortancası."
+   },
+   "fark": "Ortalama uç değerden etkilenir ve popülasyona çıkarımda kullanılır; medyan uç değerden etkilenmez, yalnızca gözlem sayısından etkilenir.",
+   "sorular": [
+    {
+     "ifade": "Uç değerlerden etkilenir",
+     "cevap": "a",
+     "neden": "10, 16, 20, 26'ya 100 eklenince ortalama sıçrar."
+    },
+    {
+     "ifade": "Yalnızca gözlem sayısından etkilenir",
+     "cevap": "b",
+     "neden": "s. 33."
+    },
+    {
+     "ifade": "Popülasyona çıkarımda bulunulabilen merkezi eğilim ölçütüdür",
+     "cevap": "a",
+     "neden": "s. 41."
+    },
+    {
+     "ifade": "1, 25, 40, 100, 150 verisinde 40'tır",
+     "cevap": "b",
+     "neden": "Ortadaki değer."
+    },
+    {
+     "ifade": "Hesaplamak için veriyi sıralamak gerekir",
+     "cevap": "b",
+     "neden": "Ortalama için sıralama gerekmez."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Aralık",
+    "tanim": "Maks − min."
+   },
+   "b": {
+    "ad": "Çeyreklikler arası fark",
+    "tanim": "Q3 − Q1."
+   },
+   "fark": "İkisi de ortalamayı dikkate almaz. Aralık uç değerden çok etkilenir; IQR uç değer etkisinden arındırır.",
+   "sorular": [
+    {
+     "ifade": "2, 3, 8, 15, 16'ya 100 eklenince 14'ten 98'e çıkar",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Aynı durumda 13'ten 34,25'e çıkar",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Uç değer etkisinden arındırılmış yayılım ölçüsü",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Ortalamayı dikkate almaz",
+     "cevap": "ikisi",
+     "neden": "s. 37 ve 41."
+    },
+    {
+     "ifade": "R = Xmaks − Xmin",
+     "cevap": "a",
+     "neden": ""
+    }
+   ],
+   "ikisi": true
+  },
+  {
+   "a": {
+    "ad": "Frekans",
+    "tanim": "Sınıftaki gözlem sayısı."
+   },
+   "b": {
+    "ad": "Göreli frekans",
+    "tanim": "Sınıftaki gözlemlerin toplam içindeki yüzdesi."
+   },
+   "fark": "Göreli frekans = frekans / toplam × 100. Toplam 100 ise ikisi aynı sayıyı verir (Tablo 2.2 ve 2.3).",
+   "sorular": [
+    {
+     "ifade": "A1 markasından 21 adet satıldı",
+     "cevap": "a",
+     "neden": "Sayı."
+    },
+    {
+     "ifade": "Satışların %21'i A1 markası",
+     "cevap": "b",
+     "neden": "Yüzde."
+    },
+    {
+     "ifade": "20 gözlemde D markası 4 kez → 20",
+     "cevap": "b",
+     "neden": "4 / 20 × 100 = 20."
+    },
+    {
+     "ifade": "Histogramın Y ekseni",
+     "cevap": "a",
+     "neden": "Kitapta Y ekseninde frekanslar."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Kümülatif frekans",
+    "tanim": "O sınıf dahil öncekilerin gözlem sayısı toplamı."
+   },
+   "b": {
+    "ad": "Kümülatif göreli frekans",
+    "tanim": "O sınıf dahil öncekilerin göreli frekansları toplamı (yüzde)."
+   },
+   "fark": "İkisi de \"... değerden daha az\" sorusunu cevaplar; biri adet, öteki yüzde verir.",
+   "sorular": [
+    {
+     "ifade": "21.800 TL'den daha az fiyatla 85 satış",
+     "cevap": "a",
+     "neden": "Adet."
+    },
+    {
+     "ifade": "Satışların %71'i 19.000 TL'den düşük",
+     "cevap": "b",
+     "neden": "Yüzde."
+    },
+    {
+     "ifade": "Son sınıfta her zaman %100 olur",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Son sınıfta toplam gözlem sayısına eşittir",
+     "cevap": "a",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Varyans",
+    "tanim": "Ortalamadan farkların karelerinin ortalaması."
+   },
+   "b": {
+    "ad": "Standart sapma",
+    "tanim": "Varyansın karekökü."
+   },
+   "fark": "Birimi değiştirir: varyans kare birimdedir (35.819.704 TL²), standart sapma veriyle aynı birimde (5.984,96 TL).",
+   "sorular": [
+    {
+     "ifade": "Satış tutarları için 35.819.704,41",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Satış tutarları için 5.984,96 TL",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "σ ile gösterilir (popülasyonda)",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "s² ile gösterilir (örneklemde)",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Değişim katsayısının payında yer alır",
+     "cevap": "b",
+     "neden": "DK = s / x̄."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Standart sapma",
+    "tanim": "Mutlak yayılım."
+   },
+   "b": {
+    "ad": "Değişim katsayısı",
+    "tanim": "Bir birim başına yayılım (s / x̄)."
+   },
+   "fark": "Ortalamalar eşitse standart sapma, ortalamalar farklıysa değişim katsayısı karşılaştırılır.",
+   "sorular": [
+    {
+     "ifade": "Ortalamaları eşit iki firmanın oynaklığını karşılaştırmak",
+     "cevap": "a",
+     "neden": "s. 39."
+    },
+    {
+     "ifade": "Ortalamaları farklı firmaların oynaklığını karşılaştırmak",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Tablo 2.10'da en az saçınımı D firmasının gösterdiğini bulmak",
+     "cevap": "b",
+     "neden": "D'nin DK'sı 0,38 ile en küçük."
+    },
+    {
+     "ifade": "Birimsizdir",
+     "cevap": "b",
+     "neden": "TL / TL."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Sağa çarpık",
+    "tanim": "Mod < medyan < ortalama."
+   },
+   "b": {
+    "ad": "Sola çarpık",
+    "tanim": "Ortalama < medyan < mod."
+   },
+   "fark": "Ortalama hangi taraftaysa (en büyük mü en küçük mü) kuyruk o taraftadır: ortalama en büyükse sağa, en küçükse sola çarpık.",
+   "sorular": [
+    {
+     "ifade": "Ortalama 41,7, medyan 42, mod 51",
+     "cevap": "b",
+     "neden": "Ortalama en küçük."
+    },
+    {
+     "ifade": "Mod 20, medyan 25, ortalama 32",
+     "cevap": "a",
+     "neden": "Ortalama en büyük."
+    },
+    {
+     "ifade": "Merkeze göre küçük değerler daha fazla görülür",
+     "cevap": "a",
+     "neden": "s. 34."
+    },
+    {
+     "ifade": "Merkeze göre büyük değerler daha fazla görülür",
+     "cevap": "b",
+     "neden": "s. 34."
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "ort",
+   "ad": "Aritmetik ortalama",
+   "formul": "x̄ = <span class=\"frac\"><span>Σ x<sub>i</sub></span><span>n</span></span> &nbsp;&nbsp; μ = <span class=\"frac\"><span>Σ x<sub>i</sub></span><span>N</span></span>",
+   "aciklama": "Örneklemde x̄ ve n, popülasyonda μ ve N.",
+   "ornek": "7, 10, 20, 25, 28 → 90 / 5 = 18.",
+   "sayfa": "s. 31"
+  },
+  {
+   "id": "agirlik",
+   "ad": "Ağırlıklı aritmetik ortalama",
+   "formul": "x̄<sub>w</sub> = w<sub>1</sub>·x̄<sub>1</sub> + w<sub>2</sub>·x̄<sub>2</sub> + … + w<sub>c</sub>·x̄<sub>c</sub>",
+   "aciklama": "Ağırlıkların toplamı %100'dür.",
+   "ornek": "%10×50 + %30×30 + %25×60 + %35×80 = 57 (2025 vize S12).",
+   "tuzak": "Ağırlıksız ortalama (55) çeldirici olarak şıklarda olur.",
+   "sayfa": "s. 32"
+  },
+  {
+   "id": "medyan",
+   "ad": "Medyanın sırası",
+   "formul": "Medyan sırası = <span class=\"frac\"><span>n + 1</span><span>2</span></span>",
+   "aciklama": "Önce küçükten büyüğe sırala. Sıra ondalıklıysa (3,5.) iki komşu değerin ortalaması alınır.",
+   "ornek": "2, 4, 6, 7, 8, 10 → 3,5. sıra → (6 + 7) / 2 = 6,5.",
+   "sayfa": "s. 32–33"
+  },
+  {
+   "id": "aralik",
+   "ad": "Aralık",
+   "formul": "R = X<sub>maks</sub> − X<sub>min</sub>",
+   "ornek": "2, 3, 8, 15, 16 → 16 − 2 = 14.",
+   "sayfa": "s. 35"
+  },
+  {
+   "id": "ceyrek",
+   "ad": "Çeyrekler ve IQR",
+   "formul": "Q<sub>1</sub>: <span class=\"frac\"><span>n + 1</span><span>4</span></span>. sıra &nbsp; Q<sub>2</sub>: <span class=\"frac\"><span>2(n + 1)</span><span>4</span></span>. sıra &nbsp; Q<sub>3</sub>: <span class=\"frac\"><span>3(n + 1)</span><span>4</span></span>. sıra &nbsp;&nbsp; IQR = Q<sub>3</sub> − Q<sub>1</sub>",
+   "aciklama": "Sıra ondalıklıysa: tam kısımdaki değer + ondalık × (bir sonraki değer − o değer). 0,25 → dörtte biri, 0,50 → yarısı, 0,75 → dörtte üçü.",
+   "ornek": "2, 3, 8, 15, 16: Q1 1,5. sıra → 2 + 0,5 × 1 = 2,5; Q3 4,5. sıra → 15 + 0,5 × 1 = 15,5; IQR = 13.",
+   "sayfa": "s. 35–36"
+  },
+  {
+   "id": "oms",
+   "ad": "Ortalama mutlak sapma",
+   "formul": "OMS = <span class=\"frac\"><span>Σ |x<sub>i</sub> − x̄|</span><span>n</span></span>",
+   "aciklama": "Popülasyonda μ ve N ile.",
+   "ornek": "3, 5, 7, 9, 11 (x̄ = 7): (4 + 2 + 0 + 2 + 4) / 5 = 2,4.",
+   "sayfa": "s. 37"
+  },
+  {
+   "id": "varyans",
+   "ad": "Varyans",
+   "formul": "s² = <span class=\"frac\"><span>Σ (x<sub>i</sub> − x̄)²</span><span>n − 1</span></span> &nbsp;&nbsp; σ² = <span class=\"frac\"><span>Σ (x<sub>i</sub> − μ)²</span><span>N</span></span>",
+   "aciklama": "Örneklemde n − 1, popülasyonda N'ye bölünür.",
+   "ornek": "3, 5, 7, 9, 11: (16 + 4 + 0 + 4 + 16) / 4 = 10.",
+   "tuzak": "n'ye bölersen 8 bulursun; şıklarda bu çeldirici olur.",
+   "sayfa": "s. 37–38"
+  },
+  {
+   "id": "ss",
+   "ad": "Standart sapma",
+   "formul": "s = √<span class=\"kok\">s²</span> &nbsp;&nbsp; σ = √<span class=\"kok\">σ²</span>",
+   "aciklama": "Gözlemler bir sabitle çarpılırsa standart sapma da o sabitle çarpılır (varyans sabitin karesiyle).",
+   "ornek": "Varyans 10 → s ≈ 3,16. Varyans 36 ve gözlemler × 100 → s = 6 × 100 = 600 (2025 vize S14).",
+   "sayfa": "s. 37–38"
+  },
+  {
+   "id": "dk",
+   "ad": "Değişim katsayısı",
+   "formul": "DK = <span class=\"frac\"><span>s</span><span>x̄</span></span>",
+   "aciklama": "Bir birim gözlemin saçınımı. Ortalamalar farklıysa karşılaştırma bununla yapılır; küçük olan daha az oynaktır.",
+   "ornek": "A: 12 / 20 = 0,60; B: 30 / 40 = 0,75 (2025 vize S8).",
+   "sayfa": "s. 39–40"
+  },
+  {
+   "id": "goreli",
+   "ad": "Göreli frekans",
+   "formul": "Göreli frekans = <span class=\"frac\"><span>f</span><span>n</span></span> × 100",
+   "aciklama": "Kümülatif göreli frekans: o sınıf dahil öncekilerin göreli frekansları toplamı.",
+   "ornek": "21 / 100 × 100 = 21.",
+   "sayfa": "s. 27"
+  },
+  {
+   "id": "sinif",
+   "ad": "Sınıflama",
+   "formul": "2<sup>k</sup> &gt; n &nbsp;&nbsp; Sınıf aralığı ≈ <span class=\"frac\"><span>X<sub>maks</sub> − X<sub>min</sub></span><span>k</span></span> &nbsp;&nbsp; Orta nokta = <span class=\"frac\"><span>alt + üst</span><span>2</span></span>",
+   "aciklama": "k: en az sınıf sayısı.",
+   "ornek": "n = 100 → k = 7; (24.695 − 5.028) / 7 = 2.807,57 ≈ 2.800.",
+   "sayfa": "s. 23, 27"
+  },
+  {
+   "id": "normal",
+   "ad": "Normal dağılım aralıkları",
+   "formul": "(μ − σ, μ + σ): %68 &nbsp; (μ − 2σ, μ + 2σ): %95 &nbsp; (μ − 3σ, μ + 3σ): %99,7",
+   "ornek": "μ = 50, σ = 5 → gözlemlerin %68'i 45–55 arasında.",
+   "sayfa": "s. 38"
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Veri sınıflamasında bir sınıftaki gözlem sayısına ne ad verilir?",
+   "secenekler": [
+    "Sınıf aralığı",
+    "Frekans",
+    "Göreli frekans",
+    "Kümülatif frekans",
+    "Sınıf orta noktası"
+   ],
+   "dogru": 1,
+   "aciklama": "Frekans, sınıftaki gözlem sayısıdır.",
+   "sayfa": "s. 23",
+   "celdirici": "Göreli frekans bu sayının toplam içindeki yüzdesidir."
+  },
+  {
+   "soru": "100 gözlemden oluşan bir veri seti için en az sınıf sayısı kaçtır?",
+   "secenekler": [
+    "5",
+    "6",
+    "7",
+    "8",
+    "10"
+   ],
+   "dogru": 2,
+   "aciklama": "2ᵏ > n eşitsizliğini sağlayan en küçük k: 2⁶ = 64 < 100, 2⁷ = 128 > 100 → 7.",
+   "sayfa": "s. 27",
+   "celdirici": "6 seçen 2⁶'nın 100'ü geçtiğini sanıyor; 64 yetmez."
+  },
+  {
+   "soru": "Sınıf sınırları 40–60 olan bir sınıfın orta noktası kaçtır?",
+   "secenekler": [
+    "20",
+    "40",
+    "45",
+    "50",
+    "60"
+   ],
+   "dogru": 3,
+   "aciklama": "(40 + 60) / 2 = 50.",
+   "sayfa": "s. 23",
+   "celdirici": "20, sınıf aralığıdır (60 − 40)."
+  },
+  {
+   "soru": "Histogramda X ve Y eksenlerinde sırasıyla neler yer alır?",
+   "secenekler": [
+    "Frekanslar – sınıflar",
+    "Sınıflar – frekanslar",
+    "Ortalama – varyans",
+    "Gözlem numarası – gözlem değeri",
+    "Sınıf orta noktası – kümülatif göreli frekans"
+   ],
+   "dogru": 1,
+   "aciklama": "Histogramda X ekseninde sınıflar, Y ekseninde frekanslar yer alır; çubuğun boyu sınıfın frekansıdır.",
+   "sayfa": "s. 30",
+   "celdirici": "Eksenler ters verilmiş şık en güçlü çeldirici."
+  },
+  {
+   "soru": "8, 2, 6, 4, 7, 10 veri setinin medyanı kaçtır?",
+   "secenekler": [
+    "6",
+    "6,5",
+    "7",
+    "6,17",
+    "7,5"
+   ],
+   "dogru": 1,
+   "aciklama": "Sırala: 2, 4, 6, 7, 8, 10. n = 6 → 3,5. sıra → (6 + 7) / 2 = 6,5. Kitaptaki örnek.",
+   "sayfa": "s. 32–33",
+   "celdirici": "6,17 aritmetik ortalamadır (37 / 6)."
+  },
+  {
+   "soru": "Medyan ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Uç değerlerden etkilenir.",
+    "Her veri setinde birden fazla olabilir.",
+    "Uç değerlerden etkilenmez.",
+    "En sık tekrar eden gözlem değeridir.",
+    "Gözlem değerlerinin toplamının gözlem sayısına bölümüdür."
+   ],
+   "dogru": 2,
+   "aciklama": "Medyan yalnızca gözlem sayısından etkilenir, uç değerlerden etkilenmez.",
+   "sayfa": "s. 33",
+   "celdirici": "En sık tekrar eden değer moddur; birden fazla olabilen de moddur."
+  },
+  {
+   "soru": "22, 22, 33, 33, 33, 55, 55, 88 veri setinin modu kaçtır?",
+   "secenekler": [
+    "22",
+    "33",
+    "42,63",
+    "55",
+    "88"
+   ],
+   "dogru": 1,
+   "aciklama": "En sık tekrar eden değer 33'tür (3 kez).",
+   "sayfa": "s. 33",
+   "celdirici": "42,63 aritmetik ortalamadır."
+  },
+  {
+   "soru": "Bir veri setinde aritmetik ortalama 41,70, medyan 42 ve mod 51 ise veri dağılımı için ne söylenebilir?",
+   "secenekler": [
+    "Sağa çarpıktır.",
+    "Normal dağılımdır.",
+    "Sola çarpıktır.",
+    "Simetriktir.",
+    "Yorum yapılamaz."
+   ],
+   "dogru": 2,
+   "aciklama": "Ortalama < medyan < mod → sola çarpık. Kitaptaki A işletmesi müşteri yaşları.",
+   "sayfa": "s. 34–35",
+   "celdirici": "Sağa çarpık için sıralama mod < medyan < ortalama olmalıydı."
+  },
+  {
+   "soru": "2, 3, 8, 15, 16 veri setinin çeyreklikler arası farkı (IQR) kaçtır?",
+   "secenekler": [
+    "14",
+    "13",
+    "12,5",
+    "8",
+    "15,5"
+   ],
+   "dogru": 1,
+   "aciklama": "Q1: (5+1)/4 = 1,5. sıra → 2 + 0,5 × (3 − 2) = 2,5. Q3: 4,5. sıra → 15 + 0,5 × (16 − 15) = 15,5. IQR = 15,5 − 2,5 = 13.",
+   "sayfa": "s. 36",
+   "celdirici": "14 aralıktır (16 − 2); 15,5 yalnızca Q3."
+  },
+  {
+   "soru": "3, 5, 7, 9, 11 veri setinin ortalama mutlak sapması kaçtır?",
+   "secenekler": [
+    "2",
+    "2,4",
+    "3,16",
+    "6",
+    "10"
+   ],
+   "dogru": 1,
+   "aciklama": "x̄ = 7; mutlak farklar 4, 2, 0, 2, 4 → toplam 12 → 12 / 5 = 2,4.",
+   "sayfa": "s. 37",
+   "celdirici": "10 varyans, 3,16 standart sapmadır."
+  },
+  {
+   "soru": "Örneklem varyansı hesaplanırken farkların kareleri toplamının n yerine (n − 1)'e bölünmesinin nedeni nedir?",
+   "secenekler": [
+    "Hesabı kolaylaştırmak",
+    "Aşağı yönlü yanlılığı ortadan kaldırmak",
+    "Uç değerlerin etkisini azaltmak",
+    "Standart sapmayı varyansa eşitlemek",
+    "Modu bulabilmek"
+   ],
+   "dogru": 1,
+   "aciklama": "n'ye bölünen örneklem varyansı popülasyon varyansını genellikle küçük tahmin eder (aşağı yönlü yanlı); n − 1 bunu giderir.",
+   "sayfa": "s. 38",
+   "celdirici": "Uç değerin etkisini azaltan çeyreklikler arası farktır, n − 1 değil."
+  },
+  {
+   "soru": "Normal dağılım gösteren bir popülasyonda gözlem değerlerinin yaklaşık %95'i hangi aralıkta bulunur?",
+   "secenekler": [
+    "(μ − σ, μ + σ)",
+    "(μ − 3σ, μ + 3σ)",
+    "(μ − 2σ, μ + 2σ)",
+    "(μ − 4σ, μ + 4σ)",
+    "(0, μ)"
+   ],
+   "dogru": 2,
+   "aciklama": "%68 → μ ± σ, %95 → μ ± 2σ, %99,7 → μ ± 3σ.",
+   "sayfa": "s. 38",
+   "celdirici": "μ ± 3σ %99,7'dir."
+  },
+  {
+   "soru": "Yukarıdaki tabloya göre bir birim satış gelirinde en az oynaklığa sahip firma hangisidir?",
+   "secenekler": [
+    "K",
+    "L",
+    "M",
+    "K ve L eşittir",
+    "Ortalamalar farklı olduğu için karşılaştırılamaz"
+   ],
+   "dogru": 1,
+   "aciklama": "Ortalamalar farklı olduğu için değişim katsayısına bak: K = 3.000 / 10.000 = 0,30; L = 5.000 / 20.000 = 0,25; M = 3.200 / 8.000 = 0,40. En küçük L.",
+   "sayfa": "s. 39–40",
+   "celdirici": "Standart sapması en küçük K'dır ama ortalamalar farklıyken standart sapma karşılaştırılmaz.",
+   "tablo": {
+    "basliklar": [
+     "Firma",
+     "Ortalama satış (TL)",
+     "Standart sapma (TL)"
+    ],
+    "satirlar": [
+     [
+      "K",
+      "10.000",
+      "3.000"
+     ],
+     [
+      "L",
+      "20.000",
+      "5.000"
+     ],
+     [
+      "M",
+      "8.000",
+      "3.200"
+     ]
+    ]
+   },
+   "tabloOnce": true
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız III",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Aralık ve IQR ortalamayı dikkate almaz; varyans ve standart sapma popülasyona çıkarımda kullanılır. Örneklem OMS'sinden popülasyona çıkarım yapılamaz.",
+   "sayfa": "s. 37, 41",
+   "celdirici": "III yanlış: kitap OMS için \"popülasyonda çıkarım yapılamaz\" der.",
+   "onculler": [
+    "Aralık ve çeyreklikler arası fark ortalamayı dikkate almaz.",
+    "Varyans ve standart sapma popülasyona çıkarımda bulunan saçınım ölçütleridir.",
+    "Örneklemin ortalama mutlak sapmasıyla popülasyon hakkında çıkarım yapılabilir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri saçınım ölçütleri bağlamında doğrudur?",
+   "sabitSik": true
+  },
+  {
+   "soru": "Yukarıdaki frekans tablosunda 20–30 sınıfının kümülatif göreli frekansı yüzde kaçtır?",
+   "secenekler": [
+    "35",
+    "50",
+    "70",
+    "85",
+    "100"
+   ],
+   "dogru": 3,
+   "aciklama": "20–30 dahil öncekiler: 4 + 6 + 7 = 17. 17 / 20 × 100 = 85.",
+   "sayfa": "s. 29",
+   "celdirici": "35, yalnızca o sınıfın göreli frekansıdır (7 / 20).",
+   "tablo": {
+    "basliklar": [
+     "Kârlılık (%)",
+     "Ürün sayısı"
+    ],
+    "satirlar": [
+     [
+      "0 – 10",
+      "4"
+     ],
+     [
+      "10 – 20",
+      "6"
+     ],
+     [
+      "20 – 30",
+      "7"
+     ],
+     [
+      "30 – 40",
+      "3"
+     ]
+    ]
+   },
+   "tabloOnce": true
+  },
+  {
+   "soru": "Ağırlıkları sırasıyla %50, %30 ve %20 olan üç kriterden bir iş 6, 4 ve 5 puan almıştır. İşin ağırlıklı ortalama puanı kaçtır?",
+   "secenekler": [
+    "5",
+    "5,2",
+    "5,4",
+    "4,8",
+    "15"
+   ],
+   "dogru": 1,
+   "aciklama": "0,5 × 6 + 0,3 × 4 + 0,2 × 5 = 3 + 1,2 + 1 = 5,2.",
+   "sayfa": "s. 32",
+   "celdirici": "5, ağırlıksız ortalamadır (15 / 3)."
+  }
+ ]
+}

@@ -1,0 +1,950 @@
+{
+ "ozet": [
+  {
+   "baslik": "İş analitiği nedir?",
+   "sayfa": "s. 6–7",
+   "maddeler": [
+    "İşletmedeki herhangi bir problemi ele almaktan çözümünü sunmaya kadar bütün aşamalardır.",
+    "Problemin neden olduğunu, müdahale edilmezse işletmeyi neyin beklediğini araştırır ve <b>optimal çözümü</b> sunar.",
+    "İstatistik, yönetim bilimi ve veri bilimiyle yakından ilişkilidir; büyük veri ve veri madenciliğiyle iç içedir. Bu işi yapana <b>iş analisti</b> denir."
+   ]
+  },
+  {
+   "baslik": "Üç temel aşama",
+   "sayfa": "s. 7",
+   "maddeler": [
+    "<b>Tanımlayıcı iş analitiği:</b> verinin tanımlanması; veri anlaşılabilir halde özetlenir ve sunulur.",
+    "<b>Tahminleyici (tahminci) iş analitiği:</b> veriyle tahminde bulunma; gelecekle ilgili öngörü.",
+    "<b>Karar destek sistemleri:</b> yönetim bilimi ve karar analizi araçlarıyla karar vericiye destek. Bazı kararları makine verir (bankanın onaysız otomatik kredisi)."
+   ]
+  },
+  {
+   "baslik": "Örnekler",
+   "sayfa": "s. 7–8",
+   "maddeler": [
+    "<b>Woolworths</b> (Avustralya): kırmızı et ve süt alanlar daha az kaza yapıyor, pirinç ve makarna alanlar gece benzin ve kahve alıyor. Bilgi sigorta şirketiyle paylaşıldı; kişiye özel promosyon programı birkaç ayda maliyetini karşıladı.",
+    "Bankacılık (kredi riski, karta özel promosyon), sosyal ağ reklamları, perakende, oyun sektörü (oyunu bırakma nedenleri), internet alışverişinde sadakat ölçümü.",
+    "Odak konuları: veri, otomatik karar sistemleri, karar destek sistemleri ve tahminler."
+   ]
+  },
+  {
+   "baslik": "İş istatistiğinin temel kavramları",
+   "sayfa": "s. 8–10",
+   "maddeler": [
+    "<b>Gözlem</b> bir özellik hakkında elde edilen bilgi; <b>veri</b> incelenen özelliklerle ilgili tüm gözlemler; <b>gözlem birimi</b> gözlem yapılan her bir varlık.",
+    "<b>Birincil kaynak:</b> araştırmacı kendisi toplar (deney, anket, gözlem, mülakat). <b>İkincil kaynak:</b> kurumların sağladığı veri (TÜİK, veri tabanları, makaleler).",
+    "<b>Popülasyon</b> dışarıda veri bırakmayan en büyük gözlem birimi; <b>örneklem</b> popülasyonun bir kısmıyla yapılan araştırma; <b>örnekleme</b> örneklemi oluşturma süreci.",
+    "<b>Parametre</b> popülasyonun, <b>istatistik</b> örneklemin sayısal özet bilgisi. Örneklemle (x̄) popülasyon (μ) tahmin edilir.",
+    "Değişken <b>nicel</b> (sayısal büyüklük: yaş, memnuniyet düzeyi) ya da <b>nitel</b> (kategori: cinsiyet, bölüm) olur."
+   ]
+  },
+  {
+   "baslik": "Semboller (Tablo 1.1)",
+   "sayfa": "s. 9",
+   "tablo": {
+    "basliklar": [
+     "Sayısal özet",
+     "İstatistik (örneklem)",
+     "Parametre (popülasyon)"
+    ],
+    "satirlar": [
+     [
+      "Aritmetik ortalama",
+      "x̄",
+      "μ"
+     ],
+     [
+      "Varyans",
+      "s²",
+      "σ²"
+     ],
+     [
+      "Standart sapma",
+      "s",
+      "σ"
+     ],
+     [
+      "Oran / yüzde",
+      "p",
+      "P, Π"
+     ],
+     [
+      "Korelasyon",
+      "r",
+      "ρ"
+     ],
+     [
+      "Veri sayısı",
+      "n",
+      "N"
+     ],
+     [
+      "Frekans",
+      "f",
+      "F"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Ölçek türleri",
+   "sayfa": "s. 9–10",
+   "maddeler": [
+    "<b>Sınıflama (nominal):</b> yalnızca ayırt eder, sayısal bilgi yok (cinsiyet, bölüm).",
+    "<b>Sıralama (ordinal):</b> karşılaştırma ve sıralama yapılır ama sıralar arası fark eşit değil (yüksek/orta/düşük teknoloji).",
+    "<b>Eşit aralıklı:</b> sıralar arası fark aynı, gerçek sıfır yok (termometre).",
+    "<b>Oranlı:</b> eşit aralıklının tüm özellikleri + gerçek sıfır (terazi). Eşit aralıklı ve oranlıda matematiksel işlem yapılır.",
+    "<b>Likert:</b> Rensis Likert; tutum ve davranış ölçer; 5'li ya da 7'li. Sıralama mı eşit aralıklı mı olduğu tartışmalıdır."
+   ]
+  },
+  {
+   "baslik": "Karar verme",
+   "sayfa": "s. 10–11",
+   "maddeler": [
+    "<b>Problem:</b> mevcut durum ile istenilen durum arasındaki fark.",
+    "<b>Problem çözme (7 adım):</b> problemi tanımla → alternatifleri belirle → kriterleri belirle → alternatifleri değerlendir → birini seç → uygula → sonuçları değerlendir.",
+    "<b>Matematiksel modelle karar verme (6 adım):</b> problemi tanımla → alternatifleri belirle → kriterleri belirle → <b>matematiksel model kur</b> → modeli çöz ve uygula → sonucu gerçek durumla değerlendir.",
+    "Model gerçeği temsil eden varsayılan durum üzerine kurulur; sonuç tatmin etmezse varsayım genişletilip model yeniden kurulur."
+   ]
+  },
+  {
+   "baslik": "Örnek olay: X bankası",
+   "sayfa": "s. 11–14",
+   "maddeler": [
+    "50 milyon TL otomatik kredi, 4 risk grubu (kredi kullanım oranına göre). İlk üç gruba en az 10 milyon, 4. gruba kredi yok.",
+    "Kâr = (Kredi − Geri ödenmeyen) × faiz − Geri ödenmeyen. 1. gruba 15 milyon: (15 − 0,75) × 0,42 − 0,75 = 5,235.",
+    "Tek kriterle değerlendirilen problem <b>tek kriterli</b>, birden fazla kriterle değerlendirilen <b>çok kriterli</b> karar verme problemidir.",
+    "Model öğeleri: <b>karar değişkenleri</b> (x1…x4 = gruplara verilecek kredi), <b>parametre</b> (fonksiyon ve kısıtların karar değişkeniyle ilişki seviyesi), <b>amaç fonksiyonu</b> (Maks. Z = kâr), <b>kısıtlar</b> (x1+x2+x3+x4 = 50; x1, x2, x3 ≥ 10; x4 = 0).",
+    "Optimal çözüm: 30 / 10 / 10 milyon → 16,19 milyon TL kâr. Elle denenen en iyi alternatif (15 / 25 / 10) 15,935 milyondu."
+   ]
+  }
+ ],
+ "kitapNotlari": [
+  "Kitapta (s. 12): \"3. Gruba 15 milyon TL kredi verilirse\" yazıyor ama hesap 10 milyonla yapılmış: (10 − 10 × 0,20) × 0,55 − 10 × 0,2 = 2,4. Alternatif Çözüm 1'de 3. gruba 10 milyon verildiği için doğrusu 10 milyon."
+ ],
+ "akildaKalsin": [
+  "Üç aşama: tanımlayıcı (ne oldu?) → tahminleyici (ne olabilir?) → karar destek.",
+  "Popülasyon ↔ parametre ↔ Yunan harfi (μ, σ). Örneklem ↔ istatistik ↔ Latin harfi (x̄, s).",
+  "Termometre eşit aralıklı (sıfır gerçek değil), terazi oranlı (gerçek sıfır).",
+  "Uygulanabilir çözüm bütün kriterleri sağlar; optimal çözüm uygulanabilirler arasında amacı en iyi olandır.",
+  "Model kurma adımı yalnızca matematiksel modelle karar vermede var; problem çözmede yok."
+ ],
+ "kartlar": [
+  {
+   "ad": "İş analitiği",
+   "tanim": "İşletmedeki herhangi bir problemi ele almaktan çözümünü sunmaya kadar bütün aşamalar. Belirli bir işle ilgili verinin toplandığı, analiz edildiği ve yönetildiği araçlar bütünü.",
+   "sayfa": "s. 6–7",
+   "akil": "problemden optimal çözüme"
+  },
+  {
+   "ad": "Tanımlayıcı iş analitiği",
+   "tanim": "Verinin tanımlanması: veri anlaşılabilir halde özetlenir ve sunulur.",
+   "sayfa": "s. 7",
+   "akil": "ne oldu?",
+   "ornek": "Satış raporu, müşteri segmentasyonu."
+  },
+  {
+   "ad": "Tahminleyici iş analitiği",
+   "tanim": "Veri yoluyla araştırma konusuyla ilgili tahminde bulunma; gelecekle ilgili öngörülerin sunulduğu aşama. Tahminci iş analitiği de denir.",
+   "sayfa": "s. 7",
+   "akil": "ne olabilir?"
+  },
+  {
+   "ad": "Karar destek sistemleri",
+   "tanim": "Yönetim bilimi ya da karar analizi araçlarıyla karar vericiye destek sağlanan aşama. Bazı kararları makineler verir.",
+   "sayfa": "s. 7",
+   "akil": "kararı makine de verebilir",
+   "ornek": "Bankanın bazı kredileri onaysız, otomatik vermesi."
+  },
+  {
+   "ad": "Gözlem",
+   "tanim": "İncelenen bir özellik (canlı ya da cansız bir varlığın benzerlik ya da farklılıklarını sağlayan mahiyetleri) hakkında elde edilen bilgi.",
+   "sayfa": "s. 8"
+  },
+  {
+   "ad": "Veri",
+   "tanim": "İncelenen özelliklerle ilgili yapılan tüm gözlemler.",
+   "sayfa": "s. 8",
+   "akil": "tüm gözlemler",
+   "ornek": "Bir çalışanın kıdem yılı, cinsiyeti ve unvanı gözlemlerinin tümü."
+  },
+  {
+   "ad": "Gözlem birimi",
+   "tanim": "Araştırma konusuyla ilgili gözlem yapılan canlı ya da cansız varlıkların, nesnelerin her biri.",
+   "sayfa": "s. 8",
+   "ornek": "Konu çalışanların ücretleriyse gözlem birimi çalışanlardır."
+  },
+  {
+   "ad": "Birincil kaynaktan veri toplama",
+   "tanim": "Araştırmacının veriyi doğrudan kendisinin toplaması: deney, anket, gözlem, mülakat.",
+   "sayfa": "s. 8",
+   "akil": "kendin toplarsın"
+  },
+  {
+   "ad": "İkincil kaynaktan veri toplama",
+   "tanim": "Kurum ve kuruluşların sağladığı veri tabanları, makaleler, iletişim araçları, kütüphaneler gibi araştırmacının üretmediği veri.",
+   "sayfa": "s. 8",
+   "akil": "başkası toplamış",
+   "ornek": "TÜİK verisi."
+  },
+  {
+   "ad": "Popülasyon",
+   "tanim": "Araştırma konusuyla ilgili, dışarıda veri bırakmayacak şekilde gözlemlerin tümünü kapsayan en büyük gözlem birimi.",
+   "sayfa": "s. 8",
+   "akil": "dışarıda veri bırakmaz",
+   "ornek": "Memnuniyet anketinde Ankara Üniversitesindeki tüm öğrenciler."
+  },
+  {
+   "ad": "Örneklem",
+   "tanim": "Popülasyonun tamamı yerine bir kısmıyla yapılan araştırma.",
+   "sayfa": "s. 8",
+   "ornek": "Rassal seçilen 500 öğrenci."
+  },
+  {
+   "ad": "Örnekleme",
+   "tanim": "Örneklem oluşturma süreci ve yöntemleri.",
+   "sayfa": "s. 8–9",
+   "akil": "süreç = örnekleme",
+   "ornek": "500 öğrencinin belirli bir yöntemle rassal seçilmesi."
+  },
+  {
+   "ad": "Parametre (istatistikte)",
+   "tanim": "Popülasyonun sayısal özet bilgisi.",
+   "sayfa": "s. 9",
+   "akil": "popülasyon → parametre",
+   "ornek": "Tüm öğrencilerin memnuniyet ortalaması (μ)."
+  },
+  {
+   "ad": "İstatistik (sayısal özet)",
+   "tanim": "Örneklemin sayısal özet bilgisi. İstatistik değerlerinden popülasyon değerleri tahmin edilir.",
+   "sayfa": "s. 9",
+   "akil": "örneklem → istatistik",
+   "ornek": "500 öğrencinin memnuniyet ortalaması (x̄)."
+  },
+  {
+   "ad": "Değişken",
+   "tanim": "Gözlem biriminin ölçülebilir ve her gözlemde değişebilen özelliği.",
+   "sayfa": "s. 9",
+   "ornek": "Cinsiyet, yaş, bölüm, memnuniyet düzeyi."
+  },
+  {
+   "ad": "Nicel (kantitatif) / nitel (kalitatif) değişken",
+   "tanim": "Değerler sayısal büyüklük gösteriyorsa nicel; yalnızca bir şeyi diğerinden ayırmak için kategorize ediliyorsa nitel.",
+   "sayfa": "s. 9",
+   "ornek": "Cinsiyet ve bölüm nitel; yaş ve memnuniyet düzeyi nicel (kitaptaki sınıflama)."
+  },
+  {
+   "ad": "Ölçüm ve ölçek türü",
+   "tanim": "Ölçüm: bir olayın ya da özelliğin önceden belirlenmiş kurallara göre sayısal ya da sözel olarak belirtilmesi. Ölçek türü: bu kural setleri.",
+   "sayfa": "s. 9"
+  },
+  {
+   "ad": "Sınıflama (nominal) ölçeği",
+   "tanim": "Yalnızca bir şeyi diğerinden ayırt etmek için kullanılan, sayısal bilgi içermeyen ölçek.",
+   "sayfa": "s. 9",
+   "akil": "sadece isim",
+   "ornek": "Cinsiyet: erkek, kadın."
+  },
+  {
+   "ad": "Sıralama (ordinal) ölçeği",
+   "tanim": "Sınıfların karşılaştırılmasını ve sıralanmasını sağlar; sıralar arasındaki farklar eşit değildir.",
+   "sayfa": "s. 10",
+   "akil": "sıra var, eşit fark yok",
+   "ornek": "Yüksek / orta / düşük düzey teknolojik ürün."
+  },
+  {
+   "ad": "Eşit aralıklı ölçek",
+   "tanim": "Sıralamaya ek olarak sıralar arasındaki farkın aynı olduğu ölçek; gerçek sıfır noktası yoktur.",
+   "sayfa": "s. 10",
+   "akil": "termometre",
+   "ornek": "Sıcaklık ölçen termometre."
+  },
+  {
+   "ad": "Oranlı ölçek",
+   "tanim": "Eşit aralıklı ölçeğin tüm özellikleri + gerçek bir sıfır noktası.",
+   "sayfa": "s. 10",
+   "akil": "terazi: gerçek sıfır"
+  },
+  {
+   "ad": "Likert ölçeği",
+   "tanim": "Rensis Likert'in tutum ve davranışı ölçmek için geliştirdiği ölçek; 5'li ya da 7'li (1 hiç katılmıyorum … 7 kesinlikle katılıyorum). Sıralama mı eşit aralıklı mı olduğu tartışmalı.",
+   "sayfa": "s. 10"
+  },
+  {
+   "ad": "Problem",
+   "tanim": "Mevcut durum ile istenilen durum arasındaki fark.",
+   "sayfa": "s. 10",
+   "ornek": "Banka otomatik kredi istiyor ama işlemi personel yapıyor: problem otomatik kredi sisteminin olmaması."
+  },
+  {
+   "ad": "Problem çözme adımları",
+   "tanim": "1) Problemi tanımla ve belirle 2) Alternatif çözümleri belirle 3) Kriterleri belirle 4) Alternatifleri değerlendir 5) Bir alternatifi seç 6) Uygula 7) Uygulanabilirliği için sonuçları değerlendir.",
+   "sayfa": "s. 10",
+   "akil": "7 adım, model yok"
+  },
+  {
+   "ad": "Karar verme",
+   "tanim": "Problemin tanımlanmasıyla başlayan; alternatif çözümlerin ve kriterlerin belirlenmesiyle formüle edilen, alternatiflerden birinin seçildiği süreç.",
+   "sayfa": "s. 10"
+  },
+  {
+   "ad": "Matematiksel modelle karar verme adımları",
+   "tanim": "1) Problemi tanımla 2) Alternatifleri belirle 3) Kriterleri belirle 4) Matematiksel model kur 5) Modeli çöz ve uygula 6) Model sonucunu gerçek durumla değerlendir.",
+   "sayfa": "s. 11",
+   "akil": "6 adım, 4.'sü model"
+  },
+  {
+   "ad": "Kriter",
+   "tanim": "Değerlendirme ölçütü. Tek kriterle değerlendirilen problem tek kriterli, birden fazla kriterle değerlendirilen çok kriterli karar verme problemidir.",
+   "sayfa": "s. 12"
+  },
+  {
+   "ad": "Karar değişkeni",
+   "tanim": "Modelde değeri aranan büyüklük; örnek olayda risk gruplarına verilecek kredi miktarları (x1, x2, x3, x4).",
+   "sayfa": "s. 13"
+  },
+  {
+   "ad": "Parametre (matematiksel modelde)",
+   "tanim": "Modeldeki fonksiyonların ya da sınırlamaların karar değişkeniyle ilişki seviyesi (katsayılar).",
+   "sayfa": "s. 13",
+   "akil": "modeldeki katsayı"
+  },
+  {
+   "ad": "Amaç fonksiyonu",
+   "tanim": "Karar vericinin amacını gösteren ve maksimize ya da minimize edilen fonksiyon; örnek olayda Maks. Z = kâr.",
+   "sayfa": "s. 13"
+  },
+  {
+   "ad": "Kısıt",
+   "tanim": "Karar problemindeki sınırlamalar.",
+   "sayfa": "s. 13–14",
+   "ornek": "x1 + x2 + x3 + x4 = 50; x1, x2, x3 ≥ 10; x4 = 0."
+  },
+  {
+   "ad": "Alternatif çözüm / optimal çözüm",
+   "tanim": "Alternatif çözüm: problemi ortadan kaldırabilecek çözüm. Optimal çözüm: kriterlerin hepsini sağlayan alternatifler arasında amacı en iyi karşılayan çözüm.",
+   "sayfa": "s. 13, 18",
+   "akil": "önce kriterler, sonra kâr"
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "Tanımlayıcı iş analitiği",
+    "tanim": "Veriyi anlaşılır halde özetler ve sunar."
+   },
+   "b": {
+    "ad": "Tahminleyici iş analitiği",
+    "tanim": "Veriden gelecekle ilgili öngörü üretir."
+   },
+   "fark": "Tanımlayıcı geçmişi özetler (ne oldu?), tahminleyici geleceği öngörür (ne olabilir?).",
+   "sorular": [
+    {
+     "ifade": "Satış verisinden müşteri segmentlerini çıkarmak",
+     "cevap": "a",
+     "neden": "Var olan veriyi özetlemek tanımlayıcıdır."
+    },
+    {
+     "ifade": "Ücret artışı %10 olursa performansın ne olacağını hesaplamak",
+     "cevap": "b",
+     "neden": "Gelecekle ilgili öngörü."
+    },
+    {
+     "ifade": "Merkezi eğilim ve saçınım ölçütleriyle veriyi anlatmak",
+     "cevap": "a",
+     "neden": "Bölüm 2'nin araçları tanımlayıcıdır."
+    },
+    {
+     "ifade": "Regresyon modeliyle müşteri kaybını tahmin etmek",
+     "cevap": "b",
+     "neden": "Regresyon tahminleyici analizin aracıdır."
+    },
+    {
+     "ifade": "Verinin histogramla gösterilmesi",
+     "cevap": "a",
+     "neden": "Grafikle sunum tanımlayıcıdır."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Popülasyon",
+    "tanim": "Dışarıda veri bırakmayan, tüm gözlemleri kapsayan en büyük gözlem birimi."
+   },
+   "b": {
+    "ad": "Örneklem",
+    "tanim": "Popülasyonun bir kısmıyla yapılan araştırma."
+   },
+   "fark": "Popülasyon tamamı, örneklem bir parçası. Popülasyonun özeti parametre, örneklemin özeti istatistik.",
+   "sorular": [
+    {
+     "ifade": "Ankara Üniversitesindeki bütün öğrenciler",
+     "cevap": "a",
+     "neden": "Hiçbir öğrenci dışarıda kalmıyor."
+    },
+    {
+     "ifade": "Rassal seçilen 500 öğrenci",
+     "cevap": "b",
+     "neden": "Tümü değil, bir kısmı."
+    },
+    {
+     "ifade": "Özet değeri σ ile gösterilir",
+     "cevap": "a",
+     "neden": "Yunan harfleri popülasyon (parametre) içindir."
+    },
+    {
+     "ifade": "Özet değeri x̄ ile gösterilir",
+     "cevap": "b",
+     "neden": "x̄ örneklem ortalamasıdır."
+    },
+    {
+     "ifade": "Tamamını ölçmek çok maliyetli ya da imkânsız olabilir",
+     "cevap": "a",
+     "neden": "Bu yüzden örneklemle popülasyon tahmin edilir (s. 9)."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Parametre",
+    "tanim": "Popülasyonun sayısal özet bilgisi (μ, σ, ρ, N)."
+   },
+   "b": {
+    "ad": "İstatistik",
+    "tanim": "Örneklemin sayısal özet bilgisi (x̄, s, r, n)."
+   },
+   "fark": "Harf kuralı: Yunan harfi → parametre (popülasyon); Latin harfi → istatistik (örneklem). Dikkat: matematiksel modelde 'parametre' katsayı anlamına da gelir.",
+   "sorular": [
+    {
+     "ifade": "Tüm öğrencilerin memnuniyet ortalaması",
+     "cevap": "a",
+     "neden": "Popülasyonun özeti."
+    },
+    {
+     "ifade": "500 öğrencinin memnuniyet ortalaması",
+     "cevap": "b",
+     "neden": "Örneklemin özeti."
+    },
+    {
+     "ifade": "ρ (rho)",
+     "cevap": "a",
+     "neden": "Popülasyon korelasyonu."
+    },
+    {
+     "ifade": "s²",
+     "cevap": "b",
+     "neden": "Örneklem varyansı."
+    },
+    {
+     "ifade": "N",
+     "cevap": "a",
+     "neden": "Popülasyondaki veri sayısı; örneklemde n."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Örneklem",
+    "tanim": "Popülasyonun bir kısmıyla yapılan araştırma (seçilen grup)."
+   },
+   "b": {
+    "ad": "Örnekleme",
+    "tanim": "Örneklemi oluşturma süreci ve yöntemleri."
+   },
+   "fark": "Örneklem 'kim' (500 öğrenci), örnekleme 'nasıl seçildi' (rassal seçim süreci).",
+   "sorular": [
+    {
+     "ifade": "Seçilen 500 öğrenci",
+     "cevap": "a",
+     "neden": "Grubun kendisi."
+    },
+    {
+     "ifade": "500 öğrencinin belirli bir yöntemle rassal seçilmesi",
+     "cevap": "b",
+     "neden": "Süreç."
+    },
+    {
+     "ifade": "Seçim yöntemleri ve süreci",
+     "cevap": "b",
+     "neden": "Kitap: örneklem oluşturma süreci ve yöntemleri."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Birincil kaynak",
+    "tanim": "Araştırmacı veriyi kendisi toplar."
+   },
+   "b": {
+    "ad": "İkincil kaynak",
+    "tanim": "Başka kurumların ürettiği veri kullanılır."
+   },
+   "fark": "Deney, anket, gözlem, mülakat birincil; TÜİK, veri tabanı, makale, kütüphane ikincil.",
+   "sorular": [
+    {
+     "ifade": "Müşterilere anket uygulamak",
+     "cevap": "a",
+     "neden": "Anket birincil kaynaktır."
+    },
+    {
+     "ifade": "TÜİK'ten sektör verisi almak",
+     "cevap": "b",
+     "neden": "Kitaptaki ikincil kaynak örneği."
+    },
+    {
+     "ifade": "Laboratuvarda deney yapmak",
+     "cevap": "a",
+     "neden": "Deney birincil."
+    },
+    {
+     "ifade": "Makalelerden veri derlemek",
+     "cevap": "b",
+     "neden": "Araştırmacının üretmediği veri."
+    },
+    {
+     "ifade": "Çalışanlarla mülakat yapmak",
+     "cevap": "a",
+     "neden": "Mülakat birincil."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Nicel (kantitatif)",
+    "tanim": "Değeri sayısal bir büyüklük gösterir."
+   },
+   "b": {
+    "ad": "Nitel (kalitatif)",
+    "tanim": "Değeri yalnızca bir kategoriyi diğerinden ayırır."
+   },
+   "fark": "Kitaptaki örnek: cinsiyet ve bölüm nitel; yaş ve memnuniyet düzeyi nicel.",
+   "sorular": [
+    {
+     "ifade": "Yaş",
+     "cevap": "a",
+     "neden": "Sayısal büyüklük."
+    },
+    {
+     "ifade": "Cinsiyet",
+     "cevap": "b",
+     "neden": "Kategori."
+    },
+    {
+     "ifade": "Bölüm",
+     "cevap": "b",
+     "neden": "Kategori."
+    },
+    {
+     "ifade": "Memnuniyet düzeyi",
+     "cevap": "a",
+     "neden": "Kitap nicel sayıyor (s. 9)."
+    },
+    {
+     "ifade": "Satış tutarı",
+     "cevap": "a",
+     "neden": "Sayısal büyüklük."
+    },
+    {
+     "ifade": "Ürün markası",
+     "cevap": "b",
+     "neden": "Bölüm 2'de kalitatif sınıflama örneği."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Sınıflama (nominal)",
+    "tanim": "Yalnızca ayırt eder; sıra yok."
+   },
+   "b": {
+    "ad": "Sıralama (ordinal)",
+    "tanim": "Sıralanabilir; sıralar arası fark eşit değil."
+   },
+   "fark": "Sıralama yapılabiliyorsa ordinal, yalnızca isim veriliyorsa nominal.",
+   "sorular": [
+    {
+     "ifade": "Erkek / kadın",
+     "cevap": "a",
+     "neden": "Sıra yok."
+    },
+    {
+     "ifade": "Yüksek / orta / düşük teknoloji",
+     "cevap": "b",
+     "neden": "Sıralanıyor."
+    },
+    {
+     "ifade": "İşletme, ekonomi, kamu yönetimi bölümleri",
+     "cevap": "a",
+     "neden": "Sıra yok."
+    },
+    {
+     "ifade": "Birinci, ikinci, üçüncü kalite",
+     "cevap": "b",
+     "neden": "Sıra var, aradaki fark belli değil."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Eşit aralıklı",
+    "tanim": "Sıralar arası fark eşit, gerçek sıfır yok."
+   },
+   "b": {
+    "ad": "Oranlı",
+    "tanim": "Eşit aralıklının tüm özellikleri + gerçek sıfır."
+   },
+   "fark": "Termometre eşit aralıklı, terazi oranlı. İkisinde de matematiksel işlem yapılabilir.",
+   "sorular": [
+    {
+     "ifade": "Termometreyle sıcaklık ölçümü",
+     "cevap": "a",
+     "neden": "Sıfır derece 'sıcaklık yok' demek değil."
+    },
+    {
+     "ifade": "Teraziyle ağırlık ölçümü",
+     "cevap": "b",
+     "neden": "Sıfır gerçekten ağırlık yok demek."
+    },
+    {
+     "ifade": "Gerçek bir sıfır noktası vardır",
+     "cevap": "b",
+     "neden": "Oranlının ayırt edici özelliği."
+    },
+    {
+     "ifade": "Matematiksel işlem yapılabilir",
+     "cevap": "ikisi",
+     "neden": "Kitap: hem eşit aralıklıda hem oranlıda."
+    }
+   ],
+   "ikisi": true
+  },
+  {
+   "a": {
+    "ad": "Problem çözme (7 adım)",
+    "tanim": "Tanımla, alternatif, kriter, değerlendir, seç, uygula, sonuçları değerlendir."
+   },
+   "b": {
+    "ad": "Matematiksel modelle karar verme (6 adım)",
+    "tanim": "Tanımla, alternatif, kriter, model kur, çöz ve uygula, gerçekle değerlendir."
+   },
+   "fark": "İlk üç adım ikisinde de aynı. Model kurma ve çözme yalnızca matematiksel modelde var.",
+   "sorular": [
+    {
+     "ifade": "Matematiksel model kurulması",
+     "cevap": "b",
+     "neden": "Yalnız modelle karar vermede."
+    },
+    {
+     "ifade": "Bir alternatif çözümün seçilmesi",
+     "cevap": "a",
+     "neden": "Problem çözmenin 5. adımı."
+    },
+    {
+     "ifade": "Kriterlerin belirlenmesi",
+     "cevap": "ikisi",
+     "neden": "İkisinin de 3. adımı."
+    },
+    {
+     "ifade": "Model sonucunun gerçek durumla değerlendirilmesi",
+     "cevap": "b",
+     "neden": "Son adım."
+    },
+    {
+     "ifade": "Alternatif çözümlerin değerlendirilmesi",
+     "cevap": "a",
+     "neden": "Problem çözmenin 4. adımı; modelde bunu model yapar."
+    }
+   ],
+   "ikisi": true
+  },
+  {
+   "a": {
+    "ad": "Amaç fonksiyonu",
+    "tanim": "Maksimize ya da minimize edilen fonksiyon."
+   },
+   "b": {
+    "ad": "Kısıt",
+    "tanim": "Karar problemindeki sınırlamalar."
+   },
+   "fark": "Amaç 'neyi en iyi yapıyoruz', kısıt 'neye uymak zorundayız'.",
+   "sorular": [
+    {
+     "ifade": "Maks. Z = kâr",
+     "cevap": "a",
+     "neden": "Amaç."
+    },
+    {
+     "ifade": "x1 + x2 + x3 + x4 = 50 milyon TL",
+     "cevap": "b",
+     "neden": "Toplam kredi sınırı."
+    },
+    {
+     "ifade": "x4 = 0",
+     "cevap": "b",
+     "neden": "Dördüncü gruba kredi yok."
+    },
+    {
+     "ifade": "x1, x2, x3 ≥ 10 milyon TL",
+     "cevap": "b",
+     "neden": "En az kredi miktarı."
+    },
+    {
+     "ifade": "Z = 50 X1 + 70 X2",
+     "cevap": "a",
+     "neden": "Değeri hesaplanan fonksiyon."
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "amac",
+   "ad": "Amaç fonksiyonunun değeri",
+   "formul": "Z = c<sub>1</sub>·X<sub>1</sub> + c<sub>2</sub>·X<sub>2</sub> + …",
+   "aciklama": "Optimal X değerlerini yerine yaz; her katsayı kendi değişkeniyle çarpılır.",
+   "ornek": "Z = 50 X1 + 70 X2; X1 = 1,2, X2 = 0,4 → 60 + 28 = 88 (2025 vize S6).",
+   "sayfa": "s. 13"
+  },
+  {
+   "id": "kar",
+   "ad": "Kredi kârı (örnek olay)",
+   "formul": "Kâr = (K − K × g) × f − K × g",
+   "aciklama": "K: verilen kredi, g: geri ödememe oranı, f: faiz oranı. Önce geri ödenmeyen düşülür, kalan üzerinden faiz alınır, sonra geri ödenmeyen tutar zarar olarak düşülür.",
+   "ornek": "K = 15, g = 0,05, f = 0,42 → (15 − 0,75) × 0,42 − 0,75 = 5,235 milyon TL.",
+   "tuzak": "Geri ödenmeyen tutar iki kez düşülür: faizden önce ve sonda.",
+   "sayfa": "s. 12"
+  },
+  {
+   "id": "kullanim",
+   "ad": "Kredi kullanım oranı",
+   "formul": "Kullanım oranı = <span class=\"frac\"><span>kullanılan kredi</span><span>tanımlanan kredi</span></span> × 100",
+   "aciklama": "Banka risk gruplarını bu orana göre ayırır: %0–25, %25–50, %50–75, %75–100.",
+   "ornek": "1 milyon tanımlı, 100 bin kullanılmış → %10.",
+   "sayfa": "s. 11"
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "İş analitiğinin temel aşamaları için aşağıdakilerden hangisi doğru sıralamadır?",
+   "secenekler": [
+    "Tahminleyici → tanımlayıcı → karar destek sistemleri",
+    "Tanımlayıcı → tahminleyici → karar destek sistemleri",
+    "Karar destek sistemleri → tanımlayıcı → tahminleyici",
+    "Tanımlayıcı → karar destek sistemleri → tahminleyici",
+    "Tahminleyici → karar destek sistemleri → tanımlayıcı"
+   ],
+   "dogru": 1,
+   "aciklama": "Kitap aşamaları şöyle sıralar: verinin tanımlanması (tanımlayıcı), veriyle tahmin (tahminleyici), karar destek sistemleri.",
+   "sayfa": "s. 7",
+   "celdirici": "Önce veri anlaşılmadan tahmin yapılmaz; tahmin olmadan da karar desteği kurulmaz."
+  },
+  {
+   "soru": "Bankacılık sektöründe bazı kredilerin hiçbir onay gerekmeden otomatik olarak kullandırılması, iş analitiğinin hangi aşamasına örnektir?",
+   "secenekler": [
+    "Tanımlayıcı iş analitiği",
+    "Veri toplama",
+    "Tahminleyici iş analitiği",
+    "Karar destek sistemleri",
+    "Örnekleme"
+   ],
+   "dogru": 3,
+   "aciklama": "Kitapta karar destek sistemlerinde bazı kararların makineler tarafından verildiği belirtilir ve otomatik kredi örnek verilir.",
+   "sayfa": "s. 7",
+   "celdirici": "Tahminleyici aşama öngörü üretir; kararı uygulayan sistem karar destek aşamasıdır."
+  },
+  {
+   "soru": "Woolworths örneğinde, görece daha fazla kırmızı et ve süt alan müşterilerle ilgili hangi sonuç elde edilmiştir?",
+   "secenekler": [
+    "Daha az araba kazası geçirdikleri",
+    "Gece benzin ve kahve aldıkları",
+    "Promosyonlara daha az ilgi gösterdikleri",
+    "İnternetten alışverişi tercih ettikleri",
+    "Sigortalarını iptal ettikleri"
+   ],
+   "dogru": 0,
+   "aciklama": "Kırmızı et ve süt alanların daha az kaza geçirdiği tespit edildi ve bu bilgi bir araba sigortası şirketiyle paylaşıldı.",
+   "sayfa": "s. 7",
+   "celdirici": "Gece benzin ve kahve alanlar pirinç ve makarna alan müşterilerdi."
+  },
+  {
+   "soru": "Türkiye İstatistik Kurumu'ndan (TÜİK) sağlanan veriyle yapılan bir araştırmada veri nasıl toplanmıştır?",
+   "secenekler": [
+    "Birincil kaynaktan",
+    "İkincil kaynaktan",
+    "Deneyle",
+    "Mülakatla",
+    "Örnekleme ile"
+   ],
+   "dogru": 1,
+   "aciklama": "Kurum ve kuruluşların sağladığı, araştırmacının üretmediği veri ikincil kaynaktır; kitap TÜİK'i örnek verir.",
+   "sayfa": "s. 8",
+   "celdirici": "Deney ve mülakat birincil kaynaktan veri toplama türleridir."
+  },
+  {
+   "soru": "Bir işyerinde çalışanların ücretleri araştırılıyorsa gözlem birimi aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Ücretler",
+    "İşyeri",
+    "Çalışanlar",
+    "Ücret ortalaması",
+    "Kıdem yılı"
+   ],
+   "dogru": 2,
+   "aciklama": "Gözlem birimi, gözlem yapılan canlı ya da cansız varlıkların her biridir; ücret araştırmasında gözlem birimi çalışanlardır.",
+   "sayfa": "s. 8",
+   "celdirici": "Ücret gözlenen özelliktir (değişken), gözlem birimi değil."
+  },
+  {
+   "soru": "Ankara Üniversitesinde rassal seçilen 500 öğrencinin memnuniyet ortalaması aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Parametre",
+    "Popülasyon",
+    "Örnekleme",
+    "İstatistik",
+    "Gözlem birimi"
+   ],
+   "dogru": 3,
+   "aciklama": "Örneklemin sayısal özet bilgisi istatistiktir. Tüm öğrencilerin ortalaması olsaydı parametre olurdu.",
+   "sayfa": "s. 9",
+   "celdirici": "Parametre popülasyonun özetidir; 500 öğrenci örneklemdir."
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Cinsiyet yalnızca ayırt edildiği için sınıflama ölçeğidir. Termometrenin gerçek sıfırı olmadığından eşit aralıklıdır; terazinin gerçek sıfırı olduğu için oranlıdır.",
+   "sayfa": "s. 9–10",
+   "celdirici": "II yanlış: termometre oranlı değil, eşit aralıklıdır.",
+   "onculler": [
+    "Cinsiyet sınıflama (nominal) ölçeğiyle ölçülür.",
+    "Termometre ile sıcaklık ölçümü oranlı ölçektir.",
+    "Terazide sıfır noktası gerçek bir sıfır olduğundan oranlı ölçektir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri ölçek türleri bağlamında doğrudur?",
+   "sabitSik": true
+  },
+  {
+   "soru": "Türkiye'de üretilen ürünlerin teknolojik düzeyini yüksek, orta ve düşük olarak ölçmek hangi ölçek türüdür?",
+   "secenekler": [
+    "Sıralama (ordinal)",
+    "Sınıflama (nominal)",
+    "Eşit aralıklı",
+    "Oranlı",
+    "Likert"
+   ],
+   "dogru": 0,
+   "aciklama": "Sınıflar karşılaştırılıp sıraya konuyor ama aralarındaki fark eşit değil: sıralama ölçeği. Kitaptaki örnek.",
+   "sayfa": "s. 10",
+   "celdirici": "Eşit aralıklı olması için yüksek–orta farkının orta–düşük farkına eşit olması gerekirdi."
+  },
+  {
+   "soru": "Matematiksel modelleme ile karar verme adımlarında \"kriterlerin belirlenmesi\"nden hemen sonra gelen adım hangisidir?",
+   "secenekler": [
+    "Alternatif çözümlerin belirlenmesi",
+    "Modelin çözülmesi ve uygulanması",
+    "Matematiksel model kurulması",
+    "Model sonucunun gerçek durumla değerlendirilmesi",
+    "Problemin tanımlanması ve belirlenmesi"
+   ],
+   "dogru": 2,
+   "aciklama": "Sıra: problem → alternatifler → kriterler → model kurulması → çözme ve uygulama → gerçek durumla değerlendirme.",
+   "sayfa": "s. 11",
+   "celdirici": "Model çözülmeden önce kurulmalıdır; çözme 5. adımdır."
+  },
+  {
+   "soru": "X bankası örneğinde \"x4 = 0\" ifadesi matematiksel modelin hangi öğesidir?",
+   "secenekler": [
+    "Amaç fonksiyonu",
+    "Karar değişkeni",
+    "Parametre",
+    "Kısıt",
+    "Alternatif çözüm"
+   ],
+   "dogru": 3,
+   "aciklama": "Dördüncü risk grubuna otomatik kredi verilmemesi bir sınırlamadır; sınırlamalar kısıttır.",
+   "sayfa": "s. 13–14",
+   "celdirici": "x4 karar değişkenidir ama \"x4 = 0\" ifadesi o değişkene konmuş bir kısıttır."
+  },
+  {
+   "soru": "Geri ödememe oranı %10, faiz oranı %50 olan bir risk grubuna 20 milyon TL kredi verilirse elde edilecek kâr kaç milyon TL olur? (Kâr = (Kredi − Geri ödenmeyen) × faiz − Geri ödenmeyen)",
+   "secenekler": [
+    "9",
+    "7",
+    "8",
+    "10",
+    "5"
+   ],
+   "dogru": 1,
+   "aciklama": "Geri ödenmeyen: 20 × 0,10 = 2. Faiz geliri: (20 − 2) × 0,50 = 9. Kâr: 9 − 2 = 7.",
+   "sayfa": "s. 12",
+   "celdirici": "9, geri ödenmeyen tutarı sonda düşmeyi unutmaktır.",
+   "cozum": [
+    "Geri ödenmeyen = 20 × 0,10 = 2",
+    "(20 − 2) × 0,50 = 9",
+    "Kâr = 9 − 2 = 7"
+   ]
+  },
+  {
+   "soru": "Amaç fonksiyonu Z = 30 X1 + 20 X2 olan bir kâr maksimizasyonu probleminde optimal çözüm X1 = 4 ve X2 = 6 ise amaç fonksiyonunun değeri kaçtır?",
+   "secenekler": [
+    "200",
+    "220",
+    "240",
+    "250",
+    "260"
+   ],
+   "dogru": 2,
+   "aciklama": "30 × 4 + 20 × 6 = 120 + 120 = 240.",
+   "sayfa": "s. 13",
+   "celdirici": "200 ya da 260, katsayıları değişkenlerle yer değiştirince çıkar (30 × 6 + 20 × 4 = 260)."
+  },
+  {
+   "soru": "Mevcut durum ile istenilen durum arasındaki fark aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Kriter",
+    "Kısıt",
+    "Karar",
+    "Model",
+    "Problem"
+   ],
+   "dogru": 4,
+   "aciklama": "Kitaptaki problem tanımı.",
+   "sayfa": "s. 10",
+   "celdirici": "Kriter bir değerlendirme ölçütüdür."
+  },
+  {
+   "soru": "Alternatif çözümlerin birden fazla ölçüt üzerinden değerlendirildiği karar problemlerine ne ad verilir?",
+   "secenekler": [
+    "Çok kriterli karar verme problemi",
+    "Tek kriterli karar verme problemi",
+    "Optimal çözüm problemi",
+    "Örnekleme problemi",
+    "Doğrusal regresyon problemi"
+   ],
+   "dogru": 0,
+   "aciklama": "Tek kriter üzerinden değerlendirme tek kriterli, birden fazla kriter üzerinden değerlendirme çok kriterli karar verme problemidir.",
+   "sayfa": "s. 12",
+   "celdirici": "X bankası örneğinde kâr, kredi miktarı, en az kredi ve kredi verilmeyecek grup olmak üzere birden çok kriter vardı."
+  },
+  {
+   "soru": "Ankara Üniversitesi memnuniyet araştırmasında aşağıdaki değişkenlerden hangisi kitaba göre nitel (kalitatif) değişkendir?",
+   "secenekler": [
+    "Yaş",
+    "Memnuniyet düzeyi",
+    "Bölüm",
+    "Kıdem yılı",
+    "Satış tutarı"
+   ],
+   "dogru": 2,
+   "aciklama": "Bölüm yalnızca bir öğrenciyi diğerinden ayırmak için kategorize edilir: nitel. Kitap cinsiyet ve bölümü nitel sayar.",
+   "sayfa": "s. 9",
+   "celdirici": "Kitap memnuniyet düzeyini nicel (kantitatif) sayar; sınavda bu sınıflamaya uy."
+  }
+ ]
+}
