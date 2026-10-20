@@ -31,7 +31,7 @@ Bir sonraki sınavın sorularını en iyi şunlar gösterir, bazen aynı soru ç
 Sitedeki çalışma yolu da bu sırada: 1 Konu çalış → 2 Çıkmış sorular → 3 Gözden Geçirelim → 4 Tahmini denemeler → 5 Deneme sınavı (yanında Günün tekrarı, Yanlış defterim; Araçlar: Hesap Atölyesi, Sınav öncesi özet, Ayarlar).
 
 ## 1. Çıkmış sorular (en değerli içerik)
-- Kullanıcı sınav PDF'lerini Claude projesinin dosyalarına yükler. Doğru şık kâğıtta **fosforlu kalemle** işaretlidir: sayfaları `pdftoppm -r 130 -png` ile görüntüye çevir ve her soruyu görüntüden oku (metin katmanı sütunları karıştırır).
+- Kullanıcı sınav PDF'lerini Claude projesinin dosyalarına yükler. Doğru şık kâğıtta **fosforlu kalemle** işaretlidir: sayfaları `pdftoppm -r 130 -png` ile görüntüye çevir ve her soruyu görüntüden oku (metin katmanı sütunları karıştırır). Proje dosyası yalnız metin olarak okunabiliyorsa PDF'i sohbete eklemesini iste.
 - **Önce sınavın bu derse ait olduğunu kontrol et**: başlıktaki ders kodu ve adı (isan = AAUF1405 Veri ve İş Analitiği). Başka dersin sınavı gelirse (ör. 2024-25 dosyaları AYBS407 Büyük Veri ve İş Analitiği: Hadoop, Spark, Hive) ekleme, kullanıcıya bildir, `ders.json` `cikmisNot`'a yaz.
 - Soru ve şıklar **birebir** (yazım hataları dahil; "yanlıştır" gibi altı çizili kelimeler `<u>`). İşaretli şık doğru cevaptır. Her işaretli cevabı hesapla/kitapla doğrula; işaret okunamıyor ya da hesap tutmuyorsa tahmin etme, kullanıcıya sor.
 - Her soruya `bolum` ata (konunun kitapta anlatıldığı bölüm). Final ve bütünlemede çıkan vize konuları `bolum` sayesinde vize çalışırken de görünür ("Final'de çıkan vize konusu" etiketi). Tekrar eden soruları ayıklama: tekrar = önemli soru.
@@ -71,7 +71,7 @@ araclar/<kod>/bolumler.py, cikmis.py, gozden.py, tahmin.py, uret.py
 araclar/test/atolye_stres.js, akis.py
 kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 ```
-İlerleme tarayıcıda: `localStorage` anahtarı `ankuzef:<kişi>:<ders>:<anahtar>` (soru, yanlis, kart, atolye, denemeler, kapsam, sinavTarihi, devam:*). Cihaz değişiminde Ayarlar → Yedeği indir / geri yükle. Bulut eşitleme yok (istenirse ayrı, onaylı iş).
+İlerleme tarayıcıda: `localStorage` anahtarı `ankuzef:<kişi>:<ders>:<anahtar>` (soru, yanlis, kart, adim, atolye, denemeler, kapsam, sinavTarihi, devam:*). Cihaz değişiminde Ayarlar → Yedeği indir / geri yükle. Bulut eşitleme yok (istenirse ayrı, onaylı iş).
 
 ## 4. Şema
 - **Soru** (`Q(soru, secenekler[5], dogru, aciklama, sayfa, celdirici=, onculler=, kok=, tablo=T(basliklar, satirlar, baslik=), cozum=[adımlar], kitapNotu=, tabloOnce=True, sabitSik=True, bolum=, no=)`). Öncüllü soruda `soru` boş ya da giriş metni, `onculler` 3 madde, `kok` soru cümlesi; şıklar `onc("Yalnız I", ...)`.
@@ -103,13 +103,13 @@ kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 - Sonek sorunu: sayıdan sonra Türkçe ek yazma ("26'dır" yanlış çıkabilir); "olarak bulunmuştur", "şöyledir:" kullan. Eksi işareti `tr()` içinde `−`.
 - `node araclar/test/atolye_stres.js` her üreticiyi 3000 kez çalıştırır: 5 farklı şık, NaN/undefined yok.
 ### E. Doğrulama ve teslim
-1. `python3 araclar/<kod>/uret.py` (hata varsa yazmaz), `node araclar/test/atolye_stres.js`, yerel sunucu + `python3 araclar/test/akis.py <ekran klasörü>` (çıkmış sınavı işaretli cevaplarla baştan sona çözer, 100 puan bekler; deneme, atölye, tekrar, yanlış defteri, özet, ayar; telefon + koyu tema; yatay taşma; konsol hatası).
-2. Ekran görüntülerine bak (özellikle yeni tablo ve formüller).
+1. `python3 araclar/<kod>/uret.py` (hata varsa yazmaz), `node araclar/test/atolye_stres.js`, yerel sunucu + `python3 araclar/test/akis.py <ekran klasörü>` (çıkmış sınavları ve Gözden Geçirelim'i doğru cevaplarla baştan sona çözer, 100 puan bekler; menü, bölüm adımları, deneme, atölye, tekrar, yanlış defteri, özet, ayar; telefon + koyu tema; yatay taşma; konsol hatası).
+2. Ekran görüntülerine bak (özellikle yeni tablo, şekil ve formüller).
 3. `taslak`'a gönder; kullanıcıya: ne eklendi (sayılarla), önizleme adresi (`https://taslak--<site>.netlify.app/<kod>/`), canlıda olmayan değişiklikler, "canlıya almak için 'yayınla' de (15 kredi)", kalan plan.
 
 ## 6. Derse özgü notlar
 ### Veri ve İş Analitiği — `isan` (AAUF1405, Şengül)
-- Kitap 6 bölüm: B1 İş Analitiği (s. 5–20), B2 Veri Betimlemesi (s. 21–46), B3 Tahminleyici Veri Analizi (s. 47–66) — **vize**; B4 Şebeke Modelleri, B5 Proje Yönetimi (CPM/PERT), B6 Karar Verme — final (final B1–6). B4–6 PDF'leri kendi sayfa numarasıyla (`B4 s. N`).
+- Kitap 6 bölüm: B1 İş Analitiği (s. 5–20), B2 Veri Betimlemesi (s. 21–46), B3 Tahminleyici Veri Analizi (s. 47–66) — **vize**; B4 Şebeke Modelleri, B5 Proje Yönetimi (CPM/PERT), B6 Karar Verme — final (final B1–6). B4–6 PDF'leri kendi sayfa numarasıyla (`B4 s. N`, PDF sayfası = basılı sayfa).
 - Çıkmış: 2025-26 Güz Vize (A kitapçığı; 20 soru, 5 şık, B1 6 / B2 7 / B3 7, 6 öncüllü, 9 hesap) ve 2025-26 Güz Final (B kitapçığı; 20 soru, B1 1 / B2 2 / B3 2 / B4 5 / B5 5 / B6 5; vize konusu S7, S10, S11, S18, S19; S9 şebeke şekli SVG). Sınav süresi doğrulanamadı (deneme varsayılanı 30 dk, kullanıcı değiştirebilir). Puanlama varsayımı: her soru 5 puan, yanlış doğruyu götürmez (doğrulanamadı).
 - 2024-25 Güz Vize/Final/Bütünleme dosyaları AYBS407 Büyük Veri ve İş Analitiği'ne ait; bu dersin kitabında yok, eklenmedi.
 - Çeyrek yöntemi kitaptaki: Q1 (n+1)/4., Q3 3(n+1)/4. sıra, ondalık kısım kadar ara fark. Örneklem varyansı n − 1. β₁ = SSXY / bağımsız değişkenin SS'i (kitap korelasyon örneğinde X'i performans almış; regresyonda bağımsız ücret artışı).
