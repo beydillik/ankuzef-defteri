@@ -94,7 +94,7 @@ for did, ad, sorular in DENEMELER:
 
 # aynı soru metni iki yerde mi? (çıkmış hariç; tekrar eden çıkmış soru önemli soru sayılır)
 gor = {}
-tum = [(f"{bid} konu", q) for bid in BOLUMLER for q in BOLUMLER[bid]["sorular"]] + [(f"{d} tahmin", q) for d, _, qs in DENEMELER for q in qs] + [(q["id"], q) for q in gg]
+tum = [(f"{bid} konu", q) for bid in BOLUMLER for q in BOLUMLER[bid].get("sorular", [])] + [(f"{d} tahmin", q) for d, _, qs in DENEMELER for q in qs] + [(q["id"], q) for q in gg]
 for yer, q in tum:
     m = (q["soru"] + (q.get("kok") or "") + "".join(q.get("onculler") or [])).strip()[:400]
     if m and m in gor:
