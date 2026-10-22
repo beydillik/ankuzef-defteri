@@ -113,7 +113,9 @@
  "soruDosyalari": [
   "cikmis_2025_guz_vize.json",
   "cikmis_2025_guz_final.json",
-  "gozden.json"
+  "gozden.json",
+  "tahmin_t1.json",
+  "tahmin_t2.json"
  ],
  "cikmisNot": "Ders 2024-25'te AYBS401 Dijital Pazarlama adıyla veriliyordu. O yılın Vize, Final ve Bütünleme sınavları (E-CRM, Web 2.0, e-ticaret, remarketing) bu kitapta yok; eklenmedi."
 }

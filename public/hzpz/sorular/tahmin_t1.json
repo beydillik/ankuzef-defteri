@@ -1,0 +1,352 @@
+{
+ "kaynak": "tahmin",
+ "deneme": "t1",
+ "ad": "Tahmini Vize Denemesi 1",
+ "sorular": [
+  {
+   "soru": "Hizmetin ayırt edici özelliği olarak kitapta mülkiyet yerine aşağıdakilerden hangisi gösterilir?",
+   "secenekler": [
+    "Bir tür kiralama olması",
+    "Stoklanabilmesi",
+    "Sahipliğin müşteriye devredilmesi",
+    "Standart üretilmesi",
+    "Yalnız fiziksel kanallarla dağıtılması"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmetin ayırt edici özelliği mülkiyet yerine bir kiralama şekli olmasıdır: müşteri bir nesneyi ya da alanı kullanma hakkı alır, personelin iş gücünü ve uzmanlığını kiralar ya da paylaşılan tesislere erişim için öder.",
+   "sayfa": "s. 23",
+   "celdirici": "Sahipliğin devri mallara özgüdür (Tablo 2: hizmette sahiplik transferi yoktur).",
+   "bolum": "b1",
+   "id": "t1-01"
+  },
+  {
+   "soru": "Bir kişinin açlık hissetmesi sonucu yemek hizmeti aramaya başlaması, kitaptaki ihtiyaç tetikleyicilerinden hangisine örnektir?",
+   "secenekler": [
+    "Fiziksel durumlar",
+    "Bilinçaltı zihin",
+    "Dış kaynaklar",
+    "Değerlendirme seti",
+    "Algılanan risk"
+   ],
+   "dogru": 0,
+   "aciklama": "İhtiyaçlar bilinçaltı zihin (kişisel kimlik ve hedefler), fiziksel durumlar (açlık) ya da dış kaynaklar (firmanın pazarlama faaliyetleri) ile tetiklenebilir.",
+   "sayfa": "s. 14",
+   "celdirici": "Dış kaynak, örneğin bir reklamın ihtiyacı hatırlatmasıdır; açlık bedenden gelir.",
+   "bolum": "b1",
+   "id": "t1-02"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Beklentiler arama ve karar sürecinde oluşur (II). Deneyim yoksa ağızdan ağıza yorumlar, haber hikâyeleri ya da firmanın kendi pazarlama çabaları kaynak olur (I doğru, III yanlış).",
+   "sayfa": "s. 16",
+   "onculler": [
+    "Önceki deneyimi olmayan tüketici beklentisini ağızdan ağıza yorumlara dayandırabilir.",
+    "Beklentiler arama ve karar verme sürecinde oluşur.",
+    "Firmanın kendi pazarlama çabaları beklentiyi etkilemez."
+   ],
+   "kok": "Hizmet beklentileriyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b1",
+   "id": "t1-03"
+  },
+  {
+   "soru": "Firmaların hizmetlerini sahnelenen bir performans gibi görüp hizmet tesislerini \"sahne\", çalışanları ve müşterileri \"oyuncu\" olarak yönettiği yaklaşım hangisidir?",
+   "secenekler": [
+    "Tiyatro metaforu",
+    "Gerçeklik anı metaforu",
+    "Servuction modeli",
+    "Hizmet kurtarma paradoksu",
+    "Tolerans bölgesi"
+   ],
+   "dogru": 0,
+   "aciklama": "Tiyatro metaforunda sahne hizmet tesisleri ve ekipman, oyuncular hizmet çalışanları ve müşterilerdir; her oyuncu rolünü ve senaryosunu anlamalıdır.",
+   "sayfa": "s. 18, 24",
+   "celdirici": "Servuction da sahne önü / sahne arkası terimlerini kullanır ama bir sistem modelidir; sahne-oyuncu benzetmesi tiyatro metaforudur.",
+   "bolum": "b1",
+   "id": "t1-04"
+  },
+  {
+   "soru": "Servuction modeline göre bir sinema salonunda görüşünüzü engelleyen başka bir müşteri için aşağıdakilerden hangisi söylenebilir?",
+   "secenekler": [
+    "Değeri yok eden bir etkileşimdir",
+    "Teknik çekirdeğin parçasıdır",
+    "Hizmetin arama niteliğidir",
+    "Düşük temaslı hizmet örneğidir",
+    "Müşteriyi etkilemeyen bir unsurdur"
+   ],
+   "dogru": 0,
+   "aciklama": "Müşteri hizmet ortamı, çalışanlar ve diğer müşterilerle etkileşir; her etkileşim değer yaratabilir (hoş ortam, güler yüzlü çalışan) ya da değeri yok edebilir (görüşü engelleyen müşteri). Firmalar bu etkileşimlerin hepsini düzenlemelidir.",
+   "sayfa": "s. 20",
+   "celdirici": "Diğer müşteriler görünür hizmet sunum sistemindedir, görünmez teknik çekirdekte değil.",
+   "bolum": "b1",
+   "id": "t1-05"
+  },
+  {
+   "soru": "Kuzey Amerika Endüstri Sınıflandırma Sistemi (NAICS) ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Ekonomik faaliyetleri üretim süreçlerine göre sınıflandırır ve altı basamaklı kod kullanır",
+    "Yalnız ABD tarafından 2010'larda geliştirilmiştir",
+    "SIC sistemini tamamlamak için tasarlanmış, onunla birlikte kullanılır",
+    "Sektörleri ürünlerin satış fiyatına göre gruplar",
+    "Kodlarının ilk iki hanesi şirketi temsil eder"
+   ],
+   "dogru": 0,
+   "aciklama": "NAICS ABD, Kanada ve Meksika'nın 1990'ların ortasında başlattığı, 1997'de tamamlanan, SIC'in yerini alan sistemdir. Faaliyetleri üretim süreçlerine göre sınıflandırır; altı basamaklı kodun ilk iki hanesi sektörü gösterir.",
+   "sayfa": "s. 22",
+   "celdirici": "SIC'i tamamlamak değil, değiştirmek için tasarlandı.",
+   "bolum": "b1",
+   "id": "t1-06"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Ekonomiler geliştikçe hizmetler GSYİH'nin en büyük bölümü olur (I) ve yeni işlerin çoğu hizmet sektöründe yaratılır (II). Bölüm özeti zaman faktörünün genellikle büyük önem taşıdığını söyler (III yanlış).",
+   "sayfa": "s. 23",
+   "onculler": [
+    "Gelişmiş ekonomilerde hizmetler GSYİH'nin en büyük bölümünü oluşturur.",
+    "Küresel olarak yeni işlerin çoğu hizmet sektöründe oluşur.",
+    "Hizmetlerde zaman faktörü genellikle önemsizdir."
+   ],
+   "kok": "Hizmet ekonomisiyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b1",
+   "id": "t1-07"
+  },
+  {
+   "soru": "Kitaba göre pazarlama stratejisi kurumsal stratejiden hangi yönüyle ayrılır?",
+   "secenekler": [
+    "Birçok iş biriminin kararları yerine belirli bir iş birimi stratejisiyle ilgilenir",
+    "Yalnız fiyat kararlarını kapsar",
+    "Uzun vadeli değil kısa vadelidir",
+    "Müşterilerle ilişkileri dışarıda bırakır",
+    "Rakipleri dikkate almaz"
+   ],
+   "dogru": 0,
+   "aciklama": "Kurumsal strateji birçok iş biriminden oluşan organizasyonun kararlarıyla ilgilenir; pazarlama stratejisi belirli bir iş birimi stratejisiyle ilgilenir ve ürünlere, pazarlara, müşteri ilişkilerine odaklanır.",
+   "sayfa": "s. 33",
+   "celdirici": "Müşteri ilişkileri tam tersine pazarlama stratejisinin odak noktalarından biridir.",
+   "bolum": "b2",
+   "id": "t1-08"
+  },
+  {
+   "soru": "Ekonomik çevre analizinde gelir, tasarruf, borç ve kredi durumu gibi tüketici harcamalarını etkileyen faktörler hangi başlıkta incelenir?",
+   "secenekler": [
+    "Mikro ekonomik koşullar",
+    "Makroekonomik koşullar",
+    "Demografik analiz",
+    "Sosyo-kültürel faktörler",
+    "Rekabet çevresi"
+   ],
+   "dogru": 0,
+   "aciklama": "Ekonomik çevre iki boyutludur: makroekonomik koşullar (ekonomik büyüme, enflasyon, döviz kuru, faiz) büyük eğilimleri; mikro ekonomik koşullar (gelir, tasarruf, borç, kredi) tüketici harcamasını etkileyen faktörleri anlatır.",
+   "sayfa": "s. 35",
+   "celdirici": "Faiz ve enflasyon makroekonomiktir; kişinin borç ve kredi durumu mikro.",
+   "bolum": "b2",
+   "id": "t1-09"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Organize alıcıların pazarlık gücü artar (I); güçlü tedarikçi ve yüksek geçiş maliyeti bölümü çekici olmaktan çıkarır (III). Giriş engeli yükseldikçe pazara girmek zorlaşır (II yanlış).",
+   "sayfa": "s. 36",
+   "onculler": [
+    "Alıcılar yoğunlaştığında veya organize olduğunda pazarlık güçleri artar.",
+    "Giriş engelleri yükseldikçe pazara girmek kolaylaşır.",
+    "Tedarikçiler güçlü ve geçiş maliyetleri yüksekse pazar bölümü çekici olmaz."
+   ],
+   "kok": "Porter'ın beş güç analiziyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b2",
+   "id": "t1-10"
+  },
+  {
+   "soru": "Bright Horizons'ın hizmetlerini ebeveynlere değil, çalışanları için işyerinde çocuk bakım merkezi isteyen şirketlere pazarlaması kitapta hangi konunun örneği olarak verilir?",
+   "secenekler": [
+    "Zayıf bir sektörün zayıflıklarını güçlüğe çeviren konumlandırma",
+    "Farklılaştırılmamış pazarlama",
+    "Avcı fiyatlama",
+    "Mikro pazarlama",
+    "Talebe göre fiyatlama"
+   ],
+   "dogru": 0,
+   "aciklama": "Bright Horizons giriş engeli olmayan, marjı düşük, markası farklılaşmamış bir sektörü işyeri ortaklıklarıyla, kaliteli personelle ve akreditasyonla güçlü bir konuma taşıdı: rekabetten uzakta konumlandırma.",
+   "sayfa": "s. 37–38",
+   "celdirici": "Yerel müşteriye odaklanma değil; kurumsal ortaklıkla farklı bir kanal ve konum seçimi.",
+   "bolum": "b2",
+   "id": "t1-11"
+  },
+  {
+   "soru": "Bazı pazarlamacılara göre tek bir faydayı öne çıkarmanın (\"en iyi hizmet\", \"en düşük fiyat\" gibi) avantajı nedir?",
+   "secenekler": [
+    "O özellikte lider imajı yaratma fırsatı vermesi",
+    "Rakiplerin taklit etmesini imkânsız kılması",
+    "Bütün segmentlere aynı anda hitap etmesi",
+    "Pazarlama karmasını gereksiz kılması",
+    "Maliyetleri sıfıra indirmesi"
+   ],
+   "dogru": 0,
+   "aciklama": "Tek fayda konumlandırması \"bir numara\" olmayı ve o özellikte lider imajı yaratmayı sağlar. Birden fazla fayda daha ayırt edici ve taklidi zor olabilir ama net imajı kaybettirebilir.",
+   "sayfa": "s. 46",
+   "celdirici": "Taklit edilmesi zor olan birden fazla faydanın sunulmasıdır; tek fayda daha kolay kopyalanır.",
+   "bolum": "b2",
+   "id": "t1-12"
+  },
+  {
+   "soru": "Pazarlama karması bileşenleri arasındaki tamamlayıcı etkiye kitapta verilen örnek hangisidir?",
+   "secenekler": [
+    "Yüksek kaliteli hizmet sunumunun yüksek kaliteli müşteri hizmeti gerektirmesi",
+    "Fiyatın kısa vadede değiştirilebilmesi",
+    "Reklamın satış gücünün yerine kullanılabilmesi",
+    "Dağıtım kanalının uzun vadede geliştirilmesi",
+    "Konumlandırma haritasının çizilmesi"
+   ],
+   "dogru": 0,
+   "aciklama": "İkame etkiler farklı karma kombinasyonları tasarlamayı sağlar; tamamlayıcı etkiler karma arasındaki korelasyonu dikkate almayı gerektirir: yüksek kaliteli hizmet sunumu yüksek kaliteli müşteri hizmeti ister.",
+   "sayfa": "s. 47",
+   "celdirici": "Bir bileşenin ötekinin yerine geçmesi ikame etkidir.",
+   "bolum": "b2",
+   "id": "t1-13"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Kitap kısa vadede fiyat, satış gücü ve reklamın; uzun vadede yeni hizmet ve kanalların değişebileceğini söyler (I, II). Yeni hizmet geliştirmek dağıtım, fiyat ya da promosyon değişikliği gerektirebilir; bileşenler birbirine bağımlıdır (III yanlış).",
+   "sayfa": "s. 47",
+   "onculler": [
+    "Fiyat, satış gücü ve reklam harcamaları kısa vadede değiştirilebilir.",
+    "Yeni hizmet sunumları ve dağıtım kanalları uzun vadede geliştirilir.",
+    "Yeni bir hizmet geliştirmek dağıtım veya fiyatlandırmada değişiklik gerektirmez."
+   ],
+   "kok": "Pazarlama karması stratejisiyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b2",
+   "id": "t1-14"
+  },
+  {
+   "soru": "Reklamın özellikleri arasında aşağıdakilerden hangisi yer almaz?",
+   "secenekler": [
+    "Mesajın gönderici işletmenin kontrolünde olmaması",
+    "Kaynağının belirli olması",
+    "Ücretli olması",
+    "Kişiselleştirilmemiş kitlesel mesaj içermesi",
+    "Ana medyada yayımlanması"
+   ],
+   "dogru": 0,
+   "aciklama": "Reklam: kaynağı belirli, ücretli, kişiselleştirilmemiş kitlesel mesaj, mesaj göndericinin kontrolünde. Mesajın işletmenin kontrolünde olmaması halkla ilişkilerin özelliğidir.",
+   "sayfa": "s. 67",
+   "celdirici": "Halkla ilişkiler de kitlesel mesaj içerir ama ücretsizdir ve kontrol işletmede değildir.",
+   "bolum": "b3",
+   "id": "t1-15"
+  },
+  {
+   "soru": "Kişiselleştirilmiş, bireysel mesaj içeren ve doğrudan geri bildirim imkânı sunan, ilişki temelli tutundurma aracı hangisidir?",
+   "secenekler": [
+    "Kişisel satış",
+    "Satış tutundurma",
+    "Reklam",
+    "Halkla ilişkiler",
+    "Dijital pazarlama iletişimi"
+   ],
+   "dogru": 0,
+   "aciklama": "Kişisel satış ilişki temellidir, kişiselleştirilmiş mesaj içerir ve doğrudan geri bildirim sunar. Doğrudan pazarlama da kişiseldir ama özelliği proaktif olmasıdır.",
+   "sayfa": "s. 67",
+   "celdirici": "Satış tutundurma ücretli, kitlesel ve kısa vadelidir.",
+   "bolum": "b3",
+   "id": "t1-16"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Tüketici pazarında göç, orta sınıfın yükselişi ve tasarruf eğilimi; endüstriyel pazarda dış kaynak kullanımı ve finansal sektöre yaslanma büyüme nedenidir. Üçü de doğru.",
+   "sayfa": "s. 56–57",
+   "onculler": [
+    "Köyden kente göçle evde sunulan temizlik ve bakım hizmetlerinin piyasadan satın alınması",
+    "İkinci Dünya Savaşı sonrası beyaz yakalı orta sınıfın yükselişi",
+    "Üreticilerin dağıtım, depolama ve yemek hizmetlerini dış uzmanlara bırakması"
+   ],
+   "kok": "Yukarıdakilerden hangileri kitapta hizmet sektörünün büyüme nedenleri arasında sayılır?",
+   "bolum": "b3",
+   "id": "t1-17"
+  },
+  {
+   "soru": "Hizmet işletmeleri çalışanları yanlış seçtiği ya da eğittiği için değil, tüketici beklentilerini yanlış anladığı için kötü kalite algısı oluşuyorsa bu hangi nedendir?",
+   "secenekler": [
+    "Yanlış anlama",
+    "Yetersiz sunum",
+    "Yetersiz kaynaklar",
+    "Abartılmış vaatler",
+    "Ağızdan ağıza iletişim"
+   ],
+   "dogru": 0,
+   "aciklama": "Dört neden: yanlış anlama (yönetici beklentiyi yanlış anlar), yetersiz kaynaklar, yetersiz sunum (yanlış çalışan seçimi/eğitimi), abartılmış vaatler.",
+   "sayfa": "s. 69",
+   "celdirici": "Yetersiz sunumda beklenti doğru anlaşılmıştır; sorun çalışandadır.",
+   "bolum": "b3",
+   "id": "t1-18"
+  },
+  {
+   "soru": "Four Seasons örneğinde tam zamanlı çalışanların yıllık işten ayrılma oranının sektör ortalamasının yarısı (%18) olması kitapta neyin sonucu olarak sunulur?",
+   "secenekler": [
+    "Çalışanlara en önemli misafir gibi davranan içsel uygulamaların",
+    "Avcı fiyat politikasının",
+    "Yoğun dağıtımın",
+    "Düşük ücret politikasının",
+    "Dokunulabilir kılma çalışmalarının"
+   ],
+   "dogru": 0,
+   "aciklama": "Four Seasons en iyi insanları işe alır, iyi öder, ortak yemek ve ücretsiz konaklama gibi uygulamalarla çalışanı misafir gibi ağırlar; memnun çalışan tüketiciyi de memnun eder (içsel pazarlama, kâr zincirinin ilk halkaları).",
+   "sayfa": "s. 72",
+   "celdirici": "Örnekte iyi ücret var; düşük ücret tam tersi.",
+   "bolum": "b3",
+   "id": "t1-19"
+  },
+  {
+   "soru": "Hizmet süreçlerinin tasarımında insan-makine dengesi için kitapta beklenen nedir?",
+   "secenekler": [
+    "Yalnız yüksek temasa değil yüksek teknolojiye de dayanan etkileşimler sunmak",
+    "Bütün çalışanları makinelerle değiştirmek",
+    "Teknolojiyi tamamen sahne arkasında tutmak",
+    "Self-servisi yasaklamak",
+    "Yalnız yüz yüze hizmet vermek"
+   ],
+   "dogru": 0,
+   "aciklama": "Bugünün pazarında işletmelerden yalnız çalışan-tüketici \"yüksek temasına\" değil, \"yüksek teknolojiyi\" de içeren etkileşimleri sunmaları beklenir.",
+   "sayfa": "s. 74",
+   "celdirici": "Denge iki ucu birlikte ister; birini tamamen kaldırmak denge değildir.",
+   "bolum": "b3",
+   "id": "t1-20"
+  }
+ ]
+}

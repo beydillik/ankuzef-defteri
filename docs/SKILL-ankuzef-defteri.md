@@ -72,6 +72,7 @@ araclar/<kod>/bolumler.py, cikmis.py, gozden.py, tahmin.py, uret.py
 araclar/test/atolye_stres.js, akis.py (isan), akis_hzpz.py (hzpz)
 kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 ```
+Temalar: Defter (varsayılan: tahta menü + açık defter sayfası; cihaz koyu moddaysa kısılır), Gece ve Tahta (Ela'nın defterindeki koyu temalar; sayfa da koyu). Seçici ana sayfada ve Ayarlar'da; `localStorage` `ankuzef:tema` (kişiden bağımsız), `<html data-tema>`. Yeni ders `index.html`'si isan/hzpz kopyası olduğundan `<head>`'deki erken tema betiğini de taşır. Koyu temada fosfor zemindeki yazı koyu kalmalı (`defter.css` tema bloğu).
 İlerleme tarayıcıda: `localStorage` anahtarı `ankuzef:<kişi>:<ders>:<anahtar>` (soru, yanlis, kart, adim, atolye, denemeler, kapsam, sinavTarihi, devam:*). Cihaz değişiminde Ayarlar → Yedeği indir / geri yükle. Bulut eşitleme yok (istenirse ayrı, onaylı iş).
 
 ## 4. Şema
@@ -127,4 +128,4 @@ kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 - Kitap hataları (bölüm yazılırken `kitapNotlari`'na): s. 58 "Hizmet Bakın Mantık" → Hizmet Baskın Mantık; B3 fiyat stratejileri (4)–(6) diye numaralanmış (üç strateji).
 - Test: `python3 araclar/test/akis_hzpz.py <ekran klasörü>` (çıkmış vize/final ve Gözden Geçirelim 100, deneme, telefon + koyu tema, taşma, konsol).
 - Bölümler ayrı dosyalarda (`araclar/hzpz/b1.py` …), `bolumler.py` bunları toplar; yarım bölüm `hazir=False` iken JSON yazılmaz, parça parça gönderilebilir.
-- B1–B3 hazır (özet 6, kart 30/31/31, çift 7, konu testi 14 her biri). Önizleme `https://taslak--ankuzef-defteri.netlify.app/hzpz/`. Sıradaki: vize tahmini denemeler (B1 7, B2 7, B3 6), sonra B4–6.
+- B1–B3 hazır (özet 6, kart 30/31/31, çift 7, konu testi 14 her biri). Tahmini Vize Denemesi 1 ve 2 (20'şer soru, B1 7 / B2 7 / B3 6; gerçek vizede öncüllü soru yoktu, tahminde 5 ve 4). Önizleme `https://taslak--ankuzef-defteri.netlify.app/hzpz/`. Sıradaki: B4–6 içeriği, sonra final tahmini denemeleri (B1 1 / B4 7 / B5 7 / B6 5).

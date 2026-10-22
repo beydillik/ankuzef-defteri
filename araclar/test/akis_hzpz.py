@@ -3,7 +3,7 @@ python3 araclar/test/akis_hzpz.py [çıktı_klasörü]
 Masaüstü (açık) ve telefon (koyu): Kemal → ders, çalışma yolu, çıkmış vize ve finali işaretli cevaplarla çözme (100),
 finalde çıkmış vize sorusu, Gözden Geçirelim 6 bölüm (100), vize ve final denemesi, hazır olmayan bölüm sayfası,
 diğer sayfalar, yatay taşma ve konsol hatası."""
-import sys, os, json, urllib.parse
+import sys, os, json, re, urllib.parse
 from playwright.sync_api import sync_playwright
 
 URL = "http://localhost:8765/"
@@ -11,6 +11,7 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else "/tmp/akis_hzpz"
 os.makedirs(OUT, exist_ok=True)
 KOK = os.path.join(os.path.dirname(__file__), "..", "..", "public", "hzpz")
 hatalar = []
+duz = lambda t: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", t)).strip()
 
 
 def kontrol(kosul, mesaj):
@@ -111,6 +112,19 @@ with sync_playwright() as p:
         if ad == "tel": pg.click(".menu-ac"); pg.wait_for_timeout(250)
         pg.click("#menu [data-kapsam='vize']"); pg.wait_for_timeout(150)
 
+        # tahmini denemeler (şıklar karışık: doğru şık metinden bulunur)
+        for did in ("t1", "t2"):
+            tq = yukle(f"tahmin_{did}.json")
+            git(pg, f"#tahmin/{did}"); pg.click("[data-basla]")
+            for i, q in enumerate(tq):
+                pg.locator(".secenek", has=pg.locator(".metin", has_text=re.compile("^" + re.escape(duz(q["secenekler"][q["dogru"]])) + "$"))).first.click()
+                if not pg.locator(".geri h3").inner_text().startswith("Doğru"): kontrol(False, f"tahmin {did} S{i + 1}")
+                pg.click("[data-sonraki]")
+            kontrol("100" in pg.locator(".kutu").first.inner_text(), f"tahmin {did}: {len(tq)}/{len(tq)} → 100")
+        # temalar
+        for t in ("gece", "tahta", "defter"):
+            git(pg, "#ayar"); pg.click(f"[data-tema-sec='{t}']")
+            kontrol(pg.evaluate("document.documentElement.dataset.tema || 'defter'") == t, f"tema {t} uygulandı")
         for yol in ["#tekrar", "#yanlis", "#ozet", "#ayar", "#tahmin", "#atolye", "#konu", "#"]:
             git(pg, yol)
             if len(pg.locator("#icerik").inner_text()) < 30: kontrol(False, f"{yol} boş")

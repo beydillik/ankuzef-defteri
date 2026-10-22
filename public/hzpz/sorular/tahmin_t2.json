@@ -1,0 +1,335 @@
+{
+ "kaynak": "tahmin",
+ "deneme": "t2",
+ "ad": "Tahmini Vize Denemesi 2",
+ "sorular": [
+  {
+   "soru": "Kitapta hizmet sektörünün başlıca endüstrileri arasında aşağıdakilerden hangisi yer almaz?",
+   "secenekler": [
+    "Madencilik ve taş ocakçılığı",
+    "Finans, sigorta ve gayrimenkul hizmetleri",
+    "Toptan ve perakende ticaret",
+    "Sağlık hizmetleri",
+    "Sanat, eğlence, rekreasyon, konaklama ve yiyecek hizmetleri"
+   ],
+   "dogru": 0,
+   "aciklama": "Başlıca hizmet endüstrileri: iş ve profesyonel hizmetler; finans, sigorta ve gayrimenkul; toptan ve perakende ticaret; ulaşım, kamu hizmetleri ve iletişim; sağlık; sanat, eğlence, rekreasyon, konaklama ve yiyecek; kamu hizmetleri. Madencilik hizmet sektörü değildir.",
+   "sayfa": "s. 23",
+   "bolum": "b1",
+   "id": "t2-01"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Bölüm girişine göre anlayışı dijitalleşme (sosyal medya), müşteri deneyimi (kişiselleştirme), veri analitiği ve sürdürülebilirlik şekillendirir. Üç ifade de doğru.",
+   "sayfa": "s. 6–7",
+   "onculler": [
+    "Sürdürülebilirlik ve sosyal sorumluluk sahibi stratejiler tüketici tercihlerini etkiler.",
+    "Sosyal medya hizmet firmalarının müşterilerle birebir iletişim kurmasını mümkün kılmıştır.",
+    "Kişiselleştirilmiş hizmet sunumu müşteri beklentilerini karşılamayı hedefler."
+   ],
+   "kok": "Hizmet pazarlaması anlayışındaki değişimle ilgili yukarıdaki ifadelerden hangileri kitapla uyumludur?",
+   "bolum": "b1",
+   "id": "t2-02"
+  },
+  {
+   "soru": "Kitaba göre gelişmiş ekonomilerde sağlık, eğitim ve yaşlı bakımı hizmetlerine talebin artmasının nedeni hangisidir?",
+   "secenekler": [
+    "Yaşlanan nüfus ve artan şehirleşme",
+    "Hizmetlerin stoklanabilir hale gelmesi",
+    "Hizmet fiyatlarının düşmesi",
+    "Küreselleşmenin azalması",
+    "Yapay zekânın çalışanların yerini alması"
+   ],
+   "dogru": 0,
+   "aciklama": "Toplumsal ve kültürel değişimler, özellikle yaşlanan nüfus ve şehirleşme, sağlık, eğitim ve yaşlı bakımı talebini artırmıştır.",
+   "sayfa": "s. 9",
+   "bolum": "b1",
+   "id": "t2-03"
+  },
+  {
+   "soru": "Daha önce kullanılmış, alternatifleri net ve algılanan riski düşük sık satın alınan hizmetler için satın alma kararı nasıldır?",
+   "secenekler": [
+    "Basit ve hızlıdır; favori sağlayıcı varsa genellikle o seçilir",
+    "Her seferinde uzun bir bilgi aramasıyla verilir",
+    "Mutlaka çok nitelikli takas içerir",
+    "Yalnız fiyata göre verilir",
+    "Karşılaşma sonrasında verilir"
+   ],
+   "dogru": 0,
+   "aciklama": "Sık alınan, riski düşük, alternatifi net hizmetlerde karar fazla düşünmeden alınır; tüketicinin favori sağlayıcısı varsa başka neden olmadıkça onu seçer. Karmaşık kararlar ise fiyat dahil birçok nitelik arasında takas içerir.",
+   "sayfa": "s. 16",
+   "celdirici": "Çok nitelikli takas karmaşık kararların (havayolu seçimi) özelliğidir.",
+   "bolum": "b1",
+   "id": "t2-04"
+  },
+  {
+   "soru": "Hizmet karşılaşmasında hangi tür hizmetler genellikle daha fazla hizmet kalitesi ipucu sunar?",
+   "secenekler": [
+    "Yüksek temaslı hizmetler",
+    "Düşük temaslı hizmetler",
+    "Self-servis kiosklar",
+    "Telefonla verilen hizmetler",
+    "Posta ile verilen hizmetler"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmet teslimatı sırasında müşteri kaliteyi değerlendirmeye başlar; yüksek temaslı hizmetler düşük temaslılara göre daha fazla kalite ipucu sunar.",
+   "sayfa": "s. 18",
+   "bolum": "b1",
+   "id": "t2-05"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Tolerans bölgesinde makul memnuniyet (I), istenen düzeye yaklaşınca ya da aşınca yüksek memnuniyet (II). Memnuniyetsiz müşteri şikâyet edebilir ya da sağlayıcıyı değiştirebilir (III yanlış).",
+   "sayfa": "s. 18",
+   "onculler": [
+    "Algılanan performans tolerans bölgesindeyse müşteri makul ölçüde memnundur.",
+    "Performans istenen düzeye yaklaştıkça veya aştıkça müşteri çok memnun olur.",
+    "Memnuniyetsiz müşteri yalnız şikâyet edebilir, sağlayıcıyı değiştiremez."
+   ],
+   "kok": "Karşılaşma sonrası aşamayla ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b1",
+   "id": "t2-06"
+  },
+  {
+   "soru": "Kitaptaki son vaka çalışmasına göre Uber ve Airbnb gibi platformlar hizmetlerin hangi iki özelliğini etkilemiştir?",
+   "secenekler": [
+    "Değişkenlik ve ayrılmazlık",
+    "Soyutluk ve stoklanamama",
+    "Stoklanamama ve sahiplik",
+    "Arama ve güven nitelikleri",
+    "Fiyat ve dağıtım"
+   ],
+   "dogru": 0,
+   "aciklama": "Bağımsız yüklenicilerle kalite sağlayıcıdan sağlayıcıya değişir (değişkenlik); sağlayıcı-müşteri etkileşimine platform aracılık eder (ayrılmazlık). COVID-19 ise soyutluk ve ayrılmazlığı öne çıkardı.",
+   "sayfa": "s. 21",
+   "celdirici": "Soyutluk ve ayrılmazlık vakadaki COVID-19 kısmıyla ilgilidir.",
+   "bolum": "b1",
+   "id": "t2-07"
+  },
+  {
+   "soru": "Kitaba göre hizmet işletmelerinin misyon beyanları üreticilerinkinden nasıl farklıdır?",
+   "secenekler": [
+    "Daha az kapsamlıdır ve çoğunlukla müşterilere ve kamu imajına odaklanır",
+    "Teknolojiye daha çok vurgu yapar",
+    "Felsefe ve konuma ağırlık verir",
+    "Yalnız finansal hedefleri içerir",
+    "Hiç rekabet avantajından söz etmez"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmet işletmelerinde misyon beyanı daha az kapsamlıdır; teknoloji, felsefe ve konuma daha az vurgu yapar, müşterilere ve kamu imajına odaklanır. Hizmet işletmeleri üreticilerden farklı olarak rekabet avantajına vurgu yapar.",
+   "sayfa": "s. 34–35",
+   "bolum": "b2",
+   "id": "t2-08"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Kurumsal kaynaklar: pazar kaynakları (ürün, marka, kanal), insan kaynakları, fiziksel kaynaklar (bina, araç, donanım), finansal kaynaklar (nakit, kredi, öz sermaye). Rakiplerle karşılaştırılması güçlü ve zayıf yönleri ortaya koyar.",
+   "sayfa": "s. 35",
+   "onculler": [
+    "Pazar kaynakları: ürünler, markalar, dağıtım kanalları",
+    "Fiziksel kaynaklar: binalar, araçlar, donanım",
+    "Finansal kaynaklar: nakit, krediler, öz sermaye"
+   ],
+   "kok": "Kurumsal kaynaklarla ilgili yukarıdaki eşleştirmelerden hangileri doğrudur?",
+   "bolum": "b2",
+   "id": "t2-09"
+  },
+  {
+   "soru": "Stratejik hedeflerden pazar payını ve satışları artırmayı amaçlayanlar hangi kategoridedir?",
+   "secenekler": [
+    "Satış ve pazar payı hedefleri",
+    "Finansal hedefler",
+    "İnsan kaynakları hedefleri",
+    "İç süreç hedefleri",
+    "Makro çevre hedefleri"
+   ],
+   "dogru": 0,
+   "aciklama": "Stratejik hedefler uzun vadelidir: finansal (kârlılık), satış ve pazar payı, insan kaynakları (iş gücünün seçimi ve gelişimi), iç süreç (operasyonel verimlilik).",
+   "sayfa": "s. 35",
+   "bolum": "b2",
+   "id": "t2-10"
+  },
+  {
+   "soru": "Kitaba göre araştırmalar bazı pazar bölümlerinin \"yetersiz hizmet aldığını\" gösterdiğinde bu pazarlar için ne söylenebilir?",
+   "secenekler": [
+    "Genellikle şaşırtıcı derecede büyüktür",
+    "Her zaman kârsızdır",
+    "Hedeflenmemelidir",
+    "Yalnız yüksek gelirli tüketicilerden oluşur",
+    "Farklılaştırılmamış pazarlamayla kazanılır"
+   ],
+   "dogru": 0,
+   "aciklama": "İhtiyaçları mevcut tedarikçilerce iyi karşılanmayan pazarlar genellikle şaşırtıcı derecede büyüktür; örneğin gelişmekte olan ekonomilerdeki düşük gelirli çalışanlar toplu olarak çok büyük bir pazardır.",
+   "sayfa": "s. 37",
+   "bolum": "b2",
+   "id": "t2-11"
+  },
+  {
+   "soru": "Konumlandırmanın pazarlama stratejisindeki önemli rolü kitapta neye bağlanır?",
+   "secenekler": [
+    "Pazar ve rekabet analizini şirket içi analize bağlamasına",
+    "Yalnız reklam mesajını belirlemesine",
+    "Fiyatı tek başına belirlemesine",
+    "Bölümlendirmeyi gereksiz kılmasına",
+    "Makro çevreyi değiştirmesine"
+   ],
+   "dogru": 0,
+   "aciklama": "Konumlandırma pazar analizini ve rekabet analizini şirket içi analize bağlar; tanısal araç olarak ürün geliştirme, hizmet sunumu, fiyatlandırma ve iletişim kararlarına girdi sağlar.",
+   "sayfa": "s. 43",
+   "bolum": "b2",
+   "id": "t2-12"
+  },
+  {
+   "soru": "Aynı hastanede çocuk ve doğum hizmetlerinin mükemmel ününün jinekoloji ve pediatri algısını da artırması, konumlandırmayla ilgili hangi ilkeyi gösterir?",
+   "secenekler": [
+    "Aynı yerde sunulan hizmetlerin konumları tutarlı olmalıdır, çünkü imaj birinden ötekine sıçrar",
+    "Her hizmet tamamen farklı konumlandırılmalıdır",
+    "Konumlandırma yalnız kurum düzeyinde yapılır",
+    "Tek fayda konumlandırması her zaman zararlıdır",
+    "Konumlandırma rakipleri içeri çekmelidir"
+   ],
+   "dogru": 0,
+   "aciklama": "Çok siteli, çok ürünlü işletmelerde konum kurum, şube ya da tek hizmet düzeyinde kurulabilir; aynı yerdeki hizmetlerin konumu tutarlı olmalıdır, çünkü ilişkili algılanan birinin imajı ötekine sıçrar. Çelişkili konum ikisine de zarar verir.",
+   "sayfa": "s. 43",
+   "bolum": "b2",
+   "id": "t2-13"
+  },
+  {
+   "soru": "Bir hizmet şirketi konumlandırma haritasındaki bilgiye dayanarak aşağıdaki stratejilerden hangisini kitaba göre izleyebilir?",
+   "secenekler": [
+    "Haritada boş bir pozisyon belirlemek",
+    "Bütün segmentleri aynı anda hedeflemek",
+    "Pazar araştırmasını bırakmak",
+    "Pazarlama karmasını konumdan bağımsız tasarlamak",
+    "Fiyatı rakiplerin altına çekip onları pazardan çıkarmak"
+   ],
+   "dogru": 0,
+   "aciklama": "Algısal haritaya dayanarak şirket rakiplere karşı mevcut pozisyonunu güçlendirebilir, haritada boş bir pozisyon belirleyebilir ya da rekabeti yeniden konumlandırabilir.",
+   "sayfa": "s. 46",
+   "celdirici": "Rakibi fiyatla pazardan çıkarmak avcı fiyat politikasıdır (Bölüm 3).",
+   "bolum": "b2",
+   "id": "t2-14"
+  },
+  {
+   "soru": "Halkla ilişkilerin kitapta sayılan özelliklerinden biri aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Genellikle yüksek inandırıcılığa sahip olması",
+    "Ücretli olması",
+    "Mesajın doğrudan işletmenin kontrolünde olması",
+    "Kişiselleştirilmiş bireysel mesaj içermesi",
+    "Kısa vadeli kullanıma uygun olması"
+   ],
+   "dogru": 0,
+   "aciklama": "Halkla ilişkiler: ücretsiz, kamuoyunu eğitme vb. amaçlı, kişiselleştirilmemiş kitlesel mesaj, genellikle yüksek inandırıcılık, mesaj işletmenin doğrudan kontrolünde değil.",
+   "sayfa": "s. 67",
+   "celdirici": "Kısa vadeli kullanım satış tutundurmanın özelliğidir.",
+   "bolum": "b3",
+   "id": "t2-15"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Kişisel satış riski azaltmaya yardımcı olur: personelin tavrı, bilgisi, empatisi kalite göstergesidir (II); memnun tüketicilerden referans listeleri oluşturulabilir (I). Kişisel satışın riski artırdığı söylenmez (III yanlış).",
+   "sayfa": "s. 68",
+   "onculler": [
+    "Memnun tüketicilerden referans isimleri istenerek referans listeleri oluşturulabilir.",
+    "Satış personelinin bilgisi ve empati becerisi kalite göstergesi olarak algılanabilir.",
+    "Kişisel satış hizmetlerde algılanan riski artırır."
+   ],
+   "kok": "Hizmetlerde algılanan riski azaltmayla ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b3",
+   "id": "t2-16"
+  },
+  {
+   "soru": "Disneyland'in bilgisayar oyunlarına zaman ayıran gençler için etkileşimli deneyimler tasarlaması kitapta neyin örneğidir?",
+   "secenekler": [
+    "Hizmet tekliflerinin değişen tüketici zevklerine göre sürekli yeniden değerlendirilmesi",
+    "Avcı fiyat politikası",
+    "Yoğun dağıtım",
+    "Hizmet telafisi paradoksu",
+    "Maliyete göre fiyatlama"
+   ],
+   "dogru": 0,
+   "aciklama": "Kaliteli hizmet sunduktan sonra bile işletmeler tüketici istek, ihtiyaç ve zevklerinin değişen doğasına uymak için tekliflerini sürekli yeniden değerlendirmelidir.",
+   "sayfa": "s. 62",
+   "bolum": "b3",
+   "id": "t2-17"
+  },
+  {
+   "soru": "Kitaba göre internetin hizmet fiyatlandırması üzerindeki etkisi nedir?",
+   "secenekler": [
+    "Fiyat şeffaflığı sağlayarak alternatif fiyatların öğrenilmesini kolaylaştırır",
+    "Fiyat rekabetini ortadan kaldırır",
+    "Maliyete göre fiyatlamayı zorunlu kılar",
+    "Tüketicilerin fiyata odaklanmasını azaltır",
+    "Hizmetleri stoklanabilir yapar"
+   ],
+   "dogru": 0,
+   "aciklama": "İnternet tüketiciler için fiyat şeffaflığı sağlar; yoğun fiyat rekabetinde hizmetler benzer görülürse tüketici fiyata odaklanır. Çözüm farklılaştırılmış hizmet ve teslimat teklifi ile uygun imajdır.",
+   "sayfa": "s. 66",
+   "bolum": "b3",
+   "id": "t2-18"
+  },
+  {
+   "soru": "İçeriğinin doğallığını vurgulayan Yves Rocher'in mekânlarında beyaz ve yeşil renk kullanması, çalışanların beyaz giyinmesi hangi pazarlama karması elemanının örneğidir?",
+   "secenekler": [
+    "Fiziksel kanıt",
+    "Süreç",
+    "Fiyat",
+    "Dağıtım",
+    "Kişisel satış"
+   ],
+   "dogru": 0,
+   "aciklama": "Fiziksel kanıt hizmet ortamı ve somut kolaylaştırıcılardır; renkler tüketiciye mesaj vermek için kullanılır (yeşil doğa, beyaz saflık ve doğallık).",
+   "sayfa": "s. 73",
+   "bolum": "b3",
+   "id": "t2-19"
+  },
+  {
+   "soru": "Kitapta \"hizmet işletmeleri için ürün\" başlığında hizmetlerin farklılaşmasının bir yolu olarak hangisi verilir?",
+   "secenekler": [
+    "Sürekli olarak rakiplerden daha yüksek kalite sunmak",
+    "Hizmeti stoklamak",
+    "Fiyatı gizlemek",
+    "Tutundurmayı bırakmak",
+    "Çalışan sayısını azaltmak"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmet işletmesi rakiplerinden sürekli olarak daha yüksek kalite sunarak farklılaşabilir; ayrıca yetenekli insanlar, fiziksel ortam ve üstün teslimat süreciyle de farklılaşabilir.",
+   "sayfa": "s. 61",
+   "bolum": "b3",
+   "id": "t2-20"
+  }
+ ]
+}

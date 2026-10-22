@@ -67,6 +67,7 @@ with sync_playwright() as p:
             kontrol(not pg.evaluate("document.querySelector('#menu').classList.contains('acik')"), "menüden seçince menü kapanır")
         else:
             pg.click("#menu >> text=Konu çalış")
+        pg.wait_for_timeout(300)  # içerik hash değişiminden sonra çizilir
         kontrol(pg.locator(".defter h1").inner_text().startswith("1. Konu"), "menü → Konu çalış")
 
         # bölüm adımları
