@@ -18,6 +18,7 @@ BOLUM_LISTE = [
     ("b6", 6, "Hizmet Pazarlamasında Fiziksel Kanıtlar", "s. 123–137", False, (123, 137)),
 ]
 ARALIK = {b[0]: b[5] for b in BOLUM_LISTE}
+HAZIR = {b[0]: b[4] for b in BOLUM_LISTE}
 VIZE = ["b1", "b2", "b3"]
 FINAL = ["b1", "b2", "b3", "b4", "b5", "b6"]
 VIZE_DAG = {"b1": 7, "b2": 7, "b3": 6}               # 2025-26 Güz Vize
@@ -120,7 +121,8 @@ if HATA:
 
 yaz("ders.json", ders)
 for bid, B in BOLUMLER.items():
-    yaz(f"bolumler/{bid}.json", B)
+    if HAZIR.get(bid):
+        yaz(f"bolumler/{bid}.json", B)
 yaz("sorular/cikmis_2025_guz_vize.json", CIKMIS_2025_VIZE)
 yaz("sorular/cikmis_2025_guz_final.json", CIKMIS_2025_FINAL)
 yaz("sorular/gozden.json", {"kaynak": "gozden", "sorular": gg})
