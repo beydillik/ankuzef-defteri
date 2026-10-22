@@ -25,6 +25,24 @@
     del(k) { try { localStorage.removeItem(k); } catch (e) { } },
     keys() { try { return Object.keys(localStorage); } catch (e) { return []; } },
   };
+  // ---------- tema (bütün cihaz için ortak; kişiye bağlı değil) ----------
+  // Defter: tahta menü + açık defter sayfası (varsayılan). Gece ve Tahta: Ela'nın defterindeki koyu temalar.
+  const TEMALAR = [["defter", "Defter", "#f7f4ea"], ["gece", "Gece", "#121833"], ["tahta", "Tahta", "#1d3a31"]];
+  const TEMA_RENK = { defter: "#15232a", gece: "#121833", tahta: "#1d3a31" };
+  const tema = () => { const t = LS.get("ankuzef:tema", "defter"); return TEMA_RENK[t] ? t : "defter"; };
+  function temaUygula(t) {
+    if (t === "defter") delete document.documentElement.dataset.tema; else document.documentElement.dataset.tema = t;
+    const m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = TEMA_RENK[t];
+  }
+  const temaSecHTML = () => `<div class="temalar" role="group" aria-label="Görünüm">${TEMALAR.map(([id, ad, r]) => `<button type="button" data-tema-sec="${id}" aria-pressed="${id === tema()}"><i style="background:${r}"></i>${ad}</button>`).join("")}</div>`;
+  function temaBagla(kok) {
+    $$("[data-tema-sec]", kok).forEach((b) => (b.onclick = () => {
+      LS.set("ankuzef:tema", b.dataset.temaSec); temaUygula(b.dataset.temaSec);
+      $$("[data-tema-sec]").forEach((x) => x.setAttribute("aria-pressed", x.dataset.temaSec === b.dataset.temaSec));
+    }));
+  }
+  temaUygula(tema());
+
   const AY = `<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M22 4a13 13 0 1 0 8 22A11 11 0 0 1 22 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="27" cy="7" r="1.2" fill="currentColor"/><circle cx="31" cy="14" r=".9" fill="currentColor"/><circle cx="24" cy="13" r=".7" fill="currentColor"/></svg>`;
 
   // ---------- profil ----------
@@ -65,7 +83,8 @@
             <span class="sag">${d.hazir ? "Aç" : "Hazırlanıyor"}</span></a></li>`).join("")}</ul>
         <p class="kucuk soluk">Şu an: <b>${kac(p)}</b> · <a href="#" data-profil-degis>kişiyi değiştir</a></p>
         <p class="alt-bilgi">İlerleme bu tarayıcıda saklanır. Cihaz değiştirirken ders içindeki Ayarlar'dan yedek al.</p>`;
-      kok.innerHTML = `<div class="tek"><a class="marka" href="./">${AY}<span>ANKUZEF Defteri</span></a><main class="defter">${govde}</main></div>`;
+      kok.innerHTML = `<div class="tek"><div class="ust-satir"><a class="marka" href="./">${AY}<span>ANKUZEF Defteri</span></a>${temaSecHTML()}</div><main class="defter">${govde}</main></div>`;
+      temaBagla(kok);
       if (!p) profilBagla(kok, ciz);
       const d = $("[data-profil-degis]", kok); if (d) d.onclick = (e) => { e.preventDefault(); LS.del("ankuzef:profil"); ciz(); };
     };
@@ -771,11 +790,13 @@
     k.innerHTML = `<h1>Ayarlar ve yedek</h1>
       <div class="kutu"><h2>Sınav tarihleri</h2><form data-tarih>${Object.entries(S.ders.kapsamlar).map(([id, x]) => `<label class="secim">${kac(x.ad)} <input class="girdi" type="date" name="${id}" value="${t[id] || ""}"></label>`).join("")}
         <div class="dugmeler"><button class="dugme">Tarihleri kaydet</button></div></form></div>
+      <div class="kutu"><h2>Görünüm</h2><p class="soluk">Defter: tahta menü ve açık defter sayfası. Gece ve Tahta: koyu temalar. Seçim bu cihazdaki bütün derslerde geçerli.</p>${temaSecHTML()}</div>
       <div class="kutu"><h2>Kişi</h2><p>Şu an: <b>${kac(profil())}</b></p><button class="dugme ikincil" data-kisi>Kişiyi değiştir</button></div>
       <div class="kutu"><h2>Yedek</h2><p class="soluk">İlerleme bu tarayıcıda tutulur. Başka cihaza geçerken yedeği indir, öbür cihazda geri yükle.</p>
         <div class="dugmeler"><button class="dugme" data-indir>Yedeği indir</button><label class="dugme ikincil">Yedekten geri yükle<input type="file" accept="application/json" data-yukle hidden></label></div>
         <p data-mesaj class="kucuk"></p></div>
       <div class="kutu"><h2>Bu dersteki ilerlemeyi sıfırla</h2><p class="soluk">Kartlar, sorular, yanlış defteri ve denemeler silinir.</p><button class="dugme ikincil" data-sifirla>Sıfırla</button></div>`;
+    temaBagla(k);
     $("[data-tarih]", k).onsubmit = (e) => { e.preventDefault(); const v = {}; Object.keys(S.ders.kapsamlar).forEach((id) => { if (e.target[id].value) v[id] = e.target[id].value; }); yaz("sinavTarihi", v); location.hash = ""; };
     const onek = `ankuzef:${profil()}:${S.ders.kod}:`;
     $("[data-indir]", k).onclick = () => {

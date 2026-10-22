@@ -41,6 +41,48 @@
   --kagit: #e6e1d3; --yuzey: #efeadd; --cizgi: #cbc3ae; --soluk: #535a69; --dogru-zemin: #d6eadd; --yanlis-zemin: #f1dad5;
 }
 
+/* ---------- Seçilebilir temalar (Ayarlar / ana sayfa; Ela'nın defterindeki Gece ve Tahta) ----------
+   Varsayılan "Defter": yukarıdaki değerler (tahta menü + açık defter sayfası, cihaz koyu moddaysa kısılmış).
+   "Gece" ve "Tahta": her şey koyu, defter sayfası da koyu; yazı tebeşir rengi. data-tema <html>'de. */
+:root[data-tema="gece"] {
+  color-scheme: dark;
+  --tahta: #121833; --tahta-2: #1a2247; --cerceve: #2b355e;
+  --tebesir: #eef1fb; --tebesir-soluk: #a6b0d4; --tebesir-cizgi: rgba(238, 241, 251, .2);
+  --kagit: #1d2547; --yuzey: #242e57; --satir-cizgi: rgba(166, 176, 212, .1); --kenar-cizgi: rgba(255, 128, 128, .4);
+  --murekkep: #eef1fb; --soluk: #a6b0d4; --cizgi: #36427a;
+  --dogru: #4cc59a; --dogru-zemin: #173d3f; --yanlis: #ff8f80; --yanlis-zemin: #43233a; --vurgu: #9db8ff;
+  --golge: 0 1px 2px rgba(0, 0, 0, .3); --sayfa-golge: 0 18px 40px rgba(0, 0, 0, .6), 0 2px 6px rgba(0, 0, 0, .4);
+  --zemin-desen: radial-gradient(1px 1px at 20px 30px, rgba(255, 255, 255, .5), transparent), radial-gradient(1.4px 1.4px at 90px 110px, rgba(255, 255, 255, .5), transparent),
+    radial-gradient(1px 1px at 150px 60px, rgba(255, 255, 255, .3), transparent), radial-gradient(1.2px 1.2px at 60px 160px, rgba(255, 255, 255, .35), transparent);
+  --zemin-boyut: 190px 190px;
+}
+:root[data-tema="tahta"] {
+  color-scheme: dark;
+  --tahta: #1d3a31; --tahta-2: #24483d; --cerceve: #5a3d27;
+  --tebesir: #f1f5ee; --tebesir-soluk: #b5cbbf; --tebesir-cizgi: rgba(241, 245, 238, .2);
+  --kagit: #24483d; --yuzey: #2a5347; --satir-cizgi: rgba(241, 245, 238, .07); --kenar-cizgi: rgba(255, 150, 140, .4);
+  --murekkep: #f1f5ee; --soluk: #b5cbbf; --cizgi: #3d6a5c;
+  --dogru: #7fd9a8; --dogru-zemin: #1c5c46; --yanlis: #ffa293; --yanlis-zemin: #50322c; --vurgu: #a8d1ff;
+  --golge: 0 1px 2px rgba(0, 0, 0, .3); --sayfa-golge: 0 18px 40px rgba(0, 0, 0, .5), 0 2px 6px rgba(0, 0, 0, .35);
+  --zemin-desen: repeating-linear-gradient(115deg, rgba(255, 255, 255, .05) 0 2px, transparent 2px 46px), repeating-linear-gradient(25deg, rgba(255, 255, 255, .03) 0 1px, transparent 1px 31px);
+  --zemin-boyut: auto;
+}
+:root[data-tema="gece"] body, :root[data-tema="tahta"] body { background-image: var(--zemin-desen); background-size: var(--zemin-boyut); }
+:root[data-tema="gece"] .menu, :root[data-tema="tahta"] .menu { border-right-color: var(--cerceve); }
+/* koyu sayfada fosforun üstündeki yazı koyu kalsın */
+:root[data-tema="gece"] .secenek.dogru-sik .metin, :root[data-tema="tahta"] .secenek.dogru-sik .metin,
+:root[data-tema="gece"] .yol .simdi .yno, :root[data-tema="tahta"] .yol .simdi .yno { color: #1f2a44; }
+:root[data-tema="gece"] .adimlar-serit a[aria-current="step"], :root[data-tema="tahta"] .adimlar-serit a[aria-current="step"] { background: color-mix(in srgb, var(--fosfor) 22%, var(--yuzey)); }
+:root[data-tema="gece"] .not, :root[data-tema="tahta"] .not { background: color-mix(in srgb, var(--fosfor) 12%, var(--yuzey)); }
+
+/* tema seçici */
+.temalar { display: inline-flex; gap: 4px; padding: 4px; border-radius: 12px; background: var(--tahta-2); border: 1px solid var(--tebesir-cizgi); }
+.temalar button { display: flex; align-items: center; gap: 7px; padding: 7px 11px; border: 0; border-radius: 9px; background: transparent; color: var(--tebesir-soluk); font-weight: 700; cursor: pointer; min-height: 36px; }
+.temalar button[aria-pressed="true"] { background: var(--tebesir); color: var(--tahta); }
+.temalar i { width: 14px; height: 14px; border-radius: 50%; display: inline-block; box-shadow: inset 0 0 0 2px rgba(127, 127, 127, .45); }
+.tek .ust-satir { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.tek .ust-satir .marka { margin-bottom: 0; }
+
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
@@ -75,7 +117,7 @@ p { margin: 0 0 .8em; }
 .kabuk { display: grid; grid-template-columns: 290px minmax(0, 1fr); min-height: 100vh; }
 .menu {
   position: sticky; top: 0; height: 100vh; overflow-y: auto; padding: 22px 18px 30px;
-  border-right: 6px solid #5a3d27; /* tahta çerçevesi */
+  border-right: 6px solid var(--cerceve, #5a3d27); /* tahta çerçevesi */
   box-shadow: inset -1px 0 0 rgba(255, 255, 255, .06);
   scrollbar-width: thin; scrollbar-color: var(--tebesir-cizgi) transparent;
 }
@@ -282,7 +324,7 @@ label.secim { display: flex; gap: 8px; align-items: center; margin: 6px 0; }
   .kabuk { display: block; }
   .ust-bar {
     display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 20; padding: 10px 12px;
-    background: var(--tahta); border-bottom: 4px solid #5a3d27;
+    background: var(--tahta); border-bottom: 4px solid var(--cerceve, #5a3d27);
   }
   .ust-bar .menu-ac { border: 1.5px solid var(--tebesir); background: transparent; color: var(--tebesir); border-radius: 8px; padding: 6px 12px; font-weight: 700; cursor: pointer; min-height: 40px; }
   .ust-bar .baslik { font-family: var(--el); font-size: 1.5rem; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
