@@ -3,5 +3,6 @@ Sayfa: basılı sayfa numarası. B1 s. 5–29, B2 s. 31–54, B3 s. 55–81, B4 
 Bölüm bitince uret.py'de BOLUM_LISTE'de hazir=True yapılır. Yarım bölüm (hazir=False) sitede görünmez."""
 from b1 import B1
 from b2 import B2
+from b3 import B3
 
-BOLUMLER = {"b1": B1, "b2": B2}
+BOLUMLER = {"b1": B1, "b2": B2, "b3": B3}
