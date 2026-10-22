@@ -60,9 +60,18 @@ with sync_playwright() as p:
         if ad == "tel":
             pg.click(".menu-ac"); pg.wait_for_timeout(300); pg.screenshot(path=f"{OUT}/{ad}-menu.png"); pg.click("#menu >> text=Konu çalış"); pg.wait_for_timeout(300)
 
-        git(pg, "#konu"); kontrol("hazırlanıyor" in pg.locator(".defter").inner_text(), "konu sayfası: bölümler 'hazırlanıyor'")
-        git(pg, "#b/b1/ozet"); kontrol("hazırlanıyor" in pg.locator(".defter").inner_text(), "hazır olmayan bölüm sayfası açılıyor")
-        if ad == "masa": pg.screenshot(path=f"{OUT}/{ad}-b1.png", full_page=True)
+        # vize bölümleri (B1–B3) hazır: her adım dolu, konu testi çözülebiliyor
+        for bid in ("b1", "b2", "b3"):
+            for sek in ["ozet", "kartlar", "ciftler", "test", "gozden", "cikmis"]:
+                git(pg, f"#b/{bid}/{sek}")
+                if len(pg.locator("#sekme").inner_text().strip()) < 50: kontrol(False, f"{bid} {sek} boş")
+        kontrol(True, "B1–B3 adımlarının hepsi dolu")
+        git(pg, "#b/b1/kartlar"); pg.click("[data-ac]"); pg.click("[data-bil='1']")
+        kontrol(len(pg.evaluate("JSON.parse(localStorage.getItem('ankuzef:Kemal:hzpz:kart'))")) == 1, "kart kaydedildi")
+        git(pg, "#b/b2/ciftler"); pg.click("[data-cift='0']"); pg.click("[data-c]")
+        kontrol(pg.is_visible(".geri"), "karıştırılanlar geri bildirimi")
+        if ad == "masa": git(pg, "#b/b3/ozet"); pg.screenshot(path=f"{OUT}/{ad}-b3-ozet.png", full_page=True)
+        git(pg, "#b/b4/ozet"); kontrol("hazırlanıyor" in pg.locator(".defter").inner_text(), "hazır olmayan bölüm (B4) sayfası açılıyor")
 
         # çıkmış vize
         git(pg, "#cikmis"); pg.screenshot(path=f"{OUT}/{ad}-cikmis.png", full_page=True)

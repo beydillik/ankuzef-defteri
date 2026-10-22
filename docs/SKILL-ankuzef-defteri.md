@@ -126,4 +126,5 @@ kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 - Gözden Geçirelim 37 soru (B1 5, B2 5, B3 7, B4 10, B5 5, B6 5). B3 ve B4'te boşluk doldurma soruları var: 5 şıklı soruya çevrildi (`bosluk: True`, `kitapCevap` anahtarın metni, doğru şık `(no + bölüm no) % 5` konumuna kaydırılır). Anahtarda hata yok; B4 S2 anahtarı "yarı pazarlamacı", metinde "yarı zamanlı pazarlamacı".
 - Kitap hataları (bölüm yazılırken `kitapNotlari`'na): s. 58 "Hizmet Bakın Mantık" → Hizmet Baskın Mantık; B3 fiyat stratejileri (4)–(6) diye numaralanmış (üç strateji).
 - Test: `python3 araclar/test/akis_hzpz.py <ekran klasörü>` (çıkmış vize/final ve Gözden Geçirelim 100, deneme, telefon + koyu tema, taşma, konsol).
-- Önizleme `https://taslak--ankuzef-defteri.netlify.app/hzpz/`. Sıradaki: B1–3 içeriği (özet, kart, çift, konu testi), sonra vize tahmini denemeler (B1 7, B2 7, B3 6), sonra B4–6.
+- Bölümler ayrı dosyalarda (`araclar/hzpz/b1.py` …), `bolumler.py` bunları toplar; yarım bölüm `hazir=False` iken JSON yazılmaz, parça parça gönderilebilir.
+- B1–B3 hazır (özet 6, kart 30/31/31, çift 7, konu testi 14 her biri). Önizleme `https://taslak--ankuzef-defteri.netlify.app/hzpz/`. Sıradaki: vize tahmini denemeler (B1 7, B2 7, B3 6), sonra B4–6.
