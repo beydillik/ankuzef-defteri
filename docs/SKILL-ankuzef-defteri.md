@@ -35,7 +35,7 @@ Sitedeki çalışma yolu da bu sırada: 1 Konu çalış → 2 Çıkmış sorular
 - **Önce sınavın bu derse ait olduğunu kontrol et**: başlıktaki ders kodu ve adı (isan = AAUF1405 Veri ve İş Analitiği). Başka dersin sınavı gelirse (ör. 2024-25 dosyaları AYBS407 Büyük Veri ve İş Analitiği: Hadoop, Spark, Hive) ekleme, kullanıcıya bildir, `ders.json` `cikmisNot`'a yaz.
 - Soru ve şıklar **birebir** (yazım hataları dahil; "yanlıştır" gibi altı çizili kelimeler `<u>`). İşaretli şık doğru cevaptır. Her işaretli cevabı hesapla/kitapla doğrula; işaret okunamıyor ya da hesap tutmuyorsa tahmin etme, kullanıcıya sor.
 - Her soruya `bolum` ata (konunun kitapta anlatıldığı bölüm). Final ve bütünlemede çıkan vize konuları `bolum` sayesinde vize çalışırken de görünür ("Final'de çıkan vize konusu" etiketi). Tekrar eden soruları ayıklama: tekrar = önemli soru.
-- Dosya: `araclar/<kod>/cikmis.py`'ye sınav başına bir sözlük `{"kaynak": "cikmis", "sinav": "2025-26 Güz Vize", "sinavTur": "Vize"|"Final"|"Büt", "sorular": [...]}`; `id` = `c<yıl><v|f|b>-NN`, `no` sınavdaki numara, `sabitSik: True` (sınavdaki şık sırası korunur). `uret.py`'ye dosyayı ve `soruDosyalari`'na adını ekle.
+- Dosya: `araclar/<kod>/cikmis.py`'ye sınav başına bir sözlük `{"kaynak": "cikmis", "sinav": "2025-26 Güz Vize", "sinavTur": "Vize"|"Final"|"Büt", "sorular": [...]}`; `id` = `c<yıl><v|f|b>-NN` (**zorunlu**: id yoksa motor farklı sınavların sorularını karıştırır), `no` sınavdaki numara, `sabitSik: True` (sınavdaki şık sırası korunur). `uret.py`'ye dosyayı ve `soruDosyalari`'na adını ekle.
 - Her soruya açıklama: neden doğru (`aciklama`), en güçlü çeldiricinin neden yanlış olduğu (`celdirici`), hesap sorusunda adımlar (`cozum`), `sayfa`.
 - Yeni çıkmış sınav, sınavın biçimini (soru sayısı, şık sayısı, öncüllü oranı, bölüm dağılımı) günceller: `ders.json` → `kapsamlar.<vize|final>.deneme.dagilim`.
 - Final/bütünleme sınavındaki vize konusu sorular ayrıca "Finalde çıkmış vize soruları" testinde toplanır (motor `bolum` alanından kendisi süzer; vize kapsamında Çıkmış sorular sayfasında ve menüde görünür). Tam final sınavı yalnızca Final kapsamında listelenir.
@@ -45,12 +45,13 @@ Sitedeki çalışma yolu da bu sırada: 1 Konu çalış → 2 Çıkmış sorular
 - Her bölümün sonundaki Gözden Geçirelim sorularını ve cevap anahtarını sayfa görüntüsünden oku (`pdftoppm -r 90`), her cevabı kendin çöz.
 - Telif: kitabın soru metni kelimesi kelimesine kopyalanmaz. Her soru aynı bilgiyi ve aynı sayıları sorar; kök ve şıklar bizim cümlelerimizle. Kitaptaki numara (`kitapNo`) ve cevap anahtarı (`kitapCevap`) saklanır, şık sırası kitaptaki gibidir (`sabitSik`), böylece kitapla karşılaştırılabilir. Kullanıcıya bunu söyle.
 - Kitabın anahtarı hatalıysa doğrusu `dogru` olur, `kitapNotu`'na "Kitabın cevap anahtarı X diyor; doğrusu Y, çünkü …" yazılır. `uret.py`, anahtardan farklı ama notu olmayan soruyu hata sayar. Soruda iki yanlış ifade varsa (kitap hatası) kitabın kabul ettiğini doğru say, öbürünü notta belirt.
+- Kitapta boşluk doldurma sorusu varsa 5 şıklı soruya çevir (`bosluk: True`; `kitapCevap` anahtarın metni; şıkları biz yazarız, doğru şık hep başta olmasın diye kaydırılır). Soru sayısı bölümden bölüme değişebilir; `uret.py` bölüm başına beklenen sayıyı kontrol eder.
 - Dosya: `araclar/<kod>/gozden.py` → `G(bolum, kitapNo, kitapCevap, sayfa, soru, secenekler, dogru, aciklama, ...)`; `GOZDEN = {bid: [...]}`; çıktı `sorular/gozden.json` (`kaynak: "gozden"`). Bölüm içeriği hazır olmasa da (final bölümleri) Gözden Geçirelim eklenir; bölümün adım listesinde ve ana menüde görünür.
 - Deneme sınavı havuzuna Gözden Geçirelim soruları da girer.
 
 ## 2. Öğretim ilkeleri (yetişkin, sınav odaklı)
 1. Bölüm akışı (numaralı adım şeridi, her adımın sonunda "Sıradaki adım" düğmesi, biten adım ✓): **Özet** (1 ekran, sayfa atıflı) → **Kavram kartları** (önce hatırla, sonra aç; Biliyordum/Bilmiyordum → aralıklı tekrar 1-3-7-14 gün) → **Karıştırılanlar** (kavram çiftleri; her ifadenin hangisine ait olduğunu seç) → **Formüller** → **Hesap** → **Konu testi** → **Gözden Geçirelim** → **Çıkmış**.
-2. Sorular sınav biçiminde: 5 şık; öncüllü (I–III + kök) sorular ~%30; hesap soruları ~%40. Şıklar sıraya bağlı yazılmaz ("yukarıdakilerin hepsi" yok), açıklamada şık harfi geçmez (konu ve tahmin sorularında şıklar karışır).
+2. Sorular sınav biçiminde: 5 şık; öncüllü (I–III + kök) sorular ~%30; hesap soruları ~%40 (sayısal derslerde; sözel derste uygulanmaz). Şıklar sıraya bağlı yazılmaz ("yukarıdakilerin hepsi" yok), açıklamada şık harfi geçmez (konu ve tahmin sorularında şıklar karışır).
 3. Her soruda neden doğru + en güçlü çeldirici + sayfa. Çeldiriciler sık yapılan hatalardan seçilir (n yerine n−1, kesişimi unutmak, varyans/standart sapma karışması, ağırlıksız ortalama).
 4. Her hesap türü için Hesap Atölyesi üreticisi: sayılar her seferinde değişir, yanlış şıklar hata türlerinden üretilir, cevaptan sonra adım adım çözüm.
 5. Yanlış defteri ve günün tekrarı motor tarafından tutulur; deneme sınavı gerçek sınav uzunluğunda ve bölüm dağılımında, süreli, sonda bölüm bazında rapor ve 75 çizgisi.
@@ -68,7 +69,7 @@ public/<kod>/sorular/*.json            üretilir: çıkmış, gozden.json ve tah
 public/<kod>/atolye.js                 elle: window.ATOLYE = [{id, bolum, ad, aciklama, formul:[formül id], uret()}]
 araclar/<kod>/ortak.py                 Q(), T(), kart(), cift(), F(), onc(), frac(), kok() ve doğrulama
 araclar/<kod>/bolumler.py, cikmis.py, gozden.py, tahmin.py, uret.py
-araclar/test/atolye_stres.js, akis.py
+araclar/test/atolye_stres.js, akis.py (isan), akis_hzpz.py (hzpz)
 kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 ```
 İlerleme tarayıcıda: `localStorage` anahtarı `ankuzef:<kişi>:<ders>:<anahtar>` (soru, yanlis, kart, adim, atolye, denemeler, kapsam, sinavTarihi, devam:*). Cihaz değişiminde Ayarlar → Yedeği indir / geri yükle. Bulut eşitleme yok (istenirse ayrı, onaylı iş).
@@ -96,14 +97,14 @@ kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 4. Hesap içeren konularda `atolye.js`'e üretici ekle (D).
 5. `python3 araclar/<kod>/uret.py` → sayıları kullanıcıya yaz.
 ### C. Tahmini deneme
-- Çıkmış vize/finalin biçiminde 20 soru (bölüm dağılımı `uret.py` kontrol eder), %30 öncüllü, %40 hesap; çıkmış sorularda sorulmamış konular öncelikli, sorulmuş konular başka açıdan. `tahmin.py` → `DENEMELER`.
+- Çıkmış vize/finalin biçiminde 20 soru (bölüm dağılımı `uret.py` kontrol eder), %30 öncüllü, %40 hesap (sayısal derste); çıkmış sorularda sorulmamış konular öncelikli, sorulmuş konular başka açıdan. `tahmin.py` → `DENEMELER`.
 - Aynı soru metni iki yerde olmasın (`uret.py` kontrol eder).
 ### D. Hesap Atölyesi üreticisi
 - `uret()` her çağrıda yeni sayılarla `{soru|kok, secenekler[5], dogru: 0, cozum, aciklama, celdirici, sayfa, tablo?, onculler?}` döndürür; uygun sayı bulamazsa `null` (motor yeniden dener). `siklar(dogru, [hata sonuçları], biçim, adım)` 5 farklı şık üretir; `oncullu([I,II,III doğru mu])` öncül şıkları.
 - Sonek sorunu: sayıdan sonra Türkçe ek yazma ("26'dır" yanlış çıkabilir); "olarak bulunmuştur", "şöyledir:" kullan. Eksi işareti `tr()` içinde `−`.
 - `node araclar/test/atolye_stres.js` her üreticiyi 3000 kez çalıştırır: 5 farklı şık, NaN/undefined yok.
 ### E. Doğrulama ve teslim
-1. `python3 araclar/<kod>/uret.py` (hata varsa yazmaz), `node araclar/test/atolye_stres.js`, yerel sunucu + `python3 araclar/test/akis.py <ekran klasörü>` (çıkmış sınavları ve Gözden Geçirelim'i doğru cevaplarla baştan sona çözer, 100 puan bekler; menü, bölüm adımları, deneme, atölye, tekrar, yanlış defteri, özet, ayar; telefon + koyu tema; yatay taşma; konsol hatası).
+1. `python3 araclar/<kod>/uret.py` (hata varsa yazmaz), `node araclar/test/atolye_stres.js`, yerel sunucu + `python3 araclar/test/akis.py <ekran klasörü>` (isan) ya da `akis_hzpz.py` (hzpz) (çıkmış sınavları ve Gözden Geçirelim'i doğru cevaplarla baştan sona çözer, 100 puan bekler; menü, bölüm adımları, deneme, atölye, tekrar, yanlış defteri, özet, ayar; telefon + koyu tema; yatay taşma; konsol hatası).
 2. Ekran görüntülerine bak (özellikle yeni tablo, şekil ve formüller).
 3. `taslak`'a gönder; kullanıcıya: ne eklendi (sayılarla), önizleme adresi (`https://taslak--<site>.netlify.app/<kod>/`), canlıda olmayan değişiklikler, "canlıya almak için 'yayınla' de (15 kredi)", kalan plan.
 
