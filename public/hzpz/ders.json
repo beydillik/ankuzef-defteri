@@ -1,0 +1,119 @@
+{
+ "kod": "hzpz",
+ "ad": "Hizmet Pazarlaması",
+ "dersKodu": "AAUF1401",
+ "varsayilanKapsam": "vize",
+ "kapsamlar": {
+  "vize": {
+   "ad": "Vize",
+   "bolumler": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "deneme": {
+    "soru": 20,
+    "sureDk": 30,
+    "dagilim": {
+     "b1": 7,
+     "b2": 7,
+     "b3": 6
+    },
+    "sureNot": "Dağılım 2025-26 Güz Vize'den alındı (B1: 7, B2: 7, B3: 6 soru). Sınav süresi doğrulanamadı; varsayılan 30 dakika, sınav giriş belgendeki süreyle değiştir."
+   }
+  },
+  "final": {
+   "ad": "Final",
+   "bolumler": [
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6"
+   ],
+   "deneme": {
+    "soru": 20,
+    "sureDk": 30,
+    "dagilim": {
+     "b1": 1,
+     "b4": 7,
+     "b5": 7,
+     "b6": 5
+    },
+    "sureNot": "Dağılım 2025-26 Güz Final'den alındı (B1: 1, B4: 7, B5: 7, B6: 5 soru; B2 ve B3'ten soru gelmedi). Sınav süresi doğrulanamadı; varsayılan 30 dakika."
+   }
+  }
+ },
+ "bolumler": [
+  {
+   "id": "b1",
+   "no": 1,
+   "baslik": "Hizmet Pazarlamasına Giriş",
+   "sayfalar": "s. 5–29",
+   "hazir": false,
+   "sinav": [
+    "Vize",
+    "Final"
+   ]
+  },
+  {
+   "id": "b2",
+   "no": 2,
+   "baslik": "Hizmetlerde Pazar Bölümlendirme, Hedef Pazar Seçimi ve Konumlandırma",
+   "sayfalar": "s. 31–54",
+   "hazir": false,
+   "sinav": [
+    "Vize",
+    "Final"
+   ]
+  },
+  {
+   "id": "b3",
+   "no": 3,
+   "baslik": "Hizmetlerde Pazarlama Karması",
+   "sayfalar": "s. 55–81",
+   "hazir": false,
+   "sinav": [
+    "Vize",
+    "Final"
+   ]
+  },
+  {
+   "id": "b4",
+   "no": 4,
+   "baslik": "Hizmet Pazarlamasında İnsan",
+   "sayfalar": "s. 83–104",
+   "hazir": false,
+   "sinav": [
+    "Final"
+   ]
+  },
+  {
+   "id": "b5",
+   "no": 5,
+   "baslik": "Hizmet Pazarlamasında Süreç",
+   "sayfalar": "s. 105–121",
+   "hazir": false,
+   "sinav": [
+    "Final"
+   ]
+  },
+  {
+   "id": "b6",
+   "no": 6,
+   "baslik": "Hizmet Pazarlamasında Fiziksel Kanıtlar",
+   "sayfalar": "s. 123–137",
+   "hazir": false,
+   "sinav": [
+    "Final"
+   ]
+  }
+ ],
+ "soruDosyalari": [
+  "cikmis_2025_guz_vize.json",
+  "cikmis_2025_guz_final.json",
+  "gozden.json"
+ ],
+ "cikmisNot": "Ders 2024-25'te AYBS401 Dijital Pazarlama adıyla veriliyordu. O yılın Vize, Final ve Bütünleme sınavları (E-CRM, Web 2.0, e-ticaret, remarketing) bu kitapta yok; eklenmedi."
+}

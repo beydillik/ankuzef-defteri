@@ -1,0 +1,367 @@
+{
+ "kaynak": "cikmis",
+ "sinav": "2025-26 Güz Final",
+ "sinavTur": "Final",
+ "sorular": [
+  {
+   "soru": "Aşağıdakilerden hangisi hizmet ortamı koşullarında öne çıkan unsurlardan <u>değildir?</u>",
+   "secenekler": [
+    "Koku",
+    "Aydınlatma",
+    "Müzik",
+    "Personel",
+    "Temizlik"
+   ],
+   "dogru": 3,
+   "aciklama": "Hizmet ortamı tasarımındaki koşullar üç gruptur: hizmet ortamı koşulları (müzik, aydınlatma, koku, sıcaklık, temizlik), tasarım koşulları (renk, mekânsal özellikler, zemin) ve sosyal koşullar (diğer müşteriler, hizmet personeli). Personel sosyal koşuldur.",
+   "sayfa": "s. 128, 130",
+   "celdirici": "Temizlik de ortam koşuludur; kitap onu müzik, ışık, koku ve sıcaklıkla birlikte sayar.",
+   "no": 1,
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "c2025f-01"
+  },
+  {
+   "soru": "Bir hizmetin sürekli olarak tutarlı ve doğru bir şekilde sunulmasını ifade eden kavram aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Tepki Verme",
+    "Güvence",
+    "Somut Unsurlar",
+    "Empati",
+    "Güvenilirlik"
+   ],
+   "dogru": 4,
+   "aciklama": "SERVQUAL'in güvenilirlik boyutu: hizmetin sürekli olarak tutarlı ve doğru biçimde sunulması.",
+   "sayfa": "s. 86",
+   "celdirici": "Güvence, çalışanların bilgi ve nezaketiyle müşteriye güven verme kapasitesidir; adları benzer, tanımları farklı.",
+   "no": 2,
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "c2025f-02"
+  },
+  {
+   "soru": "Bir ürün veya hizmetin beklentileri karşılama derecesine göre tüketicinin yaşadığı tatmin duygusu aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Müşteri Sadakati",
+    "Müşteri katılımı",
+    "Müşteri memnuniyeti",
+    "Müşteri Bağlılığı",
+    "Müşteri Beğenisi"
+   ],
+   "dogru": 2,
+   "aciklama": "Sözlükteki tanımın aynısı: müşteri memnuniyeti, ürün veya hizmetin beklentileri karşılama derecesine göre yaşanan tatmin duygusudur.",
+   "sayfa": "s. 95, 102",
+   "celdirici": "Memnuniyet sadakatin öncülüdür; sadakat ve bağlılık sonradan gelen tekrar satın alma taahhüdüdür.",
+   "no": 3,
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "c2025f-03"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi, boşlukları dolduracak kavramları sırasıyla vermektedir?<br>.........................(1) bir süreci genellikle basit bir biçimde açıklar, ............................ (2) onun daha karmaşık bir türüdür.",
+   "secenekler": [
+    "(1) hizmet haritalama (2) süreç haritalama",
+    "(1) akış şeması (2) hizmet haritalama",
+    "(1) akış şeması (2) süreç haritalama",
+    "(1) süreç haritalama (2) hizmet haritalama",
+    "(1) hizmet haritalama (2) akış şeması"
+   ],
+   "dogru": 1,
+   "aciklama": "Süreci belgelemenin iki yöntemi: akış şeması süreci basitçe açıklar; hizmet haritalama akış diyagramının daha karmaşık türüdür ve arka planda olanları da gösterir.",
+   "sayfa": "s. 109–110",
+   "celdirici": "Sıra ters çevrilmiş şık: hizmet haritalama karmaşık olandır, basit olan akış şemasıdır. \"Süreç haritalama\" kitapta bir yöntem adı olarak geçmez.",
+   "no": 4,
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "c2025f-04"
+  },
+  {
+   "soru": "Müşteri değerinin hizmet etkileşimleri yoluyla yaratıldığını vurgulayan pazarlama yaklaşımı aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Müşteri Memnuniyeti",
+    "Marka Değeri",
+    "Hizmet Baskın Mantık",
+    "İçsel Pazarlama",
+    "Marka Sadakati"
+   ],
+   "dogru": 2,
+   "aciklama": "Hizmet baskın mantık (SDL): değer, hizmet sürecindeki tüm aktörlerle etkileşim içinde birlikte yaratılır; tek taraflı olarak işletme yaratıp dağıtmaz.",
+   "sayfa": "s. 94, 103",
+   "celdirici": "Vize S2'de aynı kavram başka bir tanımla soruldu (her şey hizmettir, ürünler aracıdır). İki tanımı da bil.",
+   "no": 5,
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "c2025f-05"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisinde geniş anlamda hizmet pazarlamasında insan faktörü doğru verilmiştir?",
+   "secenekler": [
+    "İşletme personeli, müşteriler, hizmeti tüketen diğer insanlar",
+    "İşletme personeli, müşteriler, şirket sahipleri",
+    "İşletme personeli, pazarlama yöneticileri, hizmeti tüketen diğer insanlar",
+    "Pazarlama yöneticileri, hizmeti tüketen diğer insanlar, şirket sahipleri",
+    "İşletme personeli, pazarlama yöneticileri, müşteriler"
+   ],
+   "dogru": 0,
+   "aciklama": "Geniş anlamda insan faktörü hizmet teklifini üç yoldan etkiler: personel (ön saflarda ve arka aşamalarda), müşterinin kendisi (aktif katılım, ortak üretici) ve hizmeti aynı anda tüketen diğer insanlar (tiyatroda dolu salon).",
+   "sayfa": "s. 85–86",
+   "celdirici": "Pazarlama yöneticisi ve şirket sahibi bu üçlüde yok; şıklar üçlüden birini bunlarla değiştiriyor.",
+   "no": 6,
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "c2025f-06"
+  },
+  {
+   "soru": "Müşteri temas seviyesinin bir spektrumu kapsadığı kabul edildiğinde, işletmeler yüksek temaslı ve düşük temaslı hizmet sağlayıcıları olarak ele alınabilir. Buna göre, aşağıdakilerden hangisi <u>yanlıştır?</u>",
+   "secenekler": [
+    "Düşük temaslı hizmetlerde temas, elektronik veya fiziksel dağıtım kanalları aracılığıyla yapılır.",
+    "Yüksek temaslı hizmetlerde müşteriler, hizmetin sağlandığı tesisi ziyaret ettiklerinde hizmet “fabrikası”na girerler.",
+    "Yüksek temaslı hizmetler, müşteri ile organizasyon arasında sürekli bir etkileşimi içerir.",
+    "Yüksek temaslı hizmetlerde cansız nesneler yerine “işlem” gören insanlara odaklanılır.",
+    "Düşük temaslı hizmet teslimatı sırasında müşteriler organizasyon hakkında birçok fiziksel ipucuna maruz kalırlar."
+   ],
+   "dogru": 4,
+   "aciklama": "Birçok fiziksel ipucuna (bina, ekipman, personelin görünüşü, diğer müşteriler) maruz kalmak yüksek temaslı hizmetin özelliğidir. Düşük temaslı hizmette fiziksel temas çok az ya da hiç yoktur.",
+   "sayfa": "s. 19",
+   "celdirici": "Diğer dört ifade kitaptan neredeyse aynen alınmış; tek değişiklik son şıkta yüksek yerine düşük yazılması.",
+   "no": 7,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025f-07"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi, Gummesson tarafından “yarı zamanlı pazarlamacı” olarak değerlendirilmektedir?",
+   "secenekler": [
+    "Hizmet sektöründeki tüm aktörler",
+    "İşletme sahipleri",
+    "Tüketiciler",
+    "Pazarlama departmanı",
+    "Dağıtım kanalı elemanları"
+   ],
+   "dogru": 0,
+   "aciklama": "Gummesson'a (2007) göre hizmet sektörlerindeki tüm aktörler yarı zamanlı pazarlamacıdır; hizmet sürecindekilerin eylemleri müşterinin aldığı çıktıyı doğrudan etkiler.",
+   "sayfa": "s. 85",
+   "celdirici": "Pazarlama departmanı tam zamanlı pazarlamacıdır; kavramın amacı pazarlamanın yalnız o departmana ait olmadığını söylemek.",
+   "no": 8,
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "c2025f-08"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi, hizmetlerde fiziksel kanıt - dış ortam bileşenlerinden <u>değildir?</u>",
+   "secenekler": [
+    "Tabela",
+    "Ses, müzik, koku, aydınlatma",
+    "Manzara",
+    "Otopark",
+    "Çevreleyen ortam"
+   ],
+   "dogru": 1,
+   "aciklama": "Tablo 1: Dış ortam = dış tasarım, tabela, otopark, manzara, çevreleyen ortam. İç ortam = iç tasarım, ekipman, tabela, düzen, hava kalitesi ve sıcaklığı, ses-müzik-koku-aydınlatma.",
+   "sayfa": "s. 125",
+   "celdirici": "Tabela hem dış hem iç ortamda vardır; bu yüzden dış ortam için de doğrudur.",
+   "no": 9,
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "c2025f-09"
+  },
+  {
+   "soru": "Sanat ve eğlence, kablolu yayın, eğitim, yönetim danışmanlığı, konserler gibi hizmetler, hizmetlerin süreçlerinin özelliklerine göre hangi sınıfta yer alır?",
+   "secenekler": [
+    "Nesnelerin işlenmesi – soyut",
+    "Nesnelerin işlenmesi – somut",
+    "İnsanların işlenmesi – soyut",
+    "İnsanların işlenmesi – somut",
+    "Sürecin işlenmesi – soyut"
+   ],
+   "dogru": 2,
+   "aciklama": "Dört sınıf: insanların işlenmesi–somut (kişi işleme), insanların işlenmesi–soyut (zihinsel uyaran işleme: sanat, eğlence, kablolu yayın, eğitim, danışmanlık, konser), nesnelerin işlenmesi–somut (sahiplik işleme), nesnelerin işlenmesi–soyut (bilgi işleme: bankacılık, sigorta, muhasebe).",
+   "sayfa": "s. 108",
+   "celdirici": "Kablolu yayın ve danışmanlık bir \"bilgi\" gibi görünüp bilgi işlemeye (nesnelerin işlenmesi–soyut) kaydırır; ama hizmet insanın zihnine yöneliktir.",
+   "no": 10,
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "c2025f-10"
+  },
+  {
+   "soru": "Bir hizmetin görünür ve dokunulabilir yönlerini ifade eden, müşterilerin hizmet kalitesi hakkında fikir edinmesini sağlayan ve satın alma kararlarını etkileyen hizmet pazarlaması bileşeni aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Fiyat",
+    "Süreç",
+    "Fiziksel kanıt",
+    "İnsan",
+    "Pazarlama iletişimi"
+   ],
+   "dogru": 2,
+   "aciklama": "Bölüm 6'nın girişindeki tanım: bir hizmetin görünür ve dokunulabilir yönleri olan fiziksel kanıtlar müşterinin kalite hakkında fikir edinmesini sağlar ve satın alma kararını etkiler.",
+   "sayfa": "s. 124",
+   "celdirici": "Fiyat da kalite ipucudur ama görünür ve dokunulabilir bir yön değildir.",
+   "no": 11,
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "c2025f-11"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi hizmet sürecinin yeniden tasarımında kullanılan temel performans ölçütlerinden <u>değildir?</u>",
+   "secenekler": [
+    "Verimliliğin artırılması",
+    "Hizmet sürecini süresinin azaltılması",
+    "Müşteri memnuniyetinin artırılması",
+    "Hizmet hatalarının sayısının azaltılması",
+    "Müşteri şikayetlerinin artırılması"
+   ],
+   "dogru": 4,
+   "aciklama": "Yeniden tasarımın dört temel ölçütü: hizmet hatalarının azaltılması, döngü süresinin azaltılması, verimliliğin artırılması, müşteri memnuniyetinin artırılması. İdeali dördüne aynı anda ulaşmaktır.",
+   "sayfa": "s. 116",
+   "celdirici": "Şıklar \"artırılması/azaltılması\" ile oynuyor: şikâyetin artırılması hiçbir zaman hedef olmaz.",
+   "no": 12,
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "c2025f-12"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi “SERVQUAL” hizmet kalitesi modeli kapsamında hizmet kalitesinin boyutları arasında <u>yer almaz?</u>",
+   "secenekler": [
+    "Tepki verme",
+    "Soyut unsurlar",
+    "Güvence",
+    "Güvenilirlik",
+    "Empati"
+   ],
+   "dogru": 1,
+   "aciklama": "SERVQUAL'in beş boyutu: güvenilirlik, güvence, somut unsurlar, empati, tepki verme. Boyutun adı somut unsurlardır; soyut unsurlar diye bir boyut yok.",
+   "sayfa": "s. 86",
+   "celdirici": "Tek harf oyunu: somut → soyut. Beş boyutu kelimesi kelimesine bil.",
+   "no": 13,
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "c2025f-13"
+  },
+  {
+   "soru": "Hizmet işletim sistemlerinin çalışma yöntemini ve sırasını açıklayarak hizmetlerin sunulması ve tamamlanması için gerekli adımları ve sırayı belirleyen işlem dizisi aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Süreç",
+    "Sistem",
+    "Takip",
+    "Etki",
+    "Akış"
+   ],
+   "dogru": 0,
+   "aciklama": "Soru kökü sürecin kitaptaki tanımı (Lovelock ve Wright; Mudie ve Pirrie).",
+   "sayfa": "s. 107",
+   "celdirici": "Akış, süreç tanımının içinde geçer (faaliyet akışı) ama kavramın adı süreçtir.",
+   "no": 14,
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "c2025f-14"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi fiziksel kanıtların temel unsurları arasında <u>yer almaz?</u>",
+   "secenekler": [
+    "Hizmete eşlik eden somut unsurlar",
+    "Marka",
+    "Hizmet personelinin görünüşü",
+    "Hizmet süreci",
+    "Hizmetin fiyatı"
+   ],
+   "dogru": 3,
+   "aciklama": "Fiziksel kanıtın temel unsurları (Jha vd.): fiziki çevre (hizmet ortamı), iletişim, hizmetin fiyatı, hizmet personelinin görünüşü ve davranışları, hizmete eşlik eden somut unsurlar, marka. Süreç ayrı bir pazarlama karması elemanıdır.",
+   "sayfa": "s. 126–127",
+   "celdirici": "Fiyat şaşırtır ama listededir: kaliteye dair ipucu verdiği için fiziksel kanıt unsuru sayılır.",
+   "no": 15,
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "c2025f-15"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi tüketici davranışlarının incelenmesinde başvurulan varsayımlardan <u>değildir?</u>",
+   "secenekler": [
+    "Sürekli değişen ve gelişen bir süreçtir.",
+    "Güdülenmiş eylemlerdir.",
+    "Karmaşık bir süreçtir.",
+    "Satınalma anına odaklanır.",
+    "Bireylerin farklı rollerdeki davranışları ile ilgilenir."
+   ],
+   "dogru": 3,
+   "aciklama": "Varsayımlar: güdülenmiş eylemlerdir; sürekli değişen ve gelişen süreçtir (satın almadan önce başlar, sırasında ve sonrasında sürer); karmaşıktır; farklı rollerle ilgilenir; çevresel faktörlerden etkilenir. Yalnız satın alma anına odaklanmaz.",
+   "sayfa": "s. 88–89",
+   "celdirici": "\"Süreç\" varsayımı tam da bu şıkkın tersini söyler: süreç satın almadan önce başlar, sonra da devam eder.",
+   "no": 16,
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "c2025f-16"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi hizmet süreçlerinin özelliklerine göre sınıflandırılma biçimlerinden <u>değildir?</u>",
+   "secenekler": [
+    "Bilgi işleme",
+    "Kişi işleme",
+    "Sahiplik işleme",
+    "Zihinsel uyaran işleme",
+    "Hizmet işleme"
+   ],
+   "dogru": 4,
+   "aciklama": "Dört süreç türü: kişi işleme, zihinsel uyaran işleme, sahiplik işleme, bilgi işleme. \"Hizmet işleme\" yok.",
+   "sayfa": "s. 108",
+   "celdirici": "Gözden Geçirelim S4'te aynı soru \"zaman işleme\" çeldiricisiyle sorulmuştu.",
+   "no": 17,
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "c2025f-17"
+  },
+  {
+   "soru": "Hizmetlerin pazarlamasında fiziksel kanıtlara dair aşağıdaki bilgilerden hangisi <u>yanlıştır?</u>",
+   "secenekler": [
+    "Fiziksel kanıtın sayısı müşterinin deneyimine katkıda bulunur.",
+    "Hastane, okul ve kreş gibi hizmet türlerinde hizmeti müşteriye iletmek için fiziksel kanıtlara ihtiyaç düşüktür.",
+    "Sigorta ve posta gibi hizmetler müşterilere sınırlı fiziksel kanıt sunar.",
+    "Fiziksel kanıtlar farklı hizmet bağlamlarında değişiklik gösterir.",
+    "Fiziksel kanıtın türü hizmetin gerçekleştirilmesini kolaylaştırır."
+   ],
+   "dogru": 1,
+   "aciklama": "Kitap tersini söyler: hastane, okul ve kreş gibi hizmetlerde fiziksel kanıtlara büyük ölçüde ihtiyaç vardır (bina, bekleme salonu, muayene odası); sınırlı kanıt sunanlar sigorta ve posta gibi hizmetlerdir.",
+   "sayfa": "s. 127",
+   "celdirici": "Sigorta-posta şıkkı doğrudur; yanlış olan, hastane-okul-kreş için \"düşük\" denmesi.",
+   "no": 18,
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "c2025f-18"
+  },
+  {
+   "soru": "Hizmet süreçlerinin yeniden yapılandırılmasına dair aşağıdakilerden hangisi <u>yanlıştır?</u>",
+   "secenekler": [
+    "Yeniden yapılanmada, işleri sıralı olarak yürütmek, süreçleri hızlandırmak için sıklıkla başvurulan bir yöntemdir.",
+    "Yeniden yapılanma sürecinde süresini iyileştirmek için analistler süreçte yer alan her adımı belirlemelidir.",
+    "Yeniden yapılanma, süreçlerin daha hızlı ve daha iyi performans elde etmeye yönelik olarak analiz edilip yeniden tasarlanmasını içerir.",
+    "Yeniden yapılanmada, hizmet sağlayıcılar süreci yönetmek için hizmet haritalarından yararlanabilirler.",
+    "Yeniden yapılanma süreci hızlandırma fırsatlarını araştırmalı ve ölü zamanı ortadan kaldırmalıdır."
+   ],
+   "dogru": 0,
+   "aciklama": "Kitap: işleri sıralı yerine paralel yürütmek süreçleri hızlandırmak için sık başvurulan yöntemdir (ana yemek fırındayken sebzeleri pişirmek). Sıralı yürütmek süreci yavaşlatır.",
+   "sayfa": "s. 115",
+   "celdirici": "Ölü zamanı ortadan kaldırmak ve her adımı belirlemek kitapta aynen geçer; tek değiştirilen kelime \"paralel\" yerine \"sıralı\".",
+   "no": 19,
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "c2025f-19"
+  },
+  {
+   "soru": "Bir müşteri saçını yıkatıp kestirirken kuaförün müşterinin ne istediğini bilmesi ve sürecin farklı adımlarında müşteri ve kuaförün işbirliği yapmasını gerektiren katılım düzeyi aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Alt-orta katılım düzeyi",
+    "Düşük katılım düzeyi",
+    "Üst-orta katılım düzeyi",
+    "Orta katılım düzeyi",
+    "Yüksek katılım düzeyi"
+   ],
+   "dogru": 3,
+   "aciklama": "Üç katılım düzeyi var: düşük (yalnız fiziksel varlık: sinema, otobüs), orta (bilgi, çaba ya da eşya girdisi ve biraz kişiselleştirme: kuaför), yüksek (müşteri olmadan hizmet oluşmaz: evlilik danışmanlığı, eğitim, yoga, sağlık). Kuaför örneği kitapta orta düzey için verilir.",
+   "sayfa": "s. 113",
+   "celdirici": "\"Alt-orta\" ve \"üst-orta\" kitapta yok; üç düzey var.",
+   "no": 20,
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "c2025f-20"
+  }
+ ]
+}

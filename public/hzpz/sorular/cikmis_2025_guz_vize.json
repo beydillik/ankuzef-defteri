@@ -1,0 +1,369 @@
+{
+ "kaynak": "cikmis",
+ "sinav": "2025-26 Güz Vize",
+ "sinavTur": "Vize",
+ "sorular": [
+  {
+   "soru": "......................, hizmet pazarlaması stratejilerinin geliştirilmesinde ve uygulanmasında kritik bir rol oynamaktadır. ..................., tüketici davranışlarını anlamak ve öngörmek için kullanılan önemli bir araçtır. Yukarıdaki boşluğu doldurmak için uygun olan kavram çifti sırasıyla aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Veri analitiği / Büyük veri analizi",
+    "Pazarlama karması / 4P",
+    "Büyük veri analizi / Hizmet pazarlaması",
+    "4P / Hizmet pazarlaması",
+    "Pazarlama karması / Hizmet pazarlaması"
+   ],
+   "dogru": 0,
+   "aciklama": "Bölüm girişindeki iki cümlenin aynısı: veri analitiği stratejilerin geliştirilmesinde ve uygulanmasında kritik rol oynar; büyük veri analizi tüketici davranışlarını anlamak ve öngörmek için kullanılan önemli bir araçtır.",
+   "sayfa": "s. 6",
+   "celdirici": "Sıralama önemli: \"Büyük veri analizi / Hizmet pazarlaması\" seçen, ikinci boşluğa hizmet pazarlamasını koyar; tüketici davranışını öngören araç büyük veri analizidir.",
+   "no": 1,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025v-01"
+  },
+  {
+   "soru": "Aşağıdaki kavramlardan hangisi her şeyin hizmet olarak değerlendirilmesi ve ürünlerin hizmetlerin değiş tokuşunda kullanılan aracılar olarak kavranmasını ifade eder?",
+   "secenekler": [
+    "İçsel Pazarlama",
+    "Hizmet Baskın Mantık",
+    "Hizmet Pazarlaması Üçgeni",
+    "İlişkisel Pazarlama",
+    "Hizmet Karması"
+   ],
+   "dogru": 1,
+   "aciklama": "Hizmetlere üç bakış açısından sonuncusu, İskandinav Okulu'nun öncülüğündeki hizmet baskın mantıktır: her şey hizmettir, ürünler hizmetlerin değiş tokuşunda kullanılan aracılardır; pazarlamacı tüketiciyle birlikte değer yaratmayı yönetir.",
+   "sayfa": "s. 58",
+   "celdirici": "İçsel pazarlama, çalışanı iç tüketici görüp tatmin etmektir; ürün-hizmet ilişkisini tanımlamaz.",
+   "kitapNotu": "Kitapta s. 58'de yazım hatasıyla \"Hizmet Bakın Mantık\" geçer; doğrusu Hizmet Baskın Mantık (Bölüm 4, s. 94'te de böyle).",
+   "no": 2,
+   "bolum": "b3",
+   "sabitSik": true,
+   "id": "c2025v-02"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi hizmet işletmelerinin hizmet kalitesini ölçmek adına göz önünde bulundurması gereken unsurlardan <u>değildir?</u>",
+   "secenekler": [
+    "Erişim",
+    "Akılda kalıcılık",
+    "Nezaket",
+    "Yeterlilik",
+    "Somutlar"
+   ],
+   "dogru": 1,
+   "aciklama": "Hizmet kalitesini ölçmek için on unsur: erişim, güvenilirlik, güven, güvenlik, tüketiciyi anlama, yanıt verme, nezaket, yeterlilik, iletişim, somutlar. Akılda kalıcılık bu listede değil; marka adı belirlerken dikkat edilen dört konudan biridir (belirginlik, alaka, akılda kalıcılık, esneklik).",
+   "sayfa": "s. 62",
+   "celdirici": "\"Somutlar\" kalite unsurudur (çalışanların görünümü, dekor, müzik, koku). İki liste aynı sayfada; hangisi kalite, hangisi marka adı ayır.",
+   "no": 3,
+   "bolum": "b3",
+   "sabitSik": true,
+   "id": "c2025v-03"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi hizmet pazarlamasında pazar stratejisi formülasyon süreci içerisinde <u>değildir?</u>",
+   "secenekler": [
+    "Firma ve Pazar Analizi",
+    "Konumlandırma",
+    "Hedef Pazar",
+    "Pazarlama Karması Geliştirme",
+    "Rekabet Avantajı Elde Etme"
+   ],
+   "dogru": 4,
+   "aciklama": "Bölüm 2 pazar stratejisi formülasyon sürecini (Şekil 1) adım adım anlatır: firma ve pazar analizi → bölümlendirme ve hedef pazar → konumlandırma → pazarlama karması. Rekabet avantajı sürecin bir adımı değil, ulaşılmak istenen sonuçtur.",
+   "sayfa": "s. 34, 36, 42, 47",
+   "celdirici": "Pazarlama karması geliştirme sürecin son adımıdır (1.4 Pazarlama Karması Stratejisi).",
+   "kitapNotu": "Şekil 1 (s. 34) kitapta görsel; adımlar bölüm başlıklarından (1.1–1.4) okundu. Sınavın işaretli cevabıyla tutarlı.",
+   "no": 4,
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "c2025v-04"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi hizmetlerin özelliklerini içermektedir?",
+   "secenekler": [
+    "somutluk, dokunulamazlık, transfer edilemezlik, stoklanamazlık",
+    "somutluk, dokunulamazlık, transfer edilebilirlik, stoklanamazlık",
+    "somutluk, dokunulabilirlik, transfer edilemezlik, stoklanamazlık",
+    "soyutluk, dokunulamazlık, transfer edilemezlik, stoklanamazlık",
+    "soyutluk, dokunulamazlık, transfer edilemezlik, stoklanabilirlik"
+   ],
+   "dogru": 3,
+   "aciklama": "Hizmetler soyuttur; fiziksel ürünlerden farklı olarak dokunulamaz, stoklanamaz ve transfer edilemez (sahiplik transferi yoktur).",
+   "sayfa": "s. 7, 11, 13",
+   "celdirici": "Son şık dört kelimeden yalnız birini değiştiriyor: stoklanabilirlik. Hizmet depolanamaz; her kelimeyi tek tek kontrol et.",
+   "no": 5,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025v-05"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi müşteri yanıtlarına göre gerçekleştirilen bölümlendirme yaklaşımlarından <u>değildir?</u>",
+   "secenekler": [
+    "Psikografi",
+    "Sadakat",
+    "Promosyonel yanıt",
+    "Kullanım",
+    "Faydalar"
+   ],
+   "dogru": 0,
+   "aciklama": "Bölümlendirme yaklaşımları iki gruptur. Müşteri özellikleri (kim?): demografik ve sosyo-ekonomik, psikografi, coğrafya. Müşteri yanıtları (neyi neden?): faydalar, kullanım, promosyon tepkisi, sadakat. Psikografi müşteri özellikleri grubundadır.",
+   "sayfa": "s. 39–40",
+   "celdirici": "Sadakat de bir yanıttır: gelecekte yeniden satın alma taahhüdü; dört sadakat grubu buradan çıkar.",
+   "no": 6,
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "c2025v-06"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi pazar bölümlendirmenin kriterlerinden <u>değildir?</u>",
+   "secenekler": [
+    "İşlevsellik",
+    "Farklılık",
+    "Çeşitlilik",
+    "Benzerlik",
+    "Önemli Olma"
+   ],
+   "dogru": 2,
+   "aciklama": "Etkin bölümlendirmenin dört kriteri (Palmer): benzerlik (grup içi homojen), farklılık (gruplar arası heterojen), önemli olma (kârlı olacak kadar büyük), işlevsellik (tarif etmeye ve parametre belirlemeye faydalı). Çeşitlilik bunlardan biri değil.",
+   "sayfa": "s. 39",
+   "celdirici": "\"Farklılık\" kriterdir: farklı gruplar birbirinden olabildiğince farklı olmalı. Çeşitlilik ona benzediği için seçilir.",
+   "no": 7,
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "c2025v-07"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi tutundurma karması elemanlarından <u>değildir?</u>",
+   "secenekler": [
+    "Kişisel satış",
+    "Halkla ilişkiler",
+    "Satış tutundurma",
+    "Yaygın dağıtım",
+    "Dijital pazarlama"
+   ],
+   "dogru": 3,
+   "aciklama": "Tutundurma karması altı araçtır: reklam, kişisel satış, halkla ilişkiler, satış tutundurma, doğrudan pazarlama, dijital pazarlama. Yaygın (yoğun) dağıtım dağıtım politikasıdır, tutundurma değil.",
+   "sayfa": "s. 66, 70",
+   "celdirici": "Dijital pazarlama da tutundurma karmasındadır; eski 4'lü listeyi ezberleyen onu dışarıda bırakır.",
+   "no": 8,
+   "bolum": "b3",
+   "sabitSik": true,
+   "id": "c2025v-08"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi, hizmet pazarlaması karmasını fiziki ürünlerin pazarlama karmasından ayıran elemanları içermektedir?",
+   "secenekler": [
+    "Ürün, süreç, insan",
+    "Süreç, insan, tutundurma",
+    "Süreç, insan, fiziksel kanıt",
+    "Hizmet, insan, fiziksel kanıt",
+    "İnsan, fiziksel kanıt, dağıtım"
+   ],
+   "dogru": 2,
+   "aciklama": "7P = 4P (ürün, fiyat, tutundurma, dağıtım) + 3P. Hizmetleri fiziki ürünlerden ayıran eklenen 3P: insan, fiziksel kanıt, süreç.",
+   "sayfa": "s. 57, 59",
+   "celdirici": "Tutundurma ve dağıtım 4P'nin elemanıdır; fiziki ürünlerde de vardır.",
+   "no": 9,
+   "bolum": "b3",
+   "sabitSik": true,
+   "id": "c2025v-09"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi, müşterilerin sadakat derecelerine göre, \"çoğu zaman sadık kalanlar\"ı ifade etmektedir?",
+   "secenekler": [
+    "Sıkı Sadıklar",
+    "Sadakat göstermeyenler",
+    "Çok az sadakat gösterenler",
+    "Bölünmüş sadıklar",
+    "Değişen sadıklar"
+   ],
+   "dogru": 3,
+   "aciklama": "Sadakat dereceleri: sıkı sadıklar (her zaman tek marka), bölünmüş sadıklar (çoğu zaman sadık), değişen sadıklar (markadan markaya geçen), çok az ya da hiç sadakat göstermeyenler.",
+   "sayfa": "s. 40",
+   "celdirici": "Sıkı sadık \"her zaman\", bölünmüş sadık \"çoğu zaman\" sadıktır.",
+   "no": 10,
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "c2025v-10"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi konumlandırmanın özünü ifade eden dört ilkeden biri <u>değildir?</u>",
+   "secenekler": [
+    "Bir şirket hedef müşterilerinin zihninde bir konum oluşturmalıdır.",
+    "Bir şirket herkes için her şey olamaz.",
+    "Bir şirketin konumu onun hedef pazarını da belirler.",
+    "Konum tekil, basit ve tutarlı bir mesaj sağlamalıdır.",
+    "Konum bir şirketi rakiplerinden ayırmalıdır."
+   ],
+   "dogru": 2,
+   "aciklama": "Jack Trout'un (1969) dört ilkesi: zihinde konum oluştur; konum tekil, basit ve tutarlı mesaj versin; konum şirketi rakiplerinden ayırsın; şirket herkes için her şey olamaz. Sıra tersidir: önce bölümlendirme ve hedef pazar seçilir, konum sonra belirlenir.",
+   "sayfa": "s. 42",
+   "celdirici": "\"Herkes için her şey olamaz\" ilkedir; kulağa bir uyarı gibi geldiği için yanlış sanılır.",
+   "no": 11,
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "c2025v-11"
+  },
+  {
+   "soru": "Aşağıdali yıl, ana gelişme ve hizmet sektörüne etkisi eşleştirilmelerinden hangisi <u>yanlıştır?</u>",
+   "secenekler": [
+    "2020’ler - COVID 19 pandemisi - Dijital hizmetlerin benimsenmesi hızlandı",
+    "2010’lar - Dijital dönüşüm - Yeni hizmet fırsatları yaratıldı",
+    "1990’lar - Bilgi ve iletişim teknolojilerinin yükselişi- Hizmet modelleri ve sunumu iyileştirildi",
+    "2000’ler - Serbestleşme ve küreselleşme - Yeni pazarlar açıldı, rekabet arttı",
+    "1980'ler - Yeni liberalizmin yükselişi - Hizmetlerin ekonomik etkileri arttı"
+   ],
+   "dogru": 4,
+   "aciklama": "Tablo 1 (Hizmet Sektörünün Evrimi) dört satırdır: 1990'lar bilgi ve iletişim teknolojileri, 2000'ler serbestleşme ve küreselleşme, 2010'lar dijital dönüşüm, 2020'ler COVID-19. Tabloda 1980'ler satırı yok; uydurma satır yanlıştır.",
+   "sayfa": "s. 9",
+   "celdirici": "2000'ler satırı doğru; serbestleşme ile küreselleşme aynı satırda, \"yeni pazarlar açıldı, rekabet arttı\" etkisiyle.",
+   "no": 12,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025v-12"
+  },
+  {
+   "soru": "Bir hizmet başarısızlığını takiben etkili bir hizmet kurtarma sayesinde, müşteri deneyiminin beklenenden daha iyi algılanması durumu aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Hizmet Pazarlaması Üçgeni",
+    "Hizmet Baskın Mantık",
+    "Hizmet Kalitesi",
+    "Hizmet Kurtarma Paradoksu",
+    "Hizmet Pazarlaması Karması"
+   ],
+   "dogru": 3,
+   "aciklama": "Soru kökü hizmet kurtarma paradoksunun kitaptaki tanımı. Bu durumda memnuniyet, hiç başarısızlık olmasaydı olacağından yüksek olabilir. Bölüm 3'te aynı kavram \"hizmet telafisi paradoksu\" adıyla geçer.",
+   "sayfa": "s. 11",
+   "celdirici": "Hizmet kalitesi genel bir kavramdır; başarısızlıktan sonra artan memnuniyet olgusunun adı paradokstur.",
+   "no": 13,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025v-13"
+  },
+  {
+   "soru": "Bir hizmet şirketinin, yerel müşterilere odaklandığı hedef pazar yaklaşımı aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Mikro pazarlama",
+    "Farklılaştırılmış pazarlama",
+    "Farklılaştırılmamış pazarlama",
+    "Yoğunlaştırılmış pazarlama",
+    "Odaklanmış pazarlama"
+   ],
+   "dogru": 0,
+   "aciklama": "Mikro pazarlamada şirket yerel müşterilere, yani ticaret alanlarına, mahallelere, mağazalara ve bireylere odaklanır.",
+   "sayfa": "s. 41",
+   "celdirici": "Yoğunlaştırılmış pazarlama da tek bölüme odaklanır ama o bölüm yerel olmak zorunda değil.",
+   "no": 14,
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "c2025v-14"
+  },
+  {
+   "soru": "Genellikle müşteriye sunulan faaliyetler, faydalar veya tatminler olarak tanımlanan kavram aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Hizmet",
+    "Kaynak",
+    "Fiziki ürün",
+    "Kabiliyet",
+    "Dağıtım"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmetler genellikle müşteriye sunulan faaliyetler, faydalar veya tatminler olarak tanımlanır (Zeithaml, Bitner ve Gremler).",
+   "sayfa": "s. 7",
+   "celdirici": "Fiziki ürün de fayda sunar ama tanımın devamı \"dokunulamaz, stoklanamaz, transfer edilemez\"dir; bu hizmeti tarif eder.",
+   "no": 15,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025v-15"
+  },
+  {
+   "soru": "Hizmet işletmelerinin sundukları temel hizmet için düşük ücret talep etmeleri, ancak sunulan ek hizmetlerle daha yüksek fiyatların önerilmesi, hangi fiyat politikasını ifade etmektedir?",
+   "secenekler": [
+    "avcı",
+    "teşvik",
+    "karşılama",
+    "garanti",
+    "yönlendirme"
+   ],
+   "dogru": 2,
+   "aciklama": "Karşılama: temel hizmet ucuz, ek hizmetlerle fiyat yükselir (tur şirketinin ucuz paketi ve ek geziler). Diğerleri: teşvik geçici düşük fiyat, yönlendirme \"paranın karşılığı\" imajı için seçili hizmetlerde düşük fiyat, garanti sonuç alınana kadar tam ücret almamak, avcı rakibi fiyatla pazardan çıkarıp sonra fiyatı artırmak.",
+   "sayfa": "s. 65–66",
+   "celdirici": "Yönlendirmede de bazı hizmetler ucuzdur ama amaç markanın tamamına düşük fiyat imajı vermektir; ek hizmetten para kazanma yoktur.",
+   "no": 16,
+   "bolum": "b3",
+   "sabitSik": true,
+   "id": "c2025v-16"
+  },
+  {
+   "soru": "Hizmet pazarlaması, genellikle hangi stratejileri içerir?",
+   "secenekler": [
+    "hizmetlerle ürünlerin stratejilerini benzeştirmeyi",
+    "hizmet sağlayıcıların sunduğu müşteri deneyimlerini ve lişkileri yönetmeyi",
+    "tüketici tercihleri ile fiziki ürünlerin örtüştürülmesini",
+    "fiziki ürünlerin geliştirilmesini",
+    "hizmet alıcılarının rekabet stratejilerini yönetmeyi"
+   ],
+   "dogru": 1,
+   "aciklama": "Tanım: hizmet pazarlaması maddi olmayan ürünlerin pazarlanmasına odaklanır ve genellikle hizmet sağlayıcıların sunduğu müşteri deneyimlerini ve ilişkileri yönetmeye yönelik stratejileri içerir.",
+   "sayfa": "s. 7",
+   "celdirici": "\"Benzeştirmek\" tersidir: hizmetler ürünlerden farklı olduğu için farklı stratejiler gerekir.",
+   "no": 17,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025v-17"
+  },
+  {
+   "soru": "Hizmet pazarlamasının tarihsel gelişmine dair aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "1990’lar, hizmet pazarlaması alanında önemli teorik katkıların yapıldığı bir dönemdir",
+    "zamanla çeşitli teoriler ve uygulamalarla şekillenmiştir",
+    "1950’lar ve 1970’lerde başlamıştır",
+    "araştırmalar, hizmetlerin de ürünlerle benzer stratejileri gerektirdiğini ortaya koymuştur",
+    "hizmetlerin ekonomideki rolü azaldıkça, özel stratejilere ihtiyaç duyulmuştur"
+   ],
+   "dogru": 1,
+   "aciklama": "Bölüm 1.1'in ilk cümlesi: hizmet pazarlamasının evrimi zamanla çeşitli teoriler ve uygulamalarla şekillenmiştir. Diğer şıklar kitaptaki bilgiyi bozar: ilgi 1960'lar ve 1970'lerde başladı; önemli teorik katkılar 1980'lerde (1990'lar uygulamaya dönüşüm); araştırmalar farklı strateji gerektiğini gösterdi; rol arttıkça özel stratejiye ihtiyaç doğdu.",
+   "sayfa": "s. 8",
+   "celdirici": "1990'lar ile 1980'ler karışır: 1980'ler teorik katkılar (Grönroos, SERVQUAL), 1990'lar teorinin pratiğe dönüşü (CRM).",
+   "no": 18,
+   "bolum": "b1",
+   "sabitSik": true,
+   "id": "c2025v-18"
+  },
+  {
+   "soru": "İşletmeler ile hizmet sunanlar arasındaki ilişkiyi ifade eden kavram aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "İlişkisel pazarlama",
+    "Etkileşimli pazarlama",
+    "Dışsal pazarlama",
+    "Sosyal Pazarlama",
+    "İçsel pazarlama"
+   ],
+   "dogru": 4,
+   "aciklama": "Hizmet pazarlaması üçgeni: işletme → çalışan (hizmet sunan) içsel pazarlama; çalışan → müşteri etkileşimli pazarlama; işletme → müşteri dışsal pazarlama. İçsel pazarlamada işletme çalışanlarını iç tüketici görüp tatmin eder ve motive eder.",
+   "sayfa": "s. 59",
+   "celdirici": "Etkileşimli pazarlama hizmet sunan ile müşteri arasındadır, işletme ile çalışan arasında değil.",
+   "no": 19,
+   "bolum": "b3",
+   "sabitSik": true,
+   "id": "c2025v-19"
+  },
+  {
+   "soru": "Pazar stratejisi formülasyon sürecinde, pazar ve tüketici ihtiyaçlarının tanımlanması hangi aşamada gerçekleşir?",
+   "secenekler": [
+    "firma ve pazar analizi",
+    "pazarlama karması geliştirme",
+    "hedef pazar",
+    "konumlandırma",
+    "pazar bölümlendirme süreci"
+   ],
+   "dogru": 4,
+   "aciklama": "Bölümlendirme süreci, pazarın tanımlanması ve müşteri ihtiyaçlarının belirlenmesiyle başlar.",
+   "sayfa": "s. 39",
+   "celdirici": "Firma ve pazar analizi dış çevreyi (makro çevre, rekabet) inceler; tüketici ihtiyaçlarının tanımlanması bölümlendirmenin ilk adımıdır.",
+   "no": 20,
+   "bolum": "b2",
+   "sabitSik": true,
+   "id": "c2025v-20"
+  }
+ ]
+}

@@ -1,4 +1,4 @@
 [
   {"kod": "isan", "ad": "Veri ve İş Analitiği", "kodu": "AAUF1405", "ogrenciler": ["Şengül"], "hazir": true},
-  {"kod": "hzpz", "ad": "Hizmet Pazarlaması", "ogrenciler": ["Kemal"], "hazir": false}
+  {"kod": "hzpz", "ad": "Hizmet Pazarlaması", "kodu": "AAUF1401", "ogrenciler": ["Kemal"], "hazir": true}
 ]
