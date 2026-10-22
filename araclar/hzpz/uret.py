@@ -10,7 +10,7 @@ from tahmin import DENEMELER
 
 # (id, no, başlık, sayfalar, hazır mı, sayfa aralığı)
 BOLUM_LISTE = [
-    ("b1", 1, "Hizmet Pazarlamasına Giriş", "s. 5–29", False, (5, 29)),
+    ("b1", 1, "Hizmet Pazarlamasına Giriş", "s. 5–29", True, (5, 29)),
     ("b2", 2, "Hizmetlerde Pazar Bölümlendirme, Hedef Pazar Seçimi ve Konumlandırma", "s. 31–54", False, (31, 54)),
     ("b3", 3, "Hizmetlerde Pazarlama Karması", "s. 55–81", False, (55, 81)),
     ("b4", 4, "Hizmet Pazarlamasında İnsan", "s. 83–104", False, (83, 104)),

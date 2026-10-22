@@ -1,0 +1,766 @@
+{
+ "ozet": [
+  {
+   "baslik": "Hizmet ve hizmet pazarlaması",
+   "sayfa": "s. 6–7",
+   "maddeler": [
+    "<b>Hizmet pazarlaması:</b> maddi olmayan ürünlerin pazarlanmasına odaklanan disiplin; hizmet sağlayıcıların sunduğu <b>müşteri deneyimlerini ve ilişkileri</b> yönetmeye yönelik stratejileri içerir.",
+    "<b>Hizmet:</b> müşteriye sunulan faaliyetler, faydalar veya tatminler; fiziksel ürünlerden farklı olarak <b>dokunulamaz, stoklanamaz, transfer edilemez</b>.",
+    "Modern anlayışta <b>müşteri deneyimi</b> öne çıkar. <b>Veri analitiği</b> stratejilerin geliştirilmesinde kritik rol oynar; <b>büyük veri analizi</b> tüketici davranışını anlamak ve öngörmek için araçtır. Dijitalleşme ve sürdürülebilirlik de anlayışı şekillendirir.",
+    "Grönroos: hizmet karşılaşmasında önemli olan tek şey müşterinin yaşadığı deneyimin algısıdır."
+   ]
+  },
+  {
+   "baslik": "Tarihsel gelişim",
+   "sayfa": "s. 8–9",
+   "tablo": {
+    "basliklar": [
+     "Dönem",
+     "Ne oldu?"
+    ],
+    "satirlar": [
+     [
+      "1960'lar–1970'ler",
+      "İlk ilgi; hizmetlerin farklı strateji gerektirdiği görüldü (Shostack 1977)"
+     ],
+     [
+      "1980'ler",
+      "Önemli teorik katkılar: Grönroos, Parasuraman-Zeithaml-Berry, SERVQUAL; dört özellik (ayrılmazlık, heterojenlik, dokunulmazlık, dayanıksızlık)"
+     ],
+     [
+      "1990'lar",
+      "Teori pratiğe döndü: CRM, müşteri deneyimi yönetimi, hizmet inovasyonu (Lovelock, Zeithaml-Bitner-Gremler)"
+     ],
+     [
+      "2000'ler ve sonrası",
+      "Dijitalleşmenin büyük etkisi: dijital pazarlama, veri analitiği, sosyal medya; Vargo-Lusch hizmet baskın (S-D) mantık"
+     ]
+    ],
+    "baslik": "Tablo 1 (s. 9, Lovelock-Wirtz): 1990'lar BİT → hizmet modelleri iyileşti; 2000'ler serbestleşme ve küreselleşme → yeni pazarlar, rekabet; 2010'lar dijital dönüşüm → yeni fırsatlar; 2020'ler COVID-19 → dijital hizmetler hızlandı"
+   }
+  },
+  {
+   "baslik": "Hizmet endüstrisindeki gelişim",
+   "sayfa": "s. 9–10",
+   "maddeler": [
+    "<b>Teknoloji</b> en önemli dönüştürücü güç: dijital dönüşüm <b>büyük veri analitiği, yapay zekâ ve otomasyonu</b> getirdi (örnek: sohbet botları).",
+    "<b>Ekonomi:</b> ABD'de hizmetler ekonomik faaliyetin ~%80'i; küreselleşme uluslararası pazara açılmayı kolaylaştırdı.",
+    "<b>Toplum:</b> yaşlanan nüfus ve şehirleşme sağlık, eğitim, yaşlı bakımı talebini artırdı; tüketici daha hızlı, esnek, kişisel hizmet istiyor.",
+    "Tüm hizmetler deneyim sunar ama tüm deneyimler yapılandırılmış hizmet değildir."
+   ]
+  },
+  {
+   "baslik": "Hizmetlerin dört özelliği ve fırsata çevirme (Tablo 2–3)",
+   "sayfa": "s. 11–13",
+   "tablo": {
+    "basliklar": [
+     "Özellik",
+     "Ne demek?",
+     "Fırsata çevirme"
+    ],
+    "satirlar": [
+     [
+      "Soyutluk (dokunulmazlık)",
+      "Görülemez, dokunulamaz; tüketim öncesi kalite değerlendirilemez, algılanan risk yüksek",
+      "Fiziksel kanıt ve markalama"
+     ],
+     [
+      "Stoklanamama (dayanıksızlık)",
+      "Depolanamaz; boş uçak koltuğu sonradan satılamaz",
+      "Etkili talep yönetimi (dinamik fiyat, aşırı rezervasyon, erken kuşak indirimi)"
+     ],
+     [
+      "Heterojenlik (değişkenlik)",
+      "Kalite kimin, ne zaman, nerede, nasıl sunduğuna göre değişir",
+      "Standart eğitim ve kalite kontrol"
+     ],
+     [
+      "Ayrılmazlık",
+      "Üretim ve tüketim eşzamanlı; sağlayıcı-müşteri etkileşimi sonucu belirler",
+      "Müşteri etkileşimine odaklanma"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Hizmet tüketiminin üç aşamalı modeli",
+   "sayfa": "s. 14–18",
+   "maddeler": [
+    "<b>Satın alma öncesi</b> (4 adım): ihtiyaç farkındalığı → bilgi arama → alternatiflerin değerlendirilmesi → satın alma kararı. Akla gelen alternatiflere <b>değerlendirme seti</b> denir.",
+    "Nitelikler: <b>arama</b> (satın almadan önce değerlendirilir: renk, tat), <b>deneyim</b> (ancak tüketince: restoranın atmosferi), <b>güven</b> (tüketimden sonra bile zor: mutfaktaki hijyen). Hizmetlerde deneyim ve güven nitelikleri yüksek → <b>algılanan risk</b> yüksek.",
+    "Beklentiler: istenen, yeterli ve tahmin edilen hizmet düzeyi; istenen ile yeterli arasına <b>tolerans bölgesi</b> denir.",
+    "<b>Hizmet karşılaşması:</b> müşteri hizmeti başlatır, deneyimler, tüketir. <b>Gerçeklik anı</b> (Normann, boğa güreşi metaforu; Carlzon/SAS: yılda 50 milyon 15 saniyelik an).",
+    "<b>Karşılaşma sonrası:</b> performans beklentiyle karşılaştırılır. Müşteri memnuniyeti olumlu disconfirmation (beklentinin aşılması) ile ortaya çıkar; çok memnun müşteri tekrar alır, sadık kalır, olumlu ağızdan ağıza yayar."
+   ]
+  },
+  {
+   "baslik": "Temas düzeyleri ve servuction",
+   "sayfa": "s. 19–20",
+   "maddeler": [
+    "<b>Yüksek temaslı:</b> sürekli etkileşim; müşteri hizmet <b>fabrikasına</b> girer (motel, hastane, uçak); cansız nesneler değil insanlar işlenir; müşteri birçok <b>fiziksel ipucuna</b> maruz kalır.",
+    "<b>Düşük temaslı:</b> çok az ya da hiç fiziksel temas; elektronik veya fiziksel dağıtım kanalları (posta, telefon, internet bankacılığı).",
+    "<b>Servuction</b> (Eiglier ve Langeard; hizmet + üretim): müşterinin gördüğü ve deneyimlediği fiziksel ortam. <b>Teknik çekirdek</b> sahne arkası, görünmez (mutfak); <b>hizmet sunum sistemi</b> sahne önü, görünür (bina, ekipman, personel, diğer müşteriler).",
+    "<b>Hizmet kurtarma paradoksu</b> (s. 11): başarısızlıktan sonra etkili kurtarma, deneyimi beklenenden iyi algılatır."
+   ]
+  }
+ ],
+ "kitapNotlari": [],
+ "akildaKalsin": [
+  "Hizmet = faaliyet, fayda, tatmin; soyut + dokunulamaz + stoklanamaz + transfer edilemez.",
+  "Dönemler: 60-70 ilgi → 80 teori (SERVQUAL) → 90 uygulama (CRM) → 2000 ve sonrası dijital + S-D mantık.",
+  "Tablo 1'de 1980 satırı yok: 1990 BİT, 2000 küreselleşme, 2010 dijital dönüşüm, 2020 COVID.",
+  "Dört özellik → dört çözüm: soyut-fiziksel kanıt, dayanıksız-talep yönetimi, değişken-standart eğitim, ayrılmaz-etkileşim.",
+  "Satın alma öncesi 4 adım: ihtiyaç, bilgi, alternatif, karar.",
+  "Arama (önce) → deneyim (tüketince) → güven (sonra bile zor).",
+  "Fiziksel ipucu çok = yüksek temas; teknik çekirdek görünmez, sunum sistemi görünür."
+ ],
+ "kartlar": [
+  {
+   "ad": "Hizmet pazarlaması",
+   "tanim": "Maddi olmayan ürünlerin pazarlanmasına odaklanan disiplin; hizmet sağlayıcıların sunduğu müşteri deneyimlerini ve ilişkileri yönetmeye yönelik stratejileri içerir.",
+   "sayfa": "s. 7",
+   "akil": "deneyim + ilişki yönetimi"
+  },
+  {
+   "ad": "Hizmet",
+   "tanim": "Müşteriye sunulan faaliyetler, faydalar veya tatminler; dokunulamaz, stoklanamaz ve transfer edilemez. Ekonomide maddi olmayan ürün ya da fayda.",
+   "sayfa": "s. 7",
+   "akil": "faaliyet, fayda, tatmin"
+  },
+  {
+   "ad": "Veri analitiği",
+   "tanim": "Hizmet pazarlaması stratejilerinin geliştirilmesinde ve uygulanmasında kritik rol oynar; daha doğru pazarlama kararı sağlar.",
+   "sayfa": "s. 6",
+   "akil": "strateji geliştirme"
+  },
+  {
+   "ad": "Büyük veri analizi",
+   "tanim": "Tüketici davranışlarını anlamak ve öngörmek için kullanılan önemli araç (Wedel ve Kannan).",
+   "sayfa": "s. 6",
+   "akil": "davranışı öngörme"
+  },
+  {
+   "ad": "Dijital pazarlama",
+   "tanim": "İnternet ve dijital teknolojilerin kullanımını içeren pazarlama stratejisi; sosyal medya birebir iletişimi mümkün kıldı.",
+   "sayfa": "s. 6"
+  },
+  {
+   "ad": "1980'ler",
+   "tanim": "Hizmet pazarlamasında önemli teorik katkıların dönemi: Grönroos, Parasuraman-Zeithaml-Berry, SERVQUAL; dört özellik üzerinde yoğunlaşma.",
+   "sayfa": "s. 8",
+   "akil": "teori, SERVQUAL"
+  },
+  {
+   "ad": "1990'lar",
+   "tanim": "Teorik temellerin pratik uygulamaya dönüştüğü dönem: CRM, müşteri deneyimi yönetimi, hizmet inovasyonu.",
+   "sayfa": "s. 8",
+   "akil": "uygulama, CRM"
+  },
+  {
+   "ad": "2000'ler ve sonrası",
+   "tanim": "Dijitalleşmenin hizmet pazarlamasında büyük etki yarattığı dönem; Vargo ve Lusch'un hizmet baskın (S-D) mantığı.",
+   "sayfa": "s. 8",
+   "akil": "dijitalleşme"
+  },
+  {
+   "ad": "Hizmet sektörünün evrimi (Tablo 1)",
+   "tanim": "1990'lar BİT → hizmet modelleri iyileşti; 2000'ler serbestleşme ve küreselleşme → yeni pazarlar, rekabet; 2010'lar dijital dönüşüm → yeni fırsatlar; 2020'ler COVID-19 → dijital hizmetler hızlandı.",
+   "sayfa": "s. 9",
+   "akil": "1980 satırı yok"
+  },
+  {
+   "ad": "Soyutluk (dokunulmazlık)",
+   "tanim": "Hizmet görülemez, dokunulamaz; tüketim öncesi kalite değerlendirilemez, algılanan risk yüksektir. Çözüm: fiziksel kanıt ve markalama.",
+   "sayfa": "s. 11, 13",
+   "akil": "görünmezi görünür yap",
+   "ornek": "Otel fotoğrafı ve yorumlar; spa'nın huzurlu ortamı"
+  },
+  {
+   "ad": "Stoklanamama (dayanıksızlık)",
+   "tanim": "Hizmet gelecekte kullanmak üzere depolanamaz; satılmayan kapasite telafi edilemez. Çözüm: etkili talep yönetimi.",
+   "sayfa": "s. 12, 13",
+   "akil": "boş koltuk geri gelmez",
+   "ornek": "Dinamik fiyat, aşırı rezervasyon, mutlu saat"
+  },
+  {
+   "ad": "Heterojenlik",
+   "tanim": "Kalite kimin, ne zaman, nerede, nasıl sunduğuna göre değişir; insan faktöründen doğar. Çözüm: standart eğitim ve kalite kontrol.",
+   "sayfa": "s. 12, 13",
+   "akil": "her stilist farklı keser"
+  },
+  {
+   "ad": "Ayrılmazlık",
+   "tanim": "Hizmet üretildiği anda tüketilir; sağlayıcı-müşteri etkileşimi sonucu belirler. Çözüm: müşteri etkileşimine odaklanma.",
+   "sayfa": "s. 12, 13",
+   "akil": "üretim = tüketim anı",
+   "ornek": "Kişisel antrenör"
+  },
+  {
+   "ad": "Değerin birlikte yaratılması",
+   "tanim": "Değer, sağlayıcı ile tüketici arasındaki etkileşimle birlikte yaratılır; tüketici değer yaratmada aktif roldedir.",
+   "sayfa": "s. 12"
+  },
+  {
+   "ad": "Hizmet kurtarma paradoksu",
+   "tanim": "Hizmet başarısızlığını izleyen etkili kurtarma sayesinde deneyimin beklenenden iyi algılanması; memnuniyet hiç hata olmasaydı olacağından yüksek olabilir.",
+   "sayfa": "s. 11",
+   "akil": "hata + iyi telafi = daha memnun"
+  },
+  {
+   "ad": "Satın alma öncesi aşama",
+   "tanim": "Dört adım: ihtiyaç farkındalığı, bilgi arama, alternatiflerin değerlendirilmesi, satın alma kararı.",
+   "sayfa": "s. 14",
+   "akil": "ihtiyaç-bilgi-alternatif-karar"
+  },
+  {
+   "ad": "Değerlendirme seti",
+   "tanim": "Karar sürecinde müşterinin aklına gelen ürün ya da marka seti (akla gelen set).",
+   "sayfa": "s. 15"
+  },
+  {
+   "ad": "Arama nitelikleri",
+   "tanim": "Satın almadan önce değerlendirilebilen somut özellikler: stil, renk, doku, tat, ses.",
+   "sayfa": "s. 15",
+   "akil": "önceden test edilir"
+  },
+  {
+   "ad": "Deneyim nitelikleri",
+   "tanim": "Satın almadan önce değerlendirilemez; hizmeti denemek gerekir (güvenilirlik, kullanım kolaylığı, restoranın atmosferi).",
+   "sayfa": "s. 15",
+   "akil": "tüketince öğrenilir"
+  },
+  {
+   "ad": "Güven nitelikleri",
+   "tanim": "Tüketimden sonra bile değerlendirilmesi zor nitelikler; müşteri inanmak zorundadır (mutfaktaki hijyen).",
+   "sayfa": "s. 15",
+   "akil": "sonra bile bilinmez"
+  },
+  {
+   "ad": "Algılanan risk",
+   "tanim": "Olası sonuç ne kadar kötü ve olasılığı ne kadar yüksekse risk o kadar yüksek; ilk kez kullananlarda belirsizlik büyük. Başa çıkma: güvenilir kişilerden bilgi, internette karşılaştırma ve yorumlar.",
+   "sayfa": "s. 15–16"
+  },
+  {
+   "ad": "Tolerans bölgesi",
+   "tanim": "İstenen ve yeterli hizmet düzeyi arasındaki, müşterinin performans farkını kabul ettiği aralık.",
+   "sayfa": "s. 18, 24"
+  },
+  {
+   "ad": "Gerçeklik anı",
+   "tanim": "Müşteri ile hizmet sağlayıcının karşı karşıya geldiği temas anı (Normann, boğa güreşi metaforu); ilişkiyi kurar ya da bozar. Carlzon/SAS: yılda 50 milyon 15 saniyelik an.",
+   "sayfa": "s. 17",
+   "akil": "matador ve boğa"
+  },
+  {
+   "ad": "Müşteri memnuniyeti (B1)",
+   "tanim": "Olumlu disconfirmation (beklentilerin aşılması) ile keyif ve sürpriz yaşandığında ortaya çıkar.",
+   "sayfa": "s. 18"
+  },
+  {
+   "ad": "Yüksek temaslı hizmet",
+   "tanim": "Müşteri ile organizasyon arasında sürekli etkileşim; müşteri hizmet fabrikasına girer, birçok fiziksel ipucuna maruz kalır; insanlar işlenir.",
+   "sayfa": "s. 19",
+   "ornek": "Motel, hastane, uçak, restoran"
+  },
+  {
+   "ad": "Düşük temaslı hizmet",
+   "tanim": "Çok az ya da hiç fiziksel temas; temas elektronik veya fiziksel dağıtım kanallarıyla.",
+   "sayfa": "s. 19",
+   "ornek": "Posta, telefon, internet bankacılığı"
+  },
+  {
+   "ad": "Servuction sistemi",
+   "tanim": "Eiglier ve Langeard'ın kavramı (hizmet + üretim): hizmet organizasyonunun müşterilerce görülen ve deneyimlenen fiziksel ortamı.",
+   "sayfa": "s. 20",
+   "akil": "service + production"
+  },
+  {
+   "ad": "Teknik çekirdek",
+   "tanim": "Girdilerin işlendiği, hizmet unsurlarının oluşturulduğu sahne arkası; müşteriye görünmez (restoran mutfağı).",
+   "sayfa": "s. 20",
+   "akil": "arka ofis"
+  },
+  {
+   "ad": "Hizmet sunum sistemi",
+   "tanim": "Son montajın yapıldığı, müşteriye görünür sahne önü: binalar, ekipman, personel, diğer müşteriler.",
+   "sayfa": "s. 20",
+   "akil": "ön ofis"
+  },
+  {
+   "ad": "Gig ekonomisi",
+   "tanim": "Belirli bir kurumun tam zamanlı personeli olmayan, uzaktan ve esnek saatlerde çalışanların iş modeli (Uber, Airbnb); değişkenlik ve ayrılmazlığı etkiledi.",
+   "sayfa": "s. 21, 27"
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "Veri analitiği",
+    "tanim": "Hizmet pazarlaması stratejilerinin geliştirilmesinde ve uygulanmasında kritik rol oynar."
+   },
+   "b": {
+    "ad": "Büyük veri analizi",
+    "tanim": "Tüketici davranışlarını anlamak ve öngörmek için kullanılan araçtır."
+   },
+   "fark": "Sınav ikisini boşluk doldurmada sıraya koyarak sordu: strateji → veri analitiği; tüketici davranışını öngörme → büyük veri analizi (2025-26 Vize S1).",
+   "sorular": [
+    {
+     "ifade": "Stratejilerin geliştirilmesinde ve uygulanmasında kritik rol oynar",
+     "cevap": "a",
+     "neden": "s. 6'daki ilk cümle."
+    },
+    {
+     "ifade": "Tüketici davranışlarını anlamak ve öngörmek için kullanılır",
+     "cevap": "b",
+     "neden": "s. 6'daki ikinci cümle (Wedel ve Kannan)."
+    },
+    {
+     "ifade": "Daha doğru pazarlama kararı almayı sağlar",
+     "cevap": "a",
+     "neden": "Kitap bunu veri analitiği için söyler (Davenport ve Harris)."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "1980'ler",
+    "tanim": "Önemli teorik katkılar dönemi."
+   },
+   "b": {
+    "ad": "1990'lar",
+    "tanim": "Teorinin pratik uygulamaya dönüştüğü dönem."
+   },
+   "fark": "1980'ler = teori (SERVQUAL, Grönroos); 1990'lar = uygulama (CRM). Tablo 1'de ise 1990'lar BİT'in yükselişiyle başlar.",
+   "sorular": [
+    {
+     "ifade": "SERVQUAL modeli kabul gördü",
+     "cevap": "a",
+     "neden": "Parasuraman, Zeithaml, Berry 1985/1988."
+    },
+    {
+     "ifade": "Müşteri ilişkileri yönetimi (CRM) ve hizmet inovasyonuna odaklanıldı",
+     "cevap": "b",
+     "neden": "Uygulama dönemi."
+    },
+    {
+     "ifade": "Ayrılmazlık, heterojenlik, dokunulmazlık, dayanıksızlık üzerinde yoğunlaşıldı",
+     "cevap": "a",
+     "neden": "Dört özellik teorik dönemde öne çıktı."
+    },
+    {
+     "ifade": "Tablo 1'de bilgi ve iletişim teknolojilerinin yükselişiyle eşleşir",
+     "cevap": "b",
+     "neden": "Tablo 1 1990'larla başlar; 1980 satırı yok."
+    },
+    {
+     "ifade": "Lovelock (1992) uygulama ve stratejileri detaylandırdı",
+     "cevap": "b",
+     "neden": "1990'lar."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Soyutluk",
+    "tanim": "Görülemez, dokunulamaz; kalite önceden değerlendirilemez."
+   },
+   "b": {
+    "ad": "Stoklanamama",
+    "tanim": "Hizmet depolanamaz; satılmayan kapasite kaybolur."
+   },
+   "fark": "Soyutluğun çözümü fiziksel kanıt ve markalama, stoklanamamanın çözümü etkili talep yönetimi.",
+   "sorular": [
+    {
+     "ifade": "Uçaktaki boş koltuk sonradan satılamaz",
+     "cevap": "b",
+     "neden": "Depolanamama."
+    },
+    {
+     "ifade": "Otel misafiri deneyimi önceden test edemez, fotoğraflara bakar",
+     "cevap": "a",
+     "neden": "Dokunulamazlık."
+    },
+    {
+     "ifade": "Restoran yoğun olmayan saatlerde mutlu saat indirimi yapar",
+     "cevap": "b",
+     "neden": "Talebi dengeleyerek dayanıksızlığın etkisini azaltır."
+    },
+    {
+     "ifade": "Garanti ve ağızdan ağıza tavsiye ile algılanan risk azaltılır",
+     "cevap": "a",
+     "neden": "Soyutluk algılanan riski artırır."
+    },
+    {
+     "ifade": "Havayolu dinamik fiyatlandırma ve aşırı rezervasyon kullanır",
+     "cevap": "b",
+     "neden": "Kapasite ve talep yönetimi."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Heterojenlik",
+    "tanim": "Kalite sunucuya, zamana, yere göre değişir."
+   },
+   "b": {
+    "ad": "Ayrılmazlık",
+    "tanim": "Üretim ve tüketim aynı anda; etkileşim sonucu belirler."
+   },
+   "fark": "Heterojenliğin çözümü standart eğitim ve kalite kontrol, ayrılmazlığın çözümü müşteri etkileşimine odaklanmak.",
+   "sorular": [
+    {
+     "ifade": "Aynı saç kesimi stiliste göre farklı görünür",
+     "cevap": "a",
+     "neden": "Değişkenlik."
+    },
+    {
+     "ifade": "Antrenmanın etkinliği antrenörün motivasyon becerisine bağlıdır",
+     "cevap": "b",
+     "neden": "Antrenör ve müşteri aynı anda üretir ve tüketir."
+    },
+    {
+     "ifade": "Salon tüm stilistlere aynı tekniği öğretir",
+     "cevap": "a",
+     "neden": "Standart eğitim değişkenliği azaltır."
+    },
+    {
+     "ifade": "Doktorun uzmanlığı kadar etkileşimdeki iletişim de deneyimi şekillendirir",
+     "cevap": "b",
+     "neden": "Etkileşim hizmet sonucunu belirler."
+    },
+    {
+     "ifade": "Uber gibi platformlarda kalite sürücüden sürücüye çok değişir",
+     "cevap": "a",
+     "neden": "Bağımsız yükleniciler değişkenliği artırdı (vaka, s. 21)."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Deneyim nitelikleri",
+    "tanim": "Satın almadan önce değerlendirilemez; ancak tüketince anlaşılır."
+   },
+   "b": {
+    "ad": "Güven nitelikleri",
+    "tanim": "Tüketimden sonra bile değerlendirilmesi zordur."
+   },
+   "fark": "Ölçüt zaman: deneyim nitelikleri tüketimde öğrenilir, güven nitelikleri tüketimden sonra da bilinemez. Üçüncüsü arama nitelikleri (önceden değerlendirilir).",
+   "sorular": [
+    {
+     "ifade": "Yemeği ne kadar beğeneceğin",
+     "cevap": "a",
+     "neden": "Yiyince öğrenirsin."
+    },
+    {
+     "ifade": "Mutfaktaki hijyen koşulları",
+     "cevap": "b",
+     "neden": "Yedikten sonra da bilemezsin."
+    },
+    {
+     "ifade": "Garsonun hizmeti ve restoranın atmosferi",
+     "cevap": "a",
+     "neden": "Tüketirken öğrenilir."
+    },
+    {
+     "ifade": "Yemek malzemelerinin sağlıklı olup olmadığı",
+     "cevap": "b",
+     "neden": "Müşteri güvenmek zorundadır."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Yüksek temaslı hizmet",
+    "tanim": "Sürekli etkileşim; müşteri hizmet fabrikasındadır."
+   },
+   "b": {
+    "ad": "Düşük temaslı hizmet",
+    "tanim": "Çok az ya da hiç fiziksel temas; elektronik veya fiziksel kanallar."
+   },
+   "fark": "Fiziksel ipuçlarına maruz kalmak yüksek temasın özelliğidir (2025-26 Final S7 bunu ters çevirdi).",
+   "sorular": [
+    {
+     "ifade": "Müşteri birçok fiziksel ipucuna maruz kalır",
+     "cevap": "a",
+     "neden": "Bina, ekipman, personel, diğer müşteriler."
+    },
+    {
+     "ifade": "Temas posta, telefon, internet üzerinden olur",
+     "cevap": "b",
+     "neden": "Elektronik veya fiziksel dağıtım kanalı."
+    },
+    {
+     "ifade": "Cansız nesneler değil insanlar işlenir",
+     "cevap": "a",
+     "neden": "Motel, hastane, uçak."
+    },
+    {
+     "ifade": "Hizmet operasyonunun çoğu sahne arkasında kalır",
+     "cevap": "b",
+     "neden": "Müşteri fabrikayı görmez."
+    },
+    {
+     "ifade": "Birçok gerçeklik anı yönetilmelidir",
+     "cevap": "a",
+     "neden": "Temas noktası çoktur."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Teknik çekirdek",
+    "tanim": "Girdilerin işlendiği sahne arkası; müşteriye görünmez."
+   },
+   "b": {
+    "ad": "Hizmet sunum sistemi",
+    "tanim": "Son montajın yapıldığı sahne önü; müşteriye görünür."
+   },
+   "fark": "Servuction iki parçadır. Sahne arkası görünmez ama hata yaparsa (mutfak siparişi yanlış okursa) müşteri fark eder.",
+   "sorular": [
+    {
+     "ifade": "Restoranın mutfağı",
+     "cevap": "a",
+     "neden": "Sahne arkası."
+    },
+    {
+     "ifade": "Binalar, ekipman, personel ve diğer müşteriler",
+     "cevap": "b",
+     "neden": "Görünür alt sistem."
+    },
+    {
+     "ifade": "Tiyatro benzetmesinde arka ofis",
+     "cevap": "a",
+     "neden": "Görünmez bileşen."
+    },
+    {
+     "ifade": "Hizmet deneyiminin sahnelendiği canlı tiyatro",
+     "cevap": "b",
+     "neden": "Ön ofis."
+    }
+   ]
+  }
+ ],
+ "formuller": [],
+ "sorular": [
+  {
+   "soru": "Grönroos'a (1998) göre hizmet karşılaşmalarında önemli olan tek şey aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Müşterinin yaşadığı deneyimin algısı",
+    "Hizmetin fiyatı",
+    "Çalışanın teknik bilgisi",
+    "Hizmetin sunulduğu binanın büyüklüğü",
+    "Reklam bütçesi"
+   ],
+   "dogru": 0,
+   "aciklama": "Grönroos: sonuçta hizmet karşılaşmalarında önemli olan tek şey müşterinin yaşadığı deneyimin algısıdır. Bu, hizmet pazarlamasında müşteri algısının önemini vurgular.",
+   "sayfa": "s. 7",
+   "celdirici": "Teknik bilgi kaliteyi etkiler ama alıntı algıyı merkeze koyar."
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "1980'ler teorik katkılar ve SERVQUAL dönemidir (I doğru). CRM'e odaklanma 1990'ların özelliğidir (II yanlış). Hizmet baskın mantık 2000'ler ve sonrasında Vargo ve Lusch (2004) ile gelmiştir (III doğru).",
+   "sayfa": "s. 8",
+   "celdirici": "CRM'i 1980'lere koymak en sık hata: 1990'lar teorinin pratiğe döndüğü dönemdir.",
+   "onculler": [
+    "1980'lerde SERVQUAL modeli hizmet kalitesini ölçmede kabul görmüştür.",
+    "1980'lerde hizmet sağlayıcılar müşteri ilişkileri yönetimine (CRM) odaklanmaya başlamıştır.",
+    "Hizmet baskın mantık 2000'ler ve sonrasında pazarlama teorisine girmiştir."
+   ],
+   "kok": "Hizmet pazarlamasının tarihsel gelişimiyle ilgili yukarıdaki ifadelerden hangileri doğrudur?"
+  },
+  {
+   "soru": "Kitaptaki Hizmet Sektörünün Evrimi tablosuna göre \"serbestleşme ve küreselleşme\" gelişmesi hangi dönemle ve hangi etkiyle eşleşir?",
+   "secenekler": [
+    "2000'ler – yeni pazarlar açıldı, rekabet arttı",
+    "1990'lar – hizmet modelleri ve sunumu iyileştirildi",
+    "2010'lar – yeni hizmet fırsatları yaratıldı",
+    "2020'ler – dijital hizmetlerin benimsenmesi hızlandı",
+    "1980'ler – hizmetlerin ekonomik etkileri arttı"
+   ],
+   "dogru": 0,
+   "aciklama": "Tablo 1: 1990'lar BİT'in yükselişi, 2000'ler serbestleşme ve küreselleşme (yeni pazarlar, rekabet), 2010'lar dijital dönüşüm, 2020'ler COVID-19.",
+   "sayfa": "s. 9",
+   "celdirici": "1980'ler satırı tabloda yok; 2025-26 Vize S12'de yanlış eşleştirme bu satırdı."
+  },
+  {
+   "soru": "ABD'de hizmet sektörünün toplam ekonomik faaliyetler içindeki payı kitapta yaklaşık olarak kaç verilmiştir?",
+   "secenekler": [
+    "%80",
+    "%50",
+    "%63",
+    "%30",
+    "%95"
+   ],
+   "dogru": 0,
+   "aciklama": "Gelişmiş ekonomilerde hizmetlerin GSYİH payı sürekli artıyor; ABD'de toplam ekonomik faaliyetin yaklaşık %80'i (World Bank, 2021).",
+   "sayfa": "s. 9",
+   "celdirici": "%63 dünya ekonomisindeki hizmet payıdır (Bölüm 3, s. 56); ABD için %80."
+  },
+  {
+   "soru": "Bir restoran, yoğun olmayan saatlerde müşteri çekmek için erken kuşak indirimi ve mutlu saat fırsatları sunuyor. Bu uygulama hizmetlerin hangi özelliğinden doğan zorluğu hafifletir?",
+   "secenekler": [
+    "Stoklanamama",
+    "Soyutluk",
+    "Heterojenlik",
+    "Ayrılmazlık",
+    "Sahiplik"
+   ],
+   "dogru": 0,
+   "aciklama": "Yoğun saatte boş kalan masa, geri gelmeyen gelir demektir (dayanıksızlık). İndirimler talebi dengeler; çözüm etkili talep yönetimidir.",
+   "sayfa": "s. 12",
+   "celdirici": "Soyutluk riskle ilgilidir ve fiziksel kanıtla çözülür; zamanla değişen talep stoklanamamanın sorunudur."
+  },
+  {
+   "soru": "Kitaptaki Hizmet Sektöründeki Zorluklar ve Fırsatlar tablosunda \"değişkenlik\" zorluğunun karşısındaki fırsat hangisidir?",
+   "secenekler": [
+    "Standartlaştırılmış eğitim ve kalite kontrol",
+    "Fiziksel kanıt ve markalama kullanımı",
+    "Etkili talep yönetimi",
+    "Müşteri etkileşimine odaklanma",
+    "Dinamik fiyatlandırma"
+   ],
+   "dogru": 0,
+   "aciklama": "Tablo 3: soyutluk → fiziksel kanıt ve markalama; dayanıksızlık → etkili talep yönetimi; değişkenlik → standart eğitim ve kalite kontrol; ayrılmazlık → müşteri etkileşimine odaklanma.",
+   "sayfa": "s. 13",
+   "celdirici": "Müşteri etkileşimine odaklanma ayrılmazlığın karşılığıdır."
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Tablo 2'ye göre mallar somut, depolanabilir, üretim-tüketimi ayrı, standart, sahipliği devredilebilir ve tüketici etkileşimi sınırlıdır; hizmetlerde bunların tersi geçerlidir. Üç ifade de doğru.",
+   "sayfa": "s. 13",
+   "celdirici": "Sahiplik farkı unutulur: hizmet mülkiyet değil bir tür kiralamadır (s. 23).",
+   "onculler": [
+    "Mallarda üretim ve tüketim ayrı, hizmetlerde eşzamanlıdır.",
+    "Mallarda sahiplik transferi mümkün, hizmetlerde sahiplik transferi yoktur.",
+    "Mallarda tüketici etkileşimi sınırlı, hizmetlerde genellikle yüksektir."
+   ],
+   "kok": "Mallar ve hizmetler arasındaki temel farklarla ilgili yukarıdaki ifadelerden hangileri doğrudur?"
+  },
+  {
+   "soru": "Hizmet tüketiminin üç aşamalı modelinde satın alma öncesi aşamanın ilk adımı hangisidir?",
+   "secenekler": [
+    "İhtiyaç farkındalığı",
+    "Bilgi arama",
+    "Alternatiflerin değerlendirilmesi",
+    "Satın alma kararı",
+    "Hizmet karşılaşması"
+   ],
+   "dogru": 0,
+   "aciklama": "Sıra: ihtiyaç farkındalığı → bilgi arama → alternatiflerin değerlendirilmesi → satın alma kararı. İhtiyaç bilinçaltı, fiziksel durum ya da firmanın pazarlaması gibi dış kaynaklarla tetiklenebilir.",
+   "sayfa": "s. 14",
+   "celdirici": "Hizmet karşılaşması ayrı bir aşamadır, satın alma öncesinin adımı değildir."
+  },
+  {
+   "soru": "Bir restoranda mutfağın hijyen koşulları ve yemek malzemelerinin sağlıklı olup olmadığı, hizmetin hangi tür niteliklerine örnektir?",
+   "secenekler": [
+    "Güven nitelikleri",
+    "Arama nitelikleri",
+    "Deneyim nitelikleri",
+    "Somut nitelikler",
+    "Fiyat nitelikleri"
+   ],
+   "dogru": 0,
+   "aciklama": "Güven nitelikleri tüketimden sonra bile değerlendirilmesi zor niteliklerdir; müşteri görevin vaat edilen kalitede yapıldığına güvenmek zorundadır.",
+   "sayfa": "s. 15",
+   "celdirici": "Deneyim nitelikleri tüketirken öğrenilir (yemeğin tadı, garsonun hizmeti); hijyeni yedikten sonra da bilemezsin."
+  },
+  {
+   "soru": "Müşterinin hizmet performansındaki farklılığı kabul ettiği, istenen ve yeterli hizmet düzeyleri arasındaki aralığa ne ad verilir?",
+   "secenekler": [
+    "Tolerans bölgesi",
+    "Değerlendirme seti",
+    "Gerçeklik anı",
+    "Algılanan risk",
+    "Hizmet fabrikası"
+   ],
+   "dogru": 0,
+   "aciklama": "Beklentiler istenen, yeterli ve tahmin edilen hizmet düzeylerinden oluşur; istenen ile yeterli arasındaki bölge tolerans bölgesidir. Performans bu bölgede kaldıkça müşteri makul ölçüde memnun olur.",
+   "sayfa": "s. 18, 24",
+   "celdirici": "Değerlendirme seti karar sırasında akla gelen alternatiflerdir."
+  },
+  {
+   "soru": "Eski SAS genel müdürü Jan Carlzon'un \"yılda 50 milyon kez, 15 saniyelik periyotlarla oluşuyoruz\" sözü hangi kavramı anlatır?",
+   "secenekler": [
+    "Gerçeklik anı",
+    "Hizmet kurtarma paradoksu",
+    "Servuction sistemi",
+    "Tolerans bölgesi",
+    "Gig ekonomisi"
+   ],
+   "dogru": 0,
+   "aciklama": "Normann'ın gerçeklik anı metaforu: müşteri ile çalışanın karşılaştığı her temas anı ilişkiyi kurar ya da bozar. Carlzon bu metaforu SAS'ı müşteri odaklı yapmak için kullandı.",
+   "sayfa": "s. 17",
+   "celdirici": "Servuction temasın gerçekleştiği fiziksel ortamı ve sistemi anlatır, tek tek temas anlarını değil."
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız III",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Yüksek temaslı hizmette müşteri tesisi ziyaret ederek fabrikaya girer (I) ve birçok fiziksel ipucuna maruz kalır (II). Operasyonun çoğunu sahne arkasında tutmak düşük temaslı hizmetin özelliğidir (III yanlış).",
+   "sayfa": "s. 19–20",
+   "celdirici": "III'ü seçen temas düzeylerini karıştırır; kredi kartı müşterisi bankayı görmez, bu düşük temastır.",
+   "onculler": [
+    "Müşteri hizmetin sağlandığı tesisi ziyaret ederek hizmet fabrikasına girer.",
+    "Müşteri binalar, ekipman ve personelin görünüşü gibi birçok fiziksel ipucuna maruz kalır.",
+    "Hizmet operasyon sisteminin çoğu sahne arkasında tutulur."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangileri yüksek temaslı hizmetler için doğrudur?"
+  },
+  {
+   "soru": "Servuction sisteminde girdilerin işlendiği, müşteriye görünmeyen ve tiyatro benzetmesinde \"sahne arkası\" olarak adlandırılan bölüm hangisidir?",
+   "secenekler": [
+    "Teknik çekirdek",
+    "Hizmet sunum sistemi",
+    "Ön ofis",
+    "Hizmet ortamı",
+    "Etkileşimli bölüm"
+   ],
+   "dogru": 0,
+   "aciklama": "Servuction iki bölümdür: teknik çekirdek (sahne arkası, görünmez; restoran mutfağı) ve hizmet sunum sistemi (sahne önü, görünür; bina, ekipman, personel, diğer müşteriler).",
+   "sayfa": "s. 20",
+   "celdirici": "Ön ofis ve hizmet sunum sistemi görünür kısımdır."
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Bölüm özetine göre hizmetler çoğunlukla stoklanamaz (I), müşteriler ortak üretime dahil olabilir (II) ve dağıtım fiziksel olmayan kanallardan gerçekleşebilir (III). Ayrıca hizmet mülkiyet değil kiralamadır.",
+   "sayfa": "s. 23",
+   "celdirici": "III ilk bakışta şaşırtır ama özet listesinde aynen geçer (internet, telefon).",
+   "onculler": [
+    "Çoğu hizmet ürünü stoklanamaz.",
+    "Müşteriler ortak üretime dahil olabilir.",
+    "Dağıtım fiziksel olmayan kanallardan gerçekleşebilir."
+   ],
+   "kok": "Hizmetleri ürünlerden ayıran özelliklerle ilgili yukarıdaki ifadelerden hangileri doğrudur?"
+  }
+ ]
+}
