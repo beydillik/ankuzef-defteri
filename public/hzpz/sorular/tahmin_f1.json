@@ -1,0 +1,336 @@
+{
+ "kaynak": "tahmin",
+ "deneme": "f1",
+ "ad": "Tahmini Final Denemesi 1",
+ "sorular": [
+  {
+   "soru": "Hizmet tüketimi kitapta hangi üç temel aşamada açıklanır?",
+   "secenekler": [
+    "Satın alma öncesi, hizmet karşılaşması, karşılaşma sonrası",
+    "İhtiyaç, bilgi arama, karar",
+    "Arama, deneyim, güven",
+    "Ürün, fiyat, dağıtım",
+    "Teknik çekirdek, sunum sistemi, servuction"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmet tüketimi satın alma öncesi, hizmet karşılaşması ve karşılaşma sonrası olarak üç aşamada açıklanır; her aşama iki ya da daha fazla adımdan oluşur.",
+   "sayfa": "s. 14",
+   "celdirici": "İhtiyaç-bilgi-karar satın alma öncesi aşamanın adımlarıdır, üç aşama değil.",
+   "bolum": "b1",
+   "id": "f1-01"
+  },
+  {
+   "soru": "Kitaba göre bir araba alıcısının üretim işçisinin düzensiz giyinip giyinmediğiyle ilgilenmemesinin nedeni nedir?",
+   "secenekler": [
+    "Üretim ve tüketim ayrılabildiği için kötü davranışın sonucu müşteriye ulaşmadan kalite kontrolle elenir",
+    "Araba fiyatının yüksek olması",
+    "İşçinin yarı zamanlı pazarlamacı olması",
+    "Arabanın bir hizmet olması",
+    "Müşterinin ortak üretici olması"
+   ],
+   "dogru": 0,
+   "aciklama": "Üretim ve tüketimin ayrılabildiği durumlarda kalite kontrol gevşek davranışın sonuçlarını müşteriye ulaşmadan reddeder. Hizmette bu mümkün olmadığından personel davranışı doğrudan müşteriye yansır.",
+   "sayfa": "s. 85",
+   "bolum": "b4",
+   "id": "f1-02"
+  },
+  {
+   "soru": "Bir uyarıcının duyu organlarınca alınması ile bu uyarıcının kişisel olarak yorumlanması arasındaki ayrım hangi kavram çiftine karşılık gelir?",
+   "secenekler": [
+    "Duyum ve algılama",
+    "Öğrenme ve tutum",
+    "Güdü ve ilgilenim",
+    "Mizaç ve karakter",
+    "İd ve ego"
+   ],
+   "dogru": 0,
+   "aciklama": "Duyum uyarıcının duyu organlarınca algılanma sürecidir; algılama alınan uyarıcının kişisel olarak değerlendirilmesi ve yorumlanmasıdır, tamamen öznel bir süreçtir.",
+   "sayfa": "s. 90",
+   "celdirici": "Mizaç-karakter kişiliğin doğuştan ve sonradan gelen kısımlarıdır.",
+   "bolum": "b4",
+   "id": "f1-03"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Güdüler açık ve örtüktür (I); karşılanmamış ihtiyaç gerilim yaratır ve birey bunu azaltacak davranışa yönelir (II). Alım gücü ve fırsat gibi güdülenme de arttıkça satın alma artar (III yanlış).",
+   "sayfa": "s. 89–90",
+   "onculler": [
+    "Güdüler açık ve örtük (gizli) olmak üzere ikiye ayrılır.",
+    "Karşılanmamış istek ve ihtiyaçlar bireyde gerilim yaratır.",
+    "Güdülenme arttıkça satın alma davranışı azalır."
+   ],
+   "kok": "Güdülenmeyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b4",
+   "id": "f1-04"
+  },
+  {
+   "soru": "Kişiliğin doğuştan gelen kısmı ile sonradan yaşantıyla oluşan kısmı kitapta nasıl adlandırılır?",
+   "secenekler": [
+    "Mizaç ve karakter",
+    "İd ve süperego",
+    "Duyum ve algı",
+    "Tutum ve davranış",
+    "Güdü ve ilgilenim"
+   ],
+   "dogru": 0,
+   "aciklama": "Kişiliğin doğuştan gelen kısmı mizaçtır (neşeli, heyecanlı olmak); sonradan yaşantıyla oluşan ve değişebilen kısmı karakterdir.",
+   "sayfa": "s. 91",
+   "bolum": "b4",
+   "id": "f1-05"
+  },
+  {
+   "soru": "Tüketim sürecinde sosyo-kültürel etkinin rolünü açıklamada başlangıç kabul edilen kuram hangisidir?",
+   "secenekler": [
+    "Festinger'in Sosyal Karşılaştırma Teorisi",
+    "Freud'un psikoanalitik kuramı",
+    "Warner'ın sosyal sınıf kuramı",
+    "Vargo ve Lusch'un hizmet baskın mantığı",
+    "Porter'ın beş güç modeli"
+   ],
+   "dogru": 0,
+   "aciklama": "Tüketim sürecinde sosyo-kültürel etkinin rolünü açıklamada Festinger'in Sosyal Karşılaştırma Teorisi başlangıç olmaktadır.",
+   "sayfa": "s. 91",
+   "celdirici": "Freud'un kuramı kişilik (psikolojik faktör) ile ilgilidir.",
+   "bolum": "b4",
+   "id": "f1-06"
+  },
+  {
+   "soru": "Kültürel değerler tüketici davranışını hangi yolla etkiler?",
+   "secenekler": [
+    "Normlar aracılığıyla",
+    "Fiyat aracılığıyla",
+    "Dağıtım kanalı aracılığıyla",
+    "Coğrafik yerleşim aracılığıyla",
+    "Mizaç aracılığıyla"
+   ],
+   "dogru": 0,
+   "aciklama": "Kültürel değerler normlar aracılığıyla davranışı etkiler. Değerler iyi ve kötü davranışı, normlar yaptırım gücü olan kuralları, gelenekler sözel olmayan davranışları belirtir.",
+   "sayfa": "s. 91",
+   "bolum": "b4",
+   "id": "f1-07"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Üç ifade de kitapta geçer: sadakat memnuniyet, geçiş engelleri ve ses fonksiyonlarıyla ilişkilidir; Bitner sadakati süreç olarak ele alır; sadık müşteri markayı uzun süre tercih eder, tavsiye eder ve tekrar satın alır.",
+   "sayfa": "s. 96",
+   "onculler": [
+    "Sadakat memnuniyet, geçiş engelleri ve ses fonksiyonlarıyla ilişkilendirilir.",
+    "Bitner sadakati bir süreç olarak ele alır.",
+    "Sadık müşteriler markayı rakiplerin ürünlerinden bağımsız olarak uzun süre tercih eder."
+   ],
+   "kok": "Müşteri sadakatiyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b4",
+   "id": "f1-08"
+  },
+  {
+   "soru": "Kandampully ve Solnet'e göre yöneticinin bir hizmet sürecini doğru anlaması için değerlendirmesi gereken sorular arasında aşağıdakilerden hangisi yer alır?",
+   "secenekler": [
+    "Müşteri buna nasıl tepki veriyor?",
+    "Rakip hangi fiyatı istiyor?",
+    "Hangi reklam kanalı kullanılmalı?",
+    "Hizmet kaç şubede sunulmalı?",
+    "Marka adı akılda kalıcı mı?"
+   ],
+   "dogru": 0,
+   "aciklama": "Üç soru: ne yapılması gerekiyor; nasıl ve kim tarafından yapılmalı; müşteri buna nasıl tepki veriyor?",
+   "sayfa": "s. 107",
+   "bolum": "b5",
+   "id": "f1-09"
+  },
+  {
+   "soru": "Bilgi işleme hizmetlerinde müşterinin sürece katılımı genellikle nasıldır?",
+   "secenekler": [
+    "Sürecin başında gereken bilgileri ya da ihtiyaçlarını sağlayıcıya iletmek",
+    "Süreç boyunca hizmet yerinde fiziken bulunmak",
+    "Hizmeti kendisi üretmek",
+    "Sınıfta tartışmaya katılmak",
+    "Eşyasını teslim edip hiç iletişim kurmamak"
+   ],
+   "dogru": 0,
+   "aciklama": "Bilgi işlemede üretim süreci genellikle soyuttur (raporlamayla somutlaşabilir); müşterinin katılımı çoğunlukla başta bilgileri ve ihtiyaçları iletmektir.",
+   "sayfa": "s. 109",
+   "bolum": "b5",
+   "id": "f1-10"
+  },
+  {
+   "soru": "Aynı eğitimin sınıfta değil çevrimiçi ya da televizyondan sunulması durumunda katılımcılar için ne olur?",
+   "secenekler": [
+    "Sürece aktif ve etkileşimli biçimde dahil olamazlar",
+    "Hizmet sahiplik işlemeye dönüşür",
+    "Katılım yüksek düzeye çıkar",
+    "Etik standart gereği ortadan kalkar",
+    "Hizmet konumu değişmez"
+   ],
+   "dogru": 0,
+   "aciklama": "Zihinsel uyaran işlemede kanal süreci farklılaştırır: sınıfta tartışma ve yorumla etkileşimli katılım olur, çevrimiçi ya da televizyonda katılımcı aktif dahil olamaz.",
+   "sayfa": "s. 109",
+   "bolum": "b5",
+   "id": "f1-11"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Harita tam müşteri yolculuğunu, farklı departmanları (kablo örneği) kapsar ve pazarlama-operasyon-İK'yı birleştirir (I, II). Arka plan faaliyetlerini ve destek sistemlerini de gösterir (III yanlış).",
+   "sayfa": "s. 110",
+   "onculler": [
+    "Kablo hizmetinde satış temsilcisi, kurulum ekibi, çağrı merkezi ve arka ofis memurları sorunsuz kurulumdan eşit sorumludur.",
+    "Hizmet haritaları pazarlama, operasyon ve insan kaynakları yönetimini bir araya getirmeye yardım eder.",
+    "Hizmet haritası yalnız müşteriye görünen adımları içerir."
+   ],
+   "kok": "Hizmet haritasıyla ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b5",
+   "id": "f1-12"
+  },
+  {
+   "soru": "Grönroos'a göre hizmet sistemi iyi işliyorsa ne söylenebilir?",
+   "secenekler": [
+    "Hizmet bağlamında fiziksel ürünün eşdeğeri iyidir",
+    "Destek bölümüne gerek kalmaz",
+    "Müşteri sürece katılmaz",
+    "Görünürlük çizgisi kalkar",
+    "Teknik kalite önemini yitirir"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmet süreci ve işlevsel-teknik kalite etkisi sistemin nasıl işlediğine bağlıdır; sistem iyi işliyorsa hizmet bağlamında fiziksel ürünün eşdeğeri iyidir.",
+   "sayfa": "s. 111",
+   "bolum": "b5",
+   "id": "f1-13"
+  },
+  {
+   "soru": "Pandemi döneminde paket servisi olmayan bazı yeme-içme işletmelerinin paket servise geçmesi kitapta neyin örneğidir?",
+   "secenekler": [
+    "Dış çevredeki değişiklik nedeniyle hizmet sürecinin yeniden yapılandırılması",
+    "Hizmet paketinin oluşturulması",
+    "İçsel bürokrasinin artması",
+    "Zihinsel uyaran işlemenin başlaması",
+    "Avcı fiyatlamanın uygulanması"
+   ],
+   "dogru": 0,
+   "aciklama": "Pandemide sağlık endişeleri ve yasal zorunluluklar mevcut süreçleri yetersiz kıldı; firmalar bekleme süresi, teslim yöntemi ve süresini yeniden yapılandırdı. Bu, dış çevredeki değişiklikten doğan yeniden tasarım ihtiyacıdır.",
+   "sayfa": "s. 115",
+   "bolum": "b5",
+   "id": "f1-14"
+  },
+  {
+   "soru": "Grönroos'a göre süreç müşteri açısından başarısız olursa, uzun vadede müşteriyi elde tutamayan çabalar karşısında durumu en azından bir süreliğine kurtarabilecek tek şey nedir?",
+   "secenekler": [
+    "Düşük fiyat",
+    "Geleneksel dış pazarlama çabaları",
+    "İyi bir hizmet sonucu",
+    "Yoğun dağıtım",
+    "Hizmet paketi"
+   ],
+   "dogru": 0,
+   "aciklama": "Süreç başarısız olursa geleneksel dış pazarlama ve çoğu zaman iyi bir hizmet sonucu bile müşteriyi uzun vadede tutamaz; bir süreliğine kurtarabilecek tek şey düşük fiyat olabilir.",
+   "sayfa": "s. 118",
+   "celdirici": "İyi sonuç bile yetmez; kitap bunu özellikle vurgular.",
+   "bolum": "b5",
+   "id": "f1-15"
+  },
+  {
+   "soru": "Kitaba göre güvenlik odaklı seçimler söz konusu olduğunda hizmet ortamının kalabalık olması müşteri tercihini nasıl etkilemiştir?",
+   "secenekler": [
+    "Olumlu etkilemiştir",
+    "Olumsuz etkilemiştir",
+    "Hiç etkilememiştir",
+    "Yalnız personel sayısını etkilemiştir",
+    "Fiyat algısını düşürmüştür"
+   ],
+   "dogru": 0,
+   "aciklama": "Erken çalışmalar kalabalığın olumsuz olduğunu bulsa da yakın tarihli çalışmalar etkinin değiştiğini gösterir; güvenlik odaklı seçimlerde kalabalık tercihi olumlu etkilemiştir.",
+   "sayfa": "s. 130",
+   "celdirici": "80'li ve 90'lı yıllardaki çalışmalar olumsuz etki bulmuştu.",
+   "bolum": "b6",
+   "id": "f1-16"
+  },
+  {
+   "soru": "Müşteriler hizmet personelini hangi üç bağlamda değerlendirir?",
+   "secenekler": [
+    "Görünüm, yeterlilik ve davranış",
+    "Fiyat, marka ve iletişim",
+    "Güvenilirlik, güvence ve empati",
+    "Renk, zemin ve düzen",
+    "Bilişsel, duygusal ve davranışsal"
+   ],
+   "dogru": 0,
+   "aciklama": "Personel görünüm (ilk etki), yeterlilik (eğitim ve tecrübe) ve davranış (kişilik ve sosyal etkileşim) bağlamında değerlendirilir; sayı ve cinsiyet de değerlendirilir.",
+   "sayfa": "s. 130",
+   "bolum": "b6",
+   "id": "f1-17"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Sıcak kokular prestij tercihini ve harcamayı artırır (I); basit kokular bilişsel işlemeyi kolaylaştırır (II). Koku ruh halini ve duyguları da etkiler; etkisi yalnız bilişsel değildir (III yanlış).",
+   "sayfa": "s. 128–129",
+   "onculler": [
+    "Vanilya ve tarçın gibi sıcak kokular nane gibi soğuk kokulara göre prestij ürün tercihini artırmıştır.",
+    "Basit, az işlenmiş kokular bilişsel işlemeyi kolaylaştırıp harcamayı artırmıştır.",
+    "Kokunun tüketiciler üzerindeki etkisi yalnız bilişseldir."
+   ],
+   "kok": "Hizmet ortamında koku kullanımıyla ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b6",
+   "id": "f1-18"
+  },
+  {
+   "soru": "Marriott örneğinde Ritz-Carlton ile Courtyard markalarını müşteri gözünden ayıran en görünür yön nedir?",
+   "secenekler": [
+    "Hizmet ortamı (otel tasarımı)",
+    "Fiyatlandırma politikası",
+    "Sadakat programı",
+    "Reklam bütçesi",
+    "Rezervasyon sistemi"
+   ],
+   "dogru": 0,
+   "aciklama": "Müşteri bakışından Marriott'un ayırt edici marka stratejilerinin en görünür yönü hizmet ortamı, yani otel tasarımıdır: Ritz-Carlton lüks, Courtyard verimli ve iş odaklı.",
+   "sayfa": "s. 133",
+   "bolum": "b6",
+   "id": "f1-19"
+  },
+  {
+   "soru": "Hayat sigortası ve emeklilik fonu gibi hizmetlerde çalışanların marka açısından kritik olmasının nedeni nedir?",
+   "secenekler": [
+    "Çıktı uzun vadede elde edildiğinden kalite zor değerlendirilir ve risk yüksektir; güven çalışana bağlanır",
+    "Bu hizmetlerin fiziksel ortamı çok zengindir",
+    "Müşteri hiç çalışanla karşılaşmaz",
+    "Fiyat kalite ipucu olamaz",
+    "Hizmet stoklanabilir"
+   ],
+   "dogru": 0,
+   "aciklama": "Bu hizmetlerde çıktı uzun vadede alındığı için kalite değerlendirmesi zordur ve risk yüksektir; müşterinin çalışanlara güvenmesi ve sözlerin tutulacağını hissetmesi değerlendirmeyi olumlu yapar.",
+   "sayfa": "s. 132",
+   "bolum": "b6",
+   "id": "f1-20"
+  }
+ ]
+}

@@ -6,7 +6,9 @@ from ortak import HATA, h, soru_kontrol, yaz
 from bolumler import BOLUMLER
 from cikmis import CIKMIS_2025_VIZE, CIKMIS_2025_FINAL
 from gozden import GOZDEN, ADET
-from tahmin import DENEMELER
+from tahmin import DENEMELER as DENEMELER_VIZE
+from tahmin_final import DENEMELER_FINAL
+DENEMELER = DENEMELER_VIZE + DENEMELER_FINAL
 
 # (id, no, başlık, sayfalar, hazır mı, sayfa aralığı)
 BOLUM_LISTE = [
@@ -81,14 +83,16 @@ soru_dosyalari.append("gozden.json")
 # ---- tahmin ----
 tahmin_dosyalar = []
 for did, ad, sorular in DENEMELER:
+    # id öneki kapsamı belirler: t* vize denemesi, f* final denemesi
+    kapsam, hedef = (VIZE, VIZE_DAG) if did.startswith("t") else (FINAL, FINAL_DAG)
     for i, q in enumerate(sorular):
         q["id"] = f"{did}-{i + 1:02d}"
         soru_kontrol(q, f"{did} S{i + 1}", ARALIK.get(q.get("bolum")))
-        if q.get("bolum") not in VIZE:
-            h(f"{did} S{i + 1}: bölüm yok")
-    dag = {b: sum(1 for q in sorular if q["bolum"] == b) for b in VIZE}
-    if dag != VIZE_DAG:
-        h(f"{did}: bölüm dağılımı {dag}")
+        if q.get("bolum") not in kapsam:
+            h(f"{did} S{i + 1}: bölüm yok ya da kapsam dışı")
+    dag = {b: n for b in FINAL if (n := sum(1 for q in sorular if q["bolum"] == b))}
+    if dag != hedef:
+        h(f"{did}: bölüm dağılımı {dag}, beklenen {hedef}")
     tahmin_dosyalar.append((f"tahmin_{did}.json", {"kaynak": "tahmin", "deneme": did, "ad": ad, "sorular": sorular}))
     soru_dosyalari.append(f"tahmin_{did}.json")
 
@@ -136,4 +140,6 @@ for cik in (CIKMIS_2025_VIZE, CIKMIS_2025_FINAL):
     qs = cik["sorular"]
     print(f"  {cik['sinav']}: {len(qs)} soru, dağılım", {b: n for b in FINAL if (n := sum(1 for q in qs if q['bolum'] == b))}, "| doğru şık konumu", [sum(1 for q in qs if q['dogru'] == i) for i in range(5)])
 print(f"  Gözden Geçirelim: {len(gg)} soru", {b: len(v) for b, v in GOZDEN.items()}, f"| boşluk doldurmadan çevrilen {sum(1 for q in gg if q.get('bosluk'))} | anahtardan farklı: {[q['id'] for q in gg if not q.get('bosluk') and 'ABCDE'[q['dogru']] != q['kitapCevap']]}")
-print(f"  tahmini deneme: {len(DENEMELER)}")
+print(f"  tahmini deneme: vize {len(DENEMELER_VIZE)}, final {len(DENEMELER_FINAL)}")
+for did, ad, qs in DENEMELER:
+    print(f"    {ad}: {len(qs)} soru, öncüllü {sum(1 for q in qs if q.get('onculler'))}")

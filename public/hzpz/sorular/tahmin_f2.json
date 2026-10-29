@@ -1,0 +1,333 @@
+{
+ "kaynak": "tahmin",
+ "deneme": "f2",
+ "ad": "Tahmini Final Denemesi 2",
+ "sorular": [
+  {
+   "soru": "Hizmetlerin heterojenliği (değişkenliği) kitaba göre neden kaynaklanır?",
+   "secenekler": [
+    "Hizmet sunumunda insan faktörünün rol oynamasından",
+    "Hizmetlerin depolanamamasından",
+    "Hizmetlerin dokunulamamasından",
+    "Sahiplik transferinin olmamasından",
+    "Dijital dönüşümden"
+   ],
+   "dogru": 0,
+   "aciklama": "Kalite kimin, ne zaman, nerede, nasıl sunduğuna göre değişir; bu değişkenlik sunumda insan faktörünün rol oynamasından kaynaklanır ve standart eğitim, senaryo ve kalite kontrolle azaltılır.",
+   "sayfa": "s. 12",
+   "bolum": "b1",
+   "id": "f2-01"
+  },
+  {
+   "soru": "Kitaba göre birçok bire bir kişisel hizmet durumunda toplam hizmet teklifinin en önemli unsuru hangisidir?",
+   "secenekler": [
+    "Hizmet sağlayıcının kendi personeli",
+    "Hizmetin fiyatı",
+    "Fiziksel ortam",
+    "Reklam",
+    "Dağıtım kanalı"
+   ],
+   "dogru": 0,
+   "aciklama": "Çoğu hizmet üretim süreci personelin hem ön saflarda hem arka aşamalarda katkı vermesini gerektirir; birçok bire bir kişisel hizmette personel toplam teklifin en önemli unsurudur.",
+   "sayfa": "s. 85",
+   "bolum": "b4",
+   "id": "f2-02"
+  },
+  {
+   "soru": "Tüketici davranışı kitaba göre hangi disiplinlerden yararlanır?",
+   "secenekler": [
+    "Sosyoloji, psikoloji, antropoloji ve ekonomi",
+    "Yalnız ekonomi",
+    "Yalnız psikoloji",
+    "Hukuk ve tıp",
+    "Yalnız istatistik"
+   ],
+   "dogru": 0,
+   "aciklama": "Tüketici davranışı sosyoloji, psikoloji, antropoloji ve ekonomiden yararlanır; ilk açıklamalar ekonomi ve psikolojiye dayansa da bugün neredeyse tüm bilim dallarından yararlanan uygulamalı sosyal bilimdir.",
+   "sayfa": "s. 88–89",
+   "bolum": "b4",
+   "id": "f2-03"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Tutum olumlu-olumsuz tepki eğilimidir (I); satın alma sonrası memnuniyetle pekişir ya da değişir (II). Bazı tüketiciler internetten alışverişi güvenli bulmaz; tutumlar farklıdır (III yanlış).",
+   "sayfa": "s. 90",
+   "onculler": [
+    "Tutum, kişinin nesnelere ve çevresine olumlu ya da olumsuz tepki verme eğilimidir.",
+    "Üründen memnun kalınırsa tutum pekişir, kalınmazsa değişir.",
+    "Tüm tüketicilerin internetten alışverişe tutumu aynıdır."
+   ],
+   "kok": "Tutumla ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b4",
+   "id": "f2-04"
+  },
+  {
+   "soru": "Freud'un kişilik kuramında id ile süperegonun istekleri çatıştığında uzlaşmak için çabalayan \"hakem\" olarak tanımlanan yapı hangisidir?",
+   "secenekler": [
+    "Ego",
+    "İd",
+    "Süperego",
+    "Mizaç",
+    "Karakter"
+   ],
+   "dogru": 0,
+   "aciklama": "İd ilkel dürtüler ve zevk, süperego ahlaki boyuttur; ego ikisi arasında denge kurar. Freud egoyu şaha kalkmış at üzerindeki şövalye ve hakem olarak betimler.",
+   "sayfa": "s. 91",
+   "bolum": "b4",
+   "id": "f2-05"
+  },
+  {
+   "soru": "Grup etkisinin tüketici üzerindeki etkileri arasında kitapta aşağıdakilerden hangisi sayılır?",
+   "secenekler": [
+    "Tüketicinin ürünü nasıl kullanacağını belirlemesi",
+    "Tüketicinin gelirini artırması",
+    "Tüketicinin yaşını belirlemesi",
+    "Hizmetin fiyatını düşürmesi",
+    "Hizmetin dağıtım kanalını seçmesi"
+   ],
+   "dogru": 0,
+   "aciklama": "Grup etkileri: ürün ve markalarla ilgili bilgi düzeyini şekillendirir, inançları yönlendirir, deneme arzusunu etkiler, ürünü nasıl kullanacağını belirler.",
+   "sayfa": "s. 92",
+   "bolum": "b4",
+   "id": "f2-06"
+  },
+  {
+   "soru": "Demografik faktörlerden eğitim düzeyinin tüketim davranışına etkisi kitapta nasıl açıklanır?",
+   "secenekler": [
+    "Eğitim seviyesi yüksek bireyler ürün kalitesi ve bilgilendirici etiketler konusunda daha bilinçli olabilir",
+    "Eğitim düzeyi tüketimi etkilemez",
+    "Eğitimli bireyler yalnız lüks ürün alır",
+    "Eğitim düzeyi sosyo-kültürel faktördür",
+    "Eğitim yalnız coğrafi konumu belirler"
+   ],
+   "dogru": 0,
+   "aciklama": "Demografik faktörler yaş, cinsiyet, gelir, eğitim, aile yapısı, meslek ve coğrafi konumdur; eğitim seviyesi yüksek bireyler kalite ve etiketler konusunda daha bilinçli olabilir.",
+   "sayfa": "s. 93",
+   "celdirici": "Lüks ve markalı ürüne yönelme gelir düzeyiyle anlatılır.",
+   "bolum": "b4",
+   "id": "f2-07"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Starbucks düzenli eğitim verir (I) ve çalışan memnuniyetine yatırım yaparak daha iyi hizmet ve bağlılık elde eder (II). Örnek içsel pazarlamanın müşteri memnuniyetine doğrudan etkisini gösterir (III yanlış).",
+   "sayfa": "s. 96",
+   "onculler": [
+    "Starbucks çalışanlarına düzenli eğitim verir ve yüksek hizmet standartlarını teşvik eder.",
+    "Çalışan memnuniyetine yatırım müşterilere daha iyi hizmet ve markaya bağlılık sağlar.",
+    "Bu örnek dışsal pazarlamanın içsel pazarlamadan bağımsız olduğunu gösterir."
+   ],
+   "kok": "Kitaptaki Starbucks örneğiyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b4",
+   "id": "f2-08"
+  },
+  {
+   "soru": "Kitaptaki \"Hizmetler süreçtir\" kutusuna göre aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    "Uçak yolculuğu, saç kesimi ve araba tamiri gibi hizmetlerin her biri kendi başına bir süreçtir; müşteri sonuçtan da yararlanır",
+    "Hizmetin sonucu müşteri için önemsizdir",
+    "Yalnız karmaşık hizmetler süreçtir",
+    "Süreç yalnız arka ofiste olur",
+    "Hizmet süreç değil üründür"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmetin kendisi çoğunlukla bir süreçtir (uçuş, yatırım danışmanlığı, saç kesimi, üniversite, araba tamiri); müşteri sonuçtan da yararlanır (varış, portföy, diploma, tamir edilmiş araba).",
+   "sayfa": "s. 108",
+   "bolum": "b5",
+   "id": "f2-09"
+  },
+  {
+   "soru": "Sahiplik işleme hizmetlerinin süreci sonunda üretilen çıktı nasıl olmalıdır?",
+   "secenekler": [
+    "Müşterinin sorununa çözüm getirmeli ya da sahip olduğu öğeyi somut biçimde geliştirmeli",
+    "Müşterinin tutumunu değiştirmeli",
+    "Yalnız rapor biçiminde olmalı",
+    "Müşterinin fiziken orada bulunmasını gerektirmeli",
+    "Soyut kalmalı"
+   ],
+   "dogru": 0,
+   "aciklama": "Temizlik, tamir ve bakım gibi sahiplik işlemede çıktı müşterinin sorununa çözüm getirmeli ya da sahip olduğu öğeyi somut biçimde geliştirmelidir.",
+   "sayfa": "s. 109",
+   "bolum": "b5",
+   "id": "f2-10"
+  },
+  {
+   "soru": "Kitaba göre bir hizmet süreci tasarlanırken dikkat edilmesi gereken hususlardan biri hangisidir?",
+   "secenekler": [
+    "Süreç sorunsuz, hatasız, müşterinin fazla zamanını almayan ve rahat olmalıdır",
+    "Süreç olabildiğince çok adım içermelidir",
+    "Müşteri sürece hiç dahil edilmemelidir",
+    "Süreç rakiplerden kopyalanmalıdır",
+    "Süreç yalnız teknoloji tabanlı olmalıdır"
+   ],
+   "dogru": 0,
+   "aciklama": "Süreç sorunsuz ve hatasız tasarlanmalı, müşterinin zamanını almamalı ve rahat olmalıdır; süreç kolaylaştıkça müşterinin tekrar gelme ve tavsiye etme olasılığı artar.",
+   "sayfa": "s. 113",
+   "bolum": "b5",
+   "id": "f2-11"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Araştırılacak alanlar: süreç faaliyetleri, gerekli bilgiler, sürecin ürünleri (belge, hizmet), gerekli personel ve ekipman, sürecin nasıl yapılacağını belirleyen belgeler. Rakip fiyatları bunlardan değil.",
+   "sayfa": "s. 114",
+   "onculler": [
+    "Süreç faaliyetleri",
+    "Süreci gerçekleştirmek için gerekli personel ve ekipman",
+    "Rakiplerin fiyat listeleri"
+   ],
+   "kok": "Mudie ve Cottam'a göre yukarıdakilerden hangileri sürecin izlenmesi ve iyileştirilmesinde araştırılacak alanlardandır?",
+   "bolum": "b5",
+   "id": "f2-12"
+  },
+  {
+   "soru": "Yeniden tasarım faaliyetlerinden \"hizmeti doğrudan müşteriye giderek sunmak\" için Tablo 1'de belirtilen zorluk hangisidir?",
+   "secenekler": [
+    "Lojistik yük oluşturması ve maliyetli olabilmesi",
+    "Kolay taklit edilmesi",
+    "Müşteri geri bildirimi almanın zorlaşması",
+    "Boşa harcama olarak değerlendirilebilmesi",
+    "Müşteriyi role hazırlamanın gerekmesi"
+   ],
+   "dogru": 0,
+   "aciklama": "Doğrudan hizmet mağaza konumu sınırını kaldırır ve müşteri tabanını genişletir; zorlukları lojistik yük, maliyet ve itibar-güven gereğidir.",
+   "sayfa": "s. 116",
+   "celdirici": "Kolay taklit fiziksel yönlerin yeniden tasarımının, geri bildirim zorluğu self-servisin kısıtıdır.",
+   "bolum": "b5",
+   "id": "f2-13"
+  },
+  {
+   "soru": "Hizmet süreçlerinin yeniden tasarımı kitaba göre ne anlama gelmez?",
+   "secenekler": [
+    "Süreçlerin en başta kötü tasarlandığı anlamına",
+    "Güncelliğini yitirmiş süreçlerin canlandırılmasına",
+    "Teknoloji ve müşteri ihtiyaçlarındaki değişime uyuma",
+    "Verimlilik ve kalitede birlikte sıçrama fırsatına",
+    "Yeni hizmet özelliklerine uyuma"
+   ],
+   "dogru": 0,
+   "aciklama": "Yeniden tasarım güncelliğini yitirmiş süreçleri canlandırır; bu, süreçlerin en başta kötü tasarlandığı anlamına gelmez. Teknoloji, müşteri ihtiyacı, yeni özellikler ya da pandemi gibi olaylar mevcut süreci yetersiz kılabilir.",
+   "sayfa": "s. 115",
+   "bolum": "b5",
+   "id": "f2-14"
+  },
+  {
+   "soru": "Teknoloji, müşteri ihtiyaçları ve mevzuat hızla değiştiği için hizmet işletmelerine kitapta önerilen nedir?",
+   "secenekler": [
+    "Süreçlerini düzenli olarak gözden geçirip güncellemeleri",
+    "Süreçlerini hiç değiştirmemeleri",
+    "Yalnız fiyatı değiştirmeleri",
+    "Tüm hizmetleri paketlemeleri",
+    "Görünürlük çizgisini kaldırmaları"
+   ],
+   "dogru": 0,
+   "aciklama": "Süreçler zamanla güncelliğini kaybedebilir; işletmeler güncel teknolojiyi, değişen beklentileri ve yeni düzenlemeleri hesaba katarak süreçlerini düzenli gözden geçirmelidir.",
+   "sayfa": "s. 118",
+   "bolum": "b5",
+   "id": "f2-15"
+  },
+  {
+   "soru": "Kitaba göre genel müşteri deneyiminin parçası olan bilişsel, duygusal ve fiziksel yanıtlar ne zaman başlar?",
+   "secenekler": [
+    "Müşterinin hizmet ortamına girişinden itibaren",
+    "Ödeme yapıldıktan sonra",
+    "Yalnız şikâyet sırasında",
+    "Hizmet bittikten bir hafta sonra",
+    "Reklamı gördüğü anda biter"
+   ],
+   "dogru": 0,
+   "aciklama": "Bilişsel, duygusal ve fiziksel yanıtlar müşterinin hizmet ortamına girişinden itibaren başlar ve kalma, keşfetme, harcama, tekrar tercih gibi davranışlarla sonuçlanır.",
+   "sayfa": "s. 125",
+   "bolum": "b6",
+   "id": "f2-16"
+  },
+  {
+   "soru": "Lüks restoranlarda masalar arasındaki geniş boşlukların müşteriye sağladığı nedir?",
+   "secenekler": [
+    "Mahremiyet duygusu ve diğer masalarla sınır",
+    "Daha hızlı servis",
+    "Daha düşük fiyat",
+    "Daha yüksek kalabalık algısı",
+    "Daha parlak aydınlatma"
+   ],
+   "dogru": 0,
+   "aciklama": "Mekânsal özelliklerde sıkışık düzen olumsuzdur; lüks restoranlarda geniş masa aralıkları mahremiyet sağlar ve düzen haz seviyesinin önemli belirleyicisidir.",
+   "sayfa": "s. 129–130",
+   "bolum": "b6",
+   "id": "f2-17"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Marka imajı (güncel, yaratıcı, sıradışı, sıcak, katılımcı) ve şirket imajı (toplumla bağ, iyi yönetim, şeffaflık, başarı) doğru (I, II). Marka imajı, şirket imajı, çalışan güveni ve şirkete güven sadakatte etkilidir (III yanlış).",
+   "sayfa": "s. 131",
+   "onculler": [
+    "Marka imajının bileşenleri arasında güncel, yaratıcı, sıcak ve katılımcı olmak vardır.",
+    "Şirket imajı toplumla bağ kurmak, iyi yönetilmek ve şeffaf bilgilendirme gibi bileşenlerden oluşur.",
+    "Hizmet markası değerlendirmesinde çalışan güveninin rolü yoktur."
+   ],
+   "kok": "Hizmet markasıyla ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+   "bolum": "b6",
+   "id": "f2-18"
+  },
+  {
+   "soru": "Hizmet markalarının duygusal marka deneyimi oluşturması için kitapta belirtilen \"ilk ve en kolay adım\" nedir?",
+   "secenekler": [
+    "İyi tasarlanmış ve ilgi çekici bir hizmet ortamı yaratmak",
+    "Fiyatı düşürmek",
+    "Sosyal medyayı bırakmak",
+    "Çalışan sayısını azaltmak",
+    "Logoyu değiştirmek"
+   ],
+   "dogru": 0,
+   "aciklama": "Duygusal marka deneyimi satın almadan önce başlar, sırasında ve sonrasında sürer; ilk ve en kolay adım iyi tasarlanmış, ilgi çekici bir hizmet ortamı yaratmaktır.",
+   "sayfa": "s. 132",
+   "bolum": "b6",
+   "id": "f2-19"
+  },
+  {
+   "soru": "Marka kanıtlarının boyutları arasında kitapta aşağıdakilerden hangisi sayılır?",
+   "secenekler": [
+    "Fiyat/performans değeri",
+    "Rakiplerin reklam bütçesi",
+    "Hammadde maliyeti",
+    "Toptancı sayısı",
+    "Stok düzeyi"
+   ],
+   "dogru": 0,
+   "aciklama": "Marka kanıtları marka adı, fiyat/performans değeri, ana hizmet, çalışan hizmeti, hizmet ortamı, duygular ve müşteri imajı-marka imajı uyumundan oluşur; tatmin ve tutumu olumlu etkiler.",
+   "sayfa": "s. 133",
+   "bolum": "b6",
+   "id": "f2-20"
+  }
+ ]
+}
