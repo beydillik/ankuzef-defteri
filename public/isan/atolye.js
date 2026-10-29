@@ -312,5 +312,95 @@
       aciklama: "P-değeri < 0,05 → katsayı %5 düzeyinde sıfırdan farklı. Tahminde kesişimi eklemeyi unutma.", sayfa: "s. 58–61" });
   } });
 
+  // =================== BÖLÜM 4 ===================
+  const fakt = (n) => (n <= 1 ? 1 : n * fakt(n - 1));
+  const kenarTablo = (E, birim) => ({ basliklar: ["Yol", "Düğümden", "Düğüme", birim], satirlar: E.map(([a, b, w], i) => [String(i + 1), String(a), String(b), tr(w)]) });
+  // rassal bağlı şebeke: n düğüm, önce yayılan ağaç sonra ek kenarlar
+  function sebeke(n, ek, wmin, wmax) {
+    const E = []; const var_ = (a, b) => E.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
+    for (let v = 2; v <= n; v++) { const u = R(Math.max(1, v - 2), v - 1); E.push([u, v, R(wmin, wmax)]); }
+    let d = 0; while (E.length < n - 1 + ek && d++ < 100) { const a = R(1, n - 1), b = R(a + 1, n); if (!var_(a, b)) E.push([a, b, R(wmin, wmax)]); }
+    return E.sort((p, q) => p[0] - q[0] || p[1] - q[1]);
+  }
+  function dijkstra(n, E, s) {
+    const d = Array(n + 1).fill(Infinity), on = Array(n + 1).fill(0), kal = new Set(); d[s] = 0;
+    while (kal.size < n) { let u = -1; for (let v = 1; v <= n; v++) if (!kal.has(v) && (u < 0 || d[v] < d[u])) u = v; kal.add(u);
+      E.forEach(([a, b, w]) => { [[a, b], [b, a]].forEach(([x, y]) => { if (x === u && d[u] + w < d[y]) { d[y] = d[u] + w; on[y] = u; } }); }); }
+    return { d, on };
+  }
+  function prim(n, E) { // ağaç toplamı ve seçilen kenarlar (kitaptaki gibi başlangıçtan büyüyerek)
+    const S = new Set([1]); const sec_ = [];
+    while (S.size < n) { let en = null; E.forEach((e) => { const [a, b, w] = e; if (S.has(a) !== S.has(b) && (!en || w < en[2])) en = e; }); sec_.push(en); S.add(en[0]); S.add(en[1]); }
+    return sec_;
+  }
+
+  ekle({ id: "gs-dongu", bolum: "b4", ad: "Gezgin satıcı: döngü sayısı", aciklama: "(m − 1)!", formul: ["dongu"], uret() {
+    const s = R(3, 7), m = s + 1, dg = fakt(m - 1);
+    return Object.assign(siklar(dg, [fakt(m), fakt(m - 2), m * (m - 1), (m - 1) * (m - 2), m * m], (x) => tr(x, 0), 1), {
+      soru: `Bir kurye merkezden çıkıp ${s} müşteriye birer kez uğrayarak merkeze dönecektir. Merkez dahil düğüm sayısına göre olası bütün döngülerin sayısı kaçtır?`,
+      cozum: [`m = ${s} müşteri + 1 merkez = ${m}`, `(m − 1)! = ${m - 1}!`, `${Array.from({ length: m - 1 }, (_, i) => m - 1 - i).join(" × ")} = ${tr(dg, 0)}`],
+      aciklama: "Merkezi de say, bir eksiğinin faktöriyelini al.", celdirici: `${tr(fakt(m), 0)} = ${m}! (bir eksiltmeyi unutmak), ${tr(fakt(m - 2), 0)} merkezi saymamak.`, sayfa: "B4 s. 9" });
+  } });
+
+  ekle({ id: "gs", bolum: "b4", ad: "Gezgin satıcı: en kısa döngü", aciklama: "Bütün döngüleri yaz, en kısayı seç", formul: ["dongu"], uret() {
+    const Y = ["M", "Ş1", "Ş2", "Ş3"]; const D = Y.map((_, i) => Y.map((_, j) => (i === j ? 0 : R(4, 20) / 10)));
+    const perm = [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]];
+    const uz = perm.map((p) => yuv(D[0][p[0]] + D[p[0]][p[1]] + D[p[1]][p[2]] + D[p[2]][0], 2));
+    const en = Math.min(...uz); if (uz.filter((x) => x === en).length > 1) return null;
+    const p = perm[uz.indexOf(en)]; const ad = (q) => ["M", ...q.map((i) => Y[i]), "M"].join("–");
+    const ters = [...p].reverse(); const uzTers = uz[perm.findIndex((q) => q.join() === ters.join())];
+    const enUzun = Math.max(...uz);
+    return Object.assign(siklar(en, [uzTers, enUzun, ...uz], (x) => tr(x), 0.1), {
+      tablo: { basliklar: ["Nereden \\ Nereye", ...Y], satirlar: Y.map((y, i) => [y, ...Y.map((_, j) => (i === j ? "-" : tr(D[i][j])))]) }, tabloOnce: true,
+      soru: "Yukarıdaki tabloda merkez (M) ile üç şube arasındaki mesafeler (km) verilmiştir; gidiş ve dönüş mesafeleri farklı olabilir. Merkezden çıkıp her şubeye bir kez uğrayarak merkeze dönen en kısa döngü kaç km'dir?",
+      cozum: [...perm.map((q, i) => `${ad(q)} = ${tr(uz[i])}`), `En kısa: ${ad(p)} = ${tr(en)} km`],
+      aciklama: "4 düğüm → (4 − 1)! = 6 döngü. Her bağlantıyı satırdan (nereden) okuyup sütuna (nereye) git.", celdirici: `${tr(uzTers)} aynı döngünün ters yönü (${ad(ters)}); tablo simetrik olmadığı için farklıdır.`, sayfa: "B4 s. 8–10" });
+  } });
+
+  ekle({ id: "enkisa", bolum: "b4", ad: "En kısa yol", aciklama: "Kalıcı küme yöntemiyle 1'den son düğüme", formul: ["enkisa"], uret() {
+    const n = R(5, 6), E = sebeke(n, R(2, 4), 2, 15); const { d, on } = dijkstra(n, E, 1);
+    const yol = [n]; while (yol[0] !== 1) yol.unshift(on[yol[0]]);
+    // açgözlü: her adımda en kısa bağlantıya git
+    let u = 1, ac = 0; const gez = new Set([1]); while (u !== n) { const k = E.filter(([a, b]) => (a === u && !gez.has(b)) || (b === u && !gez.has(a))); if (!k.length) { ac = NaN; break; } const e = k.reduce((x, y) => (y[2] < x[2] ? y : x)); u = e[0] === u ? e[1] : e[0]; gez.add(u); ac += e[2]; }
+    const dogrudan = E.find(([a, b]) => a === 1 && b === n);
+    const agacT = topla(prim(n, E).map((e) => e[2]));
+    return Object.assign(siklar(d[n], [ac, dogrudan ? dogrudan[2] : NaN, agacT, d[n - 1], d[n] + 2], (x) => tr(x, 0), 1), {
+      tablo: kenarTablo(E, "Mesafe (km)"), tabloOnce: true,
+      soru: `Yukarıdaki tabloda bir şebekedeki iki yönlü yollar ve uzunlukları verilmiştir. 1 nolu düğümden ${n} nolu düğüme en kısa yol kaç km'dir?`,
+      cozum: [...Array.from({ length: n - 1 }, (_, i) => `1 → ${i + 2}: ${tr(d[i + 2], 0)}`), `Yol: ${yol.join("–")} = ${tr(d[n], 0)} km`],
+      aciklama: "Kalıcı kümeye her adımda başlangıçtan toplam uzaklığı en küçük düğüm girer.",
+      celdirici: `${Number.isFinite(ac) ? tr(ac, 0) + " her adımda en kısa bağlantıya gitmekle (açgözlü) çıkar; " : ""}${tr(agacT, 0)} en kısa yol ağacının toplamıdır.`, sayfa: "B4 s. 13–20" });
+  } });
+
+  ekle({ id: "agac", bolum: "b4", ad: "En kısa yol ağacı", aciklama: "Bütün düğümleri en az toplamla bağla", formul: ["agac"], uret() {
+    const n = R(5, 6), E = sebeke(n, R(2, 4), 2, 15); const S = prim(n, E); const t = topla(S.map((e) => e[2]));
+    const { d } = dijkstra(n, E, 1); const kalan = E.filter((e) => !S.includes(e)).map((e) => e[2]);
+    const enKucukKalan = kalan.length ? Math.min(...kalan) : NaN;
+    return Object.assign(siklar(t, [t + enKucukKalan, d[n], topla(d.slice(1)), t - Math.min(...S.map((e) => e[2]))], (x) => tr(x, 0), 1), {
+      tablo: kenarTablo(E, "Kablo (km)"), tabloOnce: true,
+      soru: "Yukarıdaki tabloda düğümler arasına döşenebilecek kablo hatları verilmiştir. Bütün düğümleri birbirine bağlamak için en kısa yol ağacı modeline göre en az kaç km kablo gerekir?",
+      cozum: [...S.map((e) => `${e[0]}–${e[1]}: ${e[2]}`), `${n} düğüm → ${n - 1} bağlantı; toplam = ${S.map((e) => e[2]).join(" + ")} = ${tr(t, 0)}`],
+      aciklama: "Seçili düğümlere bağlı, seçilmemiş düğümlerden bağlantısı en kısa olanı ekle; döngü kuran bağlantıyı alma.",
+      celdirici: `${tr(t + enKucukKalan, 0)} döngü oluşturan bir bağlantıyı da almakla, ${tr(d[n], 0)} yalnızca 1'den ${n}'e en kısa yolla çıkar.`, sayfa: "B4 s. 21–28" });
+  } });
+
+  ekle({ id: "akis", bolum: "b4", ad: "Maksimum akış", aciklama: "Yolları bul, en küçük kapasite kadar gönder", formul: ["akis"], uret() {
+    const k = (a, b) => R(a, b) * 100;
+    const C = { "A-B": k(4, 15), "A-C": k(4, 15), "B-C": k(1, 5), "B-D": k(3, 12), "C-D": k(3, 12) };
+    // A→B→D, A→C→D, A→B→C→D, A→C→B→D yollarıyla Edmonds-Karp yerine küçük şebekede doğrudan kesim hesabı
+    const kesim = Math.min(C["A-B"] + C["A-C"], C["B-D"] + C["C-D"], C["A-B"] + C["C-D"], C["A-C"] + C["B-D"] + C["B-C"]);
+    const yol2 = Math.min(C["A-B"], C["B-D"]) + Math.min(C["A-C"], C["C-D"]);
+    if (kesim === yol2) return null; // B–C bağlantısı işe yaramalı
+    const enKucuk = Math.min(...Object.values(C));
+    return Object.assign(siklar(kesim, [yol2, C["A-B"] + C["A-C"], C["B-D"] + C["C-D"], enKucuk, Math.min(C["A-B"], C["B-D"])], (x) => tr(x, 0), 100), {
+      tablo: { basliklar: ["Bağlantı", "Akış kapasitesi (birim)"], satirlar: Object.entries(C).map(([e, c]) => [e.replace("-", " → "), tr(c, 0)]) }, tabloOnce: true,
+      soru: "Yukarıdaki tabloda bir boru hattı şebekesinin tek yönlü bağlantıları ve kapasiteleri verilmiştir. A noktasından D noktasına gönderilebilecek maksimum akış kaç birimdir? (B → C bağlantısı yalnızca B'den C'ye akış taşır.)",
+      cozum: (() => { const c = { ...C }; const s = []; const gonder = (ad, yol) => { const m = Math.min(...yol.map((e) => c[e])); if (m > 0) { yol.forEach((e) => (c[e] -= m)); s.push(`${ad}: min = ${tr(m, 0)}`); } return m; };
+        let t = gonder("A–B–D", ["A-B", "B-D"]) + gonder("A–C–D", ["A-C", "C-D"]) + gonder("A–B–C–D", ["A-B", "B-C", "C-D"]);
+        s.push(`Hedefe akış sağlayan yol kalmadı → maksimum akış = ${tr(t, 0)}`); return t === kesim ? s : null; })(),
+      aciklama: "Her yoldan o yoldaki en küçük kapasite kadar gönder, kapasitelerden düş; yol kalmayınca akışları topla.",
+      celdirici: `${tr(yol2, 0)} B → C bağlantısını kullanmamakla, ${tr(C["A-B"] + C["A-C"], 0)} yalnızca A'dan çıkan kapasiteleri toplamakla çıkar.`, sayfa: "B4 s. 29–38" });
+  } });
+
   window.ATOLYE = G;
 })();
