@@ -1,0 +1,796 @@
+{
+ "ozet": [
+  {
+   "baslik": "Karar analizinin unsurları",
+   "sayfa": "B6 s. 4–6",
+   "maddeler": [
+    "<b>Kararlar (K):</b> problemin çözümü için sunulan alternatifler. <b>Olası durumlar (O):</b> işletmeyi etkileyen, işletmenin <b>kontrolünde olmayan</b> gelecekteki olaylar (ekonomi iyi, durağan, kötü). <b>Sonuçlar (S<sub>ij</sub>):</b> i. kararın j. olası durumdaki etki değeri.",
+    "<b>Sonuç tablosu:</b> kararlar satırda, olası durumlar sütunda, sonuçlar kesişim hücrelerinde."
+   ]
+  },
+  {
+   "baslik": "İki model sınıfı",
+   "sayfa": "B6 s. 4",
+   "tablo": {
+    "basliklar": [
+     "Belirsizlik altında (olasılıklı olmayan)",
+     "Risk altında (olasılıklı)"
+    ],
+    "satirlar": [
+     [
+      "Gelecek durumlar hakkında bilgi yok",
+      "Durumların olasılıkları biliniyor (ör. iyi %15, durağan %80, kötü %5)"
+     ],
+     [
+      "Maksimaks, maksimin, minimaks pişmanlık, Hurwicz indeks, eşit olasılık",
+      "Beklenen değer (EV), beklenen fırsat kaybı (EOL), karar ağacı; ayrıca mükemmel bilginin beklenen değeri (EVPI)"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Belirsizlik altında kriterler (amaç maksimum)",
+   "sayfa": "B6 s. 6–15",
+   "tablo": {
+    "basliklar": [
+     "Karar",
+     "O1: İyi",
+     "O2: Durağan",
+     "O3: Kötü"
+    ],
+    "satirlar": [
+     [
+      "K1: Yalnız modül-I",
+      "200",
+      "120",
+      "50"
+     ],
+     [
+      "K2: Modül-I + II",
+      "220",
+      "140",
+      "80"
+     ],
+     [
+      "K3: Modül-I + II + III",
+      "250",
+      "160",
+      "70"
+     ]
+    ],
+    "baslik": "X bankası sonuç tablosu (milyon TL, Tablo 6.3)"
+   },
+   "maddeler": [
+    "<b>Maksimaks</b> (iyimser): her kararın en iyisi → onların en büyüğü. Örnek: 200, 220, 250 → <b>K3</b>.",
+    "<b>Maksimin</b> (kötümser): her kararın en kötüsü → onların en büyüğü. Örnek: 50, 80, 70 → <b>K2</b>.",
+    "<b>Minimaks pişmanlık:</b> her sütunda en iyiden farklar (pişmanlık) → her kararın en büyük pişmanlığı → en küçüğü. Örnek: 50, 30, 10 → <b>K3</b>.",
+    "<b>Hurwicz:</b> H.İ = S<sub>maks</sub> × α + S<sub>min</sub> × (1 − α), en büyüğü seçilir. α = 0,8: 170, 192, 214 → <b>K3</b>.",
+    "<b>Eşit olasılık:</b> her durum 1/n; satır ortalaması. Örnek: 123,33; 146,67; 160 → <b>K3</b>.",
+    "Amaç <b>minimum</b> (maliyet) ise yönler tersine döner: maksimakste en küçüklerin en küçüğü, maksiminde en büyüklerin en küçüğü, Hurwicz'de S<sub>min</sub> × α + S<sub>maks</sub> × (1 − α) ve en küçüğü."
+   ]
+  },
+  {
+   "baslik": "Risk altında modeller",
+   "sayfa": "B6 s. 16–21",
+   "maddeler": [
+    "<b>Beklenen değer:</b> EV(i) = Σ S<sub>ij</sub> × P<sub>j</sub>; amaç maksimumsa en büyüğü. Örnek (P = 0,05; 0,25; 0,70): 75; <b>102</b>; 101,5 → K2.",
+    "<b>Beklenen fırsat kaybı:</b> EOL(i) = Σ pişmanlık × P<sub>j</sub>; amaç maksimumsa <b>en küçüğü</b>. Örnek: 33,5; <b>6,5</b>; 7 → K2. EV ile her zaman aynı kararı verir.",
+    "<b>Mükemmel bilgi:</b> her durumda en iyi kararın verilmesini sağlayan ek bilgi. EV(mükemmel bilgi) = Σ (sütun maksimumu × P<sub>j</sub>) = 250 × 0,05 + 160 × 0,25 + 80 × 0,70 = 108,5.",
+    "<b>EVPI</b> = EV(mükemmel bilgi) − EV(seçilen karar) = 108,5 − 102 = <b>6,5</b>: ek bilgiye ödenebilecek <b>en yüksek ücret</b>. En küçük EOL'e eşittir."
+   ]
+  },
+  {
+   "baslik": "Karar ağacı",
+   "sayfa": "B6 s. 21–25",
+   "maddeler": [
+    "Beklenen değer yaklaşımını şebeke yapısında gösterir. <b>Kare:</b> karar. <b>Oval:</b> muhtemel (olası) kararlar. <b>Ok:</b> üzerinde karar adı ve başlangıç maliyeti/kazancı ya da olası durumun olasılığı ve sonucu.",
+    "Çözüm <b>en sondan geriye doğru</b> yapılır: her ovalin beklenen değeri (+ başlangıç kazancı) bulunur, amaca göre en iyisi kareye yazılır. Örnek: 75, 102, 101,5 → kareye 3 numaralı düğüm ve 102."
+   ]
+  }
+ ],
+ "kitapNotlari": [
+  "Kitapta (B6 s. 21) EVPI hesaplarından sonra \"iki numaralı karar seçilirse mükemmel bilginin beklenen değeri 7,00\" yazıyor; 7,00 üç numaralı kararın değeridir (EVPI(3) = 108,50 − 101,50)."
+ ],
+ "akildaKalsin": [
+  "Belirsizlik = olasılık yok (5 kriter). Risk = olasılık var (EV, EOL, karar ağacı).",
+  "Maksimaks: en iyilerin en iyisi. Maksimin: en kötülerin en iyisi.",
+  "Pişmanlık sütun sütun hesaplanır: sütunun en iyisi − hücre.",
+  "Minimaks pişmanlık: en büyük pişmanlıkların en küçüğü.",
+  "Hurwicz: α iyimserlik katsayısı; α en iyi sonuçla, 1 − α en kötü sonuçla çarpılır.",
+  "Eşit olasılık = satır ortalaması.",
+  "EV ile EOL aynı kararı seçer; en küçük EOL = EVPI.",
+  "EVPI = ek bilgiye ödenecek en yüksek ücret = EV(mükemmel) − EV(en iyi karar).",
+  "Amaç minimumsa (maliyet) bütün kriterlerde yön tersine döner."
+ ],
+ "kartlar": [
+  {
+   "ad": "Karar (K)",
+   "tanim": "İşletmedeki bir problemin çözümü için sunulan alternatiflerden her biri.",
+   "sayfa": "B6 s. 5"
+  },
+  {
+   "ad": "Olası durum (O)",
+   "tanim": "İşletmeyi etkileyebilecek ve işletmenin kontrolünde olmayan gelecekteki olası olaylar.",
+   "sayfa": "B6 s. 5",
+   "ornek": "Ekonominin iyi, durağan ya da kötü olması."
+  },
+  {
+   "ad": "Sonuç (S<sub>ij</sub>)",
+   "tanim": "i. kararın j. olası durumda işletme üzerindeki etki değeri.",
+   "sayfa": "B6 s. 5"
+  },
+  {
+   "ad": "Sonuç tablosu",
+   "tanim": "Kararların (satır), olası durumların (sütun) ve sonuçların (hücre) aynı tabloda gösterilmesi.",
+   "sayfa": "B6 s. 5–6"
+  },
+  {
+   "ad": "Belirsizlik altında karar verme",
+   "tanim": "Gelecekteki durumlarla ilgili hiçbir bilgi olmadığı, olasılıkların bilinmediği varsayımına dayanan modeller: maksimaks, maksimin, minimaks pişmanlık, Hurwicz, eşit olasılık.",
+   "sayfa": "B6 s. 4",
+   "akil": "olasılık yok"
+  },
+  {
+   "ad": "Risk altında karar verme",
+   "tanim": "Gelecekteki durumların olasılık dağılımının bilindiği varsayımına dayanan modeller: beklenen değer, beklenen fırsat kaybı, karar ağacı.",
+   "sayfa": "B6 s. 4",
+   "akil": "olasılık var"
+  },
+  {
+   "ad": "Maksimaks kriteri",
+   "tanim": "İyimserlik varsayımı: her kararın en iyi sonucu alınır, bunların en iyisi seçilir.",
+   "sayfa": "B6 s. 6–8",
+   "akil": "en iyilerin en iyisi",
+   "ornek": "200, 220, 250 → K3."
+  },
+  {
+   "ad": "Maksimin kriteri",
+   "tanim": "Kötümserlik varsayımı: her kararın en kötü sonucu alınır, bunların en iyisi seçilir.",
+   "sayfa": "B6 s. 9",
+   "akil": "en kötülerin en iyisi",
+   "ornek": "50, 80, 70 → K2."
+  },
+  {
+   "ad": "Pişmanlık değeri",
+   "tanim": "Bir olası durumda en iyi kararın sonucu ile ilgili kararın sonucu arasındaki fark.",
+   "sayfa": "B6 s. 10",
+   "ornek": "İyi durumda en iyi 250; K2 için 250 − 220 = 30."
+  },
+  {
+   "ad": "Minimaks pişmanlık kriteri",
+   "tanim": "Her kararın en büyük pişmanlık değeri bulunur, bunlar arasından en az pişmanlık veren karar seçilir.",
+   "sayfa": "B6 s. 10–12",
+   "akil": "en büyük pişmanlıkların en küçüğü",
+   "ornek": "50, 30, 10 → K3."
+  },
+  {
+   "ad": "Hurwicz indeks kriteri",
+   "tanim": "İyimserlik ile kötümserlik arasında bir varsayım; iyimserlik bir katsayıyla (α) belirlenir.",
+   "sayfa": "B6 s. 12–13",
+   "akil": "H.İ = S<sub>maks</sub> × α + S<sub>min</sub> × (1 − α)",
+   "ornek": "K3: 250 × 0,8 + 70 × 0,2 = 214."
+  },
+  {
+   "ad": "İyimserlik katsayısı (α)",
+   "tanim": "Hurwicz'de sonucun en iyi olma olasılığının tahmini; 1 − α kötümser durumun ağırlığıdır.",
+   "sayfa": "B6 s. 12"
+  },
+  {
+   "ad": "Eşit olasılık kriteri",
+   "tanim": "Bütün olası durumların eşit ihtimalle gerçekleştiği varsayımı; her durumun olasılığı 1/n.",
+   "sayfa": "B6 s. 14–15",
+   "akil": "E.O = (1/n) × Σ S<sub>i</sub>",
+   "ornek": "K3: (250 + 160 + 70) / 3 = 160."
+  },
+  {
+   "ad": "Beklenen değer (EV)",
+   "tanim": "Araştırmayla tahmin edilen olasılıklara dayanır; her kararın sonuçları olasılıklarla çarpılıp toplanır.",
+   "sayfa": "B6 s. 16–17",
+   "akil": "EV(i) = Σ S<sub>ij</sub> × P<sub>j</sub>",
+   "ornek": "K2: 220 × 0,05 + 140 × 0,25 + 80 × 0,7 = 102."
+  },
+  {
+   "ad": "Beklenen fırsat kaybı (EOL)",
+   "tanim": "Her kararın pişmanlık değerleri olasılıklarla çarpılıp toplanır; amaç maksimumsa en küçük EOL seçilir.",
+   "sayfa": "B6 s. 18–19",
+   "akil": "EOL(i) = Σ pd<sub>ij</sub> × P<sub>j</sub>",
+   "ornek": "K2: 30 × 0,05 + 20 × 0,25 + 0 × 0,7 = 6,5."
+  },
+  {
+   "ad": "Mükemmel bilgi",
+   "tanim": "Olası durumlarda en iyi kararın verilebilmesini sağlayan ek bilgi.",
+   "sayfa": "B6 s. 20"
+  },
+  {
+   "ad": "Mükemmel bilgi varken beklenen değer",
+   "tanim": "Her olası durumdaki en iyi sonuç olasılığıyla çarpılıp toplanır.",
+   "sayfa": "B6 s. 20–21",
+   "akil": "Σ Maks<sub>j</sub> × P<sub>j</sub>",
+   "ornek": "250 × 0,05 + 160 × 0,25 + 80 × 0,7 = 108,5."
+  },
+  {
+   "ad": "Mükemmel bilginin beklenen değeri (EVPI)",
+   "tanim": "Mükemmel bilgi varken beklenen değer ile seçilen kararın beklenen değeri arasındaki fark; ek bilgiye ödenebilecek en yüksek ücret.",
+   "sayfa": "B6 s. 20–21",
+   "akil": "EVPI = EV(mükemmel bilgi) − EV(i)",
+   "ornek": "108,5 − 102 = 6,5."
+  },
+  {
+   "ad": "Karar ağacı",
+   "tanim": "Beklenen değer yaklaşımını temel alan, kararların bütün ayrıntılarını şebeke yapısında sunan gösterim.",
+   "sayfa": "B6 s. 21"
+  },
+  {
+   "ad": "Karar ağacı unsurları",
+   "tanim": "Kare: karar. Oval: muhtemel (olası) kararlar. Oklar: kararları birbirine, kararları olası kararlara, olası kararları olası durumlara bağlar.",
+   "sayfa": "B6 s. 21–22",
+   "akil": "kare karar, oval olası"
+  },
+  {
+   "ad": "Karar ağacının çözümü",
+   "tanim": "En sondan geriye doğru: ovallerin beklenen değeri (+ başlangıç kazancı/maliyeti) bulunur, amaca göre en iyisi seçilir.",
+   "sayfa": "B6 s. 22–25"
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "Belirsizlik altında",
+    "tanim": "Olasılıklar bilinmiyor."
+   },
+   "b": {
+    "ad": "Risk altında",
+    "tanim": "Olasılıklar biliniyor."
+   },
+   "fark": "Soruda olasılık (%, 0,2 gibi) verilmişse risk altında; yoksa belirsizlik altında.",
+   "sorular": [
+    {
+     "ifade": "Maksimin kriteri",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Beklenen değer",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Hurwicz indeks kriteri",
+     "cevap": "a",
+     "neden": "α bir olasılık değil, iyimserlik katsayısıdır."
+    },
+    {
+     "ifade": "Karar ağacı",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Eşit olasılık kriteri",
+     "cevap": "a",
+     "neden": "Olasılık bilinmediği için eşit varsayılır."
+    },
+    {
+     "ifade": "Beklenen fırsat kaybı",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Maksimaks",
+    "tanim": "İyimser: en iyilerin en iyisi."
+   },
+   "b": {
+    "ad": "Maksimin",
+    "tanim": "Kötümser: en kötülerin en iyisi."
+   },
+   "fark": "Maksimaks satırın en büyüğüne, maksimin satırın en küçüğüne bakar; ikisinde de sonra en büyük seçilir.",
+   "sorular": [
+    {
+     "ifade": "Her projenin en kötü sonucu karşılaştırılır",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Her projenin en iyi sonucu karşılaştırılır",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Kitap örneğinde K2 seçilir",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Kitap örneğinde K3 seçilir",
+     "cevap": "a",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Minimaks pişmanlık",
+    "tanim": "Belirsizlik: en büyük pişmanlıkların en küçüğü."
+   },
+   "b": {
+    "ad": "Beklenen fırsat kaybı",
+    "tanim": "Risk: pişmanlıkların olasılıklı ortalaması, en küçüğü."
+   },
+   "fark": "İkisi de pişmanlık tablosunu kullanır; olasılık varsa EOL.",
+   "sorular": [
+    {
+     "ifade": "Pişmanlıklar olasılıklarla çarpılıp toplanır",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Her kararın en büyük pişmanlığı bulunur",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Kitap örneğinde K3 (10)",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Kitap örneğinde K2 (6,5)",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Beklenen değer (EV)",
+    "tanim": "Sonuçlar × olasılık; amaç maksimumsa en büyüğü."
+   },
+   "b": {
+    "ad": "Mükemmel bilginin beklenen değeri (EVPI)",
+    "tanim": "EV(mükemmel bilgi) − EV(en iyi karar)."
+   },
+   "fark": "EVPI bir karar değil, ek bilgiye ödenecek en yüksek ücrettir.",
+   "sorular": [
+    {
+     "ifade": "102 milyon TL",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "6,5 milyon TL",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Danışmanlık raporuna en çok ne ödenir?",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Hangi proje seçilir?",
+     "cevap": "a",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Hurwicz indeks",
+    "tanim": "Belirsizlik; yalnız en iyi ve en kötü sonuç, α ağırlığıyla."
+   },
+   "b": {
+    "ad": "Eşit olasılık",
+    "tanim": "Belirsizlik; bütün sonuçlar eşit ağırlıkla."
+   },
+   "fark": "Hurwicz'de ara durumlar (durağan) kullanılmaz; eşit olasılıkta hepsi kullanılır.",
+   "sorular": [
+    {
+     "ifade": "(200 + 120 + 50) / 3",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "200 × 0,8 + 50 × 0,2",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Durağan sütunu hesaba girmez",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Her durumun olasılığı 1/n",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "maksimaks",
+   "ad": "Maksimaks ve maksimin",
+   "formul": "Maksimaks: maks<sub>i</sub> (maks<sub>j</sub> S<sub>ij</sub>) &nbsp;&nbsp; Maksimin: maks<sub>i</sub> (min<sub>j</sub> S<sub>ij</sub>)",
+   "aciklama": "Amaç minimumsa: maksimaks → min (min), maksimin → min (maks).",
+   "ornek": "Satır en büyükleri 200, 220, 250 → K3; satır en küçükleri 50, 80, 70 → K2.",
+   "tuzak": "Maksiminde satırın en küçüğünü alıp sonra en büyüğünü seç.",
+   "sayfa": "B6 s. 6–9"
+  },
+  {
+   "id": "pismanlik",
+   "ad": "Minimaks pişmanlık",
+   "formul": "Pişmanlık = sütunun en iyisi − hücre &nbsp;&nbsp; Karar = min<sub>i</sub> (maks<sub>j</sub> pişmanlık<sub>ij</sub>)",
+   "aciklama": "Pişmanlık her olası durum (sütun) için ayrı hesaplanır.",
+   "ornek": "İyi: 250 − 200 = 50, 250 − 220 = 30, 0 … En büyükler 50, 30, 10 → K3.",
+   "tuzak": "Satırın değil sütunun en iyisinden çıkar.",
+   "sayfa": "B6 s. 10–12"
+  },
+  {
+   "id": "hurwicz",
+   "ad": "Hurwicz indeks",
+   "formul": "H.İ = S<sub>maks</sub> × α + S<sub>min</sub> × (1 − α)",
+   "aciklama": "Amaç maksimumsa en büyük H.İ seçilir. Amaç minimumsa H.İ = S<sub>min</sub> × α + S<sub>maks</sub> × (1 − α) ve en küçüğü.",
+   "ornek": "K2: 220 × 0,8 + 80 × 0,2 = 192.",
+   "tuzak": "α en iyi sonuçla çarpılır; durağan gibi ara değerler kullanılmaz.",
+   "sayfa": "B6 s. 12–13"
+  },
+  {
+   "id": "esit",
+   "ad": "Eşit olasılık",
+   "formul": "P = 1/n &nbsp;&nbsp; E.O = (S<sub>1</sub> + S<sub>2</sub> + … + S<sub>n</sub>) / n",
+   "aciklama": "n olası durum sayısı.",
+   "ornek": "K1: (200 + 120 + 50) / 3 = 123,33.",
+   "sayfa": "B6 s. 14–15"
+  },
+  {
+   "id": "ev",
+   "ad": "Beklenen değer ve fırsat kaybı",
+   "formul": "EV(i) = Σ S<sub>ij</sub> × P<sub>j</sub> &nbsp;&nbsp; EOL(i) = Σ pişmanlık<sub>ij</sub> × P<sub>j</sub>",
+   "aciklama": "Amaç maksimumsa EV'nin en büyüğü, EOL'ün en küçüğü seçilir; ikisi aynı kararı verir.",
+   "ornek": "EV: 75; 102; 101,5. EOL: 33,5; 6,5; 7 → K2.",
+   "tuzak": "Olasılıklar toplamı 1 olmalı.",
+   "sayfa": "B6 s. 16–19"
+  },
+  {
+   "id": "evpi",
+   "ad": "Mükemmel bilginin beklenen değeri",
+   "formul": "EV(mükemmel bilgi) = Σ Maks<sub>j</sub> × P<sub>j</sub> &nbsp;&nbsp; EVPI = EV(mükemmel bilgi) − EV(seçilen karar)",
+   "aciklama": "Seçilen karar beklenen değeri en büyük olandır. EVPI en küçük EOL'e eşittir.",
+   "ornek": "108,5 − 102 = 6,5 milyon TL.",
+   "tuzak": "Maks<sub>j</sub> her sütunun (olası durumun) en büyüğüdür, satırın değil.",
+   "sayfa": "B6 s. 20–21"
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Karar analizinde işletmeyi etkileyebilen ve işletmenin kontrolünde olmayan gelecekteki olaylara ne ad verilir?",
+   "secenekler": [
+    "Karar",
+    "Sonuç",
+    "Olası durum",
+    "Pişmanlık",
+    "Sonuç tablosu"
+   ],
+   "dogru": 2,
+   "aciklama": "Olası durumlar (O): ekonominin iyi, durağan, kötü olması gibi.",
+   "sayfa": "B6 s. 5",
+   "celdirici": "Kararlar işletmenin seçtiği alternatiflerdir; kontrol işletmededir."
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi risk altında (olasılıklı) karar verme modellerindendir?",
+   "secenekler": [
+    "Maksimaks kriteri",
+    "Hurwicz indeks kriteri",
+    "Eşit olasılık kriteri",
+    "Beklenen fırsat kaybı",
+    "Minimaks pişmanlık kriteri"
+   ],
+   "dogru": 3,
+   "aciklama": "Risk altında modeller: beklenen değer, beklenen fırsat kaybı, karar ağacı.",
+   "sayfa": "B6 s. 4",
+   "celdirici": "Eşit olasılık adında \"olasılık\" geçse de belirsizlik altındaki bir kriterdir."
+  },
+  {
+   "soru": "Yukarıdaki sonuç tablosuna göre (kâr, milyon TL) maksimin kriteriyle hangi karar seçilir?",
+   "secenekler": [
+    "K1",
+    "K2",
+    "K3",
+    "K1 ve K3",
+    "Hiçbiri"
+   ],
+   "dogru": 1,
+   "aciklama": "En kötüler: 50, 80, 70 → en büyüğü 80 → K2.",
+   "sayfa": "B6 s. 9",
+   "celdirici": "K3 maksimaks kriterinin seçimidir.",
+   "tablo": {
+    "basliklar": [
+     "Karar",
+     "O1: İyi",
+     "O2: Durağan",
+     "O3: Kötü"
+    ],
+    "satirlar": [
+     [
+      "K1: Yalnız modül-I",
+      "200",
+      "120",
+      "50"
+     ],
+     [
+      "K2: Modül-I + II",
+      "220",
+      "140",
+      "80"
+     ],
+     [
+      "K3: Modül-I + II + III",
+      "250",
+      "160",
+      "70"
+     ]
+    ],
+    "baslik": "X bankası sonuç tablosu (milyon TL, Tablo 6.3)"
+   },
+   "cozum": [
+    "Satır en küçükleri: 50, 80, 70",
+    "En büyüğü 80 → K2"
+   ],
+   "tabloOnce": true
+  },
+  {
+   "soru": "Aynı tabloda K2 kararının ekonomik görünümün iyi olduğu durumdaki pişmanlık değeri kaçtır?",
+   "secenekler": [
+    "0",
+    "20",
+    "30",
+    "50",
+    "80"
+   ],
+   "dogru": 2,
+   "aciklama": "İyi sütununun en iyisi 250; 250 − 220 = 30.",
+   "sayfa": "B6 s. 10",
+   "celdirici": "50 K1'in pişmanlığıdır.",
+   "tablo": {
+    "basliklar": [
+     "Karar",
+     "O1: İyi",
+     "O2: Durağan",
+     "O3: Kötü"
+    ],
+    "satirlar": [
+     [
+      "K1: Yalnız modül-I",
+      "200",
+      "120",
+      "50"
+     ],
+     [
+      "K2: Modül-I + II",
+      "220",
+      "140",
+      "80"
+     ],
+     [
+      "K3: Modül-I + II + III",
+      "250",
+      "160",
+      "70"
+     ]
+    ],
+    "baslik": "X bankası sonuç tablosu (milyon TL, Tablo 6.3)"
+   },
+   "tabloOnce": true
+  },
+  {
+   "soru": "Pişmanlık tablosu yukarıdaki gibi olan bir karar probleminde minimaks pişmanlık kriterine göre hangi karar seçilir?",
+   "secenekler": [
+    "K1",
+    "K2",
+    "K3",
+    "K1 ve K2",
+    "Belirlenemez"
+   ],
+   "dogru": 2,
+   "aciklama": "En büyük pişmanlıklar 50, 30, 10 → en küçüğü 10 → K3.",
+   "sayfa": "B6 s. 11–12",
+   "celdirici": "K2'nin kötü durumda pişmanlığı 0'dır ama en büyük pişmanlığı 30'dur.",
+   "tablo": {
+    "basliklar": [
+     "Karar",
+     "İyi",
+     "Durağan",
+     "Kötü",
+     "En büyük pişmanlık"
+    ],
+    "satirlar": [
+     [
+      "K1",
+      "50",
+      "40",
+      "30",
+      "50"
+     ],
+     [
+      "K2",
+      "30",
+      "20",
+      "0",
+      "30"
+     ],
+     [
+      "K3",
+      "0",
+      "0",
+      "10",
+      "<b>10</b>"
+     ]
+    ],
+    "baslik": "Pişmanlık tablosu (Tablo 6.6–6.7)"
+   },
+   "tabloOnce": true
+  },
+  {
+   "soru": "Sonuçları iyi 250, durağan 160, kötü 70 olan bir kararın iyimserlik katsayısı α = 0,6 iken Hurwicz indeks değeri kaçtır? (amaç maksimum)",
+   "secenekler": [
+    "160",
+    "178",
+    "184",
+    "196",
+    "214"
+   ],
+   "dogru": 1,
+   "aciklama": "250 × 0,6 + 70 × 0,4 = 150 + 28 = 178.",
+   "sayfa": "B6 s. 12–13",
+   "celdirici": "160 eşit olasılık değeridir; Hurwicz durağanı kullanmaz.",
+   "cozum": [
+    "250 × 0,6 = 150",
+    "70 × 0,4 = 28",
+    "H.İ = 178"
+   ]
+  },
+  {
+   "soru": "Sonuçları 13, 9 ve 4 olan bir projenin eşit olasılık kriterine göre beklenen değeri kaçtır?",
+   "secenekler": [
+    "4",
+    "8,67",
+    "9",
+    "13",
+    "26"
+   ],
+   "dogru": 1,
+   "aciklama": "(13 + 9 + 4) / 3 = 26 / 3 = 8,67.",
+   "sayfa": "B6 s. 14",
+   "celdirici": "9 ortadaki değerdir (medyan); ortalama değil."
+  },
+  {
+   "soru": "Olasılıklar iyi 0,05, durağan 0,25, kötü 0,70 iken sonuçları 220, 140, 80 olan kararın beklenen değeri kaçtır?",
+   "secenekler": [
+    "75",
+    "101,5",
+    "102",
+    "108,5",
+    "146,67"
+   ],
+   "dogru": 2,
+   "aciklama": "220 × 0,05 + 140 × 0,25 + 80 × 0,70 = 11 + 35 + 56 = 102.",
+   "sayfa": "B6 s. 17",
+   "celdirici": "146,67 olasılıkları eşit almakla çıkar.",
+   "cozum": [
+    "11 + 35 + 56 = 102"
+   ]
+  },
+  {
+   "soru": "Kitaptaki örnekte mükemmel bilgi varken beklenen değer 108,5, beklenen değeri en yüksek karar 102 milyon TL'dir. Banka ek bilgi için en fazla ne öder?",
+   "secenekler": [
+    "6,5",
+    "7",
+    "33,5",
+    "102",
+    "108,5"
+   ],
+   "dogru": 0,
+   "aciklama": "EVPI = 108,5 − 102 = 6,5 milyon TL.",
+   "sayfa": "B6 s. 21",
+   "celdirici": "7, K3'ün EVPI'sidir; seçilen karar K2'dir."
+  },
+  {
+   "soru": "Beklenen fırsat kaybı ile ilgili hangisi doğrudur? (amaç maksimum)",
+   "secenekler": [
+    "En büyük EOL'e sahip karar seçilir.",
+    "Olasılık kullanılmaz.",
+    "Pişmanlık değerleri olasılıklarla çarpılıp toplanır ve en küçük EOL seçilir.",
+    "Sonuç değerleri olasılıklarla çarpılır.",
+    "Beklenen değerden farklı bir karar seçtirir."
+   ],
+   "dogru": 2,
+   "aciklama": "EOL = Σ pişmanlık × P; amaç maksimumsa en küçüğü seçilir ve EV ile aynı kararı verir.",
+   "sayfa": "B6 s. 18–19",
+   "celdirici": "Sonuçları olasılıkla çarpmak beklenen değerdir."
+  },
+  {
+   "soru": "Karar ağacında kare ve oval neyi gösterir (kitaba göre)?",
+   "secenekler": [
+    "Kare olası durumu, oval sonucu",
+    "Kare kararı, oval muhtemel (olası) kararları",
+    "Kare olasılığı, oval kararı",
+    "Kare sonucu, oval olasılığı",
+    "İkisi de olası durumu"
+   ],
+   "dogru": 1,
+   "aciklama": "Kitapta kare karar, oval muhtemel kararlar; oklar bağlantıları gösterir.",
+   "sayfa": "B6 s. 21"
+  },
+  {
+   "soru": "Karar ağacının çözümü nasıl yapılır?",
+   "secenekler": [
+    "Baştan sona doğru, her karede en küçük değer seçilerek",
+    "En sondan geriye doğru, ovallerin beklenen değerleri bulunup amaca göre en iyisi seçilerek",
+    "Rassal bir yol seçilerek",
+    "Bütün sonuçlar toplanarak",
+    "En kısa yol modeliyle"
+   ],
+   "dogru": 1,
+   "aciklama": "Kitap: çözüm en sondan geriye doğru yapılır.",
+   "sayfa": "B6 s. 22"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "I doğru: maksimaks iyimser. II doğru: EVPI en yüksek ödeme. III yanlış: mükemmel bilginin beklenen değeri risk altında (olasılıklı) bir kavramdır.",
+   "sayfa": "B6 s. 6, 20",
+   "onculler": [
+    "Maksimaks kriteri iyimserlik varsayımına dayanır.",
+    "Mükemmel bilginin beklenen değeri ek bilgiye ödenebilecek en yüksek ücrettir.",
+    "Mükemmel bilginin beklenen değeri belirsizlik (olasılıksız) varsayımında hesaplanır."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri doğrudur?",
+   "sabitSik": true
+  },
+  {
+   "soru": "Maliyetleri (milyon TL) K1: 8, 12, 15; K2: 10, 11, 13; K3: 6, 14, 18 olan kararlar için amaç minimum iken maksimin kriterine göre hangi karar seçilir?",
+   "secenekler": [
+    "K1",
+    "K2",
+    "K3",
+    "K1 ve K2",
+    "Hiçbiri"
+   ],
+   "dogru": 1,
+   "aciklama": "Amaç minimumsa maksiminde her kararın en büyük (en kötü) değeri alınır: 15, 13, 18 → en küçüğü 13 → K2.",
+   "sayfa": "B6 s. 9",
+   "celdirici": "K3 en küçük değeri (6) içerir; bu maksimaksın minimum amaçlı seçimidir.",
+   "cozum": [
+    "En kötüler (en büyük maliyet): 15, 13, 18",
+    "En küçüğü 13 → K2"
+   ]
+  },
+  {
+   "soru": "Olasılıklar 0,3 ve 0,7 iken iki durumdaki en iyi sonuçlar 100 ve 60'tır. Beklenen değeri en yüksek kararın EV'si 66 ise EVPI kaçtır?",
+   "secenekler": [
+    "6",
+    "72",
+    "8",
+    "14",
+    "34"
+   ],
+   "dogru": 0,
+   "aciklama": "EV(mükemmel bilgi) = 100 × 0,3 + 60 × 0,7 = 30 + 42 = 72; EVPI = 72 − 66 = 6.",
+   "sayfa": "B6 s. 20–21",
+   "celdirici": "72 mükemmel bilgi varken beklenen değerdir; EVPI fark.",
+   "cozum": [
+    "72 − 66 = 6"
+   ]
+  }
+ ]
+}

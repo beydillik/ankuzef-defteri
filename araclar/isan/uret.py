@@ -14,7 +14,7 @@ BOLUM_LISTE = [
     ("b3", 3, "Tahminleyici Veri Analizi Uygulaması", "s. 47–66", True),
     ("b4", 4, "Şebeke Modelleri Uygulamaları", "B4 s. 1–46", True),
     ("b5", 5, "Proje Yönetimi Uygulamaları", "B5 s. 1–36", True),
-    ("b6", 6, "İş Analitiğinde Karar Verme Uygulamaları", "B6 s. 1–33", False),
+    ("b6", 6, "İş Analitiğinde Karar Verme Uygulamaları", "B6 s. 1–33", True),
 ]
 VIZE = ["b1", "b2", "b3"]
 FINAL = ["b1", "b2", "b3", "b4", "b5", "b6"]
