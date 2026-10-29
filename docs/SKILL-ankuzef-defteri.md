@@ -70,6 +70,7 @@ public/<kod>/atolye.js                 elle: window.ATOLYE = [{id, bolum, ad, ac
 araclar/<kod>/ortak.py                 Q(), T(), kart(), cift(), F(), onc(), frac(), kok() ve doğrulama
 araclar/<kod>/bolumler.py, cikmis.py, gozden.py, tahmin.py, uret.py
 araclar/test/atolye_stres.js, akis.py (isan), akis_hzpz.py (hzpz)
+Final bölümleri ayrı dosyada olabilir (isan: `bolumler_final.py` → `BOLUMLER.update(BOLUMLER_FINAL)`). Tahmini denemeler: vize `tahmin.py` (id `t*`), final `tahmin_final.py` (id `f*`, dağılım final denemesiyle aynı); `uret.py` dağılımı id önekine göre denetler. Motor bir denemeyi yalnız bütün soruları seçili kapsamdaysa listeler (`denemelerKapsamda`).
 kaynaklar/<kod>/bolumN.md, cikmis/*.pdf
 ```
 Temalar: Defter (varsayılan: tahta menü + açık defter sayfası; cihaz koyu moddaysa kısılır), Gece ve Tahta (Ela'nın defterindeki koyu temalar; sayfa da koyu). Seçici ana sayfada ve Ayarlar'da; `localStorage` `ankuzef:tema` (kişiden bağımsız), `<html data-tema>`. Yeni ders `index.html`'si isan/hzpz kopyası olduğundan `<head>`'deki erken tema betiğini de taşır. Koyu temada fosfor zemindeki yazı koyu kalmalı (`defter.css` tema bloğu).
