@@ -72,7 +72,7 @@ with sync_playwright() as p:
         git(pg, "#b/b2/ciftler"); pg.click("[data-cift='0']"); pg.click("[data-c]")
         kontrol(pg.is_visible(".geri"), "karıştırılanlar geri bildirimi")
         if ad == "masa": git(pg, "#b/b3/ozet"); pg.screenshot(path=f"{OUT}/{ad}-b3-ozet.png", full_page=True)
-        git(pg, "#b/b4/ozet"); kontrol("hazırlanıyor" in pg.locator(".defter").inner_text(), "hazır olmayan bölüm (B4) sayfası açılıyor")
+        git(pg, "#tahmin"); kontrol("Tahmini Final Denemesi" not in pg.locator(".defter").inner_text(), "vize kapsamında final tahminleri gizli")
 
         # çıkmış vize
         git(pg, "#cikmis"); pg.screenshot(path=f"{OUT}/{ad}-cikmis.png", full_page=True)
@@ -106,6 +106,23 @@ with sync_playwright() as p:
         git(pg, "#gozden"); kontrol(pg.locator(".satirlar li").count() == 6, "final kapsamında Gözden Geçirelim 6 bölüm")
         for bid in ("b4", "b5", "b6"):
             git(pg, f"#gozden/{bid}"); coz(pg, [q for q in GG if q["bolum"] == bid], f"Gözden Geçirelim {bid}")
+        # final bölümleri (B4–B6) hazır
+        for bid in ("b4", "b5", "b6"):
+            for sek in ["ozet", "kartlar", "ciftler", "test", "gozden", "cikmis"]:
+                git(pg, f"#b/{bid}/{sek}")
+                if len(pg.locator("#sekme").inner_text().strip()) < 50: kontrol(False, f"{bid} {sek} boş")
+        kontrol(True, "B4–B6 adımlarının hepsi dolu")
+        if ad == "masa": git(pg, "#b/b5/ozet"); pg.screenshot(path=f"{OUT}/{ad}-b5-ozet.png", full_page=True)
+        # final tahmini denemeleri yalnız final kapsamında listelenir
+        git(pg, "#tahmin"); kontrol("Tahmini Final Denemesi 1" in pg.locator(".defter").inner_text(), "final kapsamında final tahminleri listeleniyor")
+        for did in ("f1", "f2"):
+            tq = yukle(f"tahmin_{did}.json")
+            git(pg, f"#tahmin/{did}"); pg.click("[data-basla]")
+            for i, q in enumerate(tq):
+                pg.locator(".secenek", has=pg.locator(".metin", has_text=re.compile("^" + re.escape(duz(q["secenekler"][q["dogru"]])) + "$"))).first.click()
+                if not pg.locator(".geri h3").inner_text().startswith("Doğru"): kontrol(False, f"tahmin {did} S{i + 1}")
+                pg.click("[data-sonraki]")
+            kontrol("100" in pg.locator(".kutu").first.inner_text(), f"tahmin {did}: {len(tq)}/{len(tq)} → 100")
         git(pg, "#deneme"); pg.click("text=Sınavı başlat")
         kontrol(pg.locator(".harita button").count() == 20, "final denemesi 20 soru")
         pg.click("[data-bitir]"); pg.click("[data-bitir]")
