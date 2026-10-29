@@ -1,0 +1,777 @@
+{
+ "ozet": [
+  {
+   "baslik": "Şebeke modelleri ne işe yarar?",
+   "sayfa": "B4 s. 2–4",
+   "maddeler": [
+    "Bu bölümden itibaren iş analitiğinin <b>karar analizi</b> araçları (karar verme modelleri) anlatılır. Şebeke modelleri işletmedeki şebeke problemlerini çözer.",
+    "Kullanım alanları: lojistik (kargo, servis güzergâhı), enerji (elektrik, doğalgaz), telekomünikasyon (internet altyapısı, telefon hatları), sağlık (ambulans güzergâhı, ilaç dağıtımı), projeler (inşaat, yazılım)."
+   ]
+  },
+  {
+   "baslik": "Dört model",
+   "sayfa": "B4 s. 4",
+   "tablo": {
+    "basliklar": [
+     "Model",
+     "Çözdüğü problem",
+     "Örnek"
+    ],
+    "satirlar": [
+     [
+      "Gezgin satıcı",
+      "Her yere bir kez uğrayıp başlangıca en kısa mesafede/sürede dönmek",
+      "Servis güzergâhı, kurye, otobüs hattı"
+     ],
+     [
+      "En kısa yol",
+      "Bir yerden başka <b>bir</b> yere en kısa mesafede gitmek (dönüş yok)",
+      "Ambulans, nakliye, elektrik dağıtımı"
+     ],
+     [
+      "En kısa yol ağacı",
+      "<b>Bütün</b> yerleri birbirine bağlı olacak şekilde en kısa toplamla bağlamak",
+      "İnternet altyapısı, telefon hatları"
+     ],
+     [
+      "Maksimum akış",
+      "Kapasiteli bağlantılarda bir yerden bir yere <b>en çok</b> akışı göndermek",
+      "Boru hatları, elektrik iletimi, ağ trafiği"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Şebeke unsurları ve kavramlar",
+   "sayfa": "B4 s. 5–6",
+   "maddeler": [
+    "<b>Düğüm:</b> olaydaki faaliyetler (A ili, B ili). <b>Ok:</b> ilişkili düğümleri bağlar. <b>Akış miktarı:</b> ok üzerindeki miktar (40 km).",
+    "Tek yönlü ok yalnız o yönde akış; çift yönlü ok ya da düz çizgi iki yönde akış demektir.",
+    "<b>Komşu düğüm:</b> okla bağlı olduğu düğüm. <b>Döngü:</b> düğümden çıkıp başka düğümlerden geçerek yine kendisine dönmek. <b>Ağaç:</b> döngü oluşturmadan birbirine bağlı düğümler."
+   ]
+  },
+  {
+   "baslik": "Gezgin satıcı modeli",
+   "sayfa": "B4 s. 6–10",
+   "maddeler": [
+    "Merkezden çıkıp ziyaret noktalarına <b>bir kez</b> uğrayıp merkeze <b>en kısa</b> mesafede dönmek. Ulaştırma, evde sağlık hizmeti, tur, CNC makinesi (iş-makine), kurye ve liman dağıtımı.",
+    "Model geliştirilirken bakılanlar: ziyaret edilecek yerler, aralarındaki mesafe, başlangıç yerinin belirli olup olmadığı, gezgin satıcı sayısı.",
+    "Basit çözüm: bütün döngüleri yaz, en kısayı seç. Olası döngü sayısı <b>(m − 1)!</b> (m düğüm sayısı); 4 düğüm → 3! = 6.",
+    "Kurye örneği: KM–S2–S1–S3–KM = 0,90 + 1,10 + 0,90 + 0,50 = <b>3,40 km</b> en kısa. Gidiş ve dönüş mesafeleri farklı olabilir (KM→S1 0,5; S1→KM 0,6)."
+   ]
+  },
+  {
+   "baslik": "En kısa yol modeli",
+   "sayfa": "B4 s. 11–20",
+   "maddeler": [
+    "Seçilen iki düğüm arasında en kısa mesafe, en az maliyet ya da en az zaman. Gezgin satıcıdan farkı: başlangıca dönülmez.",
+    "Kullanım: kargolama (depoya dönülmez), ambulans ve itfaiye, hava trafiği, veri merkezi bağlantısı, deniz rotası, elektrik dağıtımı.",
+    "<b>Kalıcı küme yöntemi:</b> başlangıçtan en az kayıplı düğümü seç → kalıcı kümeye ekle → kalıcı kümeye bağlı bütün düğümleri değerlendir, başlangıçtan toplam kaybı en az olanı ekle → hedef düğüm kümeye girene kadar tekrarla.",
+    "Elektrik örneği: A santralinden I şehrine en az kayıp <b>19 GWH</b> (A–B–D–F–I: 3 + 2 + 4 + 10)."
+   ]
+  },
+  {
+   "baslik": "En kısa yol ağacı modeli",
+   "sayfa": "B4 s. 21–28",
+   "maddeler": [
+    "En kısa yolda <b>bir</b> hedef düğüm vardır; en kısa yol ağacında <b>birçok</b> hedef: bütün düğümler birbirine bağlanır.",
+    "Adımlar: başlangıç düğümünü seç → ona bağlı en az kayıplı düğümü seç → seçili düğümlere bağlı kalanlardan en az kayıplı bağlantıyı seç → bütün düğümler bağlanana kadar tekrarla.",
+    "Fark: burada her adımda yalnızca <b>bağlantının kendi kaybına</b> bakılır, başlangıçtan toplama değil.",
+    "Elektrik örneği: 8 bağlantıyla 8 şehir ve santral bağlandı, toplam kayıp <b>38 GWH</b>."
+   ]
+  },
+  {
+   "baslik": "Maksimum akış modeli",
+   "sayfa": "B4 s. 29–38",
+   "maddeler": [
+    "Bağlantıların kapasitesi vardır; hedefe doğru olan <b>akış kapasitesi</b>, tersi yöndeki <b>ters akış kapasitesi</b>. Akış en aza indirilmek istenirse adı minimum akış modelidir.",
+    "Kullanım: petrol, doğalgaz, su boru hatları; elektrik iletimi; yol ve demiryolu trafiği; atık su; ağ trafiği.",
+    "Adımlar: başlangıçtan hedefe rassal bir yol seç → yoldaki <b>en küçük kapasite</b> kadar akış gönder, bu miktarı yoldaki kapasitelerden düş → ters kapasitelere ekle → hedefe akış sağlayan yol kalmayana kadar tekrarla.",
+    "Elektrik örneği: A–B–E–I 1400, A–B–D–E–I 400, A–C–H–I 1400, A–C–D–E–I 400, A–C–D–F–I 600 → maksimum akış <b>4200 GWH</b>."
+   ]
+  }
+ ],
+ "kitapNotlari": [
+  "Kitapta (B4 s. 30) maksimum akış tablosu için \"Tablo 6.7\" yazıyor; doğrusu Tablo 4.7."
+ ],
+ "akildaKalsin": [
+  "Gezgin satıcı: hepsine bir kez uğra, başa dön. En kısa yol: bir hedefe git, dönme.",
+  "En kısa yol ağacı: hepsini bağla, döngü kurma. Maksimum akış: kapasiteyle en çok gönder.",
+  "Şebeke unsurları: düğüm, ok, akış miktarı. Gezgin satıcı bir unsur değil, bir modeldir.",
+  "Gezgin satıcıda olası döngü sayısı (m − 1)!.",
+  "En kısa yolda başlangıçtan toplam mesafeye, ağaçta tek bağlantının uzunluğuna bakılır.",
+  "Maksimum akışta her yolun akışı o yoldaki en küçük kapasitedir.",
+  "Şebeke modelleri karar verme (karar analizi) araçlarıdır; tanımlayıcı iş analitiğinin aracı değildir."
+ ],
+ "kartlar": [
+  {
+   "ad": "Şebeke modeli",
+   "tanim": "Düğümler ve düğümler arası ilişkiyi gösteren oklarla bir olayın akışını gösteren diyagramlar. İşletmedeki şebeke problemlerini çözen karar analizi aracı.",
+   "sayfa": "B4 s. 4–5"
+  },
+  {
+   "ad": "Düğüm",
+   "tanim": "Olay içindeki faaliyetleri temsil eden unsur.",
+   "sayfa": "B4 s. 5",
+   "ornek": "A ilinden B iline gidişte A ve B düğümdür."
+  },
+  {
+   "ad": "Ok",
+   "tanim": "Birbiriyle ilişkili düğümleri bağlayan unsur. Tek yönlü ok o yönde akış, çift yönlü ok ya da çizgi iki yönde akış gösterir.",
+   "sayfa": "B4 s. 5"
+  },
+  {
+   "ad": "Akış miktarı",
+   "tanim": "Oklar üzerinde gösterilen miktar (mesafe, kayıp, kapasite).",
+   "sayfa": "B4 s. 5",
+   "ornek": "A ile B arası 40 km ise ok üzerine 40 yazılır."
+  },
+  {
+   "ad": "Komşu düğüm",
+   "tanim": "Bir düğümün okla bağlı olduğu düğüm.",
+   "sayfa": "B4 s. 6"
+  },
+  {
+   "ad": "Döngü",
+   "tanim": "Bir düğümün oklarla başka düğümlere bağlanıp yeniden kendisine bağlanması.",
+   "sayfa": "B4 s. 6",
+   "akil": "çıktığın yere dön"
+  },
+  {
+   "ad": "Ağaç",
+   "tanim": "Düğümlerin okla birbirine bağlandığı ama döngü oluşmayan şebeke yapısı.",
+   "sayfa": "B4 s. 6",
+   "akil": "bağlı ama döngüsüz"
+  },
+  {
+   "ad": "Gezgin satıcı modeli",
+   "tanim": "Merkezden çıkıp belirlenen noktaları yalnızca bir kez ziyaret ederek merkeze en kısa mesafede (sürede) dönme problemini çözen model.",
+   "sayfa": "B4 s. 4, 6",
+   "akil": "hepsine bir kez, sonra eve"
+  },
+  {
+   "ad": "Gezgin satıcı kullanım alanları",
+   "tanim": "Okul servisi ve otobüs güzergâhı, evde sağlık hizmeti, tur şirketi, CNC makinesinde delik açma (iş-makine), kurye ve liman dağıtımı.",
+   "sayfa": "B4 s. 7"
+  },
+  {
+   "ad": "Gezgin satıcı modelinin unsurları",
+   "tanim": "Ziyaret edilecek yerler, bu yerler arası mesafe, başlangıç yerinin belirli olup olmaması, gezgin satıcı sayısı.",
+   "sayfa": "B4 s. 7"
+  },
+  {
+   "ad": "Olası döngü sayısı",
+   "tanim": "Gezgin satıcıda bütün döngüler (m − 1)! tanedir; m düğüm sayısı (merkez dahil).",
+   "sayfa": "B4 s. 9",
+   "akil": "(m − 1)!",
+   "ornek": "4 düğüm → 3 × 2 × 1 = 6 döngü."
+  },
+  {
+   "ad": "En kısa yol modeli",
+   "tanim": "Şebekede seçilen iki düğüm arasında en kısa mesafeyi, en az maliyeti ya da en az zamanı bulan model. Başlangıca dönülmez.",
+   "sayfa": "B4 s. 4, 11",
+   "akil": "bir hedef, dönüş yok"
+  },
+  {
+   "ad": "En kısa yol kullanım alanları",
+   "tanim": "Kargolama (depoya dönülmez), ambulans ve itfaiye, hava trafik kontrolü, veri merkezi ile servis sağlayıcı bağlantısı, deniz rotası, elektrik dağıtımı.",
+   "sayfa": "B4 s. 11"
+  },
+  {
+   "ad": "Kalıcı küme",
+   "tanim": "En kısa yol çözümünde, en az kayıpla ulaşıldığı kesinleşen düğümlerin oluşturduğu küme. Hedef düğüm kümeye girince çözüm biter.",
+   "sayfa": "B4 s. 13"
+  },
+  {
+   "ad": "En kısa yol ağacı modeli",
+   "tanim": "Başlangıç düğümünden başlayarak bütün düğümleri birbirine bağlı olacak şekilde en kısa yol ya da en az kayıpla bağlayan model.",
+   "sayfa": "B4 s. 4, 21",
+   "akil": "hepsini bağla, döngü yok"
+  },
+  {
+   "ad": "En kısa yol ağacı kullanım alanları",
+   "tanim": "İnternet altyapı ağları, telefon hatları; en kısa yolun kullanıldığı alanlarda hedef düğüm birden fazlaysa.",
+   "sayfa": "B4 s. 4, 21"
+  },
+  {
+   "ad": "Maksimum akış modeli",
+   "tanim": "Bağlantıların kapasitesi olan şebekede başlangıçtan hedefe en çok akışı gönderme problemini çözen model.",
+   "sayfa": "B4 s. 4, 29",
+   "akil": "en dar boğaz kadar gönder"
+  },
+  {
+   "ad": "Minimum akış modeli",
+   "tanim": "Maksimum akış modelinde akış en aza indirilmek istendiğinde modelin adı.",
+   "sayfa": "B4 s. 4"
+  },
+  {
+   "ad": "Akış kapasitesi / ters akış kapasitesi",
+   "tanim": "Hedefe doğru gösterilen okun kapasitesi akış kapasitesi, tersi yöndeki ters akış kapasitesidir.",
+   "sayfa": "B4 s. 29",
+   "ornek": "A'dan C'ye akış kapasitesi, C'den A'ya ters akış kapasitesi."
+  },
+  {
+   "ad": "Maksimum akış kullanım alanları",
+   "tanim": "Petrol, doğalgaz, su boru hatları; elektrik iletimi; yol ve demiryolu trafiği; atık su; ağ trafiği.",
+   "sayfa": "B4 s. 29"
+  },
+  {
+   "ad": "Maksimum akış adımları",
+   "tanim": "1) Başlangıçtan hedefe rassal bir yol seç 2) Yoldaki en küçük kapasite kadar akış gönder, kapasitelerden düş 3) Bu miktarı ters kapasitelere ekle 4) Hedefe akış sağlayan yol kalmayana kadar tekrarla.",
+   "sayfa": "B4 s. 30"
+  },
+  {
+   "ad": "Şebeke modellerinin yeri",
+   "tanim": "Şebeke modelleri iş analitiğinin karar analizi (karar verme modelleri) araçlarıdır; veriyi betimlemek ya da tahmin etmek için değil, şebeke problemini çözmek için kullanılır.",
+   "sayfa": "B4 s. 2–4"
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "Gezgin satıcı",
+    "tanim": "Hepsine bir kez uğra, başlangıca dön."
+   },
+   "b": {
+    "ad": "En kısa yol",
+    "tanim": "Bir hedefe en kısa yoldan git, dönme."
+   },
+   "fark": "Dönüş var mı? Varsa gezgin satıcı, yoksa en kısa yol.",
+   "sorular": [
+    {
+     "ifade": "Okul servisi öğrencileri toplayıp okula döner",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Ambulans hastaneye en kısa sürede ulaşır",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Kargo dağıtıcısı siparişleri dağıtır, depoya dönmez",
+     "cevap": "b",
+     "neden": "Kitaptaki örnek (B4 s. 11)."
+    },
+    {
+     "ifade": "CNC makinesi 7 delik açıp başladığı noktaya döner",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Olası çözüm sayısı (m − 1)!",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Elektrik santralinden I şehrine en az kayıp",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "En kısa yol",
+    "tanim": "Tek bir hedef düğüm."
+   },
+   "b": {
+    "ad": "En kısa yol ağacı",
+    "tanim": "Bütün düğümler hedef; hepsi birbirine bağlanır."
+   },
+   "fark": "En kısa yolda başlangıçtan toplam mesafeye, ağaçta yalnızca tek bağlantının uzunluğuna bakılır.",
+   "sorular": [
+    {
+     "ifade": "İnternet altyapısıyla bütün mahalleleri bağlamak",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "A santralinden I şehrine en az kayıp: 19 GWH",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Bütün şehirlere toplam 38 GWH kayıpla elektrik",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Fiber kabloyla bütün şehirlere en az kablo (2025 final S9)",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "1 nolu şehirden 7 nolu şehre kaç km (2025 final S2)",
+     "cevap": "a",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Döngü",
+    "tanim": "Çıkılan düğüme geri dönülür."
+   },
+   "b": {
+    "ad": "Ağaç",
+    "tanim": "Bağlı ama döngü yok."
+   },
+   "fark": "Gezgin satıcının cevabı bir döngüdür; en kısa yol ağacının cevabı bir ağaçtır.",
+   "sorular": [
+    {
+     "ifade": "1→2→3→1",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "En kısa yol ağacı modelinin sonucu",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Gezgin satıcı modelinin sonucu",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Bağlantı eklerken kapalı halka oluşursa o bağlantı alınmaz",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Akış kapasitesi",
+    "tanim": "Hedefe doğru okun kapasitesi."
+   },
+   "b": {
+    "ad": "Ters akış kapasitesi",
+    "tanim": "Tersi yöndeki kapasite."
+   },
+   "fark": "Maksimum akışta gönderilen miktar akış kapasitesinden düşülür, ters kapasiteye eklenir.",
+   "sorular": [
+    {
+     "ifade": "A–B: 2000 GWH (A'dan B'ye)",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "B'den A'ya 300 GWH",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "1400 gönderildikten sonra 300 + 1400 = 1700 olur",
+     "cevap": "b",
+     "neden": "B4 s. 31."
+    },
+    {
+     "ifade": "1400 gönderildikten sonra 2000 − 1400 = 600 kalır",
+     "cevap": "a",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Maksimum akış",
+    "tanim": "Kapasiteli şebekede en çok akış."
+   },
+   "b": {
+    "ad": "En kısa yol",
+    "tanim": "Mesafe/kayıp/zamanı en aza indirmek."
+   },
+   "fark": "Soruda kapasite varsa maksimum akış; mesafe, kayıp ya da süre varsa en kısa yol (ya da ağaç).",
+   "sorular": [
+    {
+     "ifade": "Boru hattından en çok doğalgaz",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Elektriği en az kayıpla ulaştırmak",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Ağdan en yüksek kapasiteyle veri aktarmak",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "İtfaiyenin en kısa sürede varması",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "dongu",
+   "ad": "Gezgin satıcı: olası döngü sayısı",
+   "formul": "Döngü sayısı = (m − 1)!",
+   "aciklama": "m: merkez dahil düğüm sayısı. Bütün döngülerin mesafesi toplanır, en kısası seçilir.",
+   "ornek": "Merkez + 3 sipariş → (4 − 1)! = 6 döngü; en kısa KM–S2–S1–S3–KM = 3,40 km.",
+   "tuzak": "Gidiş ve dönüş mesafesi farklıysa (tablo simetrik değilse) her yönü kendi satırından oku.",
+   "sayfa": "B4 s. 9"
+  },
+  {
+   "id": "enkisa",
+   "ad": "En kısa yol (kalıcı küme)",
+   "formul": "Düğümün etiketi = min (kalıcı kümedeki düğümün etiketi + bağlantı uzunluğu)",
+   "aciklama": "Her adımda kalıcı kümeye bağlı düğümler arasından başlangıçtan <b>toplam</b> uzaklığı en küçük olanı kümeye al; hedef kümeye girince dur.",
+   "ornek": "A–B 3, B–D 2 → D'nin etiketi 5; D–F 4 → F 9; F–I 10 → I 19 GWH.",
+   "tuzak": "Bağlantının tek başına kısa olması yetmez; başlangıçtan toplamına bak.",
+   "sayfa": "B4 s. 13–20"
+  },
+  {
+   "id": "agac",
+   "ad": "En kısa yol ağacı",
+   "formul": "Toplam = seçilen bağlantıların uzunlukları toplamı (düğüm sayısı − 1 bağlantı)",
+   "aciklama": "Seçili düğümlere bağlı, henüz seçilmemiş düğümler arasından <b>bağlantısı</b> en kısa olanı ekle; döngü oluşturan bağlantıyı alma.",
+   "ornek": "9 düğüm → 8 bağlantı: 3 + 2 + 3 + 4 + 4 + 6 + 7 + 9 = 38 GWH.",
+   "tuzak": "Metre/km dönüşümüne dikkat (2025 final S9: 121 km = 121.000 m).",
+   "sayfa": "B4 s. 21–28"
+  },
+  {
+   "id": "akis",
+   "ad": "Maksimum akış",
+   "formul": "Yolun akışı = yoldaki en küçük kapasite &nbsp;&nbsp; Maksimum akış = bütün yolların akışları toplamı",
+   "aciklama": "Gönderilen miktar yoldaki her kapasiteden düşülür, ters kapasitelere eklenir. Hedefe giden kapasiteli yol kalmayınca dur.",
+   "ornek": "1400 + 400 + 1400 + 400 + 600 = 4200 GWH.",
+   "tuzak": "Hedefe giren bağlantıların kapasite toplamı, maksimum akış için bir üst sınırdır.",
+   "sayfa": "B4 s. 30–38"
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Aşağıdakilerden hangisi şebeke modellerini oluşturan unsurlardan biri değildir?",
+   "secenekler": [
+    "Düğüm",
+    "Ok",
+    "Akış miktarı",
+    "Kalıcı küme",
+    "Hepsi şebeke unsurudur"
+   ],
+   "dogru": 3,
+   "aciklama": "Şebeke unsurları düğüm, ok ve akış miktarıdır. Kalıcı küme, en kısa yol modelinin çözüm yönteminde kullanılan bir kavramdır.",
+   "sayfa": "B4 s. 5, 13",
+   "celdirici": "\"Hepsi\" şıkkı kalıcı kümeyi de unsur sayar; kitapta unsur değil."
+  },
+  {
+   "soru": "Bir düğümün oklarla başka düğümlere bağlanıp yeniden kendisine bağlanmasına ne ad verilir?",
+   "secenekler": [
+    "Ağaç",
+    "Komşu düğüm",
+    "Döngü",
+    "Akış",
+    "Kalıcı küme"
+   ],
+   "dogru": 2,
+   "aciklama": "Kitaptaki döngü tanımı.",
+   "sayfa": "B4 s. 6",
+   "celdirici": "Ağaç tam tersidir: bağlı ama döngü yok."
+  },
+  {
+   "soru": "Okul servisinin merkezden çıkıp her öğrenciyi bir kez alarak okula en kısa yoldan dönmesi hangi şebeke modeliyle çözülür?",
+   "secenekler": [
+    "En kısa yol modeli",
+    "En kısa yol ağacı modeli",
+    "Gezgin satıcı modeli",
+    "Maksimum akış modeli",
+    "Minimum akış modeli"
+   ],
+   "dogru": 2,
+   "aciklama": "Her noktaya bir kez uğrayıp başlangıca dönmek gezgin satıcı problemidir.",
+   "sayfa": "B4 s. 7",
+   "celdirici": "En kısa yolda başlangıca dönülmez."
+  },
+  {
+   "soru": "Kargo dağıtıcısı siparişleri depodan alıp dağıtıyor ve depoya dönmüyorsa kitaba göre hangi model kullanılır?",
+   "secenekler": [
+    "Gezgin satıcı modeli",
+    "En kısa yol modeli",
+    "Maksimum akış modeli",
+    "En kısa yol ağacı modeli",
+    "Proje yönetim modeli"
+   ],
+   "dogru": 1,
+   "aciklama": "Kitap kargolamada depoya dönülmediği için en kısa yol modelinin kullanıldığını söyler.",
+   "sayfa": "B4 s. 11",
+   "celdirici": "Depoya dönseydi gezgin satıcı olurdu."
+  },
+  {
+   "soru": "Bir şehrin bütün mahallelerine birbirine bağlı olacak şekilde en az kabloyla internet altyapısı kurmak hangi modelle çözülür?",
+   "secenekler": [
+    "En kısa yol ağacı modeli",
+    "Gezgin satıcı modeli",
+    "En kısa yol modeli",
+    "Maksimum akış modeli",
+    "Karar ağacı"
+   ],
+   "dogru": 0,
+   "aciklama": "Bütün düğümleri birbirine bağlamak en kısa yol ağacı problemidir; internet altyapısı kitaptaki örnek.",
+   "sayfa": "B4 s. 4, 21",
+   "celdirici": "En kısa yolda tek hedef vardır."
+  },
+  {
+   "soru": "Petrol boru hattıyla bir noktadan başka bir noktaya en çok petrolü iletmek hangi modelin konusudur?",
+   "secenekler": [
+    "En kısa yol modeli",
+    "Gezgin satıcı modeli",
+    "En kısa yol ağacı modeli",
+    "Maksimum akış modeli",
+    "Eşit olasılık kriteri"
+   ],
+   "dogru": 3,
+   "aciklama": "Bağlantıların kapasitesi olduğunda en çok akışı göndermek maksimum akış modelidir.",
+   "sayfa": "B4 s. 29"
+  },
+  {
+   "soru": "Merkez dahil 5 düğümlü bir gezgin satıcı probleminde olası bütün döngülerin sayısı kaçtır?",
+   "secenekler": [
+    "5",
+    "12",
+    "24",
+    "60",
+    "120"
+   ],
+   "dogru": 2,
+   "aciklama": "(m − 1)! = (5 − 1)! = 4 × 3 × 2 × 1 = 24.",
+   "sayfa": "B4 s. 9",
+   "celdirici": "120 = 5!; bir eksiğinin faktöriyeli alınır.",
+   "cozum": [
+    "m = 5",
+    "(5 − 1)! = 4!",
+    "4 × 3 × 2 × 1 = 24"
+   ]
+  },
+  {
+   "soru": "Yukarıdaki mesafe tablosuna göre merkezden çıkıp iki şubeye uğrayıp merkeze dönen en kısa döngü kaç km'dir?",
+   "secenekler": [
+    "9",
+    "10",
+    "11",
+    "12",
+    "14"
+   ],
+   "dogru": 2,
+   "aciklama": "İki döngü var: M–Ş1–Ş2–M = 4 + 3 + 5 = 12; M–Ş2–Ş1–M = 2 + 4 + 5 = 11. En kısa 11.",
+   "sayfa": "B4 s. 8–9",
+   "celdirici": "Tablo simetrik değil: Ş1→Ş2 (3) ile Ş2→Ş1 (4) farklı. Her yönü kendi satırından oku.",
+   "tablo": {
+    "basliklar": [
+     "Nereden \\ Nereye",
+     "Ş1",
+     "Ş2",
+     "Merkez"
+    ],
+    "satirlar": [
+     [
+      "Merkez",
+      "4",
+      "2",
+      "-"
+     ],
+     [
+      "Ş1",
+      "-",
+      "3",
+      "5"
+     ],
+     [
+      "Ş2",
+      "4",
+      "-",
+      "5"
+     ]
+    ],
+    "baslik": "Mesafeler (km)"
+   },
+   "cozum": [
+    "M–Ş1–Ş2–M: 4 + 3 + 5 = 12",
+    "M–Ş2–Ş1–M: 2 + 4 + 5 = 11",
+    "En kısa: 11 km"
+   ],
+   "tabloOnce": true
+  },
+  {
+   "soru": "En kısa yol modelinin kalıcı küme yönteminde hangi düğüm kümeye eklenir?",
+   "secenekler": [
+    "Bağlantısı en uzun olan düğüm",
+    "Kalıcı kümeye bağlı düğümler arasından başlangıçtan toplam uzaklığı en küçük olan",
+    "Rassal seçilen bir düğüm",
+    "En çok komşusu olan düğüm",
+    "Kapasitesi en büyük düğüm"
+   ],
+   "dogru": 1,
+   "aciklama": "Her adımda kalıcı kümeye bağlı düğümler değerlendirilir ve başlangıçtan toplam kaybı (uzaklığı) en az olan eklenir; hedef düğüm eklenince çözüm biter.",
+   "sayfa": "B4 s. 13–20",
+   "celdirici": "Rassal yol seçimi maksimum akış modelinin adımıdır."
+  },
+  {
+   "soru": "Yukarıdaki şebekede 1 nolu düğümden 5 nolu düğüme en kısa yol kaç km'dir?",
+   "secenekler": [
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   "dogru": 1,
+   "aciklama": "1→2 = 4; 1→3 = min(2, 4 + 1) = 2; 1→4 = min(4 + 5, 2 + 8) = 9; 1→5 = min(2 + 10, 9 + 1) = 10.",
+   "sayfa": "B4 s. 13–20",
+   "celdirici": "12, 3'ten doğrudan 5'e gitmektir (2 + 10); 2–4–5 üzerinden 10 km.",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Düğümden",
+     "Düğüme",
+     "Mesafe (km)"
+    ],
+    "satirlar": [
+     [
+      "1",
+      "1",
+      "2",
+      "4"
+     ],
+     [
+      "2",
+      "1",
+      "3",
+      "2"
+     ],
+     [
+      "3",
+      "2",
+      "3",
+      "1"
+     ],
+     [
+      "4",
+      "2",
+      "4",
+      "5"
+     ],
+     [
+      "5",
+      "3",
+      "4",
+      "8"
+     ],
+     [
+      "6",
+      "3",
+      "5",
+      "10"
+     ],
+     [
+      "7",
+      "4",
+      "5",
+      "1"
+     ]
+    ]
+   },
+   "cozum": [
+    "1→3 = 2, 1→2 = 4",
+    "1→4 = 4 + 5 = 9",
+    "1→5 = min(2 + 10, 9 + 1) = 10"
+   ],
+   "tabloOnce": true
+  },
+  {
+   "soru": "Aynı şebekedeki bütün düğümleri en kısa yol ağacıyla bağlamak için gereken toplam uzunluk kaçtır? (1–2: 4, 1–3: 2, 2–3: 1, 2–4: 5, 3–4: 8, 3–5: 10, 4–5: 1)",
+   "secenekler": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   "dogru": 2,
+   "aciklama": "Kısadan uzuna: 2–3 (1), 4–5 (1), 1–3 (2), 1–2 (4) döngü oluşturur, atlanır; 2–4 (5) iki parçayı bağlar. Toplam 1 + 1 + 2 + 5 = 9.",
+   "sayfa": "B4 s. 21–28",
+   "celdirici": "8, döngü oluşturan 1–2 (4) bağlantısını da almaktır; 5 düğüm 4 bağlantıyla bağlanır.",
+   "cozum": [
+    "2–3 = 1 ✓",
+    "4–5 = 1 ✓",
+    "1–3 = 2 ✓",
+    "1–2 = 4 ✗ (1–3–2 zaten bağlı, döngü olur)",
+    "2–4 = 5 ✓",
+    "Toplam = 9"
+   ]
+  },
+  {
+   "soru": "Maksimum akış modelinde seçilen bir yoldan gönderilebilecek akış nasıl bulunur?",
+   "secenekler": [
+    "Yoldaki kapasitelerin toplamıyla",
+    "Yoldaki en büyük kapasiteyle",
+    "Yoldaki en küçük kapasiteyle",
+    "Ters kapasitelerin toplamıyla",
+    "Yoldaki bağlantı sayısıyla"
+   ],
+   "dogru": 2,
+   "aciklama": "Yoldaki en küçük kapasite darboğazdır; o kadar akış gönderilir, sonra kapasitelerden düşülür ve ters kapasitelere eklenir.",
+   "sayfa": "B4 s. 30–31",
+   "celdirici": "En büyük kapasite kadar gönderilemez; en dar bağlantı bunu engeller."
+  },
+  {
+   "soru": "A–B–E–I yolunda kapasiteler 2000, 1400 ve 2200 GWH'tir. Bu yoldan akış gönderildikten sonra A–B bağlantısının kalan kapasitesi ve ters kapasitesi (önce 300) ne olur?",
+   "secenekler": [
+    "600 ve 1700",
+    "1400 ve 300",
+    "600 ve 300",
+    "2000 ve 1700",
+    "800 ve 1400"
+   ],
+   "dogru": 0,
+   "aciklama": "Akış = en küçük kapasite 1400. A–B: 2000 − 1400 = 600; ters: 300 + 1400 = 1700. Kitaptaki örnek.",
+   "sayfa": "B4 s. 31",
+   "celdirici": "Ters kapasiteyi değiştirmeyi unutursan 600 ve 300 bulursun.",
+   "cozum": [
+    "Akış = min(2000, 1400, 2200) = 1400",
+    "Kalan: 2000 − 1400 = 600",
+    "Ters: 300 + 1400 = 1700"
+   ]
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Gezgin satıcıda başlangıca dönülür ve olası döngü sayısı (m − 1)!'dir; model geliştirilirken gezgin satıcı sayısı da dikkate alınır.",
+   "sayfa": "B4 s. 7–9",
+   "onculler": [
+    "Gezgin satıcı modelinde başlangıç noktasına geri dönülür.",
+    "Gezgin satıcı modeli geliştirilirken gezgin satıcı sayısı dikkate alınır.",
+    "Olası döngü sayısı düğüm sayısının bir eksiğinin faktöriyelidir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri gezgin satıcı modeli için doğrudur?",
+   "sabitSik": true
+  },
+  {
+   "soru": "Kitaba göre şebeke modelleri iş analitiğinin hangi araçları arasında yer alır?",
+   "secenekler": [
+    "Tanımlayıcı iş analitiği",
+    "Veri betimlemesi",
+    "Karar analizi (karar verme modelleri)",
+    "Korelasyon analizi",
+    "Örnekleme yöntemleri"
+   ],
+   "dogru": 2,
+   "aciklama": "Bölüm, iş analitiği çerçevesinde karar verme modellerinin uygulamalarını anlatır; şebeke modelleri karar analizi araçlarıdır.",
+   "sayfa": "B4 s. 2–4",
+   "celdirici": "2025 finalin 20. sorusunda \"tanımlayıcı iş analitiğinde kullanılır\" öncülü yanlıştı."
+  }
+ ]
+}

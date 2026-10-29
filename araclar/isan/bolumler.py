@@ -544,3 +544,6 @@ B3 = {
 }
 
 BOLUMLER = {"b1": B1, "b2": B2, "b3": B3}
+
+from bolumler_final import B4
+BOLUMLER["b4"] = B4
