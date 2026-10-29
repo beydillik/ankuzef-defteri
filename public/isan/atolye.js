@@ -478,5 +478,72 @@
       aciklama: "Varyanslar toplanır, karekök alınır, 1,96 ile çarpılır.", celdirici: `${ss[1]} varyansı 1,96 ile çarpmakla, ${ss[3]} standart sapmaları toplamakla çıkar.`, sayfa: "B5 s. 22, 27–28" };
   } });
 
+  // =================== BÖLÜM 6 ===================
+  const DUR = ["İyi", "Durağan", "Kötü"];
+  function sonucTablo(k = R(3, 4)) {
+    const S = Array.from({ length: k }, () => { const iyi = R(12, 30) * 10; const d = iyi - R(1, 8) * 10; const ko = Math.max(10, d - R(1, 8) * 10); return [iyi, d, ko]; });
+    return { S, k, tablo: { basliklar: ["Karar", ...DUR], satirlar: S.map((r, i) => [`K${i + 1}`, ...r.map((x) => tr(x, 0))]) } };
+  }
+  const tekEn = (a, f = Math.max) => { const m = f(...a); return a.filter((x) => x === m).length === 1 ? a.indexOf(m) : -1; };
+  const olas = () => { const p1 = R(1, 6) / 10; const p2 = R(1, 9 - p1 * 10) / 10; return [p1, p2, yuv(1 - p1 - p2, 1)]; };
+
+  ekle({ id: "kriter", bolum: "b6", ad: "Belirsizlik altında karar", aciklama: "Maksimaks, maksimin, minimaks pişmanlık, Hurwicz, eşit olasılık", formul: ["maksimaks", "pismanlik", "hurwicz", "esit"], uret() {
+    const { S, k, tablo } = sonucTablo(); const a = R(3, 8) / 10;
+    const maks = S.map((r) => Math.max(...r)), min = S.map((r) => Math.min(...r));
+    const sut = [0, 1, 2].map((j) => Math.max(...S.map((r) => r[j]))); const pis = S.map((r) => r.map((x, j) => sut[j] - x)); const mp = pis.map((r) => Math.max(...r));
+    const hu = S.map((r, i) => yuv(maks[i] * a + min[i] * (1 - a), 2)); const eo = S.map((r) => yuv(topla(r) / 3, 2));
+    const K = { maksimaks: tekEn(maks), maksimin: tekEn(min), "minimaks pişmanlık": tekEn(mp, Math.min), [`Hurwicz (α = ${tr(a, 1)})`]: tekEn(hu), "eşit olasılık": tekEn(eo) };
+    const ad = sec(Object.keys(K)); const d = K[ad]; if (d < 0) return null;
+    const digerleri = Object.entries(K).filter(([n, v]) => n !== ad && v !== d && v >= 0); if (!digerleri.length) return null;
+    const secenekler = kar(Array.from({ length: k }, (_, i) => i).filter((i) => i !== d)).map((i) => `K${i + 1}`);
+    while (secenekler.length < 4) secenekler.push(["Hepsi aynı değeri verir", "Karar verilemez"][secenekler.length - (k - 1)]);
+    const cz = ad === "maksimaks" ? [`Satır en büyükleri: ${maks.join(", ")}`, `En büyüğü ${maks[d]} → K${d + 1}`]
+      : ad === "maksimin" ? [`Satır en küçükleri: ${min.join(", ")}`, `En büyüğü ${min[d]} → K${d + 1}`]
+      : ad === "minimaks pişmanlık" ? [`Sütun en büyükleri: ${sut.join(", ")}`, ...pis.map((r, i) => `K${i + 1} pişmanlık: ${r.join(", ")} → en büyük ${mp[i]}`), `En küçüğü ${mp[d]} → K${d + 1}`]
+      : ad.startsWith("Hurwicz") ? [...S.map((r, i) => `K${i + 1}: ${maks[i]} × ${tr(a, 1)} + ${min[i]} × ${tr(1 - a, 1)} = ${tr(hu[i])}`), `En büyüğü → K${d + 1}`]
+      : [...S.map((r, i) => `K${i + 1}: (${r.join(" + ")}) / 3 = ${tr(eo[i])}`), `En büyüğü → K${d + 1}`];
+    const [dn, dv] = digerleri[0];
+    return { secenekler: [`K${d + 1}`, ...secenekler.slice(0, 4)], dogru: 0, tablo, tabloOnce: true,
+      soru: `Yukarıdaki sonuç tablosunda kararların ekonomik görünüme göre kâra etkisi (milyon TL) verilmiştir. Amaç kârı en büyük yapmaksa ${ad} kriterine göre hangi karar seçilir?`,
+      cozum: cz, aciklama: "Belirsizlik altında olasılık kullanılmaz; kritere göre satır ya da sütun değerleri karşılaştırılır.",
+      celdirici: `K${dv + 1} ${dn} kriterinin seçimidir; kriterleri karıştırma.`, sayfa: "B6 s. 6–15" };
+  } });
+
+  ekle({ id: "hurwicz", bolum: "b6", ad: "Hurwicz indeks değeri", aciklama: "S_maks × α + S_min × (1 − α)", formul: ["hurwicz"], uret() {
+    const r = sonucTablo(1).S[0]; const a = R(2, 9) / 10; const h = r[0] * a + r[2] * (1 - a);
+    return Object.assign(siklar(h, [r[0] * (1 - a) + r[2] * a, topla(r) / 3, r[0] * a + r[1] * (1 - a), r[0] * a], (x) => tr(x), 5), {
+      soru: `Bir kararın sonuçları ekonomi iyi iken ${r[0]}, durağan iken ${r[1]}, kötü iken ${r[2]} milyon TL'dir. İyimserlik katsayısı α = ${tr(a, 1)} ise Hurwicz indeks değeri kaçtır? (amaç maksimum)`,
+      cozum: [`${r[0]} × ${tr(a, 1)} = ${tr(r[0] * a)}`, `${r[2]} × ${tr(1 - a, 1)} = ${tr(r[2] * (1 - a))}`, `H.İ = ${tr(h)}`],
+      aciklama: "α en iyi sonuçla, 1 − α en kötü sonuçla çarpılır; durağan kullanılmaz.", celdirici: `${tr(r[0] * (1 - a) + r[2] * a)} α'yı en kötü sonuçla çarpmakla, ${tr(topla(r) / 3)} eşit olasılıkla çıkar.`, sayfa: "B6 s. 12–13" });
+  } });
+
+  ekle({ id: "ev", bolum: "b6", ad: "Beklenen değer", aciklama: "Σ S × P", formul: ["ev"], uret() {
+    const { S, tablo } = sonucTablo(); const P = olas(); const ev = S.map((r) => yuv(topla(r.map((x, j) => x * P[j])), 2)); const d = tekEn(ev); if (d < 0) return null;
+    return Object.assign(siklar(ev[d], [...ev.filter((_, i) => i !== d), yuv(topla(S[d]) / 3, 2), Math.max(...S[d])], (x) => tr(x), 5), {
+      tablo, tabloOnce: true, soru: `Yukarıdaki sonuç tablosunda (kâr, milyon TL) ekonominin iyi olma olasılığı ${tr(P[0], 1)}, durağan ${tr(P[1], 1)}, kötü ${tr(P[2], 1)}'dir. Beklenen değer kriterine göre seçilecek kararın beklenen değeri kaçtır?`,
+      cozum: [...S.map((r, i) => `EV(K${i + 1}) = ${r.map((x, j) => `${x} × ${tr(P[j], 1)}`).join(" + ")} = ${tr(ev[i])}`), `En büyüğü: K${d + 1} = ${tr(ev[d])}`],
+      aciklama: "Her sonuç kendi durumunun olasılığıyla çarpılır, toplanır; amaç maksimumsa en büyüğü seçilir.", celdirici: `${tr(yuv(topla(S[d]) / 3, 2))} olasılıkları eşit almakla çıkar.`, sayfa: "B6 s. 16–17" });
+  } });
+
+  ekle({ id: "evpi", bolum: "b6", ad: "Mükemmel bilginin beklenen değeri", aciklama: "EV(mükemmel) − EV(en iyi)", formul: ["evpi"], uret() {
+    const { S, tablo } = sonucTablo(); const P = olas(); const ev = S.map((r) => yuv(topla(r.map((x, j) => x * P[j])), 2));
+    const sut = [0, 1, 2].map((j) => Math.max(...S.map((r) => r[j]))); const evm = yuv(topla(sut.map((x, j) => x * P[j])), 2); const en = Math.max(...ev); const evpi = yuv(evm - en, 2);
+    if (evpi <= 0) return null; const enK = Math.min(...ev);
+    return Object.assign(siklar(evpi, [evm, en, yuv(evm - enK, 2), yuv(topla(sut) / 3 - en, 2)], (x) => tr(x), 1), {
+      tablo, tabloOnce: true, soru: `Yukarıdaki sonuç tablosunda (kâr, milyon TL) olasılıklar iyi ${tr(P[0], 1)}, durağan ${tr(P[1], 1)}, kötü ${tr(P[2], 1)}'dir. İşletmenin ekonomik görünümle ilgili ek bilgi için ödeyebileceği en yüksek ücret (EVPI) kaçtır?`,
+      cozum: [`Sütun en büyükleri: ${sut.join(", ")}`, `EV(mükemmel bilgi) = ${sut.map((x, j) => `${x} × ${tr(P[j], 1)}`).join(" + ")} = ${tr(evm)}`, `EV'ler: ${ev.map((x) => tr(x)).join("; ")} → en büyük ${tr(en)}`, `EVPI = ${tr(evm)} − ${tr(en)} = ${tr(evpi)}`],
+      aciklama: "Önce her durumun en iyi sonucuyla beklenen değer, sonra en iyi kararın EV'si çıkarılır.", celdirici: `${tr(evm)} mükemmel bilgi varken beklenen değerdir; ${tr(yuv(evm - enK, 2))} en kötü kararın EV'sini çıkarmakla bulunur.`, sayfa: "B6 s. 20–21" });
+  } });
+
+  ekle({ id: "eol", bolum: "b6", ad: "Beklenen fırsat kaybı", aciklama: "Σ pişmanlık × P", formul: ["pismanlik", "ev"], uret() {
+    const { S, k, tablo } = sonucTablo(); const P = olas(); const sut = [0, 1, 2].map((j) => Math.max(...S.map((r) => r[j])));
+    const pis = S.map((r) => r.map((x, j) => sut[j] - x)); const eol = pis.map((r) => yuv(topla(r.map((x, j) => x * P[j])), 2)); const d = tekEn(eol, Math.min); if (d < 0) return null;
+    const i = R(0, k - 1);
+    return Object.assign(siklar(eol[i], [...eol.filter((_, j) => j !== i), yuv(topla(pis[i]) / 3, 2), Math.max(...pis[i])], (x) => tr(x), 1), {
+      tablo, tabloOnce: true, soru: `Yukarıdaki sonuç tablosunda (kâr, milyon TL) olasılıklar iyi ${tr(P[0], 1)}, durağan ${tr(P[1], 1)}, kötü ${tr(P[2], 1)}'dir. K${i + 1} kararının beklenen fırsat kaybı (EOL) kaçtır?`,
+      cozum: [`Sütun en büyükleri: ${sut.join(", ")}`, `K${i + 1} pişmanlıkları: ${pis[i].join(", ")}`, `EOL = ${pis[i].map((x, j) => `${x} × ${tr(P[j], 1)}`).join(" + ")} = ${tr(eol[i])}`, `(En küçük EOL K${d + 1}: ${tr(eol[d])} → seçilecek karar)`],
+      aciklama: "Pişmanlık = sütunun en iyisi − hücre; olasılıklarla çarpılıp toplanır.", celdirici: `${tr(Math.max(...pis[i]))} en büyük pişmanlıktır (minimaks pişmanlık), EOL değil.`, sayfa: "B6 s. 18–19" });
+  } });
+
   window.ATOLYE = G;
 })();
