@@ -6,7 +6,9 @@ from ortak import HATA, h, soru_kontrol, yaz
 from bolumler import BOLUMLER
 from cikmis import CIKMIS_2025_VIZE, CIKMIS_2025_FINAL
 from gozden import GOZDEN
-from tahmin import DENEMELER
+from tahmin import DENEMELER as _VD
+from tahmin_final import FINAL_DENEMELER
+DENEMELER = _VD + FINAL_DENEMELER
 
 BOLUM_LISTE = [
     ("b1", 1, "İş Analitiği", "s. 5–20", True),
@@ -85,10 +87,11 @@ for did, ad, sorular in DENEMELER:
     for i, q in enumerate(sorular):
         q["id"] = f"{did}-{i + 1:02d}"
         soru_kontrol(q, f"{did} S{i + 1}")
-        if q.get("bolum") not in VIZE:
+        if q.get("bolum") not in (FINAL if did.startswith("f") else VIZE):
             h(f"{did} S{i + 1}: bölüm yok")
-    dag = {b: sum(1 for q in sorular if q["bolum"] == b) for b in VIZE}
-    if dag != {"b1": 6, "b2": 7, "b3": 7}:
+    kap = FINAL if did.startswith("f") else VIZE
+    dag = {b: sum(1 for q in sorular if q["bolum"] == b) for b in kap}
+    if dag != ({"b1": 1, "b2": 2, "b3": 2, "b4": 5, "b5": 5, "b6": 5} if did.startswith("f") else {"b1": 6, "b2": 7, "b3": 7}):
         h(f"{did}: bölüm dağılımı {dag}")
     tahmin_dosyalar.append((f"tahmin_{did}.json", {"kaynak": "tahmin", "deneme": did, "ad": ad, "sorular": sorular}))
     soru_dosyalari.append(f"tahmin_{did}.json")

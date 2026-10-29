@@ -117,7 +117,9 @@
   "cikmis_2025_guz_final.json",
   "gozden.json",
   "tahmin_t1.json",
-  "tahmin_t2.json"
+  "tahmin_t2.json",
+  "tahmin_f1.json",
+  "tahmin_f2.json"
  ],
  "cikmisNot": "2024-25 Güz Vize, Final ve Bütünleme dosyaları başka bir dersin (AYBS407 Büyük Veri ve İş Analitiği: Hadoop, Spark, Hive) sınavı; bu dersin kitabında o konular yok, bu yüzden eklenmedi."
 }

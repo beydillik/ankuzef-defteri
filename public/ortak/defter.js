@@ -119,6 +119,8 @@
   const kapsamBolumleri = () => S.ders.kapsamlar[kapsam()].bolumler;
   const kapsamAd = () => S.ders.kapsamlar[kapsam()].ad;
   const kapsamda = (q) => kapsamBolumleri().includes(q.bolum);
+  // bütün soruları kapsamda olan tahmini denemeler (final denemesi vize kapsamında görünmez)
+  const denemelerKapsamda = () => { const t = S.sorular.filter((q) => q.kaynak === "tahmin"); return [...new Set(t.map((q) => q.deneme))].filter((d) => t.filter((q) => q.deneme === d).every(kapsamda)); };
   const vizeBolumleri = () => (S.ders.kapsamlar.vize || { bolumler: [] }).bolumler;
   const bAd = (bid) => (S.bolumler[bid] ? `Bölüm ${S.bolumler[bid].no}` : "");
 
@@ -221,7 +223,7 @@
       ${kapsam() === "vize" && Q.finalVize().length ? `<li><a href="#cikmis/finalvize"${cur(a === "finalvize")}>Finalde çıkmış vize soruları</a></li>` : ""}
       <li><a href="#cikmis/kapsam"${cur(a === "kapsam")}>Hepsi karışık</a></li></ul>` : "";
     const altGozden = yolAktif.gozden ? `<ul class="alt-menu">${kapsamBolumleri().filter((bid) => Q.gozden(bid).length).map((bid) => `<li><a href="#gozden/${bid}"${cur(a === bid)}>${bAd(bid)}${soruDurum(Q.gozden(bid)).cozulen === Q.gozden(bid).length ? '<span class="tik">✓</span>' : ""}</a></li>`).join("")}</ul>` : "";
-    const altTahmin = yolAktif.tahmin ? `<ul class="alt-menu">${[...new Set(Q.tahmin().filter(kapsamda).map((q) => q.deneme))].map((d) => `<li><a href="#tahmin/${d}"${cur(a === d)}>${kac(Q.tahmin().find((q) => q.deneme === d).denemeAd)}</a></li>`).join("")}<li><a href="#tahmin/hepsi"${cur(a === "hepsi")}>Hepsi karışık</a></li></ul>` : "";
+    const altTahmin = yolAktif.tahmin ? `<ul class="alt-menu">${denemelerKapsamda().map((d) => `<li><a href="#tahmin/${d}"${cur(a === d)}>${kac(Q.tahmin().find((q) => q.deneme === d).denemeAd)}</a></li>`).join("")}<li><a href="#tahmin/hepsi"${cur(a === "hepsi")}>Hepsi karışık</a></li></ul>` : "";
     const alt = { konu: altKonu, cikmis: altCikmis, gozden: altGozden, tahmin: altTahmin, deneme: "" };
     m.innerHTML = `<a class="marka" href="../">${AY}<span>ANKUZEF Defteri</span></a>
       <p class="marka-alt">${kac(S.ders.ad)}${S.ders.dersKodu ? " · " + kac(S.ders.dersKodu) : ""}</p>
@@ -690,7 +692,7 @@
       return;
     }
     const gecmis = oku("tahminTest", []);
-    const den = [...new Set(tum.filter(kapsamda).map((q) => q.deneme))];
+    const den = denemelerKapsamda();
     k.innerHTML = `<h1>4. Tahmini denemeler</h1>
       <p class="soluk">Çıkmış sınavın biçiminde (5 şık, öncüllü ve hesap soruları) ama henüz sorulmamış konulardan yazıldı. Tahmindir; gerçek sınavda çıkacağı garanti değildir.</p>
       <ul class="satirlar">${den.map((x) => { const qs = tum.filter((q) => q.deneme === x); const g = gecmis.filter((y) => y.ad === qs[0].denemeAd); const en = g.length ? Math.max(...g.map((y) => yuzde(y.d, y.n))) : null;

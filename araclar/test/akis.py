@@ -159,7 +159,11 @@ with sync_playwright() as p:
         git(pg, "#deneme"); pg.click("text=Sınavı başlat")
         kontrol(pg.locator(".harita button").count() == 20, "final denemesi 20 soru")
         pg.click("[data-bitir]"); pg.click("[data-bitir]")
-        git(pg, "#b/b5/ozet"); kontrol("hazırlanıyor" in pg.locator(".defter").inner_text(), "hazır olmayan bölümde yönlendirme")
+        for bid, kelime in (("b4", "Maksimum akış"), ("b5", "Kritik yol"), ("b6", "Hurwicz")):
+            git(pg, f"#b/{bid}/ozet"); kontrol(kelime in pg.locator(".defter").inner_text(), f"{bid} özeti açıldı")
+        git(pg, "#tahmin"); m = pg.locator(".defter").inner_text()
+        kontrol("Final tahmini deneme 1" in m and "Final tahmini deneme 2" in m, "final kapsamında final tahmini denemeleri")
+        git(pg, "#tahmin/f1"); pg.click("text=Başla") if pg.locator("text=Başla").count() else None
         if ad == "tel": pg.click(".menu-ac"); pg.wait_for_timeout(250)
         pg.click("#menu [data-kapsam='vize']"); pg.wait_for_timeout(150)
 

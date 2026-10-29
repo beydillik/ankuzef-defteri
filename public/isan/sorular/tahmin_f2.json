@@ -1,0 +1,709 @@
+{
+ "kaynak": "tahmin",
+ "deneme": "f2",
+ "ad": "Final tahmini deneme 2",
+ "sorular": [
+  {
+   "soru": "Veri yoluyla gelecekle ilgili öngörülerin sunulduğu iş analitiği aşaması aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "Tanımlayıcı iş analitiği",
+    "Tahminleyici iş analitiği",
+    "Veri betimlemesi",
+    "Örnekleme",
+    "Veri toplama"
+   ],
+   "dogru": 1,
+   "aciklama": "Tahminleyici (tahminci) iş analitiği: \"ne olabilir?\" sorusu.",
+   "sayfa": "s. 7",
+   "celdirici": "Tanımlayıcı aşama geçmişi özetler.",
+   "bolum": "b1",
+   "id": "f2-01"
+  },
+  {
+   "soru": "Bir veri setinin birinci çeyreği 12, üçüncü çeyreği 30'dur. Çeyreklikler arası fark (IQR) kaçtır?",
+   "secenekler": [
+    "9",
+    "18",
+    "21",
+    "30",
+    "42"
+   ],
+   "dogru": 1,
+   "aciklama": "IQR = Q3 − Q1 = 30 − 12 = 18.",
+   "sayfa": "s. 35–36",
+   "celdirici": "42 çeyreklerin toplamı, 21 ortalamasıdır.",
+   "bolum": "b2",
+   "id": "f2-02"
+  },
+  {
+   "soru": "Normal dağılan bir değişkenin ortalaması 60, standart sapması 5'tir. Gözlemlerin yaklaşık %95'i hangi aralıktadır?",
+   "secenekler": [
+    "55 ile 65",
+    "50 ile 70",
+    "45 ile 75",
+    "58 ile 62",
+    "40 ile 80"
+   ],
+   "dogru": 1,
+   "aciklama": "%95'i μ ± 2σ: 60 ± 10 → 50 ile 70.",
+   "sayfa": "s. 38",
+   "celdirici": "55–65 μ ± σ (%68), 45–75 μ ± 3σ (%99,7) aralığıdır.",
+   "bolum": "b2",
+   "id": "f2-03"
+  },
+  {
+   "soru": "Bir regresyon modelinde SSR = 180 ve R² = 0,6'dır. Hata terimlerinin kareler toplamı (SSE) kaçtır?",
+   "secenekler": [
+    "72",
+    "108",
+    "120",
+    "300",
+    "480"
+   ],
+   "dogru": 2,
+   "aciklama": "R² = SSR / SST → SST = 180 / 0,6 = 300; SSE = SST − SSR = 120.",
+   "sayfa": "s. 57–58",
+   "celdirici": "300 SST'dir; SSE onun açıklanamayan kısmıdır.",
+   "cozum": [
+    "SST = 180 / 0,6 = 300",
+    "SSE = 300 − 180 = 120"
+   ],
+   "bolum": "b3",
+   "id": "f2-04"
+  },
+  {
+   "soru": "Bir regresyon modelinin açıklama gücü R² = 0,81 bulunmuştur. Bu değer nasıl yorumlanır?",
+   "secenekler": [
+    "Değişkenler arasındaki korelasyon katsayısı 0,81'dir.",
+    "Bağımsız değişkenler bağımlı değişkendeki değişimin %81'ini açıklar.",
+    "Modelin hatalı tahmin oranı %81'dir.",
+    "Bağımsız değişken %81 olasılıkla anlamlıdır.",
+    "Bağımlı değişken 0,81 birim artar."
+   ],
+   "dogru": 1,
+   "aciklama": "R² = SSR / SST; 1'e yaklaştıkça açıklama gücü artar. 0,81 → değişimin %81'i açıklanır.",
+   "sayfa": "s. 57–58",
+   "celdirici": "%19 açıklanamayan kısımdır (SSE / SST); hata oranı değil.",
+   "bolum": "b3",
+   "id": "f2-05"
+  },
+  {
+   "soru": "Yukarıdaki tabloda bir doğalgaz şebekesinin tek yönlü bağlantıları ve saatlik kapasiteleri verilmiştir. A noktasından D noktasına saatte gönderilebilecek maksimum akış kaç m³'tür?",
+   "secenekler": [
+    "200",
+    "500",
+    "800",
+    "900",
+    "1.300"
+   ],
+   "dogru": 2,
+   "aciklama": "A–B–D: 200; A–C–D: 300; A–B–C–D: min(600 − 200, 300, 700 − 300) = 300. Toplam 800.",
+   "sayfa": "B4 s. 29–38",
+   "celdirici": "500, B → C bağlantısını kullanmamakla; 900 A'dan çıkan kapasiteleri toplamakla çıkar.",
+   "tablo": {
+    "basliklar": [
+     "Bağlantı",
+     "Kapasite (m³)"
+    ],
+    "satirlar": [
+     [
+      "A → B",
+      "600"
+     ],
+     [
+      "A → C",
+      "300"
+     ],
+     [
+      "B → C",
+      "300"
+     ],
+     [
+      "B → D",
+      "200"
+     ],
+     [
+      "C → D",
+      "700"
+     ]
+    ],
+    "baslik": "Tek yönlü bağlantılar"
+   },
+   "cozum": [
+    "A–B–D: 200",
+    "A–C–D: 300",
+    "A–B–C–D: min(400, 300, 400) = 300",
+    "Toplam = 800"
+   ],
+   "tabloOnce": true,
+   "bolum": "b4",
+   "id": "f2-06"
+  },
+  {
+   "soru": "Düğümlerin oklarla birbirine bağlandığı ancak hiçbir düğümün başka düğümler üzerinden yeniden kendisine bağlanmadığı şebeke yapısına ne ad verilir?",
+   "secenekler": [
+    "Döngü",
+    "Komşu düğüm",
+    "Ağaç",
+    "Kalıcı küme",
+    "Akış kapasitesi"
+   ],
+   "dogru": 2,
+   "aciklama": "Ağaç: düğümler bağlı ama döngü yok.",
+   "sayfa": "B4 s. 6",
+   "celdirici": "Döngüde düğüm yeniden kendisine bağlanır.",
+   "bolum": "b4",
+   "id": "f2-07"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "I doğru: en kısa yol ağacında bütün düğümler hedeftir. II yanlış: en kısa yolda başlangıca dönülmez (dönülen gezgin satıcıdır). III doğru.",
+   "sayfa": "B4 s. 4, 11, 21",
+   "onculler": [
+    "En kısa yol ağacı modelinde birden fazla hedef düğüm vardır.",
+    "En kısa yol modelinde başlangıç noktasına geri dönülür.",
+    "Maksimum akış modelinde akış en aza indirilmek istenirse modelin adı minimum akış modeli olur."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri doğrudur?",
+   "bolum": "b4",
+   "sabitSik": true,
+   "id": "f2-08"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi kitapta maksimum akış modelinin kullanım alanları arasında yer almaz?",
+   "secenekler": [
+    "Petrol ve doğalgaz boru hatları",
+    "Elektrik iletimi",
+    "Ağ trafiği",
+    "Atık su sistemleri",
+    "Evde sağlık hizmetinde hasta ziyaret güzergâhı"
+   ],
+   "dogru": 4,
+   "aciklama": "Hastaları birer kez ziyaret edip merkeze dönmek gezgin satıcı modelinin kullanım alanıdır.",
+   "sayfa": "B4 s. 7, 29",
+   "bolum": "b4",
+   "id": "f2-09"
+  },
+  {
+   "soru": "Yukarıdaki şebekede (iki yönlü yollar) 1 nolu düğümden 6 nolu düğüme en kısa yol kaç km'dir?",
+   "secenekler": [
+    "12",
+    "13",
+    "14",
+    "15",
+    "16"
+   ],
+   "dogru": 1,
+   "aciklama": "2 = min(5, 2 + 1) = 3; 3 = 2; 4 = min(3 + 4, 2 + 8) = 7; 5 = min(2 + 7, 7 + 3) = 9; 6 = min(7 + 6, 9 + 5) = 13. Yol 1–3–2–4–6.",
+   "sayfa": "B4 s. 13–20",
+   "celdirici": "14, 5 üzerinden gitmektir (9 + 5); 15, 1–2–4–6 (5 + 4 + 6).",
+   "tablo": {
+    "basliklar": [
+     "Yol",
+     "Düğümden",
+     "Düğüme",
+     "Mesafe (km)"
+    ],
+    "satirlar": [
+     [
+      "1",
+      "1",
+      "2",
+      "5"
+     ],
+     [
+      "2",
+      "1",
+      "3",
+      "2"
+     ],
+     [
+      "3",
+      "2",
+      "3",
+      "1"
+     ],
+     [
+      "4",
+      "2",
+      "4",
+      "4"
+     ],
+     [
+      "5",
+      "3",
+      "4",
+      "8"
+     ],
+     [
+      "6",
+      "3",
+      "5",
+      "7"
+     ],
+     [
+      "7",
+      "4",
+      "5",
+      "3"
+     ],
+     [
+      "8",
+      "4",
+      "6",
+      "6"
+     ],
+     [
+      "9",
+      "5",
+      "6",
+      "5"
+     ]
+    ]
+   },
+   "cozum": [
+    "1 → 3: 2; 1 → 2: 3",
+    "1 → 4: 7",
+    "1 → 5: 9",
+    "1 → 6: min(13, 14) = 13"
+   ],
+   "tabloOnce": true,
+   "bolum": "b4",
+   "id": "f2-10"
+  },
+  {
+   "soru": "Yukarıdaki projenin beklenen tamamlanma süresi kaç haftadır?",
+   "secenekler": [
+    "11",
+    "13",
+    "15",
+    "17",
+    "24"
+   ],
+   "dogru": 2,
+   "aciklama": "A 0–6, B 0–4, C 6–9, D 6–11, E maks(4, 9) = 9–11, F maks(11, 11) = 11–15.",
+   "sayfa": "B5 s. 10–15",
+   "celdirici": "24 bütün sürelerin toplamıdır.",
+   "tablo": {
+    "basliklar": [
+     "Faaliyet",
+     "Öncül",
+     "Süre (hafta)"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "-",
+      "6"
+     ],
+     [
+      "B",
+      "-",
+      "4"
+     ],
+     [
+      "C",
+      "A",
+      "3"
+     ],
+     [
+      "D",
+      "A",
+      "5"
+     ],
+     [
+      "E",
+      "B, C",
+      "2"
+     ],
+     [
+      "F",
+      "D, E",
+      "4"
+     ]
+    ]
+   },
+   "cozum": [
+    "A: 0–6, B: 0–4",
+    "C: 6–9, D: 6–11",
+    "E: maks(4, 9) = 9 → 11",
+    "F: maks(11, 11) = 11 → 15"
+   ],
+   "tabloOnce": true,
+   "bolum": "b5",
+   "id": "f2-11"
+  },
+  {
+   "soru": "Aynı projede (A 6, B 4, C 3, D 5, E 2, F 4; C←A, D←A, E←B, C, F←D, E) B faaliyetinin bolluk zamanı kaç haftadır?",
+   "secenekler": [
+    "0",
+    "4",
+    "5",
+    "9",
+    "11"
+   ],
+   "dogru": 2,
+   "aciklama": "F: LS = 11. E: LF = 11, LS = 9. B: LF = 9, LS = 5; ES = 0 → S = 5.",
+   "sayfa": "B5 s. 11, 17",
+   "celdirici": "9, B'nin en geç tamamlanma zamanıdır.",
+   "tablo": {
+    "basliklar": [
+     "Faaliyet",
+     "Öncül",
+     "Süre (hafta)"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "-",
+      "6"
+     ],
+     [
+      "B",
+      "-",
+      "4"
+     ],
+     [
+      "C",
+      "A",
+      "3"
+     ],
+     [
+      "D",
+      "A",
+      "5"
+     ],
+     [
+      "E",
+      "B, C",
+      "2"
+     ],
+     [
+      "F",
+      "D, E",
+      "4"
+     ]
+    ]
+   },
+   "cozum": [
+    "F: LF 15, LS 11",
+    "E: LF 11, LS 9",
+    "B: LF 9, LS 5",
+    "S = 5 − 0 = 5"
+   ],
+   "tabloOnce": true,
+   "bolum": "b5",
+   "id": "f2-12"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "I ve II doğru. III yanlış: Gantt şemasında dikey eksende faaliyetler, yatay eksende süreler yer alır.",
+   "sayfa": "B5 s. 5, 7, 21",
+   "onculler": [
+    "CPM, faaliyet sürelerinin belirli olduğu varsayımına dayanır.",
+    "PERT'te faaliyet sürelerinin beta dağılımı sergilediği varsayılır.",
+    "Gantt şemasında dikey eksende süreler, yatay eksende faaliyetler yer alır."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri doğrudur?",
+   "bolum": "b5",
+   "sabitSik": true,
+   "id": "f2-13"
+  },
+  {
+   "soru": "Bir faaliyetin iyimser süresi 3, genellikle olan süresi 6, kötümser süresi 15 haftadır. PERT'e göre ortalama süresi kaç haftadır?",
+   "secenekler": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "14"
+   ],
+   "dogru": 1,
+   "aciklama": "μ = (3 + 4 × 6 + 15) / 6 = 42 / 6 = 7.",
+   "sayfa": "B5 s. 21",
+   "celdirici": "8 = (3 + 6 + 15) / 3 basit ortalamadır.",
+   "cozum": [
+    "3 + 24 + 15 = 42",
+    "42 / 6 = 7"
+   ],
+   "bolum": "b5",
+   "id": "f2-14"
+  },
+  {
+   "soru": "Kritik yol üzerindeki üç faaliyetin (iyimser, kötümser) süreleri (2, 8), (4, 10) ve (6, 18) haftadır. PERT'e göre projenin varyansı kaçtır?",
+   "secenekler": [
+    "2,45",
+    "4",
+    "6",
+    "16",
+    "36"
+   ],
+   "dogru": 2,
+   "aciklama": "σ'lar: 1, 1, 2 → σ²'ler: 1, 1, 4 → proje varyansı 6.",
+   "sayfa": "B5 s. 21, 27",
+   "celdirici": "4 standart sapmaları toplamak, 16 onların toplamının karesidir; 2,45 projenin standart sapmasıdır.",
+   "cozum": [
+    "(8 − 2) / 6 = 1 → 1",
+    "(10 − 4) / 6 = 1 → 1",
+    "(18 − 6) / 6 = 2 → 4",
+    "σp² = 6"
+   ],
+   "bolum": "b5",
+   "id": "f2-15"
+  },
+  {
+   "soru": "Yukarıdaki sonuç tablosuna göre amaç kârı en büyük yapmak iken maksimin kriteriyle hangi proje seçilir?",
+   "secenekler": [
+    "1 nolu Proje",
+    "2 nolu Proje",
+    "3 nolu Proje",
+    "4 nolu Proje",
+    "Karar verilemez"
+   ],
+   "dogru": 1,
+   "aciklama": "En kötüler: 18, 35, 10, 25 → en büyüğü 35 → 2 nolu proje.",
+   "sayfa": "B6 s. 9",
+   "celdirici": "3 nolu proje maksimaks kriterinin seçimidir (en iyiler 60, 45, 70, 55).",
+   "tablo": {
+    "basliklar": [
+     "Proje",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "60",
+      "40",
+      "18"
+     ],
+     [
+      "2 nolu Proje",
+      "45",
+      "42",
+      "35"
+     ],
+     [
+      "3 nolu Proje",
+      "70",
+      "30",
+      "10"
+     ],
+     [
+      "4 nolu Proje",
+      "55",
+      "45",
+      "25"
+     ]
+    ],
+    "baslik": "Kâra etki (milyon TL)"
+   },
+   "tabloOnce": true,
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "f2-16"
+  },
+  {
+   "soru": "Aynı tabloda minimaks pişmanlık kriterine göre hangi proje seçilir?",
+   "secenekler": [
+    "1 nolu Proje",
+    "2 nolu Proje",
+    "3 nolu Proje",
+    "4 nolu Proje",
+    "Karar verilemez"
+   ],
+   "dogru": 3,
+   "aciklama": "Sütun en büyükleri 70, 45, 35. En büyük pişmanlıklar: 1 → 17; 2 → 25; 3 → 25; 4 → 15 (15, 0, 10). En küçüğü 15 → 4 nolu proje.",
+   "sayfa": "B6 s. 10–12",
+   "celdirici": "2 nolu proje kötü durumda pişmanlık vermez (0) ama iyi durumdaki pişmanlığı 25'tir.",
+   "tablo": {
+    "basliklar": [
+     "Proje",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "60",
+      "40",
+      "18"
+     ],
+     [
+      "2 nolu Proje",
+      "45",
+      "42",
+      "35"
+     ],
+     [
+      "3 nolu Proje",
+      "70",
+      "30",
+      "10"
+     ],
+     [
+      "4 nolu Proje",
+      "55",
+      "45",
+      "25"
+     ]
+    ],
+    "baslik": "Kâra etki (milyon TL)"
+   },
+   "cozum": [
+    "1: 10, 5, 17 → 17",
+    "2: 25, 3, 0 → 25",
+    "3: 0, 15, 25 → 25",
+    "4: 15, 0, 10 → 15",
+    "En küçüğü 15 → 4 nolu proje"
+   ],
+   "tabloOnce": true,
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "f2-17"
+  },
+  {
+   "soru": "Aynı tabloda olasılıklar iyi 0,2, durağan 0,5, kötü 0,3'tür. Beklenen fırsat kaybı kriterine göre seçilecek proje ve EOL değeri hangisidir?",
+   "secenekler": [
+    "4 nolu Proje, 6",
+    "2 nolu Proje, 6,5",
+    "1 nolu Proje, 9,6",
+    "3 nolu Proje, 15",
+    "4 nolu Proje, 41"
+   ],
+   "dogru": 0,
+   "aciklama": "EOL: 1 → 10 × 0,2 + 5 × 0,5 + 17 × 0,3 = 9,6; 2 → 6,5; 3 → 15; 4 → 15 × 0,2 + 0 + 10 × 0,3 = 6. En küçüğü 6 → 4 nolu proje (EV ile aynı karar).",
+   "sayfa": "B6 s. 18–19",
+   "celdirici": "41, 4 nolu projenin beklenen değeridir (EOL değil).",
+   "tablo": {
+    "basliklar": [
+     "Proje",
+     "İyi",
+     "Durağan",
+     "Kötü"
+    ],
+    "satirlar": [
+     [
+      "1 nolu Proje",
+      "60",
+      "40",
+      "18"
+     ],
+     [
+      "2 nolu Proje",
+      "45",
+      "42",
+      "35"
+     ],
+     [
+      "3 nolu Proje",
+      "70",
+      "30",
+      "10"
+     ],
+     [
+      "4 nolu Proje",
+      "55",
+      "45",
+      "25"
+     ]
+    ],
+    "baslik": "Kâra etki (milyon TL)"
+   },
+   "cozum": [
+    "EOL1 = 2 + 2,5 + 5,1 = 9,6",
+    "EOL2 = 5 + 1,5 + 0 = 6,5",
+    "EOL3 = 0 + 7,5 + 7,5 = 15",
+    "EOL4 = 3 + 0 + 3 = 6"
+   ],
+   "tabloOnce": true,
+   "bolum": "b6",
+   "id": "f2-18"
+  },
+  {
+   "soru": "Yukarıdaki karar ağacı bilgilerine göre işletme hangi kararı verir ve beklenen değeri kaçtır?",
+   "secenekler": [
+    "Yatırım yapmamak, 44",
+    "Yatırım yapmak, 58",
+    "Yatırım yapmak, 38",
+    "Yatırım yapmamak, 45",
+    "Yatırım yapmak, 65"
+   ],
+   "dogru": 0,
+   "aciklama": "Yatırım: 100 × 0,4 + 30 × 0,6 − 20 = 38. Yatırım yapmama: 50 × 0,4 + 40 × 0,6 + 0 = 44. En büyüğü 44.",
+   "sayfa": "B6 s. 21–25",
+   "celdirici": "58, yatırımın başlangıç maliyetini (20) düşmemekle çıkar.",
+   "tablo": {
+    "basliklar": [
+     "Olası karar (oval)",
+     "Başlangıç kazancı/maliyeti",
+     "İyi (0,4)",
+     "Kötü (0,6)"
+    ],
+    "satirlar": [
+     [
+      "Yatırım yapmak",
+      "−20",
+      "100",
+      "30"
+     ],
+     [
+      "Yatırım yapmamak",
+      "0",
+      "50",
+      "40"
+     ]
+    ],
+    "baslik": "Kare: yatırım kararı (milyon TL)"
+   },
+   "cozum": [
+    "Yatırım: 40 + 18 − 20 = 38",
+    "Yapmama: 20 + 24 = 44",
+    "En büyüğü 44 → yatırım yapmamak"
+   ],
+   "bolum": "b6",
+   "tabloOnce": true,
+   "id": "f2-19"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız III",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "I ve II doğru. III yanlış: eşit olasılık kriteri olasılıklar bilinmediğinde kullanılır; belirsizlik altında bir kriterdir.",
+   "sayfa": "B6 s. 4, 9, 21",
+   "onculler": [
+    "Maksimin kriteri kötümserlik varsayımına dayanır.",
+    "Karar ağacı beklenen değer yaklaşımını temel alır.",
+    "Eşit olasılık kriteri risk altında (olasılıklı) karar verme modelidir."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri doğrudur?",
+   "bolum": "b6",
+   "sabitSik": true,
+   "id": "f2-20"
+  }
+ ]
+}
