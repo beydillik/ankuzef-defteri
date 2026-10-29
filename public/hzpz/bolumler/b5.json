@@ -1,0 +1,700 @@
+{
+ "ozet": [
+  {
+   "baslik": "Süreç nedir?",
+   "sayfa": "s. 106–108",
+   "maddeler": [
+    "<b>Süreç:</b> hizmet işletim sistemlerinin çalışma yöntemini ve sırasını açıklayarak sunum ve tamamlama için gerekli adımları ve sırayı belirleyen işlem dizisi (Lovelock ve Wright). Pazarlama karmasının bir unsurudur.",
+    "Süreç ne yapıldığını değil <b>nasıl</b> yapıldığını gösterir. Müşteri memnuniyeti nihai sonuç kadar sürece dayanır; hizmet tüketimi çıktı tüketimi değil <b>süreç tüketimidir</b>.",
+    "Müşteri gözüyle hizmetler <b>deneyimdir</b>; firma gözüyle istenen deneyimi yaratmak için tasarlanıp yönetilmesi gereken <b>süreçlerdir</b>. Süreçler hizmetlerin mimarisidir.",
+    "Yöneticiye üç soru: ne yapılmalı, nasıl ve kim tarafından, müşteri nasıl tepki veriyor?"
+   ]
+  },
+  {
+   "baslik": "Hizmet süreçlerinin sınıflandırılması",
+   "sayfa": "s. 108–109",
+   "tablo": {
+    "basliklar": [
+     "Süreç türü",
+     "Örnekler",
+     "Not"
+    ],
+    "satirlar": [
+     [
+      "İnsanların işlenmesi – somut (kişi işleme)",
+      "Yolcu taşıma, güzellik salonu, fizik tedavi, restoran, spor salonu",
+      "Müşteri hizmet yerinde bulunmak zorunda"
+     ],
+     [
+      "İnsanların işlenmesi – soyut (zihinsel uyaran işleme)",
+      "Sanat ve eğlence, kablolu yayın, eğitim, yönetim danışmanlığı, konser",
+      "Tutum ve davranışı etkiler; etik standart ve gözetim gerekir"
+     ],
+     [
+      "Nesnelerin işlenmesi – somut (sahiplik işleme)",
+      "Yük taşıma, tamir-bakım, peyzaj, temizlik, kuru temizleme, depolama",
+      "Üretim-tüketim eşanlı değil; katılım en düşük"
+     ],
+     [
+      "Nesnelerin işlenmesi – soyut (bilgi işleme)",
+      "Bankacılık, menkul kıymet, yazılım danışmanlığı, muhasebe, sigorta, hukuk",
+      "Ağırlıklı olarak teknolojiden yararlanılır"
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Süreç tasarımı: akış şeması ve hizmet haritası",
+   "sayfa": "s. 109–112",
+   "maddeler": [
+    "Tasarımın ilk adımı süreci belgelemektir: <b>akış şeması</b> süreci basitçe açıklar (adımların niteliği ve sırası); <b>hizmet haritalama</b> akış diyagramının daha karmaşık türüdür, arka planda olanları da gösterir ve departmanlara ortak dil sağlar.",
+    "Haritada: müşteri karşılama faaliyetleri ve somut göstergeleri, müşterinin rolü, <b>görünürlük çizgisi</b>, arka plan faaliyetleri, iletişim kanalları, destek süreçleri, potansiyel hata noktaları, bekleme süreleri, hizmet standartları ve hedefleri.",
+    "Grönroos'un hizmet süreci modeli: <b>etkileşimli bölüm</b> (irtibat kişileri, sistemler ve operasyonel kaynaklar, fiziksel kaynaklar ve ekipman, müşteri) ve görünürlük çizgisinin arkasındaki <b>destek bölümü</b> (arka ofis). Teknik kalite çoğunlukla çizginin gerisinde desteklenir."
+   ]
+  },
+  {
+   "baslik": "Tasarımda dikkate alınan unsurlar ve katılım düzeyleri",
+   "sayfa": "s. 112–113",
+   "maddeler": [
+    "Beş unsur (Jha vd.): <b>farklılaşma</b>, <b>karmaşıklık</b> (farklılaşma arttıkça artar), <b>hizmet konumu</b> (sağlayıcının yeri, müşterinin yeri, tarafsız yer, sanal), <b>müşterinin katılım ve etkileşim düzeyi</b>, <b>hizmetin kendisi</b> (süreç tabanlı: çok insan ve etkileşim; teknoloji tabanlı: az).",
+    "Süreç sorunsuz, hatasız, müşterinin zamanını almayan ve rahat olmalı; kolay süreç tekrar gelmeyi ve tavsiyeyi artırır.",
+    "Katılım düzeyleri: <b>düşük</b> (yalnız fiziksel varlık: sinema, otobüs), <b>orta</b> (bilgi, çaba ya da eşya girdisi, biraz kişiselleştirme: kuaför), <b>yüksek</b> (müşteri olmadan hizmet oluşmaz: evlilik danışmanlığı, eğitim, yoga, sağlık)."
+   ]
+  },
+  {
+   "baslik": "İzleme, yeniden yapılanma ve yeniden tasarım",
+   "sayfa": "s. 113–117",
+   "maddeler": [
+    "İyi bir hizmet haritası olası sorun noktalarını içerir; önlemler önceden planlanır. Standartlar zaman parametreleri, senaryo, tutum ve davranışları kapsar.",
+    "<b>Yeniden yapılanma:</b> süreçleri daha hızlı ve iyi performans için analiz edip yeniden tasarlamak. Her adımı belirle, süresini ölç, hızlandır ya da kaldır, <b>ölü zamanı</b> yok et; işleri <b>sıralı yerine paralel</b> yürüt; hizmet haritalarından yararlan.",
+    "Değişim ihtiyacının iki nedeni: <b>dış çevre</b> değişiklikleri ve <b>içsel</b> bozulma (bürokrasi, veri tekrarı, artan kontrol, şikâyetler).",
+    "Yeniden tasarımın dört ölçütü: hata sayısını azaltmak, döngü süresini azaltmak, verimliliği artırmak, müşteri memnuniyetini artırmak.",
+    "Beş faaliyet türü (Tablo 1): değer katmayan adımları kaldırmak, self-servise geçmek, hizmeti doğrudan müşteriye götürmek, <b>hizmetleri bir araya toplamak</b> (paket, tek fiyat), fiziksel yönleri yeniden tasarlamak."
+   ]
+  },
+  {
+   "baslik": "Hizmet paketi",
+   "sayfa": "s. 117",
+   "maddeler": [
+    "Hizmetlerin bir araya toplanması: bir kısmı birleştirilip tek fiyatlı paket yapılır ve iyi tanımlanmış bir müşteri bölümüne sunulur; pazarlama maliyeti düşer, süreç hızlanır.",
+    "Müşteriye faydası: düşük arama maliyeti, çoklu ihtiyacın birlikte karşılanması, parasal avantaj. Örnekler: internet-konuşma-mesaj paketi, süper uygulamalar, uçuş paketleri."
+   ]
+  }
+ ],
+ "kitapNotlari": [
+  "Gözden Geçirelim S1'deki nitelik listesi (itibar, gizlilik, iletişim, erişilebilirlik) bölüm metninde geçmiyor; büyük olasılıkla s. 114 Şekil 3'te (görsel, bu kaynaktan okunamadı)."
+ ],
+ "akildaKalsin": [
+  "Süreç = adımlar ve sıra; \"ne\" değil \"nasıl\".",
+  "Müşteri gözü deneyim, firma gözü süreç.",
+  "Kişi işleme (somut, insan), zihinsel uyaran (soyut, insan), sahiplik (somut, nesne), bilgi (soyut, nesne).",
+  "Akış şeması basit, hizmet haritası karmaşık (görünürlük çizgisi, arka plan).",
+  "Katılım: düşük sinema, orta kuaför, yüksek yoga/eğitim.",
+  "Yeniden yapılanma: paralel iş, ölü zamanı kaldır. Dört ölçüt: hata ↓, süre ↓, verimlilik ↑, memnuniyet ↑.",
+  "Hizmet paketi: tek fiyat, tanımlı bölüm."
+ ],
+ "kartlar": [
+  {
+   "ad": "Süreç",
+   "tanim": "Hizmet işletim sistemlerinin çalışma yöntemini ve sırasını açıklayarak sunum ve tamamlama için gerekli adımları ve sırayı belirleyen işlem dizisi.",
+   "sayfa": "s. 107",
+   "akil": "adımlar + sıra"
+  },
+  {
+   "ad": "Süreç tüketimi",
+   "tanim": "Hizmet pazarlamasının merkezindeki gerçek: hizmet tüketimi çıktı tüketimi değil süreç tüketimidir; müşteri üretim sürecini de algılar.",
+   "sayfa": "s. 107"
+  },
+  {
+   "ad": "Deneyim / süreç bakışı",
+   "tanim": "Müşterinin bakış açısından hizmetler deneyimdir; firmanın bakış açısından istenen deneyimi yaratmak için tasarlanıp yönetilmesi gereken süreçlerdir.",
+   "sayfa": "s. 108"
+  },
+  {
+   "ad": "İşlevsel kalite (B5)",
+   "tanim": "Hizmet teslimatının \"nasıl\"ı; teknik kalitenin ayırt edilmesi zor olduğundan hizmette özellikle önemlidir (Yelkur).",
+   "sayfa": "s. 108"
+  },
+  {
+   "ad": "Kişi işleme",
+   "tanim": "İnsanların işlenmesi–somut: yolcu taşıma, güzellik salonu, fizik tedavi, restoran, spor salonu; müşteri hizmet yerinde bulunmalı.",
+   "sayfa": "s. 108–109"
+  },
+  {
+   "ad": "Zihinsel uyaran işleme",
+   "tanim": "İnsanların işlenmesi–soyut: sanat ve eğlence, kablolu yayın, eğitim, yönetim danışmanlığı, konser; tutumu ve davranışı etkiler, etik standart gerekir.",
+   "sayfa": "s. 108–109"
+  },
+  {
+   "ad": "Sahiplik işleme",
+   "tanim": "Nesnelerin işlenmesi–somut: yük taşıma, tamir-bakım, peyzaj, temizlik, kuru temizleme, depolama; üretim-tüketim eşanlı değil, katılım en düşük.",
+   "sayfa": "s. 108–109"
+  },
+  {
+   "ad": "Bilgi işleme",
+   "tanim": "Nesnelerin işlenmesi–soyut: bankacılık, menkul kıymet, yazılım danışmanlığı, muhasebe, sigorta, hukuk; ağırlıklı olarak teknoloji kullanılır.",
+   "sayfa": "s. 108–109"
+  },
+  {
+   "ad": "Akış şeması",
+   "tanim": "Müşterinin süreç boyunca karşılaştığı adımların niteliğini ve sırasını basitçe gösteren şema (motel örneği).",
+   "sayfa": "s. 109, 120",
+   "akil": "basit"
+  },
+  {
+   "ad": "Hizmet haritalama",
+   "tanim": "Akış diyagramının daha karmaşık türü; müşteriye görünenler dahil arka planda olanları detaylı gösterir; departmanlara ortak bakış ve dil sağlar.",
+   "sayfa": "s. 110, 120",
+   "akil": "karmaşık + arka plan"
+  },
+  {
+   "ad": "Görünürlük çizgisi",
+   "tanim": "Hizmet haritasında müşteri karşılama faaliyetlerini arka plan faaliyetlerinden ayıran çizgi.",
+   "sayfa": "s. 110"
+  },
+  {
+   "ad": "Hizmet haritasının öğeleri",
+   "tanim": "Karşılama faaliyetleri ve somut göstergeleri, müşterinin rolü, görünürlük çizgisi, arka plan, iletişim kanalları, destek süreçleri, hata noktaları, bekleme süreleri, standartlar ve hedefler.",
+   "sayfa": "s. 110–111"
+  },
+  {
+   "ad": "Etkileşimli bölüm (Grönroos)",
+   "tanim": "İrtibat kişileri, sistemler ve operasyonel kaynaklar, fiziksel kaynaklar ve ekipman ile müşteri; dördü birbirini etkiler.",
+   "sayfa": "s. 111"
+  },
+  {
+   "ad": "Destek bölümü",
+   "tanim": "Görünürlük çizgisinin arkasındaki arka ofis; etkileşimli bölüme destek verir; teknik kalite çoğunlukla burada desteklenir.",
+   "sayfa": "s. 111"
+  },
+  {
+   "ad": "Hizmet konumu",
+   "tanim": "Hizmetin niteliği konumu belirler: sağlayıcının yeri, müşterinin yeri, tarafsız yer ya da sanal (restoranda yemek / eve sipariş).",
+   "sayfa": "s. 112"
+  },
+  {
+   "ad": "Süreç tabanlı / teknoloji tabanlı",
+   "tanim": "Süreç tabanlıda insan ve etkileşim sayısı fazla (banka şubesi); teknoloji tabanlıda az (internet bankacılığı), etkileşim fırsatı kaçabilir.",
+   "sayfa": "s. 113"
+  },
+  {
+   "ad": "Müşteri katılımı (B5)",
+   "tanim": "Hizmet üretimi sırasında müşterinin sağladığı eylem ve kaynaklar: zihinsel, fiziksel, duygusal girdiler.",
+   "sayfa": "s. 113"
+  },
+  {
+   "ad": "Düşük katılım düzeyi",
+   "tanim": "Tüm işi çalışan ve sistemler yapar, hizmet standart; yalnız fiziksel varlık gerekir (sinema, otobüs).",
+   "sayfa": "s. 113"
+  },
+  {
+   "ad": "Orta katılım düzeyi",
+   "tanim": "Kişiselleştirme için müşteri girdisi gerekir: bilgi, çaba, eşya (kuaförde saç yıkatıp kestirmek).",
+   "sayfa": "s. 113",
+   "akil": "kuaför"
+  },
+  {
+   "ad": "Yüksek katılım düzeyi",
+   "tanim": "Müşteri aktif çalışmadan hizmet oluşmaz; görevini yapmazsa kalite düşer (evlilik danışmanlığı, eğitim, yoga, sağlık).",
+   "sayfa": "s. 113"
+  },
+  {
+   "ad": "Yeniden yapılanma",
+   "tanim": "Süreçleri daha hızlı ve iyi performans için analiz edip yeniden tasarlamak; adımları ölç, ölü zamanı kaldır, işleri paralel yürüt.",
+   "sayfa": "s. 115",
+   "akil": "paralel, ölü zaman yok"
+  },
+  {
+   "ad": "Ölü zaman",
+   "tanim": "Süreç adımlarında boşa geçen süre; hizmet maliyeti adım süreleri ve ölü zamanla bağlantılıdır, yeniden yapılanmada kaldırılır.",
+   "sayfa": "s. 115"
+  },
+  {
+   "ad": "Değişim ihtiyacının iki nedeni",
+   "tanim": "Dış çevredeki değişiklikler ve içsel bozulma (bürokrasi, veri tekrarı, artan kontrol faaliyetleri, istisnalar, şikâyetler).",
+   "sayfa": "s. 115"
+  },
+  {
+   "ad": "Yeniden tasarımın dört ölçütü",
+   "tanim": "Hizmet hatalarını azaltmak, döngü süresini azaltmak, verimliliği artırmak, müşteri memnuniyetini artırmak.",
+   "sayfa": "s. 116"
+  },
+  {
+   "ad": "Beş yeniden tasarım faaliyeti",
+   "tanim": "Değer katmayan adımları kaldırmak, self-servis, hizmeti doğrudan müşteriye götürmek, hizmetleri bir araya toplamak, fiziksel yönleri yeniden tasarlamak.",
+   "sayfa": "s. 116"
+  },
+  {
+   "ad": "Self-servis (yeniden tasarım)",
+   "tanim": "Müşteri üretici rolünü üstlenir: maliyeti düşürür, hızı ve kontrol algısını artırır; müşteriyi role hazırlamak gerekir, yüz yüze ilişki fırsatı azalır.",
+   "sayfa": "s. 116"
+  },
+  {
+   "ad": "Hizmet paketi",
+   "tanim": "Hizmetlerin bir kısmının birleştirilip tek fiyatla iyi tanımlanmış bir müşteri bölümüne sunulması; arama maliyetini ve parasal maliyeti düşürür.",
+   "sayfa": "s. 117, 120"
+  },
+  {
+   "ad": "Hizmet fabrikası",
+   "tanim": "İnsanların ya da makinelerin müşteriye hizmet faydası üretip sunduğu fiziki yer.",
+   "sayfa": "s. 106, 120"
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "Kişi işleme",
+    "tanim": "İnsanların işlenmesi–somut."
+   },
+   "b": {
+    "ad": "Zihinsel uyaran işleme",
+    "tanim": "İnsanların işlenmesi–soyut."
+   },
+   "fark": "İkisinde de girdi insandır; beden üzerinde mi zihin üzerinde mi diye bak (2025-26 Final S10).",
+   "sorular": [
+    {
+     "ifade": "Fizik tedavi",
+     "cevap": "a",
+     "neden": "Beden."
+    },
+    {
+     "ifade": "Konser",
+     "cevap": "b",
+     "neden": "Zihin."
+    },
+    {
+     "ifade": "Yolcu taşımacılığı",
+     "cevap": "a",
+     "neden": "Kişi taşınır."
+    },
+    {
+     "ifade": "Yönetim danışmanlığı",
+     "cevap": "b",
+     "neden": "Zihinsel uyaran."
+    },
+    {
+     "ifade": "Müşteri hizmet yerinde bulunmak zorunda",
+     "cevap": "a",
+     "neden": "Kuaför örneği."
+    },
+    {
+     "ifade": "Manipülasyon riski nedeniyle etik standart gerekir",
+     "cevap": "b",
+     "neden": "Kitap zihinsel uyaran için söyler."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Sahiplik işleme",
+    "tanim": "Nesnelerin işlenmesi–somut."
+   },
+   "b": {
+    "ad": "Bilgi işleme",
+    "tanim": "Nesnelerin işlenmesi–soyut."
+   },
+   "fark": "İkisinde de girdi nesnedir; fiziksel eşya mı, bilgi mi?",
+   "sorular": [
+    {
+     "ifade": "Kuru temizleme",
+     "cevap": "a",
+     "neden": "Eşya."
+    },
+    {
+     "ifade": "Muhasebe",
+     "cevap": "b",
+     "neden": "Bilgi."
+    },
+    {
+     "ifade": "Müşteri sürece en düşük düzeyde katılır",
+     "cevap": "a",
+     "neden": "Sahiplik işleme."
+    },
+    {
+     "ifade": "Ağırlıklı olarak teknolojiden yararlanılır",
+     "cevap": "b",
+     "neden": "Bilgi işleme."
+    },
+    {
+     "ifade": "Sigorta",
+     "cevap": "b",
+     "neden": "Bilgi işleme örneği."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Akış şeması",
+    "tanim": "Süreci basitçe açıklar."
+   },
+   "b": {
+    "ad": "Hizmet haritası",
+    "tanim": "Akış diyagramının karmaşık türü, arka planı da gösterir."
+   },
+   "fark": "2025-26 Final S4: (1) akış şeması basit, (2) hizmet haritalama karmaşık.",
+   "sorular": [
+    {
+     "ifade": "Görünürlük çizgisi içerir",
+     "cevap": "b",
+     "neden": "Arka planı ayırır."
+    },
+    {
+     "ifade": "Müşteri deneyimini hızlıca anlamanın kolay yolu",
+     "cevap": "a",
+     "neden": "Basit gösterim."
+    },
+    {
+     "ifade": "Potansiyel hata noktalarını ve bekleme sürelerini gösterir",
+     "cevap": "b",
+     "neden": "Harita öğeleri."
+    },
+    {
+     "ifade": "Departmanlara ortak bakış ve dil sağlar",
+     "cevap": "b",
+     "neden": "Hizmet haritası."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Etkileşimli bölüm",
+    "tanim": "Müşteriyle etkileşen kaynaklar."
+   },
+   "b": {
+    "ad": "Destek bölümü",
+    "tanim": "Görünürlük çizgisinin arkasındaki arka ofis."
+   },
+   "fark": "Gözden Geçirelim S2: destek personeli etkileşimli bölümde değildir.",
+   "sorular": [
+    {
+     "ifade": "İrtibat kişileri",
+     "cevap": "a",
+     "neden": "Müşteriyle temas eder."
+    },
+    {
+     "ifade": "Destek personeli",
+     "cevap": "b",
+     "neden": "Arka ofis."
+    },
+    {
+     "ifade": "Fiziksel kaynaklar ve ekipman",
+     "cevap": "a",
+     "neden": "Etkileşimli bölümün parçası."
+    },
+    {
+     "ifade": "Teknik kaliteyi çoğunlukla destekler",
+     "cevap": "b",
+     "neden": "Çizginin gerisindeki faaliyetler."
+    },
+    {
+     "ifade": "Müşterinin kendisi de burada bir kaynaktır",
+     "cevap": "a",
+     "neden": "Etkileşimli sistemin dört bölümünden biri."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Orta katılım",
+    "tanim": "Müşteri girdisi gerekir, biraz kişiselleştirme."
+   },
+   "b": {
+    "ad": "Yüksek katılım",
+    "tanim": "Müşteri olmadan hizmet oluşmaz."
+   },
+   "fark": "Kuaför orta, yoga yüksek; düşük katılım sinema ve otobüs.",
+   "sorular": [
+    {
+     "ifade": "Kuaförde saç yıkatıp kestirmek",
+     "cevap": "a",
+     "neden": "2025-26 Final S20."
+    },
+    {
+     "ifade": "Yoga sınıfı",
+     "cevap": "b",
+     "neden": "Gözden Geçirelim S3."
+    },
+    {
+     "ifade": "Evlilik danışmanlığı",
+     "cevap": "b",
+     "neden": "Müşteri aktif çalışmalı."
+    },
+    {
+     "ifade": "Bilgi, kişisel çaba ya da eşya sağlamak",
+     "cevap": "a",
+     "neden": "Orta düzey girdiler."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Yeniden yapılanma",
+    "tanim": "Süreci hızlı ve iyi performans için analiz edip yeniden tasarlamak."
+   },
+   "b": {
+    "ad": "Hizmetlerin bir araya toplanması",
+    "tanim": "Hizmetleri tek fiyatlı paket yapmak."
+   },
+   "fark": "Yeniden yapılanma hız ve ölü zamanla ilgilidir; paketleme beş yeniden tasarım faaliyetinden biri ve tanımlı bir bölüm ister.",
+   "sorular": [
+    {
+     "ifade": "İşleri sıralı yerine paralel yürütmek",
+     "cevap": "a",
+     "neden": "Hızlandırma yöntemi."
+    },
+    {
+     "ifade": "İnternet, konuşma ve mesajı tek fiyatla sunmak",
+     "cevap": "b",
+     "neden": "Paket."
+    },
+    {
+     "ifade": "Ölü zamanı ortadan kaldırmak",
+     "cevap": "a",
+     "neden": "Yeniden yapılanma."
+    },
+    {
+     "ifade": "İyi tanımlanmış bir müşteri bölümüne odaklanmayı gerektirir",
+     "cevap": "b",
+     "neden": "Paketleme şartı."
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Süreç tabanlı hizmet",
+    "tanim": "Çok insan, çok etkileşim."
+   },
+   "b": {
+    "ad": "Teknoloji tabanlı hizmet",
+    "tanim": "Az insan, az etkileşim."
+   },
+   "fark": "Aynı banka: şube süreç tabanlı, internet bankacılığı teknoloji tabanlı.",
+   "sorular": [
+    {
+     "ifade": "Banka şubesinde para havalesi",
+     "cevap": "a",
+     "neden": "Süreç tabanlı."
+    },
+    {
+     "ifade": "İnternet bankacılığı",
+     "cevap": "b",
+     "neden": "Teknoloji tabanlı."
+    },
+    {
+     "ifade": "Sağlayıcı müşteriyle etkileşim fırsatını kaçırabilir",
+     "cevap": "b",
+     "neden": "Kitabın uyarısı."
+    }
+   ]
+  }
+ ],
+ "formuller": [],
+ "sorular": [
+  {
+   "soru": "Kitaba göre müşterinin hizmet sürecine katılımı nasıl olabilir?",
+   "secenekler": [
+    "Aktif (spor kulübünde egzersiz) ya da pasif (tiyatro seyircisi)",
+    "Yalnız aktif",
+    "Yalnız pasif",
+    "Yalnız çevrimiçi",
+    "Hiçbir zaman fiziksel değil"
+   ],
+   "dogru": 0,
+   "aciklama": "Müşteri çoğu hizmet üretim sürecinin ayrılmaz parçasıdır; katılımı aktif (egzersiz yaparak fit olmak) ya da pasif (gösteri izleyen seyirci) olabilir, çoğunlukla fiziksel olarak oradadır.",
+   "sayfa": "s. 106"
+  },
+  {
+   "soru": "Bir bankada çeki içeride bozdurmak ile ATM kullanmak arasındaki fark kitapta neyi göstermek için verilir?",
+   "secenekler": [
+    "Aynı hedefe ulaşan farklı süreçlerin müşteriden farklı senaryolar istemesini",
+    "ATM'nin daha pahalı olmasını",
+    "Banka şubesinin düşük temaslı olmasını",
+    "Bilgi işlemenin teknoloji kullanmamasını",
+    "Hizmet paketinin faydasını"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmet fabrikasındaki süreç değişirse davranışı yönlendiren tüketici betikleri de değişmelidir; iki süreç aynı sonuca ulaşır ama müşteri tamamen farklı senaryolar izler.",
+   "sayfa": "s. 106"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 4,
+   "aciklama": "Süreç ne yapıldığını değil nasıl yapıldığını gösterir (I); hizmet tüketimi süreç tüketimidir (II); müşteri memnuniyeti nihai sonuç kadar sürece dayanır (III).",
+   "sayfa": "s. 106–107",
+   "onculler": [
+    "Hizmet süreci ne yapıldığını değil nasıl yapıldığını gösterir.",
+    "Hizmet tüketimi çıktı tüketiminden çok süreç tüketimidir.",
+    "Müşteri memnuniyeti genellikle nihai sonuç kadar sürece de dayanır."
+   ],
+   "kok": "Hizmet süreciyle ilgili yukarıdaki ifadelerden hangileri doğrudur?"
+  },
+  {
+   "soru": "Yük taşımacılığı, tamir-bakım, peyzaj ve kuru temizleme hizmetleri süreç özelliklerine göre hangi sınıftadır?",
+   "secenekler": [
+    "Nesnelerin işlenmesi – somut (sahiplik işleme)",
+    "Nesnelerin işlenmesi – soyut (bilgi işleme)",
+    "İnsanların işlenmesi – somut (kişi işleme)",
+    "İnsanların işlenmesi – soyut (zihinsel uyaran işleme)",
+    "Süreç tabanlı işleme"
+   ],
+   "dogru": 0,
+   "aciklama": "Sahiplik işleme müşterinin eşyası üzerinde somut işlemdir; üretim ve tüketim genellikle eşanlı değildir, müşteri sürece en düşük düzeyde katılır.",
+   "sayfa": "s. 108–109",
+   "celdirici": "Bilgi işleme de nesneyle ilgilidir ama soyuttur (muhasebe, sigorta)."
+  },
+  {
+   "soru": "Zihinsel uyaran işleme hizmetlerinde güçlü etik standartlar veya dikkatli gözetim neden gereklidir?",
+   "secenekler": [
+    "Bireylerin tutumlarını şekillendirip davranışlarını etkileme gücüne sahip oldukları için",
+    "Üretim ve tüketim eşanlı olmadığı için",
+    "Ağırlıklı olarak teknoloji kullandıkları için",
+    "Müşteri katılımı en düşük olduğu için",
+    "Fiyatları belirlenemediği için"
+   ],
+   "dogru": 0,
+   "aciklama": "Zihinsel uyaran işleme tutum ve davranışı etkileme gücüne sahiptir; müşteri bağımlı olduğunda ya da manipülasyon potansiyeli varsa etik standart ve gözetim gerekir.",
+   "sayfa": "s. 109",
+   "celdirici": "Eşanlı olmama ve en düşük katılım sahiplik işlemenin özelliğidir."
+  },
+  {
+   "soru": "Herhangi bir süreci tasarlamanın veya analiz etmenin ilk adımı kitaba göre nedir?",
+   "secenekler": [
+    "Süreci belgelemek veya açıklamak",
+    "Fiyatı belirlemek",
+    "Çalışan sayısını azaltmak",
+    "Self-servise geçmek",
+    "Hizmet paketi oluşturmak"
+   ],
+   "dogru": 0,
+   "aciklama": "İlk adım süreci belgelemek ya da açıklamaktır; bunun için iki yöntem kullanılır: akış şeması ve hizmet haritalama.",
+   "sayfa": "s. 109"
+  },
+  {
+   "soru": "Hizmet haritasında müşteri karşılama faaliyetleri ile arka plan faaliyetleri arasındaki ayrımı gösteren öğe hangisidir?",
+   "secenekler": [
+    "Görünürlük çizgisi",
+    "Potansiyel hata noktası",
+    "Akış şeması",
+    "Destek süreci",
+    "Hizmet standardı"
+   ],
+   "dogru": 0,
+   "aciklama": "Görünürlük çizgisi müşteriye görünen karşılama faaliyetlerini arka plandakilerden ayırır; Grönroos modelinde destek bölümü bu çizginin ötesinde gizlidir.",
+   "sayfa": "s. 110–111"
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Etkileşimli bölümde irtibat kişileri (I) ve sistemler, operasyonel kaynaklar, fiziksel kaynaklar ve ekipman (III) vardır. Arka ofis destek bölümüdür, görünürlük çizgisinin arkasındadır (II yanlış).",
+   "sayfa": "s. 111",
+   "celdirici": "Arka ofis etkileşimli bölümü destekler ama müşteriye görünmez.",
+   "onculler": [
+    "İrtibat kişileri",
+    "Arka ofis",
+    "Fiziksel kaynaklar ve ekipman"
+   ],
+   "kok": "Grönroos'un hizmet süreci modelinde yukarıdakilerden hangileri sistemin etkileşimli bölümündedir?"
+  },
+  {
+   "soru": "Bir müşterinin restorana gitmek yerine yemek siparişini eve teslim olarak vermesi, süreç tasarımının hangi unsurunu değiştirir?",
+   "secenekler": [
+    "Hizmet konumu",
+    "Karmaşıklık",
+    "Farklılaşma",
+    "Görünürlük çizgisi",
+    "Döngü süresi"
+   ],
+   "dogru": 0,
+   "aciklama": "Hizmet konumu hizmetin niteliğine göre sağlayıcının yeri, müşterinin yeri, tarafsız yer ya da sanal olabilir; eve siparişte konum müşterinin evidir.",
+   "sayfa": "s. 112"
+  },
+  {
+   "soru": "Kitaba göre hizmet sürecinde farklılaşma arttıkça ne olur?",
+   "secenekler": [
+    "Sürecin karmaşıklığı da artar",
+    "Süreç basitleşir",
+    "Müşteri katılımı ortadan kalkar",
+    "Hizmet konumu sabitlenir",
+    "Teknoloji tabanlı hale gelir"
+   ],
+   "dogru": 0,
+   "aciklama": "Bir hizmetin üretimi ve sunumunda faaliyet sayısı farklılaşmayla birlikte artar; farklılaşma arttıkça karmaşıklık da artar.",
+   "sayfa": "s. 112"
+  },
+  {
+   "soru": "Tüm işi çalışanların ve sistemlerin üstlendiği, hizmetin standartlaşmaya eğilimli olduğu ve yalnız müşterinin fiziksel varlığının gerektiği katılım düzeyine örnek hangisidir?",
+   "secenekler": [
+    "Otobüse binmek",
+    "Saç kestirmek",
+    "Yoga sınıfına katılmak",
+    "Evlilik danışmanlığı almak",
+    "Eğitim hizmeti almak"
+   ],
+   "dogru": 0,
+   "aciklama": "Düşük katılım: sinemaya gitmek, otobüse binmek. Orta: kuaför. Yüksek: evlilik danışmanlığı, eğitim, yoga, sağlık.",
+   "sayfa": "s. 113"
+  },
+  {
+   "soru": "Kitaba göre hizmet süreçlerinin yeniden tasarımı ihtiyacını gösteren içsel belirtilerden biri hangisidir?",
+   "secenekler": [
+    "Değer katan faaliyetlere kıyasla kontrol faaliyetleri oranının yükselmesi",
+    "Müşteri şikâyetlerinin azalması",
+    "Veri tekrarının ortadan kalkması",
+    "Bürokrasinin azalması",
+    "Pandemi gibi dış olaylar"
+   ],
+   "dogru": 0,
+   "aciklama": "İçsel nedenler süreçlerin doğal bozulması, bürokrasi ve resmi olmayan standartlardır; belirtileri aşırı bilgi alışverişi, veri tekrarı, kontrolün değer katan işe oranının yükselmesi, istisnalar ve artan şikâyetlerdir.",
+   "sayfa": "s. 115",
+   "celdirici": "Pandemi dış çevredeki değişikliğe örnektir, içsel neden değil."
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Self-servis maliyeti azaltır (I) ve müşterinin kontrol algısını artırır (II). Yüz yüze etkileşim ve ilişki fırsatını artırmaz, sınırlar (III yanlış).",
+   "sayfa": "s. 116",
+   "celdirici": "Tablo 1'de self-servisin kısıtları: müşteriyi role hazırlamak gerekir, yüz yüze ilişki sınırlanır, geri bildirim almak zorlaşır.",
+   "onculler": [
+    "Firmanın maliyetini azaltır.",
+    "Müşterinin kontrol algısını artırır.",
+    "Yüz yüze etkileşim ve ilişki kurma fırsatlarını artırır."
+   ],
+   "kok": "Hizmet sürecinin yeniden tasarımında kendi kendine hizmete (self-servis) geçişle ilgili yukarıdaki ifadelerden hangileri doğrudur?"
+  },
+  {
+   "soru": "Hizmetlerin bir araya toplanmasının (hizmet paketi) etkili olması için kitapta ne şart koşulur?",
+   "secenekler": [
+    "İyi tanımlanmış bir müşteri bölümüne odaklanmak",
+    "Her hizmeti ayrı fiyatlandırmak",
+    "Hizmet konumunu değiştirmek",
+    "Yalnız teknoloji tabanlı hizmet sunmak",
+    "Müşteri katılımını yükseltmek"
+   ],
+   "dogru": 0,
+   "aciklama": "Paket tek fiyatla önceden tanımlanmış bir bölüme sunulur; hedef kitle iyi belirlenirse her hizmetin pazarlama maliyeti düşer ve süreç hızlanır.",
+   "sayfa": "s. 117",
+   "celdirici": "Paketin anlamı zaten tek fiyattır; ayrı fiyatlama tersidir."
+  }
+ ]
+}
