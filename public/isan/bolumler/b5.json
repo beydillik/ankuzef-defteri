@@ -1,0 +1,930 @@
+{
+ "ozet": [
+  {
+   "baslik": "Proje ve proje yönetimi",
+   "sayfa": "B5 s. 4–5",
+   "maddeler": [
+    "<b>Proje:</b> işletmedeki bir problemin çözümü için birbiriyle ilişkili <b>geçici</b> faaliyetler kümesi. <b>Proje yönetimi:</b> önemli bir işin beklenen zamanda, bütçe de gözetilerek başarıyla gerçekleştirilmesi.",
+    "Kullanım alanları: Ar-Ge, yapım işleri (metro, köprü, bina), yazılım geliştirme, büyük makinelerin bakım/onarımı; ayrıca planlama, zaman ve kontrolün önemli olduğu her iş.",
+    "Faydaları: çözümü en kısa sürede bitirmek, faaliyetlerin başlama/bitiş tarihlerini belirlemek, kritik faaliyetleri bulmak, kritik olmayanların ne kadar ertelenebileceğini bulmak, kaynakları verimli kullanmak."
+   ]
+  },
+  {
+   "baslik": "Üç proje yönetim modeli",
+   "sayfa": "B5 s. 5, 7",
+   "tablo": {
+    "basliklar": [
+     "Model",
+     "Süreler",
+     "Not"
+    ],
+    "satirlar": [
+     [
+      "Gantt şeması",
+      "—",
+      "Henry Gantt. Dikey eksende faaliyetler, yatay eksende süre; yatay çubuk grafik. Görece az faaliyetli projeler."
+     ],
+     [
+      "CPM (Kritik Yol Yöntemi)",
+      "<b>Belirli</b> (tek değer)",
+      "Zaman çizelgesiyle proje yönetimi."
+     ],
+     [
+      "PERT",
+      "<b>Belirsiz, olasılıklı</b> (a, m, b)",
+      "Üç koşulda süre tahmini; beta dağılımı varsayımı."
+     ]
+    ]
+   }
+  },
+  {
+   "baslik": "Unsurlar ve kavramlar",
+   "sayfa": "B5 s. 5–7",
+   "maddeler": [
+    "Proje şebeke yapısı, faaliyet, <b>düğüm</b> (faaliyet harfi ve süresi içinde), <b>ok</b> (ilişkiyi ve sırayı gösterir). Şebeke soldan sağa ilerler.",
+    "<b>Öncül faaliyet:</b> önce yapılması gereken. <b>Ardıl faaliyet:</b> sonra yapılan. A → B ise A, B'nin öncülü; B, A'nın ardılıdır.",
+    "ES en erken başlama, EF en erken tamamlanma, LS en geç başlama, LF en geç tamamlanma. <b>Bolluk S = LS − ES = LF − EF</b>.",
+    "<b>Kritik yol:</b> bolluğu olmayan faaliyetlerin topluluğu; başlangıçtan bitişe <b>en uzun</b> yol. Süreleri toplamı projenin beklenen tamamlanma süresidir."
+   ]
+  },
+  {
+   "baslik": "CPM adımları",
+   "sayfa": "B5 s. 10–11",
+   "maddeler": [
+    "1) Öncüllere göre şebeke yapısı. 2) En erken süreler: öncülü olmayanın ES = 0; <b>ES = öncüllerin EF'lerinin en büyüğü</b>, EF = ES + süre.",
+    "3) Projenin süresi = EF'lerin en büyüğü. 4) En geç süreler: ardılı olmayanın LF = proje süresi; <b>LF = ardılların LS'lerinin en küçüğü</b>, LS = LF − süre.",
+    "5) Bolluk S = LS − ES. 6) Kritik faaliyetler (S = 0): gecikmeleri projeyi geciktirir. 7) Kritik olmayanlar (S > 0): bolluk kadar gecikme projeyi etkilemez. 8) Kritik yolun gösterimi."
+   ]
+  },
+  {
+   "baslik": "Örnek: otomatik kredi verme sistemi",
+   "sayfa": "B5 s. 7–19",
+   "tablo": {
+    "basliklar": [
+     "Faaliyet",
+     "ES",
+     "EF",
+     "LS",
+     "LF",
+     "S"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "0",
+      "10",
+      "0",
+      "10",
+      "0"
+     ],
+     [
+      "B",
+      "10",
+      "18",
+      "11",
+      "19",
+      "1"
+     ],
+     [
+      "C",
+      "10",
+      "16",
+      "13",
+      "19",
+      "3"
+     ],
+     [
+      "D",
+      "10",
+      "19",
+      "10",
+      "19",
+      "0"
+     ],
+     [
+      "E",
+      "18",
+      "22",
+      "22",
+      "26",
+      "4"
+     ],
+     [
+      "F",
+      "19",
+      "26",
+      "19",
+      "26",
+      "0"
+     ],
+     [
+      "G",
+      "19",
+      "24",
+      "22",
+      "27",
+      "3"
+     ],
+     [
+      "H",
+      "26",
+      "30",
+      "26",
+      "30",
+      "0"
+     ],
+     [
+      "I",
+      "26",
+      "29",
+      "27",
+      "30",
+      "1"
+     ],
+     [
+      "J",
+      "30",
+      "42",
+      "30",
+      "42",
+      "0"
+     ]
+    ],
+    "baslik": "En erken, en geç süreler ve bolluk (Tablo 5.5)"
+   },
+   "maddeler": [
+    "Kritik faaliyetler A, D, F, H, J → kritik yol <b>A–D–F–H–J</b>, proje süresi 10 + 9 + 7 + 4 + 12 = <b>42 hafta</b>.",
+    "Bolluklar: B 1, C 3, E 4, G 3, I 1 hafta. Örneğin G'ye 19 ile 22. hafta arasında başlamak projeyi geciktirmez."
+   ]
+  },
+  {
+   "baslik": "PERT",
+   "sayfa": "B5 s. 21–28",
+   "maddeler": [
+    "a iyimser, m genellikle olan, b kötümser koşuldaki süre. <b>μ = (a + 4m + b) / 6</b>, <b>σ² = ((b − a) / 6)²</b>.",
+    "Ortalama sürelerle CPM adımları uygulanır. Proje süresi μp = kritik faaliyetlerin ortalamaları toplamı; proje varyansı σp² = kritik faaliyetlerin <b>varyansları</b> toplamı.",
+    "%95 güven aralığı: <b>μp − 1,96 σp ≤ proje bitiş süresi ≤ μp + 1,96 σp</b> (σp = √σp²).",
+    "Örnek: σp² = 0,44 + 0,11 + 0,44 + 0,11 + 2,78 = 3,88; σp = 1,97; aralık 42 ∓ 1,96 × 1,97 → <b>38,14 ile 45,86 hafta</b>.",
+    "a ve b, m'ye göre simetrikse (E: 3, 4, 5) μ = m çıkar."
+   ]
+  }
+ ],
+ "kitapNotlari": [
+  "Kitapta (B5 s. 28) alt ve üst sınırın değerleri yer değiştirmiş: \"Alt sınır 45,86, üst sınır 38,14\". Doğrusu alt sınır 42 − 1,96 × 1,97 = 38,14, üst sınır 45,86 (kitabın sonuç cümlesi de 38,14 ile 45,86 der).",
+  "Kitapta (B5 s. 10–11) en erken süreler için \"sağdan sola\", en geç süreler için \"soldan sağa\" ilerlenir yazıyor. Şebeke soldan sağa çizildiği için en erken süreler soldan sağa (ileri), en geç süreler sağdan sola (geri) hesaplanır; kitap s. 15'te de \"geriye doğru (sağdan sola)\" der.",
+  "Kitapta (B5 s. 22) σp için \"projenin varyansı\" yazıyor; σp standart sapmadır, varyans σp²'dir.",
+  "Kitapta (B5 s. 17) \"SH = 26 − 26 = 3\" yazıyor; doğrusu 0 (H kritik faaliyettir)."
+ ],
+ "akildaKalsin": [
+  "CPM: süreler belli. PERT: süreler olasılıklı (a, m, b). Gantt: yatay çubuk grafik.",
+  "İleri: ES = öncüllerin EF'lerinin en büyüğü. Geri: LF = ardılların LS'lerinin en küçüğü.",
+  "Bolluk = LS − ES = LF − EF. Bolluk 0 → kritik.",
+  "Kritik yol en uzun yoldur; proje süresi kritik faaliyet süreleri toplamı.",
+  "μ = (a + 4m + b) / 6; σ = (b − a) / 6; σ² onun karesi.",
+  "Proje varyansı: yalnız kritik faaliyetlerin varyansları toplanır; standart sapmalar toplanmaz.",
+  "%95: μ ± 1,96 σ. Önce varyansın karekökünü al."
+ ],
+ "kartlar": [
+  {
+   "ad": "Proje",
+   "tanim": "İşletmedeki herhangi bir problemin çözümü için birbiriyle ilişkili olan geçici faaliyetler kümesi.",
+   "sayfa": "B5 s. 4"
+  },
+  {
+   "ad": "Proje yönetimi",
+   "tanim": "Problemle ilgili önemli bir işin beklenen zamanda, bütçe yönü de göz önünde bulundurularak başarıyla gerçekleştirilmesi; faaliyetlerin düzenlenmesi, uygulanması ve kontrolü.",
+   "sayfa": "B5 s. 4"
+  },
+  {
+   "ad": "CPM ve PERT kullanım alanları",
+   "tanim": "Ar-Ge çalışmaları, yapım işleri (metro, köprü, otoyol, bina, fabrika), yazılım geliştirme, büyük makinelerin bakım/onarımı.",
+   "sayfa": "B5 s. 4"
+  },
+  {
+   "ad": "Gantt şeması",
+   "tanim": "Henry Gantt'ın geliştirdiği; dikey eksende faaliyetler, yatay eksende süreler olan yatay çubuklu grafikle zaman planlaması. Görece az faaliyetli projeler için; CPM ve PERT onun geliştirilmiş hâlidir.",
+   "sayfa": "B5 s. 5, 7"
+  },
+  {
+   "ad": "Kritik Yol Yöntemi (CPM)",
+   "tanim": "Faaliyetlerin bitirilme sürelerinin <b>belirli</b> olduğu varsayımıyla zaman çizelgesi üzerinden proje yönetimi.",
+   "sayfa": "B5 s. 5, 10",
+   "akil": "CPM: süre kesin"
+  },
+  {
+   "ad": "PERT",
+   "tanim": "Proje Değerlendirme ve Gözden Geçirme Tekniği. Faaliyet sürelerinin <b>belirli olmadığı, olasılıklı</b> olduğu varsayımıyla proje yönetimi. Süreler üç koşulda tahmin edilir, beta dağılımı varsayılır.",
+   "sayfa": "B5 s. 5, 21",
+   "akil": "PERT: süre olasılıklı"
+  },
+  {
+   "ad": "Proje şebeke yapısı",
+   "tanim": "Bir işin geliştirilmesindeki geçici ve birbiriyle ilişkili faaliyetleri gösteren şebeke yapısı.",
+   "sayfa": "B5 s. 5"
+  },
+  {
+   "ad": "Faaliyet",
+   "tanim": "İşin geliştirilmesindeki her bir işlem ya da karar.",
+   "sayfa": "B5 s. 5",
+   "ornek": "Kredi sisteminde veri tabanı modelleme."
+  },
+  {
+   "ad": "Düğüm (proje)",
+   "tanim": "Faaliyetin harf/sayıyla ve süresiyle gösterildiği daire, kare gibi şekil.",
+   "sayfa": "B5 s. 5"
+  },
+  {
+   "ad": "Ok (proje)",
+   "tanim": "İlişkili düğümleri bağlayan, hangi faaliyetle başlanıp hangisiyle bitileceğini gösteren çizgi.",
+   "sayfa": "B5 s. 5"
+  },
+  {
+   "ad": "Öncül faaliyet",
+   "tanim": "Birbiriyle ilişkili faaliyetlerden önce yapılması gereken faaliyet.",
+   "sayfa": "B5 s. 6",
+   "ornek": "A → B ise A, B'nin öncülüdür."
+  },
+  {
+   "ad": "Ardıl faaliyet",
+   "tanim": "Belirli bir faaliyet yapıldıktan sonra yapılan faaliyet.",
+   "sayfa": "B5 s. 6",
+   "ornek": "A → B ise B, A'nın ardılıdır."
+  },
+  {
+   "ad": "En erken başlama (ES)",
+   "tanim": "Faaliyetin başlanabileceği en erken zaman. Öncülü yoksa 0; varsa öncüllerin EF değerlerinin en büyüğü.",
+   "sayfa": "B5 s. 6, 10",
+   "akil": "ES = maks (öncül EF)"
+  },
+  {
+   "ad": "En erken tamamlanma (EF)",
+   "tanim": "Faaliyetin tamamlanabileceği en erken zaman.",
+   "sayfa": "B5 s. 6, 10",
+   "akil": "EF = ES + süre"
+  },
+  {
+   "ad": "En geç tamamlanma (LF)",
+   "tanim": "Faaliyetin tamamlanabileceği en geç zaman. Ardılı yoksa proje süresi; varsa ardılların LS değerlerinin en küçüğü.",
+   "sayfa": "B5 s. 6, 11",
+   "akil": "LF = min (ardıl LS)"
+  },
+  {
+   "ad": "En geç başlama (LS)",
+   "tanim": "Faaliyetin başlanabileceği en geç zaman.",
+   "sayfa": "B5 s. 6, 11",
+   "akil": "LS = LF − süre"
+  },
+  {
+   "ad": "Bolluk zamanı (S)",
+   "tanim": "Projenin beklenen tamamlanma süresini değiştirmeden faaliyetin geciktirilebileceği süre.",
+   "sayfa": "B5 s. 7, 11",
+   "akil": "S = LS − ES = LF − EF"
+  },
+  {
+   "ad": "Kritik faaliyet",
+   "tanim": "Bolluk zamanı olmayan faaliyet; gecikmesi projeyi geciktirir, iyileşmesi kısaltır.",
+   "sayfa": "B5 s. 11"
+  },
+  {
+   "ad": "Kritik yol",
+   "tanim": "Bolluğu olmayan faaliyetlerin oluşturduğu topluluk; başlangıçtan bitişe zaman açısından en uzun yol. Süreleri toplamı proje süresidir.",
+   "sayfa": "B5 s. 7, 11",
+   "akil": "en uzun yol",
+   "ornek": "A–D–F–H–J = 42 hafta."
+  },
+  {
+   "ad": "Projenin beklenen tamamlanma süresi",
+   "tanim": "En erken tamamlanma zamanlarının en büyüğü; kritik faaliyet süreleri toplamı.",
+   "sayfa": "B5 s. 10, 15"
+  },
+  {
+   "ad": "PERT'te üç süre",
+   "tanim": "a: iyimser koşulda, m: genellikle olan koşulda, b: kötümser koşulda tamamlanma süresi.",
+   "sayfa": "B5 s. 21"
+  },
+  {
+   "ad": "PERT ortalama süre",
+   "tanim": "Faaliyetin beklenen (ortalama) tamamlanma süresi.",
+   "sayfa": "B5 s. 21",
+   "akil": "μ = (a + 4m + b) / 6",
+   "ornek": "8, 10, 12 → (8 + 40 + 12) / 6 = 10."
+  },
+  {
+   "ad": "PERT varyans",
+   "tanim": "Faaliyet süresinin varyansı.",
+   "sayfa": "B5 s. 21",
+   "akil": "σ² = ((b − a) / 6)²",
+   "ornek": "3, 8, 13 → (10 / 6)² = 2,78."
+  },
+  {
+   "ad": "Proje varyansı",
+   "tanim": "Kritik faaliyetlerin varyansları toplamı; standart sapması bunun karekökü.",
+   "sayfa": "B5 s. 22, 27",
+   "ornek": "0,44 + 0,11 + 0,44 + 0,11 + 2,78 = 3,88; σp = 1,97."
+  },
+  {
+   "ad": "%95 güven aralığı",
+   "tanim": "Proje süresinin normal dağıldığı varsayımıyla tamamlanma aralığı.",
+   "sayfa": "B5 s. 22, 28",
+   "akil": "μp − 1,96 σp ≤ süre ≤ μp + 1,96 σp",
+   "ornek": "42 ± 1,96 × 1,97 → 38,14 ile 45,86 hafta."
+  }
+ ],
+ "ciftler": [
+  {
+   "a": {
+    "ad": "CPM",
+    "tanim": "Faaliyet süreleri belirli (tek değer)."
+   },
+   "b": {
+    "ad": "PERT",
+    "tanim": "Faaliyet süreleri olasılıklı (a, m, b)."
+   },
+   "fark": "Soruda iyimser/kötümser süre ya da varyans varsa PERT; tek süre varsa CPM.",
+   "sorular": [
+    {
+     "ifade": "Her faaliyete üç süre tahmini yapılır",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "F faaliyeti 7 hafta sürer",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Beta dağılımı varsayılır",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "%95 güven aralığı hesaplanır",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Süreleri belirli iş geliştirme süreci (Gözden Geçirelim S4)",
+     "cevap": "a",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Öncül faaliyet",
+    "tanim": "Önce yapılması gereken."
+   },
+   "b": {
+    "ad": "Ardıl faaliyet",
+    "tanim": "Sonra yapılan."
+   },
+   "fark": "Oku izle: okun çıktığı öncül, girdiği ardıldır. ES öncüllerden, LF ardıllardan hesaplanır.",
+   "sorular": [
+    {
+     "ifade": "E'nin B ve C'si",
+     "cevap": "a",
+     "neden": "E'nin öncülleri B ve C."
+    },
+    {
+     "ifade": "A'nın B, C ve D'si",
+     "cevap": "b",
+     "neden": "A'nın ardılları."
+    },
+    {
+     "ifade": "ES hesaplanırken bakılan faaliyetler",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "LF hesaplanırken bakılan faaliyetler",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "En erken süreler (ES, EF)",
+    "tanim": "İleri doğru: başlangıçtan bitişe."
+   },
+   "b": {
+    "ad": "En geç süreler (LS, LF)",
+    "tanim": "Geri doğru: bitişten başlangıca."
+   },
+   "fark": "İleride maksimum, geride minimum alınır.",
+   "sorular": [
+    {
+     "ifade": "Öncüllerin EF'lerinin en büyüğü",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Ardılların LS'lerinin en küçüğü",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Öncülü olmayan faaliyete 0 verilir",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Ardılı olmayan faaliyete proje süresi verilir",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Süre eklenir",
+     "cevap": "a",
+     "neden": "EF = ES + süre"
+    },
+    {
+     "ifade": "Süre çıkarılır",
+     "cevap": "b",
+     "neden": "LS = LF − süre"
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Kritik faaliyet",
+    "tanim": "Bolluk = 0."
+   },
+   "b": {
+    "ad": "Kritik olmayan faaliyet",
+    "tanim": "Bolluk > 0."
+   },
+   "fark": "Kritik faaliyetteki 1 haftalık gecikme projeyi 1 hafta geciktirir; kritik olmayanda bolluk kadar gecikme projeyi etkilemez.",
+   "sorular": [
+    {
+     "ifade": "D (ES = LS = 10)",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "E (S = 4)",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "Kritik yol üzerinde",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Gantt şemasında yanında bolluk çubuğu var",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  },
+  {
+   "a": {
+    "ad": "Varyans (σ²)",
+    "tanim": "((b − a) / 6)²; proje için kritik varyanslar toplanır."
+   },
+   "b": {
+    "ad": "Standart sapma (σ)",
+    "tanim": "(b − a) / 6; proje için √(proje varyansı)."
+   },
+   "fark": "Güven aralığında standart sapma kullanılır. Varyanslar toplanır, standart sapmalar toplanmaz.",
+   "sorular": [
+    {
+     "ifade": "3, 20, 27 → 4",
+     "cevap": "b",
+     "neden": "Gözden Geçirelim S10."
+    },
+    {
+     "ifade": "3, 8, 13 → 2,78",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Projede 3,88",
+     "cevap": "a",
+     "neden": ""
+    },
+    {
+     "ifade": "Projede 1,97",
+     "cevap": "b",
+     "neden": ""
+    },
+    {
+     "ifade": "1,96 ile çarpılan",
+     "cevap": "b",
+     "neden": ""
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "es",
+   "ad": "En erken süreler",
+   "formul": "ES = öncüllerin EF değerlerinin en büyüğü &nbsp;&nbsp; EF = ES + süre",
+   "aciklama": "Öncülü olmayan faaliyette ES = 0. Proje süresi = EF'lerin en büyüğü.",
+   "ornek": "F'nin öncülleri B (18), C (16), D (19) → ES = 19, EF = 26.",
+   "tuzak": "Öncüllerin en küçüğünü değil en büyüğünü al: bütün öncüller bitmeden başlanamaz.",
+   "sayfa": "B5 s. 10, 12–15"
+  },
+  {
+   "id": "lf",
+   "ad": "En geç süreler",
+   "formul": "LF = ardılların LS değerlerinin en küçüğü &nbsp;&nbsp; LS = LF − süre",
+   "aciklama": "Ardılı olmayan faaliyette LF = proje süresi. Bitişten geriye doğru hesaplanır.",
+   "ornek": "F'nin ardılları H (LS 26), I (LS 27) → LF = 26, LS = 19.",
+   "tuzak": "Geri hesapta en büyüğü değil en küçüğü alınır.",
+   "sayfa": "B5 s. 11, 15–16"
+  },
+  {
+   "id": "bolluk",
+   "ad": "Bolluk zamanı",
+   "formul": "S = LS − ES = LF − EF",
+   "aciklama": "S = 0 olanlar kritik faaliyet; bunların yolu kritik yoldur.",
+   "ornek": "G: 22 − 19 = 3 hafta (27 − 24 = 3).",
+   "sayfa": "B5 s. 11, 17"
+  },
+  {
+   "id": "pert",
+   "ad": "PERT ortalama ve varyans",
+   "formul": "μ = (a + 4m + b) / 6 &nbsp;&nbsp; σ² = ((b − a) / 6)² &nbsp;&nbsp; σ = (b − a) / 6",
+   "aciklama": "a iyimser, m genellikle olan, b kötümser süre.",
+   "ornek": "5, 8, 17 → μ = (5 + 32 + 17) / 6 = 9.",
+   "tuzak": "m 4 ile çarpılır, bölen 6'dır. Standart sapma sorulursa kare alma.",
+   "sayfa": "B5 s. 21, 24–25"
+  },
+  {
+   "id": "aralik",
+   "ad": "Proje süresi ve %95 aralık",
+   "formul": "μp = kritik μ'ler toplamı &nbsp;&nbsp; σp² = kritik σ²'ler toplamı &nbsp;&nbsp; μp ± 1,96 × √σp²",
+   "aciklama": "Yalnız kritik yol üzerindeki faaliyetler toplanır.",
+   "ornek": "μ = 20, σ² = 9 → σ = 3; 20 ± 5,88 → 14,12 ile 25,88.",
+   "tuzak": "Varyansı doğrudan 1,96 ile çarpma; önce karekök.",
+   "sayfa": "B5 s. 22, 27–28"
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Faaliyetlerin bitirilme sürelerinin belirli olmadığı (olasılıklı olduğu) varsayımına dayanan proje yönetim tekniği hangisidir?",
+   "secenekler": [
+    "Gantt şeması",
+    "CPM",
+    "PERT",
+    "En kısa yol modeli",
+    "Maksimum akış modeli"
+   ],
+   "dogru": 2,
+   "aciklama": "PERT süreleri üç koşulda tahmin eder; CPM süreleri belirli kabul eder.",
+   "sayfa": "B5 s. 5",
+   "celdirici": "CPM'de süreler belirlidir."
+  },
+  {
+   "soru": "Dikey ekseninde faaliyetler, yatay ekseninde süreler bulunan yatay çubuklu grafikle proje planlaması yapan model hangisidir?",
+   "secenekler": [
+    "PERT",
+    "Gantt şeması",
+    "Karar ağacı",
+    "CPM",
+    "Kutu grafiği"
+   ],
+   "dogru": 1,
+   "aciklama": "Henry Gantt'ın geliştirdiği Gantt şeması.",
+   "sayfa": "B5 s. 5, 7"
+  },
+  {
+   "soru": "Bolluk zamanı olmayan faaliyetlerin oluşturduğu faaliyet topluluğuna ne ad verilir?",
+   "secenekler": [
+    "Kritik faaliyet",
+    "Öncül faaliyet",
+    "Kritik yol",
+    "Proje şebeke yapısı",
+    "Ardıl faaliyet"
+   ],
+   "dogru": 2,
+   "aciklama": "Kritik yol; aynı zamanda başlangıçtan bitişe en uzun yoldur.",
+   "sayfa": "B5 s. 7",
+   "celdirici": "Kritik faaliyet tek bir faaliyettir; topluluk kritik yoldur."
+  },
+  {
+   "soru": "Öncülleri B (EF = 18), C (EF = 16) ve D (EF = 19) olan, süresi 7 hafta olan F faaliyetinin en erken tamamlanma zamanı (EF) kaçtır?",
+   "secenekler": [
+    "23",
+    "25",
+    "26",
+    "41",
+    "60"
+   ],
+   "dogru": 2,
+   "aciklama": "ES = maks (18, 16, 19) = 19; EF = 19 + 7 = 26.",
+   "sayfa": "B5 s. 13–15",
+   "celdirici": "23 en küçük EF'yi (16) almakla çıkar.",
+   "cozum": [
+    "ES = maks (18, 16, 19) = 19",
+    "EF = 19 + 7 = 26"
+   ]
+  },
+  {
+   "soru": "Ardılları H (LS = 26) ve I (LS = 27) olan, süresi 7 hafta olan F faaliyetinin en geç başlama zamanı (LS) kaçtır?",
+   "secenekler": [
+    "19",
+    "20",
+    "26",
+    "27",
+    "33"
+   ],
+   "dogru": 0,
+   "aciklama": "LF = min (26, 27) = 26; LS = 26 − 7 = 19.",
+   "sayfa": "B5 s. 16–17",
+   "celdirici": "20 en büyük LS'yi (27) almakla çıkar.",
+   "cozum": [
+    "LF = min (26, 27) = 26",
+    "LS = 26 − 7 = 19"
+   ]
+  },
+  {
+   "soru": "Bir faaliyetin ES = 19, EF = 24, LS = 22 ve LF = 27'dir. Bu faaliyet için hangisi doğrudur?",
+   "secenekler": [
+    "Kritik faaliyettir.",
+    "Bolluk zamanı 5 haftadır.",
+    "Bolluk zamanı 3 haftadır; 22. haftaya kadar başlaması projeyi geciktirmez.",
+    "Süresi 8 haftadır.",
+    "En geç 24. haftada bitmelidir."
+   ],
+   "dogru": 2,
+   "aciklama": "S = LS − ES = 22 − 19 = 3 (LF − EF = 27 − 24 = 3). Kitaptaki G faaliyeti.",
+   "sayfa": "B5 s. 18",
+   "celdirici": "Süre EF − ES = 5'tir; bolluk değil.",
+   "cozum": [
+    "S = 22 − 19 = 3",
+    "Kontrol: 27 − 24 = 3"
+   ]
+  },
+  {
+   "soru": "Yukarıdaki projeye göre projenin beklenen tamamlanma süresi kaç haftadır?",
+   "secenekler": [
+    "10",
+    "12",
+    "13",
+    "14",
+    "16"
+   ],
+   "dogru": 2,
+   "aciklama": "ES/EF: A 0–4, B 0–3, C 4–9, D 4–10 (maks(4, 3) = 4), E 10–13 (maks(9, 10) = 10). Proje = 13 hafta, kritik yol A–D–E.",
+   "sayfa": "B5 s. 10–15",
+   "celdirici": "16 bütün süreleri toplamak değil; 12 D'nin öncülü olarak yalnız B'yi almakla çıkar.",
+   "tablo": {
+    "basliklar": [
+     "Faaliyet",
+     "Öncül",
+     "Süre"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "-",
+      "4"
+     ],
+     [
+      "B",
+      "-",
+      "3"
+     ],
+     [
+      "C",
+      "A",
+      "5"
+     ],
+     [
+      "D",
+      "A, B",
+      "6"
+     ],
+     [
+      "E",
+      "C, D",
+      "3"
+     ]
+    ]
+   },
+   "cozum": [
+    "A: 0–4, B: 0–3",
+    "C: 4–9; D: maks (4, 3) = 4 → 4–10",
+    "E: maks (9, 10) = 10 → 10–13",
+    "Proje süresi = 13"
+   ],
+   "tabloOnce": true
+  },
+  {
+   "soru": "Aynı projede (A 4, B 3, C 5, D 6, E 3; C←A, D←A,B, E←C,D) C faaliyetinin bolluk zamanı kaçtır?",
+   "secenekler": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": 1,
+   "aciklama": "Proje 13; E: LF 13, LS 10. C: LF = 10, LS = 5; ES = 4 → S = 1.",
+   "sayfa": "B5 s. 11, 17",
+   "celdirici": "0 dersen C'yi kritik sanırsın; kritik yol A–D–E.",
+   "cozum": [
+    "E: LS = 13 − 3 = 10",
+    "C: LF = 10, LS = 10 − 5 = 5",
+    "S = 5 − 4 = 1"
+   ]
+  },
+  {
+   "soru": "Bir faaliyetin iyimser süresi 4, genellikle olan süresi 7, kötümser süresi 16 haftadır. PERT'e göre ortalama süresi kaç haftadır?",
+   "secenekler": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "27"
+   ],
+   "dogru": 1,
+   "aciklama": "μ = (4 + 4 × 7 + 16) / 6 = 48 / 6 = 8.",
+   "sayfa": "B5 s. 21",
+   "celdirici": "9 = (4 + 7 + 16) / 3 basit ortalamadır.",
+   "cozum": [
+    "4 + 28 + 16 = 48",
+    "48 / 6 = 8"
+   ]
+  },
+  {
+   "soru": "İyimser süresi 3, kötümser süresi 15 hafta olan bir faaliyetin PERT'e göre varyansı kaçtır?",
+   "secenekler": [
+    "2",
+    "3",
+    "4",
+    "6",
+    "12"
+   ],
+   "dogru": 2,
+   "aciklama": "σ² = ((15 − 3) / 6)² = 2² = 4.",
+   "sayfa": "B5 s. 21",
+   "celdirici": "2 standart sapmadır; varyans karesidir.",
+   "cozum": [
+    "(15 − 3) / 6 = 2",
+    "σ² = 2² = 4"
+   ]
+  },
+  {
+   "soru": "Kritik yol üzerindeki faaliyetlerin varyansları 1,2; 0,8 ve 2,0'dır. Projenin standart sapması kaçtır?",
+   "secenekler": [
+    "1",
+    "1,33",
+    "2",
+    "4",
+    "16"
+   ],
+   "dogru": 2,
+   "aciklama": "σp² = 1,2 + 0,8 + 2,0 = 4; σp = √4 = 2.",
+   "sayfa": "B5 s. 27–28",
+   "celdirici": "4 varyanstır; standart sapma için karekök alınır.",
+   "cozum": [
+    "σp² = 4",
+    "σp = 2"
+   ]
+  },
+  {
+   "soru": "Beklenen tamamlanma süresi 30 hafta, varyansı 4 olan bir projenin %95 güven aralığı hangisidir?",
+   "secenekler": [
+    "26,08 ile 33,92",
+    "22,16 ile 37,84",
+    "28,04 ile 31,96",
+    "26 ile 34",
+    "29,02 ile 30,98"
+   ],
+   "dogru": 0,
+   "aciklama": "σ = 2; 1,96 × 2 = 3,92 → 26,08 ile 33,92.",
+   "sayfa": "B5 s. 22, 28",
+   "celdirici": "22,16–37,84 varyansı (4) 1,96 ile çarpmakla çıkar.",
+   "cozum": [
+    "σ = √4 = 2",
+    "1,96 × 2 = 3,92",
+    "30 ± 3,92"
+   ]
+  },
+  {
+   "soru": "",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "I doğru (S = LS − ES = LF − EF). II yanlış: kritik yol en uzun yoldur. III doğru: proje varyansı kritik faaliyetlerin varyansları toplamıdır.",
+   "sayfa": "B5 s. 7, 11, 22",
+   "onculler": [
+    "Bolluk zamanı en geç başlama ile en erken başlama arasındaki farktır.",
+    "Kritik yol, başlangıç ile bitiş arasındaki zaman açısından en kısa yoldur.",
+    "PERT'te proje varyansı kritik faaliyetlerin varyansları toplamıdır."
+   ],
+   "kok": "Yukarıdaki ifadelerden hangisi ya da hangileri doğrudur?",
+   "sabitSik": true
+  },
+  {
+   "soru": "Kitaptaki otomatik kredi verme projesinde kritik yol hangisidir?",
+   "secenekler": [
+    "A–B–E–H–J",
+    "A–D–F–H–J",
+    "A–C–G–I–J",
+    "A–D–G–I–J",
+    "A–B–F–I–J"
+   ],
+   "dogru": 1,
+   "aciklama": "Bolluğu 0 olan A, D, F, H, J; 10 + 9 + 7 + 4 + 12 = 42 hafta.",
+   "sayfa": "B5 s. 9, 18–19",
+   "celdirici": "A–D–G–I–J = 39 hafta; en uzun yol değil.",
+   "tablo": {
+    "basliklar": [
+     "Faaliyet",
+     "Tanım",
+     "Öncül",
+     "Süre (hafta)"
+    ],
+    "satirlar": [
+     [
+      "A",
+      "İhtiyaç analizi",
+      "-",
+      "10"
+     ],
+     [
+      "B",
+      "Tasarım-I",
+      "A",
+      "8"
+     ],
+     [
+      "C",
+      "Tasarım-II",
+      "A",
+      "6"
+     ],
+     [
+      "D",
+      "Veri tabanı modelleme",
+      "A",
+      "9"
+     ],
+     [
+      "E",
+      "Modül-I geliştirme",
+      "B, C",
+      "4"
+     ],
+     [
+      "F",
+      "Modül-II geliştirme",
+      "B, C, D",
+      "7"
+     ],
+     [
+      "G",
+      "Modül-III geliştirme",
+      "C, D",
+      "5"
+     ],
+     [
+      "H",
+      "Entegrasyon-I",
+      "E, F",
+      "4"
+     ],
+     [
+      "I",
+      "Entegrasyon-II",
+      "F, G",
+      "3"
+     ],
+     [
+      "J",
+      "Test",
+      "H, I",
+      "12"
+     ]
+    ],
+    "baslik": "Otomatik kredi verme sistemi (Tablo 5.1)"
+   },
+   "tabloOnce": true
+  },
+  {
+   "soru": "PERT'te bir faaliyetin iyimser ve kötümser süreleri genellikle olan süreye göre simetrikse (örneğin 3, 4, 5) ortalama süre için ne söylenebilir?",
+   "secenekler": [
+    "Ortalama süre iyimser süreye eşittir.",
+    "Ortalama süre genellikle olan süreye eşittir.",
+    "Varyans sıfırdır.",
+    "Faaliyet kritik olur.",
+    "Ortalama süre kötümser süreye eşittir."
+   ],
+   "dogru": 1,
+   "aciklama": "(3 + 16 + 5) / 6 = 4 = m. Kitap simetriklikte ortalamanın m ile aynı olduğunu söyler.",
+   "sayfa": "B5 s. 25–26",
+   "celdirici": "Varyans ((5 − 3) / 6)² = 0,11; sıfır değil."
+  }
+ ]
+}
