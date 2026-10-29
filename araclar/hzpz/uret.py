@@ -13,7 +13,7 @@ BOLUM_LISTE = [
     ("b1", 1, "Hizmet Pazarlamasına Giriş", "s. 5–29", True, (5, 29)),
     ("b2", 2, "Hizmetlerde Pazar Bölümlendirme, Hedef Pazar Seçimi ve Konumlandırma", "s. 31–54", True, (31, 54)),
     ("b3", 3, "Hizmetlerde Pazarlama Karması", "s. 55–81", True, (55, 81)),
-    ("b4", 4, "Hizmet Pazarlamasında İnsan", "s. 83–104", False, (83, 104)),
+    ("b4", 4, "Hizmet Pazarlamasında İnsan", "s. 83–104", True, (83, 104)),
     ("b5", 5, "Hizmet Pazarlamasında Süreç", "s. 105–121", False, (105, 121)),
     ("b6", 6, "Hizmet Pazarlamasında Fiziksel Kanıtlar", "s. 123–137", False, (123, 137)),
 ]
