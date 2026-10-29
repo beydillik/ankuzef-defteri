@@ -4,5 +4,6 @@ Bölüm bitince uret.py'de BOLUM_LISTE'de hazir=True yapılır. Yarım bölüm (
 from b1 import B1
 from b2 import B2
 from b3 import B3
+from b4 import B4
 
-BOLUMLER = {"b1": B1, "b2": B2, "b3": B3}
+BOLUMLER = {"b1": B1, "b2": B2, "b3": B3, "b4": B4}
