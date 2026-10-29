@@ -402,5 +402,81 @@
       celdirici: `${tr(yol2, 0)} B → C bağlantısını kullanmamakla, ${tr(C["A-B"] + C["A-C"], 0)} yalnızca A'dan çıkan kapasiteleri toplamakla çıkar.`, sayfa: "B4 s. 29–38" });
   } });
 
+  // =================== BÖLÜM 5 ===================
+  function proje() { // 5–6 faaliyet, rassal öncüller, CPM hesabı
+    const n = R(5, 6), H = "ABCDEF".slice(0, n).split(""); const F = [];
+    H.forEach((h, i) => { let on = []; if (i >= 2 || (i === 1 && Math.random() < 0.4)) { const ad = H.slice(0, i); on = kar(ad).slice(0, R(1, Math.min(2, ad.length))).sort(); } F.push({ h, on, t: R(2, 9) }); });
+    // her faaliyetin ardılı olsun (son hariç tek bitiş sorun değil)
+    F.forEach((f) => { f.es = Math.max(0, ...f.on.map((o) => F.find((x) => x.h === o).ef)); f.ef = f.es + f.t; });
+    const T_ = Math.max(...F.map((f) => f.ef));
+    [...F].reverse().forEach((f) => { const ard = F.filter((x) => x.on.includes(f.h)); f.ard = ard.map((x) => x.h); f.lf = ard.length ? Math.min(...ard.map((x) => x.ls)) : T_; f.ls = f.lf - f.t; f.s = f.ls - f.es; });
+    return { F, T: T_, tablo: { basliklar: ["Faaliyet", "Öncül", "Süre (hafta)"], satirlar: F.map((f) => [f.h, f.on.join(", ") || "-", String(f.t)]) } };
+  }
+  const esSatir = (F) => F.map((f) => `${f.h}: ES = ${f.on.length ? `maks (${f.on.map((o) => F.find((x) => x.h === o).ef).join(", ")}) = ${f.es}` : "0"}, EF = ${f.ef}`);
+
+  ekle({ id: "cpm-sure", bolum: "b5", ad: "Projenin tamamlanma süresi", aciklama: "ES = maks (öncül EF), EF = ES + süre", formul: ["es"], uret() {
+    const P = proje(); const F = P.F; const top = topla(F.map((f) => f.t));
+    // hata: öncüllerin en küçüğünü almak
+    const k = {}; F.forEach((f) => { const es = f.on.length ? Math.min(...f.on.map((o) => k[o])) : 0; k[f.h] = es + f.t; });
+    const hataMin = Math.max(...Object.values(k));
+    return Object.assign(siklar(P.T, [hataMin, top, P.T - Math.min(...F.map((f) => f.t)), Math.max(...F.map((f) => f.t))], (x) => tr(x, 0), 1), {
+      tablo: P.tablo, tabloOnce: true, soru: "Yukarıdaki tabloda bir projenin faaliyetleri, öncülleri ve süreleri verilmiştir. Kritik yol yöntemine (CPM) göre projenin beklenen tamamlanma süresi kaç haftadır?",
+      cozum: [...esSatir(F), `Proje süresi = EF'lerin en büyüğü = ${P.T}`],
+      aciklama: "Bütün öncüller bitmeden başlanamaz: ES öncüllerin EF'lerinin en büyüğüdür.", celdirici: `${tr(hataMin, 0)} öncüllerin en küçük EF'sini almakla, ${tr(top, 0)} bütün süreleri toplamakla çıkar.`, sayfa: "B5 s. 10–15" });
+  } });
+
+  ekle({ id: "cpm-bolluk", bolum: "b5", ad: "Bolluk zamanı", aciklama: "LF = min (ardıl LS), S = LS − ES", formul: ["lf", "bolluk"], uret() {
+    const P = proje(); const F = P.F; const ad = F.filter((f) => f.s > 0); if (!ad.length) return null; const f = sec(ad);
+    const lsMaks = f.ard.length ? Math.max(...f.ard.map((a) => F.find((x) => x.h === a).ls)) - f.t - f.es : NaN;
+    return Object.assign(siklar(f.s, [0, lsMaks, f.lf - f.es, f.t, P.T - f.ef], (x) => tr(x, 0), 1), {
+      tablo: P.tablo, tabloOnce: true, soru: `Yukarıdaki projede ${f.h} faaliyetinin bolluk zamanı kaç haftadır?`,
+      cozum: [...esSatir(F), `Proje süresi = ${P.T}`, ...[...F].reverse().map((x) => `${x.h}: LF = ${x.ard.length ? `min (${x.ard.map((a) => F.find((y) => y.h === a).ls).join(", ")})` : "proje süresi"} = ${x.lf}, LS = ${x.ls}`), `S(${f.h}) = LS − ES = ${f.ls} − ${f.es} = ${f.s}`],
+      aciklama: "İleri hesapla ES, geri hesapla LS bulunur; farkları bolluktur.", celdirici: `0 dersen faaliyeti kritik sanırsın${Number.isFinite(lsMaks) && lsMaks !== f.s ? `; ${tr(lsMaks, 0)} ardılların en büyük LS'sini almakla çıkar` : ""}.`, sayfa: "B5 s. 11, 15–18" });
+  } });
+
+  ekle({ id: "cpm-kritik", bolum: "b5", ad: "Kritik faaliyetler", aciklama: "Bolluğu 0 olanlar", formul: ["bolluk"], uret() {
+    const P = proje(); const F = P.F; const kr = F.filter((f) => f.s === 0).map((f) => f.h).join(", ");
+    const sec_ = new Set([kr]); let d = 0;
+    while (sec_.size < 5 && d++ < 100) { const alt = kar(F.map((f) => f.h)).slice(0, R(2, F.length - 1)).sort().join(", "); sec_.add(alt); }
+    if (sec_.size < 5) return null;
+    return { secenekler: [...sec_], dogru: 0, tablo: P.tablo, tabloOnce: true,
+      soru: "Yukarıdaki projede kritik faaliyetler hangileridir?",
+      cozum: [...F.map((f) => `${f.h}: ES ${f.es}, LS ${f.ls} → S = ${f.s}`), `Kritik (S = 0): ${kr}; proje süresi ${P.T}`],
+      aciklama: "Kritik faaliyetlerin bolluğu yoktur; süreleri toplamı proje süresine eşittir.", sayfa: "B5 s. 11, 18–19" };
+  } });
+
+  ekle({ id: "pert-mu", bolum: "b5", ad: "PERT ortalama süre", aciklama: "μ = (a + 4m + b) / 6", formul: ["pert"], uret() {
+    let a, m, b, mu; let d = 0; do { a = R(2, 10); m = a + R(1, 8); b = m + R(1, 14); mu = (a + 4 * m + b) / 6; } while (!Number.isInteger(mu * 2) && d++ < 50);
+    return Object.assign(siklar(mu, [(a + m + b) / 3, m, (a + 4 * m + b) / 3, (a + b) / 2], undefined, 0.5), {
+      soru: `Bir faaliyetin iyimser koşullarda tamamlanma süresi ${a}, genellikle olan koşullarda ${m}, kötümser koşullarda ${b} haftadır. PERT'e göre faaliyetin ortalama (beklenen) süresi kaç haftadır?`,
+      cozum: [`a + 4m + b = ${a} + ${4 * m} + ${b} = ${a + 4 * m + b}`, `μ = ${a + 4 * m + b} / 6 = ${tr(mu)}`],
+      aciklama: "m 4 ile çarpılır, toplam 6'ya bölünür.", celdirici: `${tr((a + m + b) / 3)} basit ortalama, ${m} yalnız m'yi almaktır.`, sayfa: "B5 s. 21" });
+  } });
+
+  ekle({ id: "pert-var", bolum: "b5", ad: "PERT varyans / standart sapma", aciklama: "σ = (b − a) / 6", formul: ["pert"], uret() {
+    const a = R(2, 12), k = R(1, 4), b = a + 6 * k, m = R(a + 1, b - 1); const varMi = Math.random() < 0.5; const s = k, v = k * k;
+    const dogru = varMi ? v : s;
+    return Object.assign(siklar(dogru, [varMi ? s : v, (b - a), (b - a) / 3, ((b - a) / 3) ** 2, m - a], (x) => tr(x), 1), {
+      soru: `Bir faaliyetin iyimser süresi ${a}, genellikle olan süresi ${m}, kötümser süresi ${b} haftadır. PERT'e göre bu faaliyetin ${varMi ? "varyansı" : "standart sapması"} kaçtır?`,
+      cozum: [`σ = (b − a) / 6 = (${b} − ${a}) / 6 = ${s}`, varMi ? `σ² = ${s}² = ${v}` : "Standart sapma soruluyor; kare alınmaz."],
+      aciklama: "m bu hesaba girmez.", celdirici: varMi ? `${s} standart sapmadır, varyans için karesi alınır.` : `${v} varyanstır; standart sapma için kare alınmaz.`, sayfa: "B5 s. 21, 33" });
+  } });
+
+  ekle({ id: "pert-aralik", bolum: "b5", ad: "%95 güven aralığı", aciklama: "μp ± 1,96 σp", formul: ["aralik"], uret() {
+    const n = R(3, 5); const k = Array.from({ length: n }, () => R(4, 16)); const s = sec([1, 1.5, 2, 2.5, 3, 4]); let vs; let d = 0;
+    // kritik varyanslar toplamı s² olacak şekilde
+    do { const v = s * s; const p = Array.from({ length: n - 1 }, () => yuv(Math.random() * v / n, 2)); vs = [...p, yuv(v - topla(p), 2)]; } while (vs.some((x) => x <= 0) && d++ < 50);
+    const mu = topla(k), v = yuv(topla(vs), 2), sp = Math.sqrt(v);
+    if (mu - 1.96 * v < 0) return null;
+    const yaz_ = (lo, hi) => `${tr(lo)} ile ${tr(hi)}`;
+    const ss = [yaz_(mu - 1.96 * sp, mu + 1.96 * sp), yaz_(mu - 1.96 * v, mu + 1.96 * v), yaz_(mu - sp, mu + sp), yaz_(mu - 1.96 * topla(vs.map(Math.sqrt)), mu + 1.96 * topla(vs.map(Math.sqrt))), yaz_(mu - 2 * 1.96 * sp, mu + 2 * 1.96 * sp)];
+    if (new Set(ss).size < 5) return null;
+    return { secenekler: ss, dogru: 0,
+      tablo: { basliklar: ["Kritik faaliyet", "Ortalama süre (μ)", "Varyans (σ²)"], satirlar: k.map((x, i) => [String.fromCharCode(65 + i), String(x), tr(vs[i])]) }, tabloOnce: true,
+      soru: "Yukarıda bir projenin kritik yolu üzerindeki faaliyetlerin PERT'e göre ortalama süreleri ve varyansları verilmiştir. Projenin %95 güven aralığında tamamlanma süresi aralığı hangisidir?",
+      cozum: [`μp = ${k.join(" + ")} = ${mu}`, `σp² = ${vs.map((x) => tr(x)).join(" + ")} = ${tr(v)}`, `σp = √${tr(v)} = ${tr(sp)}`, `1,96 × ${tr(sp)} = ${tr(1.96 * sp)}`, `${mu} ± ${tr(1.96 * sp)} → ${ss[0]}`],
+      aciklama: "Varyanslar toplanır, karekök alınır, 1,96 ile çarpılır.", celdirici: `${ss[1]} varyansı 1,96 ile çarpmakla, ${ss[3]} standart sapmaları toplamakla çıkar.`, sayfa: "B5 s. 22, 27–28" };
+  } });
+
   window.ATOLYE = G;
 })();
